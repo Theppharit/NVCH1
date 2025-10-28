@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<<<<<<< HEAD
+<!<!DOCTYPE html>
 <html lang="en">
 
 
@@ -6,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theppharit</title>
+    <title>jakgapat</title>
 </head>
 
 
@@ -25,7 +26,7 @@
 
 <section class="" id="">
 
-<h1 class="">Theppharit Tomongkhon</h1>
+<h1 class="">jakgapat</h1>
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloribus sequi voluptate sed iste possimus consequuntur ipsum adipisci minima accusamus. Quos architecto earum nobis neque dolorum quam consectetur non accusamus?
@@ -46,6 +47,16 @@ Fugiat excepturi facilis rerum quae voluptate? Consequatur, adipisci quibusdam r
 <footer class=""></footer>
 
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จักรภัทร ปุริเส</title>
+</head>
+<body>
+>>>>>>> 43a50c8ef42cb5e80bbd80c1b9d05ab433a69c1b
     
 </body>
 
