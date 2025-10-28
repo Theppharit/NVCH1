@@ -363,6 +363,8 @@ footer {
     background: hotpink;
 }
 
+<div class="container">
+
 </style>
 <section class="" id="">
 
@@ -373,3 +375,4 @@ footer {
 
 </section>
 
+</div>
