@@ -363,16 +363,21 @@ footer {
     background: hotpink;
 }
 
-<div class="container">
+
 
 </style>
-<section class="" id="">
-
-<h1 class="">Potcharapon Poolsawat</h1>
-<h2 class="">Gamer</h2>
-<h3 class="">NVC</h3>
-<p class=""></p>
-
-</section>
-
+<div class="container">
+  <h1>Potcharapon Poolsawat</h1>
+  <h2>Gamer</h2>
+  <h3>NVC</h3>
 </div>
+
+<style>
+.container {
+  text-align: center;         
+  position: absolute;          
+  top: 50%;               
+  left: 50%;                   
+  transform: translate(-50%, -50%); 
+}
+</style>
