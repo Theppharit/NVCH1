@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!<!DOCTYPE html>
 <html lang="en">
 
@@ -46,6 +47,16 @@ Fugiat excepturi facilis rerum quae voluptate? Consequatur, adipisci quibusdam r
 <footer class=""></footer>
 
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จักรภัทร ปุริเส</title>
+</head>
+<body>
+>>>>>>> 43a50c8ef42cb5e80bbd80c1b9d05ab433a69c1b
     
 </body>
 
