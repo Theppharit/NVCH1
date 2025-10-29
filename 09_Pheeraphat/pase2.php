@@ -29,7 +29,7 @@
 <main class="">
 
 <section class="" id="section1">
-    <h1 class="section-head">Pheeraphat1</h1>
+    <h1 class="">Pheeraphat1</h1>
     <h2 class="">bo</h1>
     <h3 class="">age 19</h1>
     <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident repudiandae asperiores quidem minus quia nesciunt in aliquam aperiam, maiores sunt! Sapiente quis necessitatibus nesciunt veritatis fugit ad distinctio facere harum!
