@@ -7,7 +7,20 @@
     background: #9bff06;
 }
 
+.div-head2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;;
+    height: 150%px;
+    background: #ff0019;
+}
+
 
 .section-head {
     color:rgb(255, 255, 255);
+}
+
+.section-head2 {
+    color: rgb(255, 0, 0);
 }
