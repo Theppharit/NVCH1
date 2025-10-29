@@ -7,5 +7,12 @@
 </head>
 <body>
     
+<nav class="">
+
+<a href="./index.php" class="">หน้าแรก</a>
+<a href="" class=""></a>
+
+</nav>
+
 </body>
 </html>
