@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
    
-   
-   
     <title>Supansa</title>
-
-
 </head>
 
 
@@ -18,29 +14,29 @@
 
 
 
-<nav class=""></nav>
+<nav class="">
 <a href="/index.php" class="">หน้าแรก</a>
 <a href="page2.php" class="">หน้าที่ 2</a>
-
 
 <a href="section1" class="">หัวข้อที่1</a>
 <a href="section2" class="">หัวข้อที่2</a>
 <a href="section3" class="">หัวข้อที่3</a>
 
+</van>
 
-<main class=""></main>
+<main class="">
 
 
 
 
 <section class="" id="section1">
-<div class="div-head">
-<h1 class=""></h1>
-</div>
-<h2 class="section-head"></h2>
 
-<h1 class="">หัวข้อที่1</h1>
-<h2 class="">software Engineer</h2>
+<div class="div-head">
+
+<h1 class="section-head">หัวข้อที่1</h1>
+</div>
+<h2 class="section-head2">software Engineer</h2>
+
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis itaque rerum dignissimos laboriosam. Incidunt adipisci consectetur aut deserunt ab. Nesciunt pariatur maiores quidem ipsam at recusandae nisi iusto expedita nostrum.
 Nesciunt ea voluptates vel, laudantium expedita omnis nam suscipit molestiae, animi, itaque nulla praesentium culpa! Sit architecto vel id commodi, aut sint obcaecati iusto magni, accusamus nobis ullam iure? Quasi.
@@ -50,6 +46,7 @@ Unde iste, impedit commodi iure laborum magnam consequatur placeat ipsum quae ab
 Nisi, consequuntur maiores fugit velit debitis inventore atque mollitia? Cumque, fuga. Temporibus nostrum molestiae eveniet mollitia provident laudantium, esse, tempora blanditiis ea nihil magni reprehenderit ipsa voluptates. Ullam, iure cum?</p>
 
 </section>
+
 <section class="" id="section2">
 
 <h1 class="">หัวข้อที่2</h1>
@@ -63,6 +60,7 @@ Unde iste, impedit commodi iure laborum magnam consequatur placeat ipsum quae ab
 Nisi, consequuntur maiores fugit velit debitis inventore atque mollitia? Cumque, fuga. Temporibus nostrum molestiae eveniet mollitia provident laudantium, esse, tempora blanditiis ea nihil magni reprehenderit ipsa voluptates. Ullam, iure cum?</p>
 
 </section>
+
 <section class="" id="section3">
 
 <h1 class="">หัวข้อที่3</h1>
