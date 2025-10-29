@@ -61,7 +61,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
     <h1 class="section-head">หัวข้อที่ 3</h1>
 </div>
 
-<h2 class="section-head2">ห่ะะ</h2>
+<h2 class="section-head3">ห่ะะ</h2>
 <h3 class="">NVC</h3>
 <p class="">ห่วววววว</p>
 </section>
