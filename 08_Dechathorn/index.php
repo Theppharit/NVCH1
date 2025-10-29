@@ -27,9 +27,9 @@
 <main class="">
    
 
-
 <section class="" id="หน้าที่1">
-<div class="">
+
+<div class="div-head">
    <h1 class="">หน้าแรก</h1>
 </div>
 
