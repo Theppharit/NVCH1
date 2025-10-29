@@ -70,7 +70,10 @@
 
         <section class="" id="section2">
 
+        <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 2</h1>
+        </div>
+
             <h2 class="">Software Engineer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
@@ -100,7 +103,10 @@
 
         <section class="" id="section3">
 
+        <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 3</h1>
+        </div>
+
             <h2 class="">Software Engineer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
