@@ -20,7 +20,7 @@
 
 <nav class=""></nav>
 <a href="/index.php" class="">หน้าแรก</a>
-<a href="page2.php" class=""></a>
+<a href="page2.php" class="">หน้าที่ 2</a>
 
 
 <a href="section1" class="">หัวข้อที่1</a>
