@@ -24,13 +24,14 @@
 <nav class=""></nav>
 
 <main class="">
-   
 
- <section class="" id="หน้าที่1">
+ <div class="div-head">
+      <h1 class="">หน้าที่2</h1>
+   </div>
 
-<div class="div-head">
-   <h1 class="">หน้าที่2</h1>
-</div>
+   <section class="" id="หน้าที่1">
+
+
 
 
 <h2 class="">kar</h2>
