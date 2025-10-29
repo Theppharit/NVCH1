@@ -25,3 +25,12 @@
 .section-head2 {
     color: brown;
 }
+
+.nav {
+    font-size: 25px !important;
+font-family: 'Paytone One', sans-serif;
+text-shadow: 1px 1px black;
+text-transform:none;
+padding-left:3px;
+text-align: center;
+}
