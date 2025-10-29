@@ -36,7 +36,7 @@
 
         <section class="" id="section1">
 
-            <h1 class="section-head">หัวข้อที่ 1</h1>
+            <h1 class="section-head">หัวข้อที่ 1 หน้าที่ 2</h1>
             <h2 class="">Gamer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
@@ -66,7 +66,7 @@
 
         <section class="" id="section2">
 
-            <h1 class="section-head">หัวข้อที่ 2</h1>
+            <h1 class="section-head">หัวข้อที่ 2 หน้าที่ 2</h1>
             <h2 class="">Gamer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
@@ -96,7 +96,7 @@
 
         <section class="" id="section3">
 
-            <h1 class="section-head">หัวข้อที่ 3</h1>
+            <h1 class="section-head">หัวข้อที่ 3 หน้าที่ 2</h1>
             <h2 class="">Gamer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
