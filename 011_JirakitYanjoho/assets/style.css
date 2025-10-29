@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-    .main {
-        padding: 0 5rem;
-    }
+.section-contianer {
+    padding: 0 5rem;
+}
+
+    
 
 .div-head {
     display: flex;
