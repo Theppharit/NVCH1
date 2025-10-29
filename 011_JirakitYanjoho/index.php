@@ -13,8 +13,8 @@
 
 
 <nav class="">
-    <a href="#section1" class="">หัวข้อที่ 2</a>
-    <a href="#section2" class="">หัวข้อที่ 1</a>
+    <a href="#section1" class="">หัวข้อที่ 1</a>
+    <a href="#section2" class="">หัวข้อที่ 2</a>
     <a href="#section3" class="">หัวข้อที่ 3</a>
 
 </nav>
