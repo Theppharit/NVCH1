@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-.section-content{
-    padding: 0 3rem;
+.section-contianer{
+    padding: 0 5rem;
 }
 
 
@@ -17,14 +17,20 @@
     align-items: center;
     width: 100%;
     height: 150px;
-    background-color: darkgreen;
+    background-color: rgb(81, 209, 81);
     margin: 3rem 0;
 }
 
 .section-head {
    color:rgb(240, 240, 240);
 }
-    
+    .section-contianer{
+        padding: ;
+    }
+
+
 .section-head2 {
     color: darkgreen;
 }
+
+
