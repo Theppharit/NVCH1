@@ -1,9 +1,10 @@
 .div-head {
-    width: 100px;;
-    height: 150px;
+    width: 100%px;;
+    height: 150%px;
+    background: #9bff06;
 }
 
 
 .section-head {
-    color:rgb(226, 16, 16);
+    color:rgb(255, 255, 255);
 }
