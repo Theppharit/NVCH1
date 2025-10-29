@@ -31,18 +31,14 @@
 
 
 
-
-
 <main class="">
-
-
-
-<section class="" id="section1">
 
 <div class="div-head">
 <h1 class="section-head">หัวข้อที่ 1</h1>
 </div>
 
+
+<section class="section-conteaner" id="section1">
 
 
 <h2 class="section-head2">Software Engineer</h2>
@@ -70,9 +66,17 @@ Culpa facilis voluptatibus eveniet architecto numquam rem quas sunt exercitation
 Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil modi architecto voluptates maiores! Placeat eius voluptatem, sit explicabo laborum, iure ipsa unde vero enim suscipit culpa.</p>
 
 </section>
-<section class="" id="section2">
 
+<div class="div-head">
 <h1 class="section-head">หัวข้อที่ 2</h1>
+</div>
+
+<section class="section-conteaner" id="section2">
+
+
+
+
+
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
@@ -97,9 +101,18 @@ Culpa facilis voluptatibus eveniet architecto numquam rem quas sunt exercitation
 Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil modi architecto voluptates maiores! Placeat eius voluptatem, sit explicabo laborum, iure ipsa unde vero enim suscipit culpa.</p>
 
 </section>
-<section class="" id="section3">
 
-<h1 class="section-head">หัวข้อที่ 13</h1>
+<div class="div-head ">
+<h1 class="section-head">หัวข้อที่ 3</h1>
+</div>
+
+<section class="section-conteaner" id="section3">
+
+
+
+
+
+
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
