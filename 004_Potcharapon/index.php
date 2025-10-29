@@ -32,14 +32,15 @@
 
     <main class="">
 
+    <div class="div-head">
+                <h1 class="section-head">หัวข้อที่ 1</h1>
+            </div>
 
+        <section class="pad" id="section1">
 
-        <section class="" id="section1">
-
-            <h1 class="section-head">หัวข้อที่ 1</h1>
-            <h2 class="">Gamer</h2>
-            <h3 class="">NVC</h3>
-            <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
+            <h2 class="pad">Gamer</h2>
+            <h3 class="pad">NVC</h3>
+            <p class="pad">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
                 Odio vero assumenda consectetur minima perferendis ipsum. Aliquam ullam ad necessitatibus veniam commodi dicta asperiores hic doloribus, odio magnam inventore distinctio nisi cum delectus eaque quisquam incidunt quam dolor. Est.
                 Pariatur fugit exercitationem modi eum voluptate aspernatur tempore, dolores error corrupti porro? Architecto non veniam magnam, voluptate quidem quod ad. Blanditiis veniam deserunt odit expedita molestiae repellendus quae voluptas quam.
