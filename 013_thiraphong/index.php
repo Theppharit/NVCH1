@@ -39,8 +39,14 @@
 
 <section class="" id="section1">
 
+<div class="div-head">
 <h1 class="section-head">หัวข้อที่ 1</h1>
-<h2 class="">Software Engineer</h2>
+</div>
+
+
+
+<h2 class="section-head2">Software Engineer</h2>
+
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
 Minima, voluptates! Labore totam cupiditate fugiat minima enim suscipit iste accusamus vitae, atque eius doloremque ut commodi. Sed harum et nostrum repellendus, fugit magnam iusto sequi odio dolor. Pariatur, recusandae.
