@@ -6,8 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- import style.css -->
     <link rel="stylesheet" href="./assets/style.css">
 
+    <!-- Website name -->
     <title>Theppharit</title>
 </head>
 
@@ -17,6 +20,7 @@
 
 
 
+    <!-- Navbar -->
     <nav class="">
 
         <a href="./index.php" class="">หน้าแรก</a>
@@ -30,16 +34,17 @@
 
 
 
+    <!-- Main Content -->
     <main class="">
 
 
-            <div class="div-head">
-                <h1 class="section-head">หัวข้อที่ 1</h1>
-            </div>
+        <div class="div-head">
+            <h1 class="section-head">หัวข้อที่ 1</h1>
+        </div>
 
 
         <section class="section-contianer" id="section1">
- 
+
             <h2 class="section-head2">Software Engineer</h2>
 
             <h3 class="">NVC</h3>
@@ -67,9 +72,9 @@
         </section>
 
 
-            <div class="div-head">
-                <h1 class="section-head">หัวข้อที่ 2</h1>
-            </div>
+        <div class="div-head">
+            <h1 class="section-head">หัวข้อที่ 2</h1>
+        </div>
 
 
         <section class="section-contianer" id="section2">
@@ -99,9 +104,9 @@
 
         </section>
 
-            <div class="div-head">
-                <h1 class="section-head">หัวข้อที่ 3</h1>
-            </div>
+        <div class="div-head">
+            <h1 class="section-head">หัวข้อที่ 3</h1>
+        </div>
 
         <section class="section-contianer" id="section3">
 
