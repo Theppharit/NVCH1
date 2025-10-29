@@ -16,7 +16,7 @@
 
 <body>
 
-<nav class=""></nav>
+<nav class="">
 <a href="./index.php" class="">หน้าแรก</a>
 <a href="./index 2.php" class="">หน้าที่2</a>
 
@@ -25,12 +25,14 @@
 <a href="#setion2" class="">หัวข้อที่2</a>
 <a href="#setion3" class="">หัวข้อที่3</a>
 
+</nav>
+
 <main class="">
 
 <section class="" id="setion1">
  
 <div class="div-head">
- <h1 class="">หัวข้อที่1</h1>
+ <h1 class="section-head">หัวข้อที่1</h1>
 
 </div>
 <h2 class="section-head">Toon</h2>
