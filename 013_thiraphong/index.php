@@ -26,14 +26,13 @@
 <!-- Navbar -->
 <nav class="">
 
+
 <a href="./index.php" class="">หน้าแรก</a>
 <a href="./page.php" class="">หน้าที่ 2</a>
 
 <a href="#section1" class="">หัวข้อที่ 1</a>
 <a href="#section2" class="">หัวข้อที่ 2</a>
 <a href="#section3" class="">หัวข้อที่ 3</a>
-
-
 
 
 </nav>
@@ -157,7 +156,7 @@ Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil
 
 <!-- footers -->
 <footer class="">
-    
+
 </footer>
 
 
