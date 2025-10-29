@@ -25,11 +25,15 @@
 <nav class=""></nav>
 
 <main class="">
-    <div class=""></div>
+   
 
 
 <section class="" id="หน้าที่1">
+<div class="">
 <h1 class="">หน้าแรก</h1>
+</div>
+
+
 <h2 class="">kar</h2>
 <h3 class="">age 19</h3>
 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corrupti est laudantium corporis repellat repudiandae recusandae? Optio ab veniam blanditiis aspernatur iusto voluptatem, aperiam labore, laborum unde similique suscipit provident!
@@ -60,7 +64,7 @@ Totam omnis rem exercitationem facere, hic reiciendis saepe, blanditiis quam ver
 <main class="">
 
 <section class="" id="หน้าที่2">
-<h1 class="">หัวข้อที่2</h1>
+<h1 class="">หัวข้อที่1</h1>
 <h2 class="">kar</h2>
 <h3 class="">age 19</h3>
 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corrupti est laudantium corporis repellat repudiandae recusandae? Optio ab veniam blanditiis aspernatur iusto voluptatem, aperiam labore, laborum unde similique suscipit provident!
@@ -89,7 +93,7 @@ Totam omnis rem exercitationem facere, hic reiciendis saepe, blanditiis quam ver
 
 </main>
 <section class="" id="หน้าที่3">
-<h1 class="">หัวข้อที่3</h1>
+<h1 class="">หัวข้อที่2</h1>
 <h2 class="">kar</h2>
 <h3 class="">age 19</h3>
 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corrupti est laudantium corporis repellat repudiandae recusandae? Optio ab veniam blanditiis aspernatur iusto voluptatem, aperiam labore, laborum unde similique suscipit provident!
