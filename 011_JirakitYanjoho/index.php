@@ -44,7 +44,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 
 <section class="" id="section2">
 
-<div class="div-head">
+<div class="div-head2">
     <h1 class="section-head">หัวข้อที่ 2</h1>
 </div>
 
@@ -57,7 +57,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 
 <section class="" id="section3">
 
-<div class="div-head">
+<div class="div-head3">
     <h1 class="section-head">หัวข้อที่ 3</h1>
 </div>
 

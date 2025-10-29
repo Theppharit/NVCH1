@@ -31,7 +31,7 @@
 
 <section class="" id="section1">
 
-<div class="div-head2">
+<div class="div-head">
     <h1 class="section-head">หัวข้อที่ 1</h1>
 </div>
 
@@ -57,7 +57,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 
 <section class="" id="section3">
 
-<div class="div-head2">
+<div class="div-head3">
     <h1 class="section-head">หัวข้อที่ 3</h1>
 </div>
 
