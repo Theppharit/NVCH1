@@ -26,9 +26,6 @@
 </nav>
 
 
-
-<main class="main">
-
 <div class="div-head">
     <h1 class="section-head">หัวข้อที่ 1</h1>
 </div>
