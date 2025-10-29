@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pawarit</title>
-
+    <link rel="stylesheet" href="">
 
 
 
@@ -33,7 +33,7 @@
 <section class="" id="section1">
 
 
-<h1 class="">หัวข้อที่ 1</h1>
+<h1 class=".section-head">หัวข้อที่ 1</h1>
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae adipisci nisi! Fuga dignissimos commodi ipsam harum deserunt? Porro voluptatem explicabo molestiae atque eos suscipit eius aspernatur nostrum, officiis quasi.
