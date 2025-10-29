@@ -1,5 +1,16 @@
+.div-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: darkgreen;
+}
+
 .section-head {
-   color:rgb(103, 196, 196);
+   color:rgb(240, 240, 240);
 }
     
-
+.section-head2 {
+    color: darkgreen;
+}
