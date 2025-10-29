@@ -72,7 +72,12 @@ Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil
 </section>
 <section class="" id="section2">
 
+
+<div class="div-head">
 <h1 class="section-head">หัวข้อที่ 2</h1>
+</div>
+
+
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
@@ -99,7 +104,13 @@ Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil
 </section>
 <section class="" id="section3">
 
-<h1 class="section-head">หัวข้อที่ 13</h1>
+<div class="div-head ">
+<h1 class="section-head">หัวข้อที่ 3</h1>
+</div>
+
+
+
+
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?

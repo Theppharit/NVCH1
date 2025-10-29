@@ -52,8 +52,8 @@ h4 {
 /* navigation */
 nav { 
     background: rgba(49, 121, 255, 0.4);
-  border-radius: 15px;
-  border: 2px dotted    rgb(190, 226, 255);
+  border-radius: 28px;
+  border: 6px dotted    rgb(190, 226, 255);
   font-size: 23px !important;
   font-family: 'Paytone One', sans-serif;
   text-shadow: 1px 1px black;
@@ -81,6 +81,7 @@ main {
   border: 2px dotted    rgb(190, 226, 255);
 }
 
+  
 /* floating animation */
 @keyframes floating {
   0% { transform: translate(0, 0px); }
