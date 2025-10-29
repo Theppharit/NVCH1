@@ -15,7 +15,23 @@
 <main class="">
 
 <section class="" id="">
-    <h1 class="">jirakit</h1>
+    <h1 class="">หัวข้อที่ 1</h1>
+<h2 class="">ห่ะะ</h2>
+<h3 class="">NVC</h3>
+<p class="">ห่วววววว</p>
+</section>
+
+
+<section class="" id="">
+    <h1 class="">หัวข้อที่ 2</h1>
+<h2 class="">ห่ะะ</h2>
+<h3 class="">NVC</h3>
+<p class="">ห่วววววว</p>
+</section>
+
+
+<section class="" id="">
+    <h1 class="">หัวข้อที่ 3</h1>
 <h2 class="">ห่ะะ</h2>
 <h3 class="">NVC</h3>
 <p class="">ห่วววววว</p>
