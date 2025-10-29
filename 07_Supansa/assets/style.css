@@ -1,3 +1,15 @@
+.div-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background: #eee671;
+}
 .section-head {
-    color: #ee99ce;
+    color: rgb(241, 123, 216);
+}
+
+.section-head2 {
+    color: #55a8ec;
 }

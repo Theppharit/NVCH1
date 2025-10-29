@@ -34,6 +34,10 @@
 
 
 <section class="" id="section1">
+<div class="div-head">
+<h1 class=""></h1>
+</div>
+<h2 class="section-head"></h2>
 
 <h1 class="">หัวข้อที่1</h1>
 <h2 class="">software Engineer</h2>
