@@ -26,6 +26,7 @@
 </nav>
 
 
+
 <div class="div-head">
     <h1 class="section-head">หัวข้อที่ 1</h1>
 </div>
@@ -38,12 +39,13 @@
 Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem id velit, dolor architecto. Quae, vero quas eligendi totam velit explicabo, harum ea magnam eos, vitae numquam doloribus neque nemo dolorem?</p>
 </section>
 
-
-<section class="section-contianer" id="section2">
-
 <div class="div-head2">
     <h1 class="section-head">หัวข้อที่ 2</h1>
 </div>
+
+
+
+<section class="section-contianer" id="section2">
 
 <h2 class="">ห่ะะ</h2>
 <h3 class="">NVC</h3>
@@ -52,11 +54,12 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 </section>
 
 
-<section class="section-contianer" id="section2">
 
 <div class="div-head3">
     <h1 class="section-head">หัวข้อที่ 3</h1>
 </div>
+
+<section class="section-contianer" id="section2">
 
 <h2 class="section-head2">ห่ะะ</h2>
 <h3 class="">NVC</h3>
