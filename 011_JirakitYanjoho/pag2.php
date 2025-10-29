@@ -4,7 +4,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./assets/style.css">
 
     <title>จอมมาร</title>
@@ -28,6 +29,10 @@
 
 
 <main class="">
+
+<div class="div-head">
+    <h1 class="section-head2">หัวข้อที่ 2</h1>
+</div>
 
 <section class="" id="section1">
 
