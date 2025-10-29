@@ -25,11 +25,11 @@
 <nav class=""></nav>
 
 <main class="">
-    <div class=""><h1 class="">หน้าแรก</h1></div>
+    <div class=""></div>
 
 
 <section class="" id="หน้าที่1">
-
+<h1 class="">หน้าแรก</h1>
 <h2 class="">kar</h2>
 <h3 class="">age 19</h3>
 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corrupti est laudantium corporis repellat repudiandae recusandae? Optio ab veniam blanditiis aspernatur iusto voluptatem, aperiam labore, laborum unde similique suscipit provident!
