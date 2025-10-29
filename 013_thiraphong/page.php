@@ -17,6 +17,8 @@
 
 <nav class="">
 
+<a href="./index.php" class="">หน้าแรก</a>
+<a href="./page.php" class="">หน้าที่ 2</a>
 
 <a href="#section1" class="">หัวข้อที่ 1</a>
 <a href="#section2" class="">หัวข้อที่ 2</a>
@@ -37,7 +39,7 @@
 
 <section class="" id="section1">
 
-<h1 class="section-head">หัวข้อที่ 1</h1>
+<h1 class="section-head">หัวข้อที่ 1 หน้าที่ 2</h1>
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
@@ -64,7 +66,7 @@ Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil
 </section>
 <section class="" id="section2">
 
-<h1 class="">หัวข้อที่ 2</h1>
+<h1 class="">หัวข้อที่ 2 หน้าที่ 2</h1>
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
@@ -91,7 +93,7 @@ Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil
 </section>
 <section class="" id="section3">
 
-<h1 class="">หัวข้อที่ 13</h1>
+<h1 class="">หัวข้อที่ 3 หน้าที่ 2</h1>
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
