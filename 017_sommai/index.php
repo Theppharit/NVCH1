@@ -6,8 +6,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- import-style.css -->  
     <link rel="stylesheet" href="./assets/style.css">
 
+    <!--website name-->
     <title>Sommai</title>
 </head>
 
@@ -16,7 +18,7 @@
 <body>
 
 
-
+<!-- navber -->
     <nav class="">
 
         <a href="./index.php" class="">หน้าแรก</a>
@@ -29,17 +31,17 @@
     </nav>
 
 
-
+<!-- maincontent -->
     <main class="">
 
 
-
+<!-- section 1 title -->
         <section class="" id="section1">
 
-
-        <div class="div-head">
+         <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 1</h1>
-        </div>
+         </div>
+                
             <h2 class="section-head2">yooo</h2>
 
             <h3 class="">AV</h3>
@@ -67,10 +69,12 @@
         </section>
 
 
-
+<!-- section 2 title -->
         <section class="" id="section2">
 
+        <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 2</h1>
+        </div>
             <h2 class="">yooo</h2>
             <h3 class="">AV</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
@@ -97,10 +101,13 @@
         </section>
 
 
-
+<!-- section 3 title -->
         <section class="" id="section3">
+            
+         <div class="div-head">
+                 <h1 class="section-head">หัวข้อที่ 3</h1>
+         </div>
 
-            <h1 class="section-head">หัวข้อที่ 3</h1>
             <h2 class="">fafafa</h2>
             <h3 class="">AV</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
