@@ -17,9 +17,10 @@
 
 
 
-    <a href="" class="">หัวข้อที่ 1</a>
-    <a href="" class="">หัวข้อที่ 2</a>
-    <a href="" class="">หัวข้อที่ 3</a>
+    <a href="#section1" class="">หัวข้อที่ 1</a>
+    <a href="#section2" class="">หัวข้อที่ 2</a>
+    <a href="#section3" class="">หัวข้อที่ 3</a>
+    
 
 
 
@@ -29,7 +30,7 @@
 <main class="">
 
 
-<section class="" id="">
+<section class="" id="section1">
 
 
 <h1 class="">Pawarit Phenkhoksung</h1>
@@ -60,7 +61,7 @@ Dignissimos neque dolorem, cupiditate harum laborum pariatur quibusdam illum a t
 </section>
 
 
-<section class="" id="">
+<section class="" id="section2">
 
 
 <h1 class="">หัวข้อที่ 2</h1>
@@ -88,7 +89,7 @@ Sed, harum neque nobis veritatis impedit doloremque asperiores mollitia quam dol
 Dignissimos neque dolorem, cupiditate harum laborum pariatur quibusdam illum a temporibus error earum corporis ut quod voluptate voluptas. Voluptatem ex aliquid illum neque accusantium debitis? Ducimus minima accusantium culpa itaque.
 
 
-<section class="" id="">
+<section class="" id="section3">
 
 
 <h1 class="">หัวข้อที่ 3</h1>
