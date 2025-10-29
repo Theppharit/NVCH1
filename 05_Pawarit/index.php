@@ -74,7 +74,7 @@ Dignissimos neque dolorem, cupiditate harum laborum pariatur quibusdam illum a t
 <section class="" id="section2">
 
 
-<h1 class="">หัวข้อที่ 2</h1>
+<div class="div-head"><h1 class="section-head2">หัวข้อที่ 2</h1></div>
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae adipisci nisi! Fuga dignissimos commodi ipsam harum deserunt? Porro voluptatem explicabo molestiae atque eos suscipit eius aspernatur nostrum, officiis quasi.
@@ -102,7 +102,7 @@ Dignissimos neque dolorem, cupiditate harum laborum pariatur quibusdam illum a t
 <section class="" id="section3">
 
 
-<h1 class="">หัวข้อที่ 3</h1>
+<div class="div-head"><h1 class="section-head2">หัวข้อที่ 3</h1></div>
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa quas ab repudiandae quibusdam quo nostrum beatae voluptas sint eveniet laborum, sunt laudantium esse incidunt dolor possimus eos vero minus.

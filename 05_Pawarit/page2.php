@@ -15,11 +15,12 @@
     
 <nav class="">
 
+        <a href="./index.php" class="section-head">หน้าแรก</a>
+            <a href="./page2.php" class="">หัวข้อที 2</a>
 
-
-    <a href="#section1" class="">หัวข้อที่ 1</a>
-    <a href="#section2" class="">หัวข้อที่ 2</a>
-    <a href="#section3" class="">หัวข้อที่ 3</a>
+         <a href="#section1" class="">หัวข้อที่ 1</a>
+     <a href="#section2" class="">หัวข้อที่ 2</a>
+       <a href="#section3" class="">หัวข้อที่ 3</a>
     
 
 
