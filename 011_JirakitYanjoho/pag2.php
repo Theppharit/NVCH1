@@ -30,7 +30,7 @@
 
 <main class="">
 
-<div class="">
+<div class="div-head">
     <h1 class="section-head2">หัวข้อที่ 2</h1>
 </div>
 
