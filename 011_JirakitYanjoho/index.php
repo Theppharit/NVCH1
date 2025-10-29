@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./assels/style.css">
+<link rel="stylesheet" href="./assets/style.css">
 
     <title>จอมมาร</title>
 </head>
@@ -15,6 +15,10 @@
 
 
 <nav class="">
+
+<a href="./index.php" class="">หน้าแรก</a>
+<a href="./pag2.php" class="">หน้าที่ 2</a>
+
     <a href="#section1" class="">หัวข้อที่ 1</a>
     <a href="#section2" class="">หัวข้อที่ 2</a>
     <a href="#section3" class="">หัวข้อที่ 3</a>
@@ -27,7 +31,7 @@
 
 <section class="" id="section1">
 
-    <h1 class="">หัวข้อที่ 1</h1>
+    <h1 class="section-head">หัวข้อที่ 1</h1>
 <h2 class="">ห่ะะ</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, iure ducimus sapiente qui cum quibusdam tempora aperiam ipsum asperiores, quae fuga eligendi vero necessitatibus vel. Doloremque rem natus beatae ullam!
