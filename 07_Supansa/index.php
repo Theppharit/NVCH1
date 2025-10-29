@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link rel="stylesheet" href="./assets/style.css">
    
    
    
     <title>Supansa</title>
 
 
-
-
-
 </head>
+
+
 <body>
 
+
+
+
 <nav class=""></nav>
+<a href="/index.php" class="">หน้าแรก</a>
+<a href="page2.php" class=""></a>
+
+
 <a href="section1" class="">หัวข้อที่1</a>
 <a href="section2" class="">หัวข้อที่2</a>
 <a href="section3" class="">หัวข้อที่3</a>
