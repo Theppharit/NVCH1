@@ -26,14 +26,11 @@
 </nav>
 
 
-
-<main class="main">
-
 <div class="div-head">
     <h1 class="section-head">หัวข้อที่ 1</h1>
 </div>
 
-<section class="" id="section1">
+<section class="section-continer" id="section1">
 
 <h2 class="section-head2">ห่ะะ</h2>
 <h3 class="">NVC</h3>
