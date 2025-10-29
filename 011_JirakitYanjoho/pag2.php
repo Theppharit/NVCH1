@@ -55,15 +55,16 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 </section>
 
 
-<section class="" id="section3">
+<section class="" id="section2">
 
-<div class="div-head3">
+<div class="div-head2">
     <h1 class="section-head">หัวข้อที่ 3</h1>
 </div>
 
-<h2 class="">ห่ะะ</h2>
+<h2 class="section-head2">ห่ะะ</h2>
 <h3 class="">NVC</h3>
-<p class="">ห่วววววว</p>
+<p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, iure ducimus sapiente qui cum quibusdam tempora aperiam ipsum asperiores, quae fuga eligendi vero necessitatibus vel. Doloremque rem natus beatae ullam!
+Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem id velit, dolor architecto. Quae, vero quas eligendi totam velit explicabo, harum ea magnam eos, vitae numquam doloribus neque nemo dolorem?</p>
 </section>
 
 
