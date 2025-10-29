@@ -6,6 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>จอมมาร</title>
+<style>
+    .color {
+        color: .bleu;
+    }
+
+</style>
+
 </head>
 
 <body>
@@ -24,6 +31,7 @@
 <main class="">
 
 <section class="" id="section1">
+
     <h1 class="">หัวข้อที่ 1</h1>
 <h2 class="">ห่ะะ</h2>
 <h3 class="">NVC</h3>
@@ -33,6 +41,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 
 
 <section class="" id="section2">
+
     <h1 class="">หัวข้อที่ 2</h1>
 <h2 class="">ห่ะะ</h2>
 <h3 class="">NVC</h3>
@@ -42,6 +51,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 
 
 <section class="" id="section3">
+
     <h1 class="">หัวข้อที่ 3</h1>
 <h2 class="">ห่ะะ</h2>
 <h3 class="">NVC</h3>
