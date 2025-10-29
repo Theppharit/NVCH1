@@ -17,7 +17,7 @@
     
 <nav class="">
 
-    <a href="./index.php" class="">หน้าแรก</a>
+    <a href="./index.php" class="section-head">หน้าแรก</a>
     <a href="./page2.php" class="">หัวข้อที 2</a>
 
 
