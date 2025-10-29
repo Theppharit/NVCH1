@@ -1,13 +1,13 @@
+/* Main Setup */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.section-contianer {
-    padding: 0 5rem;
-}
 
+
+/* Section Title */
 .div-head {
     display: flex;
     justify-content: center;
@@ -20,6 +20,13 @@
 
 .section-head {
     color: rgb(255, 255, 255);
+}
+
+
+
+/* Section Setup */
+.section-contianer {
+    padding: 0 5rem;
 }
 
 .section-head2 {

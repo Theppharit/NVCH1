@@ -32,11 +32,13 @@
 
     <main class="">
 
+    <div class="div-head">
+                <h1 class="section-head">หัวข้อที่ 1</h1>
+            </div>
+ <div class="pad"> 
 
+        <section class="pad" id="section1">
 
-        <section class="" id="section1">
-
-            <h1 class="section-head">หัวข้อที่ 1</h1>
             <h2 class="">Gamer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
@@ -61,12 +63,15 @@
                 Aperiam vitae, dignissimos, iusto eius harum dolores cupiditate molestias laborum velit tempore molestiae doloribus vero, ab est a nulla? Fugit iure officia soluta rem exercitationem ea molestias maiores inventore in?>
 
         </section>
+</div>
 
+  <div class="div-head">
+                       <h1 class="section-head">หัวข้อที่ 2</h1>
+            </div>
+       <div class="pad">     
+        <section class="pad" id="section2">
 
-
-        <section class="" id="section2">
-
-            <h1 class="section-head">หัวข้อที่ 2</h1>
+     
             <h2 class="">Gamer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
@@ -91,12 +96,15 @@
                 Aperiam vitae, dignissimos, iusto eius harum dolores cupiditate molestias laborum velit tempore molestiae doloribus vero, ab est a nulla? Fugit iure officia soluta rem exercitationem ea molestias maiores inventore in?</p>
 
         </section>
+</div>
+  <div class="div-head">
+                <h1 class="section-head">หัวข้อที่ 3</h1>
+            </div>
+ <div class="pad"> 
 
+        <section class="pad" id="section3">
 
-
-        <section class="" id="section3">
-
-            <h1 class="section-head">หัวข้อที่ 3</h1>
+            
             <h2 class="">Gamer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
@@ -121,7 +129,7 @@
                 Aperiam vitae, dignissimos, iusto eius harum dolores cupiditate molestias laborum velit tempore molestiae doloribus vero, ab est a nulla? Fugit iure officia soluta rem exercitationem ea molestias maiores inventore in?</p>
 
         </section>
-
+</div>
 
 
 
