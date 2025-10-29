@@ -19,6 +19,8 @@
 
     <nav class="">
 
+        <a href="./index.php" class="">หน้าแรก</a>
+        
 
         <a href="#section1" class="">หัวข้อที่ 1</a>
         <a href="#section2" class="">หัวข้อที่ 2</a>
