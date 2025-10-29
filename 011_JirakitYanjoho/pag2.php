@@ -27,7 +27,9 @@
 
 
 
-<main class="">
+<main class="main">
+
+
 
 <section class="" id="section1">
 
