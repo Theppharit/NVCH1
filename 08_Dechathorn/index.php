@@ -25,7 +25,7 @@
 <nav class=""></nav>
 
 <main class="">
-    <div class=""><h1 class="">หัวข้อที่1</h1></div>
+    <div class=""><h1 class="">หน้าแรก</h1></div>
 
 
 <section class="" id="หน้าที่1">
