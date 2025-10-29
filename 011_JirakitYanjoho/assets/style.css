@@ -1,15 +1,18 @@
+/* Main Setup */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* Section Setup */
 .section-contianer {
     padding:0 5rem;
 }
 
     
-
+/* Section1 Title */
 .div-head {
     display: flex;
     justify-content: center;
@@ -20,6 +23,7 @@
     margin: 2rem 0;
 }
 
+/* Section2 Title */
 .div-head2 {
     display: flex;
     justify-content: center;
@@ -30,6 +34,7 @@
     margin: 2rem 0;
 }
 
+/* Section3 Title */
 .div-head3 {
     display: flex;
     justify-content: center;
@@ -40,7 +45,7 @@
     margin: 2rem 0;
 }
 
-
+/* Section Color */
 .section-head {
     color:rgb(255, 255, 255);
 }

@@ -5,16 +5,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- inport style.css -->
     <link rel="stylesheet" href="./assets/style.css">
 
-
+    <!-- Wedstis name -->
     <title>Dechathorn Ronkrathok</title>
 </head>
 
 
 <body>
    
-
+<!-- nav bar -->
+<nav class="">
+    
 <a href="./index.php">หน้าแรก</a>
 <a href="./index page2.php">หน้าที่ 2</a>
 
@@ -22,16 +25,19 @@
 <a href="#หน้าที่2" class="">หัวข้อที่2</a>
 <a href="#หน้าที่3" class="">หัวข้อที่3</a>
 
-<nav class=""></nav>
+</nav>
 
+
+
+<!-- main content -->
 <main class="">
    
-
-<section class="" id="หน้าที่1">
-
 <div class="div-head">
    <h1 class="">หน้าแรก</h1>
 </div>
+
+<section class="section-contianer" id="หน้าที่1">
+
 
 
 <h2 class="">kar</h2>
@@ -61,7 +67,8 @@ Totam omnis rem exercitationem facere, hic reiciendis saepe, blanditiis quam ver
 
 
 </main>
-<main class="">
+
+<main class="main">
 
 <section class="" id="หน้าที่2">
 
@@ -96,6 +103,9 @@ Totam omnis rem exercitationem facere, hic reiciendis saepe, blanditiis quam ver
 
 
 </main>
+
+<main class="main">
+
 <section class="" id="หน้าที่3">
 <h1 class="">หัวข้อที่2</h1>
 <h2 class="">kar</h2>
