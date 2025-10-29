@@ -29,11 +29,13 @@
 
 <main class="">
 
+
 <div class="div-head">
-    <h1 class="section-head">หัวข้อที่1 </h1>
+
+<h1 class="section-head">หัวข้อที่1 </h1>
 </div>
 
-<section class="" id="1">
+
     
 <h2 class="">deesing</h2>
 <h3 class="">nigga</h3>
