@@ -8,7 +8,9 @@
 <body>
 
 <nav class=""></nav>
-
+<a href="section1" class="">หัวข้อที่1</a>
+<a href="section2" class="">หัวข้อที่2</a>
+<a href="section3" class="">หัวข้อที่3</a>
 
 
 <main class=""></main>
@@ -16,7 +18,8 @@
 
 
 
-<section class="" id=""></section>
+<section class="" id="section1">
+
 <h1 class="">หัวข้อที่1</h1>
 <h2 class="">software Engineer</h2>
 <h3 class="">NVC</h3>
@@ -28,8 +31,8 @@ Unde iste, impedit commodi iure laborum magnam consequatur placeat ipsum quae ab
 Nisi, consequuntur maiores fugit velit debitis inventore atque mollitia? Cumque, fuga. Temporibus nostrum molestiae eveniet mollitia provident laudantium, esse, tempora blanditiis ea nihil magni reprehenderit ipsa voluptates. Ullam, iure cum?</p>
 
 </section>
+<section class="" id="section2">
 
-section class="" id=""></section>
 <h1 class="">หัวข้อที่2</h1>
 <h2 class="">software Engineer</h2>
 <h3 class="">NVC</h3>
@@ -41,9 +44,8 @@ Unde iste, impedit commodi iure laborum magnam consequatur placeat ipsum quae ab
 Nisi, consequuntur maiores fugit velit debitis inventore atque mollitia? Cumque, fuga. Temporibus nostrum molestiae eveniet mollitia provident laudantium, esse, tempora blanditiis ea nihil magni reprehenderit ipsa voluptates. Ullam, iure cum?</p>
 
 </section>
+<section class="" id="section3">
 
-
-section class="" id=""></section>
 <h1 class="">หัวข้อที่3</h1>
 <h2 class="">software Engineer</h2>
 <h3 class="">NVC</h3>
@@ -58,23 +60,33 @@ Nisi, consequuntur maiores fugit velit debitis inventore atque mollitia? Cumque,
 
 
 
+<section class="" id="">
 
 
 
 
-<section class="" id=""></section>
+</section>
 
 
 
-<section class="" id=""></section>
+<section class="" id="">
+
+
+</section>
 
 
 
-<section class="" id=""></section>
+<section class="" id="">
+
+
+</section>
 
 
 
-<section class="" id=""></section>
+<section class="" id="">
+
+
+</section>
 
 
 
@@ -82,9 +94,14 @@ Nisi, consequuntur maiores fugit velit debitis inventore atque mollitia? Cumque,
 
 
 
-<footer class=""></footer>
+<footer class="">
+
+
+</footer>
 
 
 
 </body>
+
+
 </html>
