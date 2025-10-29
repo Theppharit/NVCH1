@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
     
+    <!-- import style.css -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- website name -->
     <title>Pawarit</title>
 
 
@@ -13,10 +18,11 @@
 </head>
 
 
-<body>
-    
-<nav class="">
 
+<body>
+    <!-- navbartopwebsite -->
+<nav class="">
+    
     <a href="./index.php" class="section-head">หน้าแรก</a>
     <a href="./page2.php" class="">หัวข้อที 2</a>
 
@@ -26,22 +32,20 @@
     <a href="#section3" class="">หัวข้อที่ 3</a>
     
 
-
-
 </nav>
 
 
-<main class="main">
+
+<!-- maincontent -->
+<main class="">
 
 
-<div class="div-head"><h1 class="section-head2">หัวข้อที่ 1</h1>
+<div class="div-head"><h1 class="section-head2">หัวข้อที่ 1</h1></div>
+
+
 
 <section class="section-contianer" id="section1">
 
-
-
-
-</div>
 
 
 <h2 class="">Software Engineer</h2>
@@ -71,10 +75,15 @@ Dignissimos neque dolorem, cupiditate harum laborum pariatur quibusdam illum a t
 </section>
 
 
-<section class="" id="section2">
-
 
 <div class="div-head"><h1 class="section-head2">หัวข้อที่ 2</h1></div>
+
+
+
+<section class="section-contianer" id="section2">
+
+
+
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae adipisci nisi! Fuga dignissimos commodi ipsam harum deserunt? Porro voluptatem explicabo molestiae atque eos suscipit eius aspernatur nostrum, officiis quasi.
@@ -98,11 +107,18 @@ Quibusdam aut beatae libero iure natus impedit, voluptatum nulla aliquid cum! Of
 Sed, harum neque nobis veritatis impedit doloremque asperiores mollitia quam dolorem tempora vero iste labore eaque officia nesciunt ipsam dignissimos consequuntur recusandae ea rem debitis. Adipisci molestias doloremque laborum repellendus?
 Dignissimos neque dolorem, cupiditate harum laborum pariatur quibusdam illum a temporibus error earum corporis ut quod voluptate voluptas. Voluptatem ex aliquid illum neque accusantium debitis? Ducimus minima accusantium culpa itaque.
 
+</section>
 
-<section class="" id="section3">
 
 
 <div class="div-head"><h1 class="section-head2">หัวข้อที่ 3</h1></div>
+
+
+
+<section class="section-contianer" id="section3">
+
+
+
 <h2 class="">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptas voluptate, tenetur inventore voluptatum laudantium enim ipsum, officia laborum molestiae vel maiores aperiam minus quaerat iusto! Dolorem eius perferendis fugiat.
@@ -128,7 +144,6 @@ Dolorum, voluptatibus nobis? Suscipit alias laborum dolor! Quos non sunt harum n
 
 </section>
 
-</section>
 
 
 </main>
