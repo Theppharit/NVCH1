@@ -15,7 +15,7 @@
 <body>
    
 
-<a href="./index.php">หน้าแรก1</a>
+<a href="./index.php">หน้าแรก</a>
 <a href="./index page2.php">หน้าที่ 2</a>
 
 <a href="#หน้าที่1" class="">หัวข้อที่1</a>
@@ -30,7 +30,7 @@
 
 <section class="" id="หน้าที่1">
 <div class="">
-<h1 class="">หน้าแรก</h1>
+   <h1 class="">หน้าแรก</h1>
 </div>
 
 
