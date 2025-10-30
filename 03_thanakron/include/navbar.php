@@ -1,4 +1,4 @@
-<nav class="navbar">
+     <nav class="navbar">
 
     <div class="div-navbar">
         <a href="./index.php" class="a-navbar">หน้าแรก</a>
