@@ -1,8 +1,10 @@
 /* Variable setup */
 :root{
     --main-color:rgb(53, 53, 53) ;
-    
+    --sub-color: rgb(255, 125, 38);
 }
+    
+
 
 
 
@@ -32,8 +34,9 @@
     align-items: center;
 }
 
-.a-navbar: {
-    
+.a-navbar:hover {
+    color: var(--sub-color);
+    text-decoration: wavy;
 }
 
 .div {
