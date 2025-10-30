@@ -25,6 +25,19 @@
     align-items:center;
 }
 
+.div-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-navbar {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0 1rem;
+}
+
 .div {
     border: purple 2px solid;
 }
