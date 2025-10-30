@@ -21,7 +21,7 @@
 
 
     <!-- Navbar -->
-    <nav class="navbar">
+<nav class="navbar">
 
     <div class="div">
         <a href="./index.php" class="">หน้าแรก</a>
@@ -33,6 +33,7 @@
         <a href="#section2" class="">หัวข้อที่ 2</a>
         <a href="#section3" class="">หัวข้อที่ 3</a>
     </div>
+</nav>
 
 
 
