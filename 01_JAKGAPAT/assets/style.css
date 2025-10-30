@@ -1,7 +1,10 @@
 /* Variable setup */
 :root{
-    --main-color:rgb(92, 45, 108) ;
+    --main-color:rgb(53, 53, 53) ;
+    --sub-color: rgb(255, 125, 38);
 }
+    
+
 
 
 
@@ -18,7 +21,7 @@
 .navbar {
     width: 100vw;
     height: 70px;
-    background-color: #9fcaff;
+    background-color: #474a4e;
     padding: 1rem 5rem;
     display: flex;
     justify-content:space-between;
@@ -31,12 +34,13 @@
     align-items: center;
 }
 
-.a-navbar {
-    
+.a-navbar:hover {
+    color: var(--sub-color);
+    text-decoration: wavy;
 }
 
 .div {
-    border: purple 2px solid;
+    border: rgb(114, 105, 114) 2px solid;
 }
 
 

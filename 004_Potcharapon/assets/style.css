@@ -1,6 +1,7 @@
 /* Variable setup */
 :root{
-    --main-color:rgb(92, 45, 108) ;
+    --main-color:rgb(28, 96, 198) ;
+    --sub-color: rgb(81, 207, 216);
 }
 
 
@@ -18,16 +19,33 @@
 .navbar {
     width: 100vw;
     height: 70px;
-    background-color: #9fcaff;
+    background-color: #003c86;
     padding: 1rem 5rem;
     display: flex;
     justify-content:space-between;
     align-items:center;
 }
 
-.div {
-    border: purple 2px solid;
+.div-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.a-navbar {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0 1rem;
+    transition: 0.3s linear;
+}
+
+.a-navbar:hover {
+    color: var(--sub-color);
+    text-decoration: wavy underline;
+    scale: 1.1;
+}
+
 
 
 /* Section Title */

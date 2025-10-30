@@ -1,46 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    
-    <title>Thiraphong</title>
+<!-- Head -->
+<?php include('./include/head.php') ?>
 
 
-
-</head>
 
 <body>
  
 
-<nav class="">
-
-<a href="./index.php" class="">หน้าแรก</a>
-<a href="./page.php" class="">หน้าที่ 2</a>
-
-<a href="#section1" class="">หัวข้อที่ 1</a>
-<a href="#section2" class="">หัวข้อที่ 2</a>
-<a href="#section3" class="">หัวข้อที่ 3</a>
+<!-- Navbar -->
+<?php include('./include/navbar.php') ?>
 
 
 
 
-</nav>
-
-
-
-
-
+<!-- Main -->
 <main class="">
 
 
+<!-- section1 title -->
+<div class="div-head">
+    <h1 class="section-head">หัวข้อที่ 1 หน้าที่ 2</h1>
+</div>
 
-<section class="" id="section1">
 
-<h1 class="section-head">หัวข้อที่ 1 หน้าที่ 2</h1>
-<h2 class="">Software Engineer</h2>
+
+<section class="section-conteaner" id="section1">
+
+
+<h2 class="section-head2">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
 Minima, voluptates! Labore totam cupiditate fugiat minima enim suscipit iste accusamus vitae, atque eius doloremque ut commodi. Sed harum et nostrum repellendus, fugit magnam iusto sequi odio dolor. Pariatur, recusandae.
@@ -64,10 +50,16 @@ Culpa facilis voluptatibus eveniet architecto numquam rem quas sunt exercitation
 Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil modi architecto voluptates maiores! Placeat eius voluptatem, sit explicabo laborum, iure ipsa unde vero enim suscipit culpa.</p>
 
 </section>
-<section class="" id="section2">
 
-<h1 class="section-head">หัวข้อที่ 2 หน้าที่ 2</h1>
-<h2 class="">Software Engineer</h2>
+<!-- section2 title -->
+<div class="div-head">
+    <h1 class="section-head">หัวข้อที่ 2 หน้าที่ 2</h1>
+</div>
+
+<section class="section-conteaner" id="section2">
+
+
+<h2 class="section-head2">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
 Minima, voluptates! Labore totam cupiditate fugiat minima enim suscipit iste accusamus vitae, atque eius doloremque ut commodi. Sed harum et nostrum repellendus, fugit magnam iusto sequi odio dolor. Pariatur, recusandae.
@@ -91,10 +83,18 @@ Culpa facilis voluptatibus eveniet architecto numquam rem quas sunt exercitation
 Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil modi architecto voluptates maiores! Placeat eius voluptatem, sit explicabo laborum, iure ipsa unde vero enim suscipit culpa.</p>
 
 </section>
-<section class="" id="section3">
 
-<h1 class="section-head">หัวข้อที่ 3 หน้าที่ 2</h1>
-<h2 class="">Software Engineer</h2>
+<!-- section3 title -->
+<div class="div-head">
+    <h1 class="section-head">หัวข้อที่ 3 หน้าที่ 2</h1>
+</div>
+
+
+
+<section class="section-conteaner" id="section3">
+
+
+<h2 class="section-head2">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
 Minima, voluptates! Labore totam cupiditate fugiat minima enim suscipit iste accusamus vitae, atque eius doloremque ut commodi. Sed harum et nostrum repellendus, fugit magnam iusto sequi odio dolor. Pariatur, recusandae.
@@ -128,8 +128,8 @@ Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil
 
 
 
-<footer class=""></footer>
-
+<!-- footers -->
+<?php include ('./include/footer.php') ?>
 
 
 
