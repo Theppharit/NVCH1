@@ -224,7 +224,7 @@ Fugiat excepturi facilis rerum quae voluptate? Consequatur, adipisci quibusdam r
     <title>จักรภัทร ปุริเส</title>
 </head>
 <body>
->>>>>>> 43a50c8ef42cb5e80bbd80c1b9d05ab433a69c1b
+
     
 </body>
 
