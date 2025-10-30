@@ -1,6 +1,7 @@
 /* Variable setup */
 :root{
-    --main-color:rgb(92, 45, 108) ;
+    --main-color:rgb(198, 99, 28) ;
+    --sub-color: rgb(43, 134, 79);
 }
 
 
@@ -32,12 +33,17 @@
 }
 
 .a-navbar {
-    
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0 1rem;
 }
 
-.div {
-    border: purple 2px solid;
+.a-navbar:hover {
+    color: var(--sub-color);
+    text-decoration: wavy underline;
 }
+
 
 
 /* Section Title */
