@@ -25,6 +25,16 @@
     align-items:center;
 }
 
+.div-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-navbar {
+    
+}
+
 .div {
     border: purple 2px solid;
 }
@@ -45,6 +55,16 @@
     color: rgb(255, 255, 255);
 }
 
+
+
+/* Section Setup */
+.section-contianer {
+    padding: 0 5rem;
+}
+
+.section-head2 {
+    color: var(--main-color);
+}
 
 
 /* Section Setup */
