@@ -1,5 +1,5 @@
-  
-   <?php include('./include/head.php') ?>
+
+    <?php include('./include/head.php') ?>
 <body>
 
     <!-- Navbar -->
