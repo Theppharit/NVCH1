@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/style.css">
 
     <!-- Website name -->
-    <title>Theppharit</title>
+    <title>jakgapat</title>
 </head>
 
 
@@ -23,15 +23,15 @@
     <!-- Navbar -->
     <nav class="navbar">
 
-    <div class="div">
-        <a href="./index.php" class="">หน้าแรก</a>
-        <a href="./page2.php" class="">หน้าที่ 2</a>
+    <div class="div div-navbar">
+        <a href="./index.php" class="a-navbar">หน้าแรก</a>
+        <a href="./page2.php" class="a-navbar">หน้าที่ 2</a>
     </div>
 
-    <div class="div">
-        <a href="#section1" class="">หัวข้อที่ 1</a>
-        <a href="#section2" class="">หัวข้อที่ 2</a>
-        <a href="#section3" class="">หัวข้อที่ 3</a>
+    <div class="div div-navbar">
+        <a href="#section1" class="a-navbar">หัวข้อที่ 1</a>
+        <a href="#section2" class="a-navbar">หัวข้อที่ 2</a>
+        <a href="#section3" class="a-navbar">หัวข้อที่ 3</a>
     </div>
 
     </nav>
@@ -162,70 +162,6 @@
 
 
 
-</body>
-
-
-
-</html><<<<<<< HEAD
-<!<!DOCTYPE html>
-<html lang="en">
-
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jakgapat</title>
-</head>
-
-
-
-<body>
-
-
-
-<nav class=""></nav>
-
-
-
-<main class="">
-
-
-
-<section class="" id="">
-
-<h1 class="">jakgapat</h1>
-<h2 class="">Software Engineer</h2>
-<h3 class="">NVC</h3>
-<p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloribus sequi voluptate sed iste possimus consequuntur ipsum adipisci minima accusamus. Quos architecto earum nobis neque dolorum quam consectetur non accusamus?
-Quia saepe dolorum officia excepturi? Corrupti expedita obcaecati fugiat sint exercitationem provident aliquam voluptates facere velit molestiae, consectetur vel! Saepe deserunt repudiandae sint eaque architecto labore aut enim quis dolorum!
-Iusto architecto nostrum ipsa dolor adipisci modi delectus magni similique placeat optio inventore vero officiis doloremque earum, facere praesentium perferendis! Neque quidem earum quaerat. Animi fuga perspiciatis ratione non ipsa.
-Natus debitis nostrum necessitatibus earum, excepturi eveniet consequatur. Quae eligendi veritatis repudiandae, expedita eveniet, eum aspernatur ipsa voluptates eius, placeat corrupti neque fuga! Error perspiciatis, exercitationem perferendis nostrum magni rerum!
-Fugiat excepturi facilis rerum quae voluptate? Consequatur, adipisci quibusdam rerum vero quod quaerat praesentium explicabo, sed cumque tempora alias molestiae dignissimos cupiditate sint quia cum perspiciatis doloremque magni officiis eaque.</p>
-
-</section>
-
-
-
-
-</main>
-
-
-
-<footer class=""></footer>
-
-
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>จักรภัทร ปุริเส</title>
-</head>
-<body>
-
-    
 </body>
 
 
