@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- import style.css -->
+    
+    <!-- import styles.css -->
     <link rel="stylesheet" href="./assets/style.css">
-
-    <!-- Website name -->
-    <title>Theppharit</title>
+    
+   <!-- website name -->
+    <title>Thiraphong</title>
 </head>
