@@ -10,6 +10,9 @@
     height: 70px;
     background-color: rgb(244, 151, 169);
     padding: 1rem 5rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 
