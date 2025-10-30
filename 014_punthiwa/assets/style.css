@@ -32,6 +32,13 @@ div-nabar{
     align-items: center;
 }
 
+a-nabar{
+text-decoration: none;
+font-weight: bold;
+color:var(--main-color);
+margin: 0 1rem;
+}
+
 
 div{
     border: 1px solid rgba(121, 154, 204, 0.582);
