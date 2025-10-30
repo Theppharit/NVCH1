@@ -35,6 +35,8 @@
     color: var(--main-color);
     margin: 1rem;
     transition:all 0.3s linear;
+    text-decoration: wavy underline;
+    scale:(1.5)
 }
 
 /**/
