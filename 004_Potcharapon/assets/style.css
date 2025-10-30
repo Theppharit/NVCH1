@@ -1,20 +1,43 @@
+/* Variable setup */
+:root{
+    --main-color:rgb(92, 45, 108) ;
+}
+
+
+
+/* Main Setup */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.section-contianer {
-    padding: 0 5rem;
+
+
+/* Navbar */
+.navbar {
+    width: 100vw;
+    height: 70px;
+    background-color: #9fcaff;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
+.div {
+    border: purple 2px solid;
+}
+
+
+/* Section Title */
 .div-head {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 150px;
-    background-color: rgb(12, 0, 0);
+    background-color: var(--main-color);
     margin: 3rem 0;
 }
 
@@ -22,15 +45,13 @@
     color: rgb(255, 255, 255);
 }
 
-.section-head2 {
-    color: brown;
+
+
+/* Section Setup */
+.section-contianer {
+    padding: 0 5rem;
 }
 
-.nav {
-    font-size: 25px !important;
-font-family: 'Paytone One', sans-serif;
-text-shadow: 1px 1px black;
-text-transform:none;
-padding-left:3px;
-text-align: center;
+.section-head2 {
+    color: var(--main-color);
 }

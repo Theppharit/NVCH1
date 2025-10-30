@@ -65,3 +65,13 @@
 .section-head2 {
     color: var(--main-color);
 }
+
+
+/* Section Setup */
+.section-contianer {
+    padding: 0 5rem;
+}
+
+.section-head2 {
+    color: var(--main-color);
+}
