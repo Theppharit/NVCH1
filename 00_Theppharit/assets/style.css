@@ -25,6 +25,16 @@
     align-items:center;
 }
 
+.div-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-navbar {
+    
+}
+
 .div {
     border: purple 2px solid;
 }
