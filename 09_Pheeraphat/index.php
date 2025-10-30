@@ -22,7 +22,7 @@
 
 <div class="">
     <a href="./index.php" class="">หน้าหลัก</a>
-    <a href="./pase2.php" class="">หน้าที่สอง</a>
+    <a href="./pase2.php" class="">หน้าที่ 2</a>
 </div>
 
 <div class=""></div>
