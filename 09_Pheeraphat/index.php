@@ -1,44 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Import style.css -->
-    <link rel="stylesheet" href="./accets/style.css">
-
-    <!-- Website name -->
-    <title>Pheeraphat</title>
-</head>
+<!-- Head -->
+<?php include('./include/head.php')?>
 
 
 <body>  
 
 
-    <!--Navbar-->
-    <nav class="navbar">
-
-    <div class="div-navbar">
-        <a href="./index.php" class="">หน้าหลัก</a>
-        <a href="./pase2.php" class="">หน้าที่ 2</a>
-    </div>
-
-    <div class="div-navbar"></div>
-        <a href="#section1" class="herf">หัวที่ 1</a>
-        <a href="#section2" class="herf">หัวที่ 2</a>
-        <a href="#section3" class="herf">หัวที่ 3</a>
-    </div>
-
-    </nav>
+    <?php include('./include/navbar.php')?>
 
 
     <!--Main content-->
     <main class="">
 
         <div class="div-head">
-            <h1 class="section-head">Pheeraphat1</h1>
+            <h1 class="section-head">Head one</h1>
         </div>
     
 
@@ -46,8 +20,8 @@
     <section class="section-contianer" id="section1">
 
 
-        <h2 class="">bo</h1>
-        <h3 class="">age 19</h1>
+        <h2 class="">A</h1>
+        <h3 class="">B</h1>
         <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae excepturi provident rem voluptas autem mollitia porro dolorum vero sunt sapiente iusto aliquam adipisci ab facilis repellat accusamus, non nostrum eos.
         Consectetur doloribus facilis aperiam vero, exercitationem deserunt praesentium corporis quidem dolor, molestias, doloremque fugiat repellat voluptate ratione id fugit provident! Dolore aliquid deleniti quis repudiandae pariatur voluptatibus. Itaque, dolor a?
         Eius totam animi illo minus veniam voluptates laboriosam debitis vero deserunt voluptatum nemo qui, sunt accusantium voluptatibus magnam eaque itaque officiis, consequuntur unde neque ab facilis rerum ipsum. Eum, autem.
@@ -65,11 +39,11 @@
         <!--Section Title-->
         <section class="section-contianer" id="section2">
             <div class="div-head2">
-            <h1 class="section-head2">Pheeraphat2</h1>
+            <h1 class="section-head2">Head two</h1>
             </div>
     
-            <h2 class="">bo</h1>
-            <h3 class="">age 19</h1>
+            <h2 class="">C</h1>
+            <h3 class="">D</h1>
             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsa molestiae, iure eligendi vero reprehenderit vel nihil sit delectus, impedit quo? Neque, sapiente magnam quidem nostrum suscipit vel quod inventore!
             Ratione aliquam libero, aut accusamus beatae ab architecto eius maxime dolorem repellendus ut tempore, quam autem laborum, quaerat officiis suscipit fuga veritatis ducimus veniam eaque! Ad quia dignissimos quam veniam?
             Amet esse quam eligendi minus quasi repellendus, consectetur blanditiis voluptatibus, laborum asperiores voluptatum ipsa corrupti laboriosam maiores, velit cum aspernatur! Obcaecati soluta consectetur distinctio sequi sint ad, quibusdam quasi voluptates!
@@ -84,7 +58,7 @@
         </section>
 
         <div class="div-head3">
-            <h1 class="section-head3">Pheeraphat3</h1>
+            <h1 class="section-head3">Head tree</h1>
         </div>
     
 
@@ -92,8 +66,8 @@
         <section class="section-contianer" id="section3">
     
     
-            <h2 class="">bo</h1>
-            <h3 class="">age 19</h1>
+            <h2 class="">E</h1>
+            <h3 class="">F</h1>
             <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident repudiandae asperiores quidem minus quia nesciunt in aliquam aperiam, maiores sunt! Sapiente quis necessitatibus nesciunt veritatis fugit ad distinctio facere harum!
             Molestiae reiciendis impedit repudiandae dolores cupiditate sed, labore sunt. Adipisci quo nihil consequuntur, incidunt provident voluptatum. Unde magni voluptate, velit omnis nulla iste. Veritatis voluptate impedit id ut neque eius!</p>
 
@@ -102,9 +76,7 @@
 
     </main>
 
-
-
-    <footer class=""></footer>
+    <?php include ('./include/footer.php')?>
 
 
 </body>
