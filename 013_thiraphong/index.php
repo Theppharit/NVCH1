@@ -2,21 +2,9 @@
 <html lang="en">
 
 
+<!-- Head -->
+<?php include('./include/head.php') ?>
 
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- import styles.css -->
-    <link rel="stylesheet" href="./assets/style.css">
-    
-   <!-- website name -->
-    <title>Thiraphong</title>
-
-
-
-</head>
 
 
 
@@ -24,23 +12,7 @@
 <body>
  
 <!-- Navbar -->
-<nav class="navbar">
-
-<div>
-<a href="./index.php" class="">หน้าแรก</a>
-<a href="./page.php" class="">หน้าที่ 2</a>
-</div>
-
-
-
-<div>
-<a href="#section1" class="">หัวข้อที่ 1</a>
-<a href="#section2" class="">หัวข้อที่ 2</a>
-<a href="#section3" class="">หัวข้อที่ 3</a>
-</div>
-
-
-</nav>
+<?php include('./include/navbar.php') ?>
 
 
 <!-- Main -->
