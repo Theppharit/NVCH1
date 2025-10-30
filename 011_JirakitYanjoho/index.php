@@ -17,7 +17,7 @@
  
 
 <!-- Navbar -->
-<nav class="">
+<nav class="navbar">
 
 <a href="./index.php" class="">หน้าแรก</a>
 <a href="./pag2.php" class="">หน้าที่ 2</a>
@@ -47,7 +47,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 </section>
 
 <!-- section2 Title-->
-<div class="div-head2">
+<div class="div-head">
     <h1 class="section-head">หัวข้อที่ 2</h1>
 </div>
 
@@ -60,7 +60,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 </section>
 
 <!-- section3 Title-->
-<div class="div-head3">
+<div class="div-head">
     <h1 class="section-head">หัวข้อที่ 3</h1>
 </div>
 

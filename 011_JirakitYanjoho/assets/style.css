@@ -1,3 +1,21 @@
+/* Variable2 Setup */
+:root {
+    --main-color: #95be66;
+}
+
+
+/* Navbar */
+.navbar {
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(244, 151, 169);
+    padding: 1rem 5rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
 /* Main Setup */
 * {
     margin: 0;
@@ -19,7 +37,7 @@
     align-items: center;
     width: 100%;;
     height: 150px;
-    background: #60822d;
+    background: var(--main-color);
     margin: 2rem 0;
 }
 

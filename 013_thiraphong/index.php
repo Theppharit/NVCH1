@@ -24,7 +24,7 @@
 <body>
  
 <!-- Navbar -->
-<nav class="">
+<nav class="navbar">
 
 
 <a href="./index.php" class="">หน้าแรก</a>
