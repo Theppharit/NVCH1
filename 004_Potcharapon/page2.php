@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
 
-    <title>Theppharit</title>
+    <title>Potcharapon</title>
 </head>
 
 
@@ -35,7 +35,7 @@
         <section class="" id="section1">
 
             <h1 class="section-head">หัวข้อที่ 1 หน้าที่ 2</h1>
-            <h2 class="">GAMER</h2>
+            <h2 class="">Gamer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
@@ -65,7 +65,7 @@
         <section class="" id="section2">
 
             <h1 class="section-head">หัวข้อที่ 2 หน้าที่ 2</h1>
-            <h2 class="">GAMER</h2>
+            <h2 class="">Gamer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
@@ -95,7 +95,7 @@
         <section class="" id="section3">
 
             <h1 class="section-head">หัวข้อที่ 3 หน้าที่ 2</h1>
-            <h2 class="">GAMER</h2>
+            <h2 class="">Gamer</h2>
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
