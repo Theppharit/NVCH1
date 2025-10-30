@@ -1,27 +1,35 @@
+/* Main Setup */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.section-contianer {
-    padding: 0 5rem;
-}
 
+
+/* Section Title */
 .div-head {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 150px;
-    background-color: rgb(12, 0, 0);
+    background-color: rgb(31, 16, 231)
+    ;
     margin: 3rem 0;
 }
 
 .section-head {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* Section Setup */
+.section-contianer {
+    padding: 0 5rem;
 }
 
 .section-head2 {
-    color: brown;
+    color: rgb(31, 16, 231);
 }

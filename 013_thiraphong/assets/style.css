@@ -1,12 +1,17 @@
+/* main setup */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+
+/* section setup */
 .section-conteaner{
     padding: 0 5rem;
 }
+
 
 
 .div-head {
@@ -19,6 +24,9 @@
     margin: 2rem 0;
 
 }
+
+
+
 
 .section-head {
     color:rgb(255, 255, 255);
