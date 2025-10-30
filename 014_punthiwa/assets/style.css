@@ -13,9 +13,7 @@
     box-sizing: border-box;
 }
 
-.section-contianer{
-    padding: 0 5rem;
-}
+
 
 /*navbar*/
 .navbar{
@@ -24,13 +22,21 @@
     background-color: rgba(245, 222, 179, 0.322);
     padding: 1rem 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div-nabar{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
 
+div{
+    border: 1px solid rgba(121, 154, 204, 0.582);
 
-
+}
 
 
 
@@ -48,6 +54,11 @@
 .section-head {
    color:rgb(240, 240, 240);
 }
+
+.section-contianer{
+    padding: 0 5rem;
+}
+
 
 .section-head2 {
     color: var(--main-color);
