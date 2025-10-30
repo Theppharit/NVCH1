@@ -34,14 +34,14 @@
     font-weight: bold;
     color: var(--main-color);
     margin: 1rem;
-    transition: 0.2s linear;
+    transition:all 0.3s linear;
 }
 
 /**/
 .a-navbar:hover {
     color: var(--sub-color);
     text-decoration: wavy underline;
-    scale: 1em;
+    scale:(1.5)
 }
 
 
