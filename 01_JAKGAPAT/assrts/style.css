@@ -1,6 +1,6 @@
 /* Variable setup */
 :root{
-    --main-color:rgb(167, 127, 201) ;
+    --main-color:rgb(92, 45, 108) ;
 }
 
 
@@ -25,8 +25,18 @@
     align-items:center;
 }
 
+.div-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-navbar {
+    
+}
+
 .div {
-    border: rgb(0, 23, 128) 2px solid;
+    border: purple 2px solid;
 }
 
 
@@ -45,6 +55,16 @@
     color: rgb(255, 255, 255);
 }
 
+
+
+/* Section Setup */
+.section-contianer {
+    padding: 0 5rem;
+}
+
+.section-head2 {
+    color: var(--main-color);
+}
 
 
 /* Section Setup */
