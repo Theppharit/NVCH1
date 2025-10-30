@@ -1,3 +1,9 @@
+.root{
+    --main
+}
+
+
+
 /* main setup */
 *{
     margin:0;
