@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
 <!-- Head -->
 <?php include('./include/head.php') ?>
-
-
 
 
 
@@ -132,10 +126,7 @@ Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil
 
 
 <!-- footers -->
-<footer class="">
-
-</footer>
-
+<?php include ('./include/footer.php') ?>
 
 
 
