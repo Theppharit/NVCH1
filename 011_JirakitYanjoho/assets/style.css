@@ -15,10 +15,22 @@
     align-items: center;
 }
 
-
+/**/
 .div {
-    
+    border: #000000 2px solid;
 }
+/**/
+.div-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+.a-navbar {
+    text-decoration: none;
+}
+
+
 
 
 /* Main Setup */
