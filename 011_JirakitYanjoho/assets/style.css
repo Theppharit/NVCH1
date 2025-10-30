@@ -1,6 +1,7 @@
 /* Variable2 Setup */
 :root {
-    --main-color: #95be66;
+    --main-color: #ff0000;
+    --sub-color:  #ffffff;
 }
 
 
@@ -8,26 +9,39 @@
 .navbar {
     width: 100vw;
     height: 70px;
-    background-color: rgb(244, 151, 169);
+    background-color: rgb(245, 195, 205);
     padding: 1rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/**/
+/* div */
 .div {
-    border: #000000 2px solid;
+    border: #3cff00 5px solid;
 }
-/**/
+
+/* div Navbar */
 .div-navbar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/**/
+
+/* A Navbar */
 .a-navbar {
     text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 1rem;
+    transition: 0.2s linear;
+}
+
+/**/
+.a-navbar:hover {
+    color: var(--sub-color);
+    text-decoration: wavy underline;
+    scale:calc(5.2)
 }
 
 

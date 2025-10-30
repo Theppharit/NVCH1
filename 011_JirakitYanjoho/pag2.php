@@ -19,15 +19,15 @@
 <!-- Navbar -->
 <nav class="navbar">
 
-<div class=" ">
-    <a href="./index.php" class="">หน้าแรก</a>
-    <a href="./pag2.php" class="">หน้าที่ 2</a>
+<div class=" div-anvbar">
+    <a href="./index.php" class="a-navbar">หน้าแรก</a>
+    <a href="./pag2.php" class="a-navbar">หน้าที่ 2</a>
 </div>
 
-<div class=" ">
-    <a href="#section1" class="">หัวข้อที่ 1</a>
-    <a href="#section2" class="">หัวข้อที่ 2</a>
-    <a href="#section3" class="">หัวข้อที่ 3</a>
+<div class=" div-anvbar ">
+    <a href="#section1" class="a-navbar">หัวข้อที่ 1</a>
+    <a href="#section2" class="a-navbar">หัวข้อที่ 2</a>
+    <a href="#section3" class="a-navbar">หัวข้อที่ 3</a>
 </div>
     
 
@@ -39,7 +39,7 @@
 
 
 <!-- section1 Title-->
-<div class="div-head">
+<div class="div div-head">
     <h1 class="section-head2">หัวข้อที่ 1</h1>
 </div>
 
@@ -52,7 +52,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 </section>
 
 <!-- section2 Title-->
-<div class="div-head">
+<div class="div div-head">
     <h1 class="section-head2">หัวข้อที่ 2</h1>
 </div>
 
@@ -65,7 +65,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 </section>
 
 <!-- section3 Title-->
-<div class="div-head">
+<div class="div div-head">
     <h1 class="section-head2">หัวข้อที่ 3</h1>
 </div>
 
