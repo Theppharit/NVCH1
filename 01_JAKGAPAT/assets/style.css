@@ -1,6 +1,7 @@
 /* Variable setup */
 :root{
     --main-color:rgb(53, 53, 53) ;
+    
 }
 
 
@@ -31,7 +32,7 @@
     align-items: center;
 }
 
-.a-navbar {
+.a-navbar: {
     
 }
 
