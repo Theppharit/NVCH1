@@ -1,3 +1,13 @@
+/* Variable setup */
+:root{
+    --main-color:rgb(87, 27, 197) ;
+    --sub-color: rgb(154, 105, 233);
+}
+    
+
+
+
+
 /* Main Setup */
 * {
     margin: 0;
@@ -7,6 +17,33 @@
 
 
 
+/* Navbar */
+.navbar {
+    width: 100vw;
+    height: 70px;
+    background-color: #8564fd;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.div-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-navbar:hover {
+    color: var(--sub-color);
+    text-decoration: wavy;
+}
+
+.div {
+    border: rgb(114, 105, 114) 2px solid;
+}
+
+
 /* Section Title */
 .div-head {
     display: flex;
@@ -14,13 +51,12 @@
     align-items: center;
     width: 100%;
     height: 150px;
-    background-color: rgb(31, 16, 231)
-    ;
+    background-color: var(--main-color);
     margin: 3rem 0;
 }
 
 .section-head {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -31,5 +67,15 @@
 }
 
 .section-head2 {
-    color: rgb(31, 16, 231);
+    color: var(--main-color);
+}
+
+
+/* Section Setup */
+.section-contianer {
+    padding: 0 5rem;
+}
+
+.section-head2 {
+    color: var(--main-color);
 }
