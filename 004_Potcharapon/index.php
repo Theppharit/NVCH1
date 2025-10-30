@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/style.css">
 
     <!-- Website name -->
-    <title>Potcharapon</title>
+    <title>Potcharapn</title>
 </head>
 
 
@@ -21,19 +21,20 @@
 
 
     <!-- Navbar -->
-<nav class="navbar">
+    <nav class="navbar">
 
-    <div class="div">
-        <a href="./index.php" class="">หน้าแรก</a>
-        <a href="./page2.php" class="">หน้าที่ 2</a>
+    <div class="div div-navbar">
+        <a href="./index.php" class="a-navbar">หน้าแรก</a>
+        <a href="./page2.php" class="a-navbar">หน้าที่ 2</a>
     </div>
 
-    <div class="div">
-        <a href="#section1" class="">หัวข้อที่ 1</a>
-        <a href="#section2" class="">หัวข้อที่ 2</a>
-        <a href="#section3" class="">หัวข้อที่ 3</a>
+    <div class="div div-navbar">
+        <a href="#section1" class="a-navbar">หัวข้อที่ 1</a>
+        <a href="#section2" class="a-navbar">หัวข้อที่ 2</a>
+        <a href="#section3" class="a-navbar">หัวข้อที่ 3</a>
     </div>
-</nav>
+
+    </nav>
 
 
 
@@ -48,8 +49,8 @@
         </div>
 
         <section class="section-contianer" id="section1">
-            
-            <h2 class="section-head2">GAMER</h2>
+
+            <h2 class="section-head2">Gamer</h2>
 
             <h3 class="">NVC</h3>
 
@@ -86,7 +87,7 @@
 
         <section class="section-contianer" id="section2">
 
-            <h2 class="section-head2">GAMER</h2>
+            <h2 class="section-head2">Gamer</h2>
 
             <h3 class="">NVC</h3>
 
@@ -122,7 +123,7 @@
 
         <section class="section-contianer" id="section3">
 
-            <h2 class="section-head2">GAMER</h2>
+            <h2 class="section-head2">Gamer</h2>
 
             <h3 class="">NVC</h3>
 
