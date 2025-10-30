@@ -19,6 +19,12 @@
 <!-- Navbar -->
 <nav class="navbar">
 
+<div class="">
+
+
+</div>
+
+
 <a href="./index.php" class="">หน้าแรก</a>
 <a href="./pag2.php" class="">หน้าที่ 2</a>
 
