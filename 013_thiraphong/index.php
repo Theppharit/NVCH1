@@ -26,13 +26,18 @@
 <!-- Navbar -->
 <nav class="navbar">
 
-
+<div>
 <a href="./index.php" class="">หน้าแรก</a>
 <a href="./page.php" class="">หน้าที่ 2</a>
+</div>
 
+
+
+<div>
 <a href="#section1" class="">หัวข้อที่ 1</a>
 <a href="#section2" class="">หัวข้อที่ 2</a>
 <a href="#section3" class="">หัวข้อที่ 3</a>
+</div>
 
 
 </nav>
