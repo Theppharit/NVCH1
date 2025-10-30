@@ -2,15 +2,7 @@
 <html lang="en">
 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <!--import style.css-->
-    
-    <title>punthiwa</title>
-<!--website name-->
-</head>
+<?php include('./include/head.php'); ?>
 
 
 <body>
@@ -79,8 +71,7 @@ Molestiae reiciendis impedit repudiandae dolores cupiditate sed, labore sunt. Ad
 
 
 
-<footer class=""></footer>
-
+<?php include('./include/footer.php'); ?>
 
 </body>
 
