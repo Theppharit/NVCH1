@@ -1,47 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- import-style.css -->  
-    <link rel="stylesheet" href="./assets/style.css">
-
-    <!--website name-->
-    <title>Sommai</title>
-</head>
+<!-- head -->
+ <?php include('./include/head.php') ?>
 
 
 
 <body>
 
 
-<!-- navber -->
-    <nav class="">
 
-        <a href="./index.php" class="">หน้าแรก</a>
-        <a href="./page2.php" class="">หน้าที่ 2</a>
+<!-- navbar -->
+<?php include('./include/navbar.php') ?>
 
-        <a href="#section1" class="">หัวข้อที่ 1</a>
-        <a href="#section2" class="">หัวข้อที่ 2</a>
-        <a href="#section3" class="">หัวข้อที่ 3</a>
-
-    </nav>
 
 
 <!-- maincontent -->
     <main class="">
 
 
+
+
 <!-- section 1 title -->
-        <section class="" id="section1">
+        
 
          <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 1</h1>
          </div>
                 
+         <section class="section-contianer" id="section1">
+
             <h2 class="section-head2">yooo</h2>
 
             <h3 class="">AV</h3>
@@ -75,6 +60,8 @@
         <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 2</h1>
         </div>
+
+         <section class="section-contianer" id="section2">        
             <h2 class="">yooo</h2>
             <h3 class="">AV</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
@@ -107,7 +94,7 @@
          <div class="div-head">
                  <h1 class="section-head">หัวข้อที่ 3</h1>
          </div>
-
+             <section class="section-contianer" id="section3">
             <h2 class="">fafafa</h2>
             <h3 class="">AV</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
