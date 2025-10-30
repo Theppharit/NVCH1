@@ -1,7 +1,7 @@
 
 :root{
     --main-color: rgb(101, 140, 197);
-    
+    --sub-color: rgb(255, 0, 0);
 }
 
 
@@ -26,21 +26,27 @@
     align-items: center;
 }
 
-.div-nabar{
+.div-nabar {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.a-nabar{
+.a-navbar {
 text-decoration: none;
 font-weight: bold;
 color:var(--main-color);
 margin: 0 1rem;
 }
+.a-navbar:hover{
+    color: var(--sub-color);
+    text-decoration: wavy underline;
+}
 
 
-div{
+
+
+.div{
     border: 1px solid rgba(121, 154, 204, 0.582);
 
 }
