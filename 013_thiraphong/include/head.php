@@ -7,7 +7,4 @@
     
    <!-- website name -->
     <title>Thiraphong</title>
-
-
-
 </head>
