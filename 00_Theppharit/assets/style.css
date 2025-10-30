@@ -14,6 +14,22 @@
 
 
 
+/* Navbar */
+.navbar {
+    width: 100vw;
+    height: 70px;
+    background-color: #9fcaff;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.div {
+    border: purple 2px solid;
+}
+
+
 /* Section Title */
 .div-head {
     display: flex;
