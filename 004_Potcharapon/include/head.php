@@ -6,5 +6,5 @@
     <link rel="stylesheet" href="./assets/style.css">
 
     <!-- Website name -->
-    <title>Theppharit</title>
+    <title>Potcharapon</title>
 </head>
