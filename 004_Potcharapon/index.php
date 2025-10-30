@@ -21,7 +21,7 @@
 
 
     <!-- Navbar -->
-    <nav class="">
+    <nav class="nav">
 
         <a href="./index.php" class="">หน้าแรก</a>
         <a href="./page2.php" class="">หน้าที่ 2</a>
@@ -45,7 +45,7 @@
         </div>
 
         <section class="section-contianer" id="section1">
-
+            
             <h2 class="section-head2">GAMER</h2>
 
             <h3 class="">NVC</h3>
