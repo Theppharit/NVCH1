@@ -1,40 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
 
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- import style.css -->
-    <link rel="stylesheet" href="./assets/style.css">
-
-    <!-- Website name -->
-    <title>Potcharapn</title>
-</head>
-
-
-
+    <?php include('./include/head.php') ?>
 <body>
 
-
-
     <!-- Navbar -->
-    <nav class="navbar">
+    <?php include('./include/navbar.php') ?>
 
-    <div class="div div-navbar">
-        <a href="./index.php" class="a-navbar">หน้าแรก</a>
-        <a href="./page2.php" class="a-navbar">หน้าที่ 2</a>
-    </div>
 
-    <div class="div div-navbar">
-        <a href="#section1" class="a-navbar">หัวข้อที่ 1</a>
-        <a href="#section2" class="a-navbar">หัวข้อที่ 2</a>
-        <a href="#section3" class="a-navbar">หัวข้อที่ 3</a>
-    </div>
-
-    </nav>
+ 
 
 
 

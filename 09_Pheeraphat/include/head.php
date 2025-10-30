@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- import style.css -->
-    <link rel="stylesheet" href="./assets/style.css">
+    
+    <!-- Import style.css -->
+    <link rel="stylesheet" href="./accets/style.css">
 
     <!-- Website name -->
-    <title>Potcharapon</title>
-</head>
+    <title>KUB</title>
+</head> 
