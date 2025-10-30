@@ -41,6 +41,7 @@ margin: 0 1rem;
 .a-navbar:hover{
     color: var(--sub-color);
     text-decoration: wavy underline;
+    scale: 1.1;
 }
 
 
