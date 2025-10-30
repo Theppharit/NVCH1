@@ -1,6 +1,6 @@
 /* Variable setup */
 :root{
-    --main-color:rgb(92, 45, 108) ;
+    --main-color:rgb(167, 127, 201) ;
 }
 
 
@@ -25,18 +25,8 @@
     align-items:center;
 }
 
-.div-navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.a-navbar {
-    
-}
-
 .div {
-    border: purple 2px solid;
+    border: rgb(0, 23, 128) 2px solid;
 }
 
 
