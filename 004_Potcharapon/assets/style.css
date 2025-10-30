@@ -1,7 +1,7 @@
 /* Variable setup */
 :root{
-    --main-color:rgb(28, 96, 198) ;
-    --sub-color: rgb(81, 207, 216);
+    --main-color:rgb(198, 99, 28) ;
+    --sub-color: rgb(43, 134, 79);
 }
 
 
@@ -19,7 +19,7 @@
 .navbar {
     width: 100vw;
     height: 70px;
-    background-color: #003c86;
+    background-color: #9fcaff;
     padding: 1rem 5rem;
     display: flex;
     justify-content:space-between;
