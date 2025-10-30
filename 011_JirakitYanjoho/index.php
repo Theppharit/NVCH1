@@ -5,15 +5,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- impor style.css -->
 <link rel="stylesheet" href="./assets/style.css">
 
+<!-- Website name -->
     <title>จอมมาร</title>
 </head>
 
 <body>
  
 
-
+<!-- Navbar -->
 <nav class="">
 
 <a href="./index.php" class="">หน้าแรก</a>
@@ -26,7 +29,11 @@
 </nav>
 
 
+<!-- Main conent -->
+<main>
 
+
+<!-- section1 Title-->
 <div class="div-head">
     <h1 class="section-head">หัวข้อที่ 1</h1>
 </div>
@@ -39,11 +46,10 @@
 Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem id velit, dolor architecto. Quae, vero quas eligendi totam velit explicabo, harum ea magnam eos, vitae numquam doloribus neque nemo dolorem?</p>
 </section>
 
+<!-- section2 Title-->
 <div class="div-head2">
     <h1 class="section-head">หัวข้อที่ 2</h1>
 </div>
-
-
 
 <section class="section-contianer" id="section2">
 
@@ -53,8 +59,7 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem id velit, dolor architecto. Quae, vero quas eligendi totam velit explicabo, harum ea magnam eos, vitae numquam doloribus neque nemo dolorem?</p>
 </section>
 
-
-
+<!-- section3 Title-->
 <div class="div-head3">
     <h1 class="section-head">หัวข้อที่ 3</h1>
 </div>
@@ -72,6 +77,8 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 
 </main>
 
+
+<!-- Footer -->
 <footer class=""></footer>
 
 </body>
