@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 
 
 <?php include('./include/head.php'); ?>
@@ -8,20 +7,8 @@
 <body>
 
 <!--navbar-->
-<nav class="navbar">
+<?php include('./include/navbar.php'); ?>
 
-<div class=" div-navbar">
-    <a href="./index.php" class="">หน้าแรก</a>
-    <a href="./index 2.php" class="">หน้าที่2</a>
-</div>
-
-<div class=" div-nabar">
-    <a href="#setion1" class="">-หัวข้อที่1</a>
-<a href="#setion2" class="">หัวข้อที่2</a>
-<a href="#setion3" class="">หัวข้อที่3</a>
-</div>
-
-</nav>
 
 <!--main content-->
 <main class="">
