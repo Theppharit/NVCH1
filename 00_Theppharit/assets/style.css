@@ -79,10 +79,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .section-img {
-    width: 600px;
+    width: 464px;
 }
 
 .section-head2 {
