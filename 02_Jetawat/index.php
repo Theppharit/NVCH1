@@ -41,6 +41,7 @@
             <h1 class="section-head">หัวข้อที่ 1</h1>
         </div>
             <h2 class="section-head2">Software Engineer</h2>
+              <img src="./img/closeup-giraffe-zoo.jpg" width=300 height=200>
 
             <h3 class="">NVC</h3>
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
@@ -73,6 +74,7 @@
         <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 2</h1>
         </div>
+              <img src="./img/zoo.jpg" width=300 height=200>
 
             <h2 class="">Software Engineer</h2>
             <h3 class="">NVC</h3>
@@ -106,6 +108,7 @@
         <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 3</h1>
         </div>
+              <img src="./img/img2.jpg" width=300 height=200>
 
             <h2 class="">Software Engineer</h2>
             <h3 class="">NVC</h3>

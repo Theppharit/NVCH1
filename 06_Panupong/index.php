@@ -12,7 +12,7 @@
     <main class="">
 
         <div class="div-head">
-            <h1 class="section-head">Head 1</h1>
+            <h1 class="section-head">Head one</h1>
         </div>
     
 
@@ -22,6 +22,8 @@
 
         <h2 class="">A</h1><br>
         <img src="Image/giraffe.jpg" width="500" height="300" alt="g.jpg">
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/Ud04jZWJCMA?si=2cuFjH7ASZhVq5xa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h3 class="">B</h1><br>
         <img src="Image/lemur.jpg" width="500" height="300" alt="l.jpg">
         <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae excepturi provident rem voluptas autem mollitia porro dolorum vero sunt sapiente iusto aliquam adipisci ab facilis repellat accusamus, non nostrum eos.
@@ -41,11 +43,11 @@
         <!--Section Title-->
         <section class="section-contianer" id="section2">
             <div class="div-head2">
-            <h1 class="section-head2">Head 2</h1>
+            <h1 class="section-head2">Head two</h1>
             </div>
     
             <h2 class="">C</h1><br>
-            <img src="Image/zebras.jpg" width="500" height="300" alt="z.jpg">
+            <img src="Image/zebras.jpg" width="500" height="300" alt="z.jpg"> 
             <h3 class="">D</h1>
             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsa molestiae, iure eligendi vero reprehenderit vel nihil sit delectus, impedit quo? Neque, sapiente magnam quidem nostrum suscipit vel quod inventore!
             Ratione aliquam libero, aut accusamus beatae ab architecto eius maxime dolorem repellendus ut tempore, quam autem laborum, quaerat officiis suscipit fuga veritatis ducimus veniam eaque! Ad quia dignissimos quam veniam?
@@ -61,7 +63,7 @@
         </section>
 
         <div class="div-head3">
-            <h1 class="section-head3">Head 3</h1>
+            <h1 class="section-head3">Head tree</h1>
         </div>
     
 
