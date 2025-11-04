@@ -59,7 +59,7 @@ Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil
 
 <section class="section-conteaner" id="section2">
 
-
+<img src="./img/girl-holding-glass-apple-slices-looking-ring-tailed-lemur-zoo.jpg" width="800" height="500" alt="">
 
 <h2 class="section-head2">Software Engineer</h2>
 <h3 class="">NVC</h3>
@@ -95,7 +95,7 @@ Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil
 
 <section class="section-conteaner" id="section3">
 
-
+<img src="./img/view-two-zebras-zoo-with-wooden-fence-surface.jpg" width="800" height="500" alt="">
 
 <h2 class="section-head2">Software Engineer</h2>
 <h3 class="">NVC</h3>
