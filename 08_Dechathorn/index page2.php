@@ -26,7 +26,11 @@
         <section class="section-contianer" id="หน้าที่1">
 
 
-
+        <img src="./img copy/closeup-giraffe-zoo.jpg" alt="" width="300" height="200">
+        
+        
+        <a href="https://youtu.be/PDt9hOENiI8?si=NttWysv0uUkakk1g">25 ปีศาจสุดสยองจากหนัง</a>
+           
             <h2 class="section-head2">kar</h2>
 
             <h3 class="">age 19</h3> 

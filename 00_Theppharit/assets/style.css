@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 /* Navbar */
@@ -70,6 +75,17 @@
     padding: 0 5rem;
 }
 
+.div-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-img {
+    width: 600px;
+}
+
 .section-head2 {
     color: var(--main-color);
+    margin-top: 3rem;
 }
