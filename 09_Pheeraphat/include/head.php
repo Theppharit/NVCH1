@@ -9,5 +9,5 @@
     <link rel="stylesheet" href="./accets/style.css">
 
     <!-- Website name -->
-    <title>KUB</title>
+    <title>k</title>
 </head> 
