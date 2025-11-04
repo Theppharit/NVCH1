@@ -13,6 +13,7 @@
     <!-- Main Content -->
     <main class="">
 
+      
 
 
         <!-- section1 Title -->
@@ -23,7 +24,7 @@
         <section class="section-contianer" id="section1">
 
             <h2 class="section-head2">Gamer</h2>
-
+              <img src="./img/closeup-giraffe-zoo.jpg" width=300 height=200>
             <h3 class="">NVC</h3>
 
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
