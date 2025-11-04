@@ -23,7 +23,7 @@
 
 <section class="section-contianer" id="section1">
     <a href="https://youtu.be/qthxa7m_B4E?si=cIMg_VEeb8WBlrmf"><h1>MeMe</h1></a>
-        <img src="./img/closeup-giraffe-zoo.jpg" alt=" ">
+        <img src="./img/closeup-giraffe-zoo.jpg" alt=" " width=300 height=150>
 
              <h2 class="section-head">ห่ะะ</h2>
                 <h3 class="">NVC</h3>
@@ -38,9 +38,11 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 </div>
 
 <section class="section-contianer" id="section2">
-    <h2 class="section-head">ห่ะะ</h2>
-        <h3 class="">NVC</h3>
-            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, iure ducimus sapiente qui cum quibusdam tempora aperiam ipsum asperiores, quae fuga eligendi vero necessitatibus vel. Doloremque rem natus beatae ullam!
+    <a href="https://youtu.be/Rc2k_8skxtI?si=URcCllCbzm5G03ek"><h1>MeMe</h1></a>
+        <img src="./img/closeup-giraffe-zoo.jpg" alt=" " width=300 height=150>
+            <h2 class="section-head">ห่ะะ</h2>
+                 <h3 class="">NVC</h3>
+                        <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, iure ducimus sapiente qui cum quibusdam tempora aperiam ipsum asperiores, quae fuga eligendi vero necessitatibus vel. Doloremque rem natus beatae ullam!
 Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem id velit, dolor architecto. Quae, vero quas eligendi totam velit explicabo, harum ea magnam eos, vitae numquam doloribus neque nemo dolorem?</p>
 </section>
 
@@ -51,9 +53,11 @@ Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem 
 </div>
 
 <section class="section-contianer" id="section2">
-    <h2 class="section-head">ห่ะะ</h2>
-        <h3 class="">NVC</h3>
-            <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, iure ducimus sapiente qui cum quibusdam tempora aperiam ipsum asperiores, quae fuga eligendi vero necessitatibus vel. Doloremque rem natus beatae ullam!
+    <a href="https://youtu.be/KpDIsxgdf-Y?si=fU-TZZ0vJ60egLzy"><h1>MeMe</h1></a>
+        <img src="./img/closeup-giraffe-zoo.jpg" alt=" " width=300 height=150>
+            <h2 class="section-head">ห่ะะ</h2>
+                <h3 class="">NVC</h3>
+                     <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, iure ducimus sapiente qui cum quibusdam tempora aperiam ipsum asperiores, quae fuga eligendi vero necessitatibus vel. Doloremque rem natus beatae ullam!
 Maiores iure, cumque veritatis, eos consequatur molestiae soluta exercitationem id velit, dolor architecto. Quae, vero quas eligendi totam velit explicabo, harum ea magnam eos, vitae numquam doloribus neque nemo dolorem?</p>
 </section>
 
