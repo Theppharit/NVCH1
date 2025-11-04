@@ -22,6 +22,9 @@
 
 <section class="section-conteaner" id="section1">
 
+<img src="./img/closeup-giraffe-zoo.jpg" width="800" height="500" alt="">
+
+
 <h2 class="section-head2">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
