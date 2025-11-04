@@ -1,0 +1,98 @@
+/* Variable setup */
+.root {
+    --main--color:rgb(255, 0, 0);
+    --sub--color: rgb(0, 255, 0);
+}
+
+
+/* Main setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+.navbar {
+    width: 100vw;
+    height: 70px;
+    background-color: #406e42;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.div-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-navbar {
+    text-decoration:dashed;
+    font-weight: bold;
+    color: var(--main--color);
+    margin: 0 1rem;
+    transition: 0.3s linear;
+}
+
+.a-navbar:hover {
+    color:white;
+    text-decoration: wavy underline;
+    transition: all 0.5s;
+    scale: 1.20;
+}
+
+/* Section contianer */
+.section-contianer {
+    padding: 0 5rem;
+}
+
+
+/* Div head */
+.div-head {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    margin: 3rem 0;
+}
+
+.div-head2 {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(37, 92, 49);
+    margin: 1rem 0;
+
+}
+
+.div-head3 {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(189, 39, 219);
+    margin: 3rem 0;
+}
+
+
+/* Section head */
+.section-head {
+    color: brown;
+}
+
+.section-head2 {
+    color: rgb(255, 255, 255);
+}
+
+.section-head3 {
+    color: rgb(238, 255, 0);
+}

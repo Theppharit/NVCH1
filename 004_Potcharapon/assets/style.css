@@ -26,6 +26,11 @@
     align-items:center;
 }
 
+.div-img {
+    justify-content: center;
+    align-items:center;
+}
+
 .div-navbar {
     display: flex;
     justify-content: center;

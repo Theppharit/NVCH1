@@ -1,4 +1,0 @@
-<!-- footers -->
-<footer class="">
-
-</footer>
