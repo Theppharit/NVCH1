@@ -13,7 +13,6 @@
     <!-- Website name -->
     <title>jakgapat</title>
 </head>
- <img src="https://th.bing.com/th/id/R.107d57e81e09a09f25629c9213b6cc37?rik=tXl3L4DZnB%2fVfw&riu=http%3a%2f%2fdusit.zoothailand.org%2fzoo_office%2ffileupload%2fencyclopedia_file%2f346.JPG&ehk=wG8MU7mGbVnTHWFJKsZxcv9knrd5NQkQaHAm24DfUzY%3d&risl=&pid=ImgRaw&r=0" width=300 height=200>
 
 
 <body>
@@ -26,9 +25,7 @@
     <div class="div div-navbar">
         <a href="./index.php" class="a-navbar">หน้าแรก</a>
         <a href="./page2.php" class="a-navbar">หน้าที่ 2</a>
-    </div>
- <img src="https://th.bing.com/th/id/R.107d57e81e09a09f25629c9213b6cc37?rik=tXl3L4DZnB%2fVfw&riu=http%3a%2f%2fdusit.zoothailand.org%2fzoo_office%2ffileupload%2fencyclopedia_file%2f346.JPG&ehk=wG8MU7mGbVnTHWFJKsZxcv9knrd5NQkQaHAm24DfUzY%3d&risl=&pid=ImgRaw&r=0" width=300 height=200>
-    <div class="div div-navbar">
+    </div>    <div class="div div-navbar">
         <a href="#section1" class="a-navbar">หัวข้อที่ 1</a>
         <a href="#section2" class="a-navbar">หัวข้อที่ 2</a>
         <a href="#section3" class="a-navbar">หัวข้อที่ 3</a>
@@ -51,6 +48,7 @@
         <section class="section-contianer" id="section1">
 
             <h2 class="section-head2">Software Engineer</h2>
+              <img src="./img/zoo.jpg" width=300 height=200>
 
             <h3 class="">NVC</h3>
 
@@ -90,6 +88,7 @@
             <h2 class="section-head2">Software Engineer</h2>
 
             <h3 class="">NVC</h3>
+              <img src="img2.jpg" width=300 height=200>
 
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
@@ -124,6 +123,7 @@
         <section class="section-contianer" id="section3">
 
             <h2 class="section-head2">Software Engineer</h2>
+              <img src="./img/closeup-giraffe-zoo.jpg" width=300 height=200>
 
             <h3 class="">NVC</h3>
 

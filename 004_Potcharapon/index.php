@@ -61,6 +61,7 @@
         <section class="section-contianer" id="section2">
 
             <h2 class="section-head2">Gamer</h2>
+              <img src="./img/img2.jpg" width=300 height=200>
 
             <h3 class="">NVC</h3>
 
@@ -97,6 +98,7 @@
         <section class="section-contianer" id="section3">
 
             <h2 class="section-head2">Gamer</h2>
+              <img src="./img/zoo.jpg" width=300 height=200>
 
             <h3 class="">NVC</h3>
 
