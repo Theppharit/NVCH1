@@ -81,7 +81,9 @@
 
     <?php include ('./include/footer.php')?>
 
-
+<style>
+    
+</style>
 </body>
 
 </html>
