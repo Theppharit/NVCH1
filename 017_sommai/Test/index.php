@@ -34,7 +34,7 @@
             <h3 class="">AV</h3>
 
             <img src="./img/girl-holding-glass-apple-slices-looking-ring-tailed-lemur-zoo.jpg" alt="" while=300% height = "200">
-            <a href="https://www.youtube.com/watch?v=GMgsFZ4rkEI">คลิปน่ารัก</a>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oxIOJWX86s0?si=yaxf3Ef9XI0Ybrji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
@@ -71,7 +71,7 @@
             <h2 class="">yooo</h2>
             <h3 class="">AV</h3>
             <img src="./img/closeup-giraffe-zoo.jpg" alt="" while=300% height = "200">
-            <a href="https://www.youtube.com/watch?v=GMgsFZ4rkEI">คลิปน่ารัก</a>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zivpBXVprMI?si=OPo5AaFFoWpKP3zJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
              
 
 
@@ -111,7 +111,7 @@
             <h3 class="">AV</h3>
 
             <img src="./img/view-two-zebras-zoo-with-wooden-fence-surface.jpg" alt="" while=300% height = "200">
-            <a href="https://www.youtube.com/watch?v=GMgsFZ4rkEI">คลิปน่ารัก</a>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RSkWs-cYUp8?si=yaPZFlCCnWV6Hon6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
