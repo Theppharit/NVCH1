@@ -14,6 +14,14 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
 
 
 /*navbar*/
@@ -61,14 +69,26 @@ transition: 0.3s linear;
    color:rgb(240, 240, 240);
 }
 
-
+/* section content */
 .section-contianer{
     padding: 0 5rem;
 }
 
+.div-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.section-img {
+    width: 500px;
+}
 
 .section-head2 {
     color: var(--main-color);
+    margin-top: 3rem;
 }
+
 
 
