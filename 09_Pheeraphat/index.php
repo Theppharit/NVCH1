@@ -20,8 +20,10 @@
     <section class="section-contianer" id="section1">
 
 
-        <h2 class="">A</h1>
-        <h3 class="">B</h1>
+        <h2 class="">A</h1><br>
+        <img src="Image/giraffe.jpg" width="500" height="300" alt="g.jpg">
+        <h3 class="">B</h1><br>
+        <img src="Image/lemur.jpg" width="500" height="300" alt="l.jpg">
         <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae excepturi provident rem voluptas autem mollitia porro dolorum vero sunt sapiente iusto aliquam adipisci ab facilis repellat accusamus, non nostrum eos.
         Consectetur doloribus facilis aperiam vero, exercitationem deserunt praesentium corporis quidem dolor, molestias, doloremque fugiat repellat voluptate ratione id fugit provident! Dolore aliquid deleniti quis repudiandae pariatur voluptatibus. Itaque, dolor a?
         Eius totam animi illo minus veniam voluptates laboriosam debitis vero deserunt voluptatum nemo qui, sunt accusantium voluptatibus magnam eaque itaque officiis, consequuntur unde neque ab facilis rerum ipsum. Eum, autem.
@@ -42,7 +44,8 @@
             <h1 class="section-head2">Head two</h1>
             </div>
     
-            <h2 class="">C</h1>
+            <h2 class="">C</h1><br>
+            <img src="Image/zebras.jpg" width="500" height="300" alt="z.jpg">
             <h3 class="">D</h1>
             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsa molestiae, iure eligendi vero reprehenderit vel nihil sit delectus, impedit quo? Neque, sapiente magnam quidem nostrum suscipit vel quod inventore!
             Ratione aliquam libero, aut accusamus beatae ab architecto eius maxime dolorem repellendus ut tempore, quam autem laborum, quaerat officiis suscipit fuga veritatis ducimus veniam eaque! Ad quia dignissimos quam veniam?
