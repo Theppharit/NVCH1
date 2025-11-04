@@ -24,8 +24,13 @@
 <section class="section-contianer" id="section1">
     <a href="https://youtu.be/qthxa7m_B4E?si=cIMg_VEeb8WBlrmf"><h1>อย่ากดเข้าไปนะ!</h1></a>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7Um3FaXJixg?si=OiwIHODxc7BVQeoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="500"
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/qthxa7m_B4E" 
+        title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
 
         <img src="./img/arknights-dance-kaltsit-dance.gif" alt=" " width=250 height=250>
 
