@@ -24,6 +24,12 @@
        </div>
         <!--  section1 title -->
         <section class="section-contianer" id="หน้าที่1">
+         
+        <div class="div-img">
+                <img src="./img copy/girl-holding-glass-apple-slices-looking-ring-tailed-lemur-zoo.jpg " alt="" class="section-img">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PDt9hOENiI8?si=PxEXfvkOyXeJ98sR&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+         
 
 
 
@@ -63,6 +69,11 @@
         <!--  section1 title -->
         <section class="section-contianer" id="หน้าที่2">
 
+         <div class="div-img">
+                <img src="./img copy/girl-holding-glass-apple-slices-looking-ring-tailed-lemur-zoo.jpg " alt="" class="section-img">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PDt9hOENiI8?si=PxEXfvkOyXeJ98sR&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
 
 
             <h2 class="section-head2">kar</h2>
@@ -100,6 +111,11 @@
        </div>
         <!--  section1 title -->
         <section class="section-contianer" id="หน้าที่3">
+
+         <div class="div-img">
+                <img src="./img copy/girl-holding-glass-apple-slices-looking-ring-tailed-lemur-zoo.jpg " alt="" class="section-img">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PDt9hOENiI8?si=PxEXfvkOyXeJ98sR&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
 
 

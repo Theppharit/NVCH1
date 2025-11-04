@@ -1,12 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    <?php include('./include/head.php') ?>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- import style.css -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- Website name -->
+    <title>Thanakorn</title>
+    
+</head>
+
+
 <body>
 
+
+
     <!-- Navbar -->
-    <?php include('./include/navbar.php') ?>
+    <nav class="navbar">
 
+    <div class="div div-navbar">
+        <a href="./index.php" class="a-navbar">หน้าแรก</a>
+        <a href="./page2.php" class="a-navbar">หน้าที่ 2</a>
+    </div>    <div class="div div-navbar">
+        <a href="#section1" class="a-navbar">หัวข้อที่ 1</a>
+        <a href="#section2" class="a-navbar">หัวข้อที่ 2</a>
+        <a href="#section3" class="a-navbar">หัวข้อที่ 3</a>
+    </div>
 
- 
+    </nav>
 
 
 
@@ -22,7 +48,8 @@
 
         <section class="section-contianer" id="section1">
 
-            <h2 class="section-head2">Gamer</h2>
+            <h2 class="section-head2">Software Engineer</h2>
+              <img src="./img/zoo.jpg" width=300 height=200>
 
             <h3 class="">NVC</h3>
 
@@ -59,9 +86,10 @@
 
         <section class="section-contianer" id="section2">
 
-            <h2 class="section-head2">Gamer</h2>
+            <h2 class="section-head2">Software Engineer</h2>
 
             <h3 class="">NVC</h3>
+              <img src="./img/img2.jpg" width=300 height=200>
 
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
@@ -95,7 +123,8 @@
 
         <section class="section-contianer" id="section3">
 
-            <h2 class="section-head2">Gamer</h2>
+            <h2 class="section-head2">Software Engineer</h2>
+              <img src="./img/closeup-giraffe-zoo.jpg" width=300 height=200>
 
             <h3 class="">NVC</h3>
 
@@ -139,3 +168,4 @@
 
 
 </html>
+    
