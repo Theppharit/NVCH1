@@ -12,7 +12,7 @@
 
     <!-- Website name -->
     <title>Thanakorn</title>
-    
+
 </head>
 
 
@@ -49,7 +49,9 @@
         <section class="section-contianer" id="section1">
 
             <h2 class="section-head2">Software Engineer</h2>
-              <img src="./img/zoo.jpg" width=300 height=200>
+              <img src="img/zoo.jpg" width=300 height=200>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/scuvck0j2C4?si=3xzz2TqnZh9pOw88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
 
             <h3 class="">NVC</h3>
 
@@ -89,7 +91,9 @@
             <h2 class="section-head2">Software Engineer</h2>
 
             <h3 class="">NVC</h3>
-              <img src="./img/img2.jpg" width=300 height=200>
+              <img src="img/img2.jpg" width=300 height=200>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/QOBxwoTJrNU?si=wfXVXG32JChkN8yQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
@@ -125,6 +129,8 @@
 
             <h2 class="section-head2">Software Engineer</h2>
               <img src="./img/closeup-giraffe-zoo.jpg" width=300 height=200>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cL4uhaQ58Rk?si=VertjsuVqE8Uxh1h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
             <h3 class="">NVC</h3>
 
