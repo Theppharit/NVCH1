@@ -25,6 +25,7 @@
             <h2 class="section-head2">Gamer</h2>
 
             <h3 class="">NVC</h3>
+            <h4><img src="" alt=""></h4>
 
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
