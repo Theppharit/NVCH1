@@ -14,15 +14,19 @@
     <main class="">
 
       
+        <section class="section-contianer" id="section1">
+                    <div class="div-img">
+                <img src="./img/img2.jpg" alt="" class="section-img" width="560" height="315">
 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7Um3FaXJixg?si=OiwIHODxc7BVQeoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
         <!-- section1 Title -->
         <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 1</h1>
         </div>
 
-        <section class="section-contianer" id="section1">
-
+    
             <h2 class="section-head2">Gamer</h2>
               <img src="./img/closeup-giraffe-zoo.jpg" width=300 height=200>
             <h3 class="">NVC</h3>
