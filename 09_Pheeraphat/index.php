@@ -22,6 +22,7 @@
 
         <h2 class="">A</h1><br>
         <img src="Image/giraffe.jpg" width="500" height="300" alt="g.jpg">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qpO8nWVBboE?si=08ZQGarzvnxvrCrF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h3 class="">B</h1><br>
         <img src="Image/lemur.jpg" width="500" height="300" alt="l.jpg">
         <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae excepturi provident rem voluptas autem mollitia porro dolorum vero sunt sapiente iusto aliquam adipisci ab facilis repellat accusamus, non nostrum eos.
@@ -81,7 +82,9 @@
 
     <?php include ('./include/footer.php')?>
 
-
+<style>
+    
+</style>
 </body>
 
 </html>
