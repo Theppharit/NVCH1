@@ -23,7 +23,7 @@
 
 <section class="section-contianer" id="section1">
     <a href="https://youtu.be/qthxa7m_B4E?si=cIMg_VEeb8WBlrmf"><h1>MeMe</h1></a>
-        <img src="./img/1.png" alt=" " width=300 height=150>
+        <img src="./img/arknights-dance-kaltsit-dance.gif" alt=" " width=300 height=150>
 
              <h2 class="section-head">ห่ะะ</h2>
                 <h3 class="">NVC</h3>
