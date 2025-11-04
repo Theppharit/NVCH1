@@ -109,7 +109,13 @@ Ullam sapiente omnis deserunt, incidunt eos illum ad provident fuga at cum nihil
 
 <img src="./img/view-two-zebras-zoo-with-wooden-fence-surface.jpg" width="800" height="500" alt="">
 
-<h2 class="section-head2">Software Engineer</h2>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MchTcmfWNcI?si=RaPgW0ZVoEsNJJPx" title="YouTube video player" frameborder="0" allow="accelerometer;
+     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+     <h2 class="section-head2">Software Engineer</h2>
 <h3 class="">NVC</h3>
 <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo illo culpa nisi ipsam laboriosam, vero, esse sunt quisquam fugit reprehenderit optio fuga nulla dolores voluptatibus eum? Minima, obcaecati natus?
 Minima, voluptates! Labore totam cupiditate fugiat minima enim suscipit iste accusamus vitae, atque eius doloremque ut commodi. Sed harum et nostrum repellendus, fugit magnam iusto sequi odio dolor. Pariatur, recusandae.
