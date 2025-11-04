@@ -18,14 +18,23 @@
         <!-- section1 Title -->
         <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 1</h1>
+            
+
+
         </div>
+
+         <div class="div-img">
+                <img src="./img/girl-holding-glass-apple-slices-looking-ring-tailed-lemur-zoo.jpg" width="560" height="315"  alt="" class="section-img">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_gC5nRvVX9c?si=xR-ci3-LuN_1CD9M&amp;start=225" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
         <section class="section-contianer" id="section1">
 
             <h2 class="section-head2">Gamer</h2>
 
             <h3 class="">NVC</h3>
-            <h4><img src="" alt=""></h4>
+            
 
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
