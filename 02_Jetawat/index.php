@@ -108,7 +108,7 @@
         <div class="div-head">
             <h1 class="section-head">หัวข้อที่ 3</h1>
         </div>
-              <img src="img2.jpg" width=300 height=200>
+              <img src="./img/img2.jpg" width=300 height=200>
 
             <h2 class="">Software Engineer</h2>
             <h3 class="">NVC</h3>
