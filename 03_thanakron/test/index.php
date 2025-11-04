@@ -49,7 +49,7 @@
         <section class="section-contianer" id="section1">
 
             <h2 class="section-head2">Software Engineer</h2>
-              <img src="./img/zoo.jpg" width=300 height=200>
+              <img src="./img/closeup-giraffe-zoo.jpg" width=300 height=200>
 
             <h3 class="">NVC</h3>
 
@@ -89,7 +89,7 @@
             <h2 class="section-head2">Software Engineer</h2>
 
             <h3 class="">NVC</h3>
-              <img src="./img/img2.jpg" width=300 height=200>
+              <img src="./img/girl-holding-glass-apple-slices-looking-ring-tailed-lemur-zoo.jpg" width=300 height=200>
 
             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus quae nam officiis neque non natus a laboriosam et iure. Officiis, odio voluptatibus dignissimos rem quaerat accusantium voluptatum nisi at.
                 Obcaecati cum, natus excepturi dolor quas nostrum ea odio beatae explicabo minus doloremque, fuga non sed animi dolorem vitae? Tempora fugiat perferendis error incidunt ratione velit cumque beatae, voluptatem saepe.
@@ -124,7 +124,7 @@
         <section class="section-contianer" id="section3">
 
             <h2 class="section-head2">Software Engineer</h2>
-              <img src="./img/closeup-giraffe-zoo.jpg" width=300 height=200>
+              <img src="./img/view-two-zebras-zoo-with-wooden-fence-surface.jpg" width=300 height=200>
 
             <h3 class="">NVC</h3>
 
