@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- import style.css -->
-    <link rel="stylesheet" href="./assets/style.css">
-
-    <!-- Website name -->
-    <title>Theppharit</title>
-</head>
+<!-- head -->
+<?php include('./include/head.php') ?>
 
 
 
@@ -21,16 +8,8 @@
 
 
     <!-- Navbar -->
-    <nav class="">
+    <?php include('./include/navbar.php') ?>
 
-        <a href="./index.php" class="">หน้าแรก</a>
-        <a href="./page2.php" class="">หน้าที่ 2</a>
-
-        <a href="#section1" class="">หัวข้อที่ 1</a>
-        <a href="#section2" class="">หัวข้อที่ 2</a>
-        <a href="#section3" class="">หัวข้อที่ 3</a>
-
-    </nav>
 
 
 
@@ -154,7 +133,7 @@
 
 
     <!-- Footer -->
-    <footer class=""></footer>
+    <?php include('./include/footer.php') ?>
 
 
 

@@ -1,3 +1,9 @@
+/* Variable2 Setup */
+:root {
+    --main-color: #ff0000;
+    --sub-color:  #ffffff;
+}
+
 /* Main Setup */
 * {
     margin: 0;
@@ -6,10 +12,53 @@
 }
 
 
-/* Section Setup */
-.section-contianer {
-    padding:0 5rem;
+/* Navbar */
+.navbar {
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(245, 195, 205);
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
+
+/* div */
+.div {
+    border: #3cff00 5px solid;
+}
+
+/* div Navbar */
+.div-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* A Navbar */
+.a-navbar {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0 1rem;
+    transition:all 0.3s linear;
+}
+
+/*แก้ได้แล้วครับจารรรรรร!*/
+.a-navbar:hover {
+    color: var(--sub-color);
+    text-decoration: wavy underline;
+    scale: 1.2;
+    
+        display: inline-block;
+        transition:  0.3s ease, color 0.3s ease;
+}
+
+
+
+
+
+
 
     
 /* Section1 Title */
@@ -19,7 +68,7 @@
     align-items: center;
     width: 100%;;
     height: 150px;
-    background: #60822d;
+    background: var(--main-color);
     margin: 2rem 0;
 }
 
@@ -45,13 +94,21 @@
     margin: 2rem 0;
 }
 
+
+/* Section Setup */
+.section-contianer {
+    padding:0 5rem;
+}
+
+
+
 /* Section Color */
 .section-head {
-    color:rgb(255, 255, 255);
+    color:var(--main-color);
 }
 
 .section-head2 {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .section-head3 {

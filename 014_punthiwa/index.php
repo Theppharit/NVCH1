@@ -1,30 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <!--import style.css-->
-    
-    <title>punthiwa</title>
-<!--website name-->
-</head>
+
+<?php include('./include/head.php'); ?>
 
 
 <body>
 
 <!--navbar-->
-<nav class="">
-<a href="./index.php" class="">หน้าแรก</a>
-<a href="./index 2.php" class="">หน้าที่2</a>
+<?php include('./include/navbar.php'); ?>
 
-<a href="#setion1" class="">-หัวข้อที่1</a>
-<a href="#setion2" class="">หัวข้อที่2</a>
-<a href="#setion3" class="">หัวข้อที่3</a>
-
-</nav>
 
 <!--main content-->
 <main class="">
@@ -74,8 +58,7 @@ Molestiae reiciendis impedit repudiandae dolores cupiditate sed, labore sunt. Ad
 
 
 
-<footer class=""></footer>
-
+<?php include('./include/footer.php'); ?>
 
 </body>
 
