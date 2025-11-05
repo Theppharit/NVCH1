@@ -87,7 +87,7 @@ img {
   height: 100vh;
 }
 
-.login__ocntainer{
+.login__container{
   align-items: center;
 }
 
@@ -96,8 +96,8 @@ img {
 }
 
 .login__data{
-  text-align: center
-  color var(--title-color)
+  text-align: center;
+  color: var(--title-color);
 }
 
 .login__title{
@@ -127,7 +127,7 @@ img {
 }
 
 .login__button:hover{
-  border-color: var(--first-color-alt);
+  background-color: var(--first-color-alt);
   box-shadow: 0 8px 24px hsla(4, 80%, 40%, .4);
 }
 
