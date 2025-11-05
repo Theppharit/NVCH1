@@ -15,3 +15,19 @@ const showHiddenPass = (password, eye) => {
 showHiddenPass('loginPass','loginEye')
 
 /*=============== SWIPER IMAGES ===============*/
+const swiperlogin = new Swiper('.login__swiper', {
+  loop: true,
+  spaceBetween: '24',
+  grabCursor: true,
+  speed: 600,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+//  autoplay: {
+//    delay: 3000,
+//    disableOnInteraction: false,
+  }
+});
