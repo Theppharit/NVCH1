@@ -83,6 +83,46 @@ img {
 }
 
 /*=============== LOGIN ===============*/
+.login{
+  height: 100vh;
+}
+
+.login__container{
+  align-items: center;
+}
+
+.login__swiper{
+  display: none;
+}
+
+.login__data{
+  text-align: center;
+  color: var(--title-color); 
+}
+
+.login__title{
+  font-size: var(--bigger-font-size);
+  font-family: var(--second-font);
+  margin-bottom: 3rem;
+}
+
+.login__description{
+  font-size: var(--small-font-size);
+  margin-bottom: 1rem;
+}
+
+.login__button,
+.login__button-border{
+  width: 100%;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  transition: background-color .4s, box-shadow .4s;
+}
+
+.login
+
 
 
 /*=============== BREAKPOINTS ===============*/
