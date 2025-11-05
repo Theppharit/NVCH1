@@ -198,7 +198,7 @@ img {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   transition: border .4s;
-  z-index: 1;
+  z-index: 1  ;
 }
 
 

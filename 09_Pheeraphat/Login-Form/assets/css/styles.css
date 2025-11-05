@@ -83,7 +83,7 @@ img {
 }
 
 /*=============== LOGIN ===============*/
-.login {
+.login{
   height: 100vh;
 }
 
@@ -97,7 +97,7 @@ img {
 
 .login__data{
   text-align: center;
-  color: var(--title-color);
+  color: var(--title-color); 
 }
 
 .login__title{
@@ -106,7 +106,7 @@ img {
   margin-bottom: 3rem;
 }
 
-.login_dedcription{
+.login__description{
   font-size: var(--small-font-size);
   margin-bottom: 1rem;
 }
@@ -122,8 +122,8 @@ img {
 }
 
 .login__button{
-  border-color: var(--first-color);
-  color: var(--white-color)
+  background-color: var(--first-color);
+  color: var(--white-color);
 }
 
 .login__button:hover{
@@ -136,9 +136,9 @@ img {
   justify-content: center;
   align-items: center;
   column-gap: .5rem;
-  border-color: var(--white-color);
+  background-color: var(--white-color);
   border: 2px solid var(--border-color);
-  color: var(--title-color)
+  color: var(--title-color);
 }
 
 .login__button-border i{
@@ -146,18 +146,18 @@ img {
   font-weight: initial;
 }
 
-.login__button:hover{
-  border-color: var(--hover-color);
+.login__button-border:hover{
+  background-color: var(--hover-color);
 }
 
 .login__line{
   position: relative;
-  justify-items: center;
+  justify-self: center;
   font-weight: var(--font-semi-bold);
-  color: var(--title-color)
+  color: var(--title-color);
 }
 
-.login__line::before,
+.login__line::before, 
 .login__line::after{
   content: '';
   position: absolute;
@@ -165,9 +165,9 @@ img {
   bottom: 0;
   width: 96px;
   height: 1px;
-  border-color: var(--border-color);
+  background-color: var(--border-color);
   margin: auto 0;
-}
+} 
 
 .login__line::before{
   right: 1.5rem;
@@ -182,11 +182,11 @@ img {
   margin-bottom: .75rem;
 }
 
-.login__box{
+.login_box{
   position: relative;
   display: flex;
   align-items: center;
-  border-color: var(--white-color);
+  background-color: var(--white-color);
 }
 
 .login__input{
@@ -202,11 +202,11 @@ img {
 }
 
 .login__input::placeholder{
-  color: var(--title-color)
+  color: var(--title-color);
 }
 
 .login__input:focus{
-  border-color: var(--title-color);
+  border-color: var(--text-color);
 }
 
 .login__input:autofill{
@@ -228,25 +228,20 @@ img {
 .login__forgot{
   display: block;
   width: max-content;
-  margin:  0 0 1.5rem auto;
+  margin: 0 0 1.5rem auto;
   font-size: var(--small-font-size);
-  color: var(--first-color)
+  color: var(--first-color);
 }
 
 .login__switch{
   display: flex;
-  justify-items: center;
+  justify-content: center;
   column-gap: .5rem;
   font-size: var(--small-font-size);
-  color: var(--title-color)
+  color: var(--title-color);
 }
 
 .login__sign{
   color: var(--first-color);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For medium devices */
-
-
-/* For large devices */
