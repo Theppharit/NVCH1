@@ -28,7 +28,7 @@ const swiperLogin = new Swiper('.login__swiper', {
 
   
   autoplay: {
-    delay: 3000,             
-    disableOnInteraction: false,   
+    delay: 3000,            
+    disableOnInteraction: false,
   },
 });
