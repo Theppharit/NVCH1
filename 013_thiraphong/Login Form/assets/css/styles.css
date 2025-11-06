@@ -14,7 +14,7 @@
   --border-color: hsl(0, 0%, 72%);
   --body-color: hsl(0, 0%, 100%);
 
-  /*========== Font and typography ==========*/
+  /*========== Font and typography ==== ======*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
   --second-font: "Unbounded", sans-serif;
@@ -333,7 +333,13 @@ img {
     right: 5rem;
     bottom: 4rem;
   }
-  .login .swiper-pagination-bullet[
-    background-color: ;
-  ]
+  .login .swiper-pagination-bullet{
+    background-color: var(--white-color);
+    opacity: .6;
+    transition: opacity .4s;
+  }
+    .login .swiper-pagination-bullet-active{
+      opacity: 1;
+    }
+  
 }
