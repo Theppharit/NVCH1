@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
       <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
@@ -18,7 +18,7 @@
    <body>
       <div class="login container grid">
             <div class="login__container grid">
-               <div class="login__swiper">
+               <div class="login__swiper swiper">
                   <div class="login__swiper-data">
                      <p class="login__swiper-subtitle">Welcome Back</p>
 
@@ -51,13 +51,16 @@
                       </div>
                    </div>
 
-                   <div>
-                     <img src="assets/img/img-1.png" alt="images" class="login__swiper-img">
+                   <div class="swiper-wrapper">
+                     <img src="assets/img/img-1.png" alt="images" class="login__swiper-img swiper-slider">
                      
-                     <img src="assets/img/img-2.png" alt="images" class="login__swiper-img">
+                     <img src="assets/img/img-2.png" alt="images" class="login__swiper-img swiper-slider">
                      
-                     <img src="assets/img/img-3.png" alt="images" class="login__swiper-img">
-                   </div>
+                     <img src="assets/img/img-3.png" alt="images" class="login__swiper-img swiper-slider">
+                   
+                  </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             
                <div class="login__area grid">
@@ -103,6 +106,6 @@
       <script src="assets/js/swiper-bundle.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+      <script src="./assets/js/main.js"></script>
    </body>
 </html>
