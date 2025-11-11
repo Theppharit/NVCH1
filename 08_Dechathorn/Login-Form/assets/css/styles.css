@@ -4,7 +4,6 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(4, 82%, 54%);
   --first-color-alt: hsl(4, 78%, 50%);
   --hover-color: hsl(0, 0%, 95%);
@@ -14,8 +13,7 @@
   --border-color: hsl(0, 0%, 72%);
   --body-color: hsl(0, 0%, 100%);
 
-  /*========== Font and typography ==== ======*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /*========== Font and typography ==========*/
   --body-font: "Montserrat", sans-serif;
   --second-font: "Unbounded", sans-serif;
   --bigger-font-size: 1.5rem;
@@ -83,36 +81,36 @@ img {
 }
 
 /*=============== LOGIN ===============*/
-.login{
+.login {
   height: 100vh;
 }
 
-.login__container{
+.login__container {
   align-items: center;
 }
 
-.login__swiper{
+.login__swiper {
   display: none;
 }
 
-.login__data{
+.login__data {
   text-align: center;
-  color: var(--title-color); 
+  color: var(--title-color);
 }
 
-.login__title{
+.login__title {
   font-size: var(--bigger-font-size);
   font-family: var(--second-font);
   margin-bottom: 3rem;
 }
 
-.login__description{
+.login__description {
   font-size: var(--small-font-size);
   margin-bottom: 1rem;
 }
 
 .login__button,
-.login__button-border{
+.login__button-border {
   width: 100%;
   padding: 1rem;
   border-radius: .5rem;
@@ -121,17 +119,17 @@ img {
   transition: background-color .4s, box-shadow .4s;
 }
 
-.login__button{
+.login__button {
   background-color: var(--first-color);
   color: var(--white-color);
 }
 
-.login__button:hover{
+.login__button:hover {
   background-color: var(--first-color-alt);
   box-shadow: 0 8px 24px hsla(4, 80%, 40%, .4);
 }
 
-.login__button-border{
+.login__button-border {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,24 +139,24 @@ img {
   color: var(--title-color);
 }
 
-.login__button-border i{
+.login__button-border i {
   font-size: 1.5rem;
   font-weight: initial;
 }
 
-.login__button-border:hover{
+.login__button-border:hover {
   background-color: var(--hover-color);
 }
 
-.login__line{
+.login__line {
   position: relative;
   justify-self: center;
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
 
-.login__line::before, 
-.login__line::after{
+.login__line::before,
+.login__line::after {
   content: '';
   position: absolute;
   top: 0;
@@ -167,65 +165,68 @@ img {
   height: 1px;
   background-color: var(--border-color);
   margin: auto 0;
-} 
+}
 
-.login__line::before{
+.login__line::before {
   right: 1.5rem;
 }
 
-.login__line::after{
+.login__line::after {
   left: 1.5rem;
 }
 
-.login__content{
+.login__content {
   row-gap: .75rem;
   margin-bottom: .75rem;
 }
 
-.login_box{
+/* ✅ แก้ไขส่วนนี้ให้สมบูรณ์ */
+.login__box {
   position: relative;
   display: flex;
   align-items: center;
   background-color: var(--white-color);
 }
 
-.login__input{
+/* ช่อง input */
+.login__input {
   width: 100%;
   background: none;
   border: 2px solid var(--border-color);
-  padding: 1rem 1.25rem;
+  padding: 1rem 3rem 1rem 1.25rem; /* เผื่อพื้นที่ขวาไว้สำหรับไอคอน */
   border-radius: .5rem;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   transition: border .4s;
-  z-index: 1;
 }
 
-.login__input::placeholder{
+.login__input::placeholder {
   color: var(--title-color);
 }
 
-.login__input:focus{
+.login__input:focus {
   border-color: var(--text-color);
 }
 
-.login__input:autofill{
-  transition: background-color 6000s, color 6000s;
-}
-
-.login__box i{
+/* ✅ ดวงตาในช่องรหัสผ่าน */
+.login__eye {
   position: absolute;
-  right: 1.25rem;
-  font-size: 1.5rem;
-  color: var(--title-color);
-}
-
-.login__eye{
-  z-index: 10;
+  right: 1.25rem;   /* ห่างจากขอบขวา */
+  top: 50%;         /* อยู่กึ่งกลางแนวตั้ง */
+  transform: translateY(-50%);
+  background: none;
+  border: none;
   cursor: pointer;
+  color: var(--title-color);
+  font-size: 1.4rem;
+  z-index: 10;
 }
 
-.login__forgot{
+.login__eye:hover {
+  color: var(--first-color);
+}
+
+.login__forgot {
   display: block;
   width: max-content;
   margin: 0 0 1.5rem auto;
@@ -233,7 +234,7 @@ img {
   color: var(--first-color);
 }
 
-.login__switch{
+.login__switch {
   display: flex;
   justify-content: center;
   column-gap: .5rem;
@@ -241,31 +242,30 @@ img {
   color: var(--title-color);
 }
 
-.login__sign{
+.login__sign {
   color: var(--first-color);
 }
 
-
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
-@media screen and (min-width: 540px){
-  .login__area{
+@media screen and (min-width: 540px) {
+  .login__area {
     grid-template-columns: 340px;
     justify-content: center;
   }
-} 
-  
+}
 
 /* For large devices */
-@media screen and (min-width: 1150px){
-  .container{
+@media screen and (min-width: 1150px) {
+  .container {
     margin-inline: auto;
   }
 
-  .login{
+  .login {
     place-items: center;
   }
-  .login__container{
+
+  .login__container {
     grid-template-columns: 592px 340px;
     column-gap: 5rem;
     width: 1110px;
@@ -275,7 +275,8 @@ img {
     padding: .75rem;
     border-radius: 3rem;
   }
-  .login__swiper{
+
+  .login__swiper {
     display: block;
     overflow: hidden;
     height: 100%;
@@ -284,62 +285,72 @@ img {
     margin-inline: initial;
     clip-path: path("M0 37.8182C0 16.9318 17.9784 0 40.156 0H551.843C574.902 0 593.224 18.2478 591.936 39.9306L556.273 640.294C555.083 660.328 537.487 676 516.18 676H40.156C17.9784 676 0 659.068 0 638.182V37.8182Z");
   }
-  .login__swiper-img{
+
+  .login__swiper-img {
     width: 592px;
     object-fit: cover;
     border-radius: 2.5rem;
     clip-path: path("M0 37.8182C0 16.9318 17.9784 0 40.156 0H551.843C574.902 0 593.224 18.2478 591.936 39.9306L556.273 640.294C555.083 660.328 537.487 676 516.18 676H40.156C17.9784 676 0 659.068 0 638.182V37.8182Z");
   }
+
   .login__swiper-data,
-  .login__swiper-social{
+  .login__swiper-social {
     position: absolute;
     z-index: 10;
     color: var(--white-color);
   }
-  .login__swiper-data{
+
+  .login__swiper-data {
     top: 5.5rem;
     left: 3rem;
   }
-  .login__swiper-subtitle{
+
+  .login__swiper-subtitle {
     font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
     margin-bottom: .5rem;
   }
-  .login__swiper-title{
+
+  .login__swiper-title {
     font-size: var(--bigger-font-size);
     font-family: var(--second-font);
   }
-  .login__swiper-social{
+
+  .login__swiper-social {
     left: 3rem;
     bottom: 4rem;
   }
-  .login__swiper-links{
+
+  .login__swiper-links {
     display: flex;
     align-items: center;
     column-gap: .75rem;
   }
-  .login__swiper-links{
+
+  .login__swiper-links {
     color: var(--white-color);
     font-size: 1.5rem;
     transition: transform .4s;
   }
-  .login__swiper-links:hover{
+
+  .login__swiper-links:hover {
     transform: translateY(-.25rem);
   }
 
-  .login .swiper-pagination-bullets{
+  .login .swiper-pagination-bullets {
     width: initial;
     left: initial;
     right: 5rem;
     bottom: 4rem;
   }
-  .login .swiper-pagination-bullet{
+
+  .login .swiper-pagination-bullet {
     background-color: var(--white-color);
     opacity: .6;
     transition: opacity .4s;
   }
-    .login .swiper-pagination-bullet-active{
-      opacity: 1;
-    }
-  
+
+  .login .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
 }
