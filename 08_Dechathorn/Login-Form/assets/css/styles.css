@@ -3,7 +3,6 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  /*========== Colors ==========*/
   --first-color: hsl(4, 82%, 54%);
   --first-color-alt: hsl(4, 78%, 50%);
   --hover-color: hsl(0, 0%, 95%);
@@ -12,20 +11,15 @@
   --white-color: hsl(0, 0%, 100%);
   --border-color: hsl(0, 0%, 72%);
   --body-color: hsl(0, 0%, 100%);
-
-  /*========== Font and typography ==========*/
   --body-font: "Montserrat", sans-serif;
   --second-font: "Unbounded", sans-serif;
   --bigger-font-size: 1.5rem;
   --normal-font-size: .938rem;
   --small-font-size: .875rem;
-
-  /*========== Font weight ==========*/
   --font-regular: 400;
   --font-semi-bold: 600;
 }
 
-/*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
     --bigger-font-size: 1.75rem;
@@ -37,8 +31,8 @@
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body,
@@ -139,48 +133,11 @@ img {
   color: var(--title-color);
 }
 
-.login__button-border i {
-  font-size: 1.5rem;
-  font-weight: initial;
-}
-
 .login__button-border:hover {
   background-color: var(--hover-color);
 }
 
-.login__line {
-  position: relative;
-  justify-self: center;
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-}
-
-.login__line::before,
-.login__line::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 96px;
-  height: 1px;
-  background-color: var(--border-color);
-  margin: auto 0;
-}
-
-.login__line::before {
-  right: 1.5rem;
-}
-
-.login__line::after {
-  left: 1.5rem;
-}
-
-.login__content {
-  row-gap: .75rem;
-  margin-bottom: .75rem;
-}
-
-/* ✅ แก้ไขส่วนนี้ให้สมบูรณ์ */
+/*=============== ช่องกรอกข้อมูล ===============*/
 .login__box {
   position: relative;
   display: flex;
@@ -188,31 +145,26 @@ img {
   background-color: var(--white-color);
 }
 
-/* ช่อง input */
 .login__input {
   width: 100%;
   background: none;
   border: 2px solid var(--border-color);
-  padding: 1rem 3rem 1rem 1.25rem; /* เผื่อพื้นที่ขวาไว้สำหรับไอคอน */
+  padding: 1rem 3rem 1rem 1.25rem;
   border-radius: .5rem;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   transition: border .4s;
 }
 
-.login__input::placeholder {
-  color: var(--title-color);
-}
-
 .login__input:focus {
   border-color: var(--text-color);
 }
 
-/* ✅ ดวงตาในช่องรหัสผ่าน */
+/*=============== ปุ่มดวงตา (Eye icon) ===============*/
 .login__eye {
   position: absolute;
-  right: 1.25rem;   /* ห่างจากขอบขวา */
-  top: 50%;         /* อยู่กึ่งกลางแนวตั้ง */
+  right: 1.25rem;
+  top: 50%;
   transform: translateY(-50%);
   background: none;
   border: none;
@@ -220,6 +172,7 @@ img {
   color: var(--title-color);
   font-size: 1.4rem;
   z-index: 10;
+  transition: color 0.3s ease;
 }
 
 .login__eye:hover {
@@ -247,7 +200,6 @@ img {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For medium devices */
 @media screen and (min-width: 540px) {
   .login__area {
     grid-template-columns: 340px;
@@ -255,7 +207,6 @@ img {
   }
 }
 
-/* For large devices */
 @media screen and (min-width: 1150px) {
   .container {
     margin-inline: auto;
@@ -282,75 +233,11 @@ img {
     height: 100%;
     position: relative;
     border-radius: 2.5rem;
-    margin-inline: initial;
-    clip-path: path("M0 37.8182C0 16.9318 17.9784 0 40.156 0H551.843C574.902 0 593.224 18.2478 591.936 39.9306L556.273 640.294C555.083 660.328 537.487 676 516.18 676H40.156C17.9784 676 0 659.068 0 638.182V37.8182Z");
   }
 
   .login__swiper-img {
     width: 592px;
     object-fit: cover;
     border-radius: 2.5rem;
-    clip-path: path("M0 37.8182C0 16.9318 17.9784 0 40.156 0H551.843C574.902 0 593.224 18.2478 591.936 39.9306L556.273 640.294C555.083 660.328 537.487 676 516.18 676H40.156C17.9784 676 0 659.068 0 638.182V37.8182Z");
-  }
-
-  .login__swiper-data,
-  .login__swiper-social {
-    position: absolute;
-    z-index: 10;
-    color: var(--white-color);
-  }
-
-  .login__swiper-data {
-    top: 5.5rem;
-    left: 3rem;
-  }
-
-  .login__swiper-subtitle {
-    font-size: var(--small-font-size);
-    font-weight: var(--font-semi-bold);
-    margin-bottom: .5rem;
-  }
-
-  .login__swiper-title {
-    font-size: var(--bigger-font-size);
-    font-family: var(--second-font);
-  }
-
-  .login__swiper-social {
-    left: 3rem;
-    bottom: 4rem;
-  }
-
-  .login__swiper-links {
-    display: flex;
-    align-items: center;
-    column-gap: .75rem;
-  }
-
-  .login__swiper-links {
-    color: var(--white-color);
-    font-size: 1.5rem;
-    transition: transform .4s;
-  }
-
-  .login__swiper-links:hover {
-    transform: translateY(-.25rem);
-  }
-
-  .login .swiper-pagination-bullets {
-    width: initial;
-    left: initial;
-    right: 5rem;
-    bottom: 4rem;
-  }
-
-  .login .swiper-pagination-bullet {
-    background-color: var(--white-color);
-    opacity: .6;
-    transition: opacity .4s;
-  }
-
-  .login .swiper-pagination-bullet-active {
-    opacity: 1;
   }
 }
