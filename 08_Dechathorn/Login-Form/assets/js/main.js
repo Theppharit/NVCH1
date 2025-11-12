@@ -1,35 +1,38 @@
 /*=============== HIDE & SHOW PASSWORD ===============*/
-const showHiddenPass = (password, eye) => {
-  const input = document.getElementById(password),
-        button = document.getElementById(eye),
-        icon = button.querySelector("i")
+const showHiddenPass = (passwordId, eyeId) => {
+  const input = document.getElementById(passwordId),
+        iconEye = document.getElementById(eyeId);
 
-  button.addEventListener("click", () => {
-    // เปลี่ยนชนิดของ input
-    input.type = input.type === "password" ? "text" : "password"
+  if (!input || !iconEye) return;
 
-    // สลับไอคอน
-    icon.classList.toggle("ri-eye-line")
-    icon.classList.toggle("ri-eye-off-line")
-  })
-}
+  iconEye.addEventListener('click', () => {
+    if (input.type === 'password') {
+      input.type = 'text';
+      iconEye.classList.remove('ri-eye-line');
+      iconEye.classList.add('ri-eye-off-line');
+    } else {
+      input.type = 'password';
+      iconEye.classList.remove('ri-eye-off-line');
+      iconEye.classList.add('ri-eye-line');
+    }
+  });
+};
 
-showHiddenPass("loginPass", "loginEye")
+showHiddenPass('loginPass', 'loginEye');
 
 /*=============== SWIPER IMAGES ===============*/
-const swiperLogin = new Swiper(".login__swiper", {
+const swiperLogin = new Swiper('.login__swiper', {
   loop: true,
   spaceBetween: 24,
   grabCursor: true,
-  speed: 600,
-
+  effect: 'fade',
+  speed: 800,
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
-
   autoplay: {
-    delay: 3000,
+    delay: 3500,
     disableOnInteraction: false,
   },
-})
+});
