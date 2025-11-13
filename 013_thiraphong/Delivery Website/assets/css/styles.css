@@ -156,7 +156,7 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
-.header {
+.header{
   position: fixed;
   width: 100%;
   top: 0;
@@ -204,7 +204,7 @@ img {
   .nav__menu{
     position: fixed;
     top: 5rem;
-    left: 0;
+    left: -200%;
     right: 0;
     margin: 0 auto;
     width: 75%;
@@ -217,8 +217,40 @@ img {
   }
 }
 
-/* Show menu */
+.nav__list{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
 
+.nav__link{
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+
+.nav__theme{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+/* Show menu */
+.show-menu{
+  left: 0;
+}
+
+.show-menu + .nav__toggle{
+  transform: rotate(90deg);
+}
 
 /* Add shadow header */
 
@@ -227,7 +259,41 @@ img {
 
 
 /*=============== HOME ===============*/
+.home__container{
+  padding-block: 1.5rem;
+  row-gap: 3rem;
+}
 
+.home__data{
+  text-align: center;
+  display: grid;
+  row-gap: 3rem; 
+}
+
+.home__title{
+  font-size: var(--bigger-font-size);
+  margin-bottom: .5rem;
+}
+
+.home__title span{
+  color: var(--first-color);
+}
+
+.home__description{
+  margin-bottom: 2rem;
+}
+
+.home__social{
+  display: flex;
+  justify-content: center;
+  column-gap: .75rem;
+}
+
+.home__link{
+  width: 40px;
+  height: 40px;
+  background-color: var(--container-color);
+}
 
 /*=============== BUTTON ===============*/
 
@@ -264,12 +330,47 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 360px){
+  .container{
+    margin-inline: 1rem;
+  }
+}
 
+@media screen and (min-width: 540px){
+  .nav__menu{
+    width: 50%;
+  }
+}
 
 /* For medium devices */
 
 
 /* For large devices */
+@media screen and (min-width: 1150px){
+  .container{
+    margin-inline: auto;
+  }
 
+  .nav{
+    height: calc(var(--header-height) + 2rem);
+  }
+  .nav__toggle{
+    display: none;
+  }
+  .nav__list{
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+  .nav__theme{
+    position: initial;
+    font-size: 1.5rem;
+  }
+  .nav__menu{
+    width: initial;
+    display: flex;
+    column-gap: 4rem;
+    align-items: center;
+  }
+}
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
