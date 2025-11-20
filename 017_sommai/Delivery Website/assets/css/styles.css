@@ -300,12 +300,41 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media scraee and (max-width: 360px){
+  .container{
+    margin-inline: 1rem;
+  }
+}
 
 
+@media scraee and (min-with: 540px){
+  .nav__manu{
+    width: 50%;
+  }
+}
 /* For medium devices */
 
 
 /* For large devices */
+@media scraee and (min-with : 1150px){
+  .container{
+    margin-inline: auto;
+  }
 
+  .nev{
+    height: calc(var(--header-height) + 2rem);
+
+  }
+
+  .nav__toggle{
+    display: none;
+
+  }
+
+  .nav__list{
+    flex-direction: row;
+    font-size: 4rem;
+  }
+} 
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
