@@ -300,15 +300,15 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media scraee and (max-width: 360px){
+@media screen and (max-width: 360px){
   .container{
     margin-inline: 1rem;
   }
 }
 
 
-@media scraee and (min-with: 540px){
-  .nav__manu{
+@media screen and (min-width: 540px){
+  .nav__menu{
     width: 50%;
   }
 }
@@ -316,12 +316,12 @@ img {
 
 
 /* For large devices */
-@media scraee and (min-with : 1150px){
+@media screen and (min-width : 1150px){
   .container{
     margin-inline: auto;
   }
 
-  .nev{
+  .nav{
     height: calc(var(--header-height) + 2rem);
 
   }
