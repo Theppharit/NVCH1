@@ -491,7 +491,11 @@ img {
   }
 }
 
-
+@media screen and (min-width: 768px){
+  .service__container{
+    grid-template-columns: repeat(2, 220px);
+  }
+}
 
 
 /* For large devices */
