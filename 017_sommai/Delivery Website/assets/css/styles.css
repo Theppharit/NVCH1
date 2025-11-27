@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -166,7 +166,7 @@ img {
   transition: background-color .4s, box-shadow .4s;
 }
 
-.nav{
+.nav {
   position: relative;
   height: var(--header-height);
   display: flex;
@@ -177,7 +177,7 @@ img {
 .nav__logo{
   display: flex;
   align-items: center;
-  column-gap: .25rem;
+  column-gap: .25rem ;
 }
 
 .nav__logo i{
@@ -198,9 +198,6 @@ img {
   cursor: pointer;
   transition: transform .4s;
 }
-
-
-
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px){
   .nav__menu{
@@ -215,7 +212,7 @@ img {
     padding: 3.5rem;
     border-radius: 3rem;
     border: 3px solid var(--first-color);
-    transition: left .4s, background-color .4s, box-shadow .4s;
+    transition: left .4s background-color .4s box-shadow .4s;
   }
 }
 
@@ -243,19 +240,11 @@ img {
   font-size: 1.25rem;
   color: var(--title-color);
   cursor: pointer;
-
 }
-
 /* Show menu */
 .show-menu{
   left: 0;
 }
-
-.show-menu + .nav__toggle{
-  transform: rotate(90deg);
-}
-
-
 /* Add shadow header */
 
 
@@ -300,41 +289,12 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 360px){
-  .container{
-    margin-inline: 1rem;
-  }
-}
 
 
-@media screen and (min-width: 540px){
-  .nav__menu{
-    width: 50%;
-  }
-}
 /* For medium devices */
 
 
 /* For large devices */
-@media screen and (min-width : 1150px){
-  .container{
-    margin-inline: auto;
-  }
 
-  .nav{
-    height: calc(var(--header-height) + 2rem);
-
-  }
-
-  .nav__toggle{
-    display: none;
-
-  }
-
-  .nav__list{
-    flex-direction: row;
-    font-size: 4rem;
-  }
-} 
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
