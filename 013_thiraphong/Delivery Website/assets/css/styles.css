@@ -824,12 +824,73 @@ img {
   transition: background-color .4s, color .4s;
 }
 
+.footer__input{
+  width: 100%;
+  background: transparent;
+  color: var(--title-color);
+  padding-left: .75rem;
+}
+
+.footer__button{
+  width: 48px;
+  height: 48px;
+  background-color: var(--first-color);
+  box-shadow: 0 4px 8px var(--shadow-first-color);
+  font-size: 1.5rem;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: background-color .4s, color .4s;
+}
+
+.footer__button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.footer__copy{
+  display: block;
+  margin-top: 5rem;
+  text-align: center;
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+}
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: 1rem;
+  background-color: hsl(45, 32%, 70%);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 1rem;
+  background-color: hsl(45, 32%, 60%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(45, 32%, 50%);
+}
+
 
 
 /*=============== SCROLL UP ===============*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--body-color);
+  box-shadow: var(--shadow-big);
+  color: var(--title-color);
+  display: inline-flex;
+  padding: 6px;
+  font-size: 1.25rem;
+  border-radius: .75rem;
+  z-index: var(--z-tooltip);
+  transition: bottom .4s, transform .4s, background-color .4s, color .4s;
+}
 
+.scrollup:hover{
+  transform: translateY(-.5rem);
+}
 
 /* Show Scroll Up */
 
@@ -867,6 +928,10 @@ img {
   .reviews__comment{
     width: 85%;
   }
+
+  .footer__content{
+    gap: 2rem;
+  }
 }
 
 /* For medium devices */
@@ -885,6 +950,15 @@ img {
     grid-template-columns: repeat(2, 180px);
     justify-content: center;
   }
+
+  .app__container{
+      width: 380px;
+      margin-inline: auto;
+  }
+
+  .footer__form{
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -894,6 +968,13 @@ img {
 
   .menu__container{
     grid-template-columns: repeat(3, 180px);
+  }
+
+  .footer__content{
+    grid-template-columns: repeat(3, max-content);
+  }
+  .footer__newsletter{
+    grid-column: initial;
   }
 }
 
@@ -1132,6 +1213,20 @@ img {
 .map__content{
   grid-template-columns: repeat(2, max-content);
   gap: 4rem 5rem;
-}
+  }
+  
+  .footer{
+    padding-block: 6rem 3rem;
+  }
+  .footer__container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+  .footer__content{
+    column-gap: 5rem;
+  }
+  .footer__form{
+    width: 330px;
+  }
 }
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
