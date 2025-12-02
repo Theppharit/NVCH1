@@ -156,6 +156,36 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition: background-color .4s, box-shadow .4s;
+}
+
+.nav{
+position: relative;
+height: var(--header-height);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav__logo{
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.nav__logo i{
+font-size: 1.5rem;
+color: var(--text-color);
+transition: color .4s;
+}
+
 
 
 /* Navigation for mobile devices */
