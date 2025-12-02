@@ -112,13 +112,24 @@ img {
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
-
-
+.dark-theme{
+  --first-color-light: hsl(45, 48%, 16%);
+  --title-color: hsl(45, 4%, 95%);
+  --text-color: hsl(45, 4%, 60%);
+  --body-color: hsl(45, 8%, 8%);
+  --container-color: hsl(45, 8%, 12%);
+  --shadow-small: 0 4px 8px hsla(45, 50%, 2%, .2);
+  --shadow-big: 0 2px 16px hsla(45, 50%, 2%, .6);
+}
 /*========== 
 	Color changes in some parts of 
 	the website, in dark theme
 ==========*/
-
+.dark-theme :is(.button, .home__link:hover, .menu__button,
+                .swiper-button-prev:hover, .swiper-button-next:hover,
+                .footer__social-link:hover, .footer__button:hover){
+  color: var(--dark-color);
+} 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -258,7 +269,9 @@ img {
 }
 
 /* Active link */
-
+.active-link{
+  color: var(--first-color)
+}
 
 /*=============== HOME ===============*/
 .home__container{
@@ -893,7 +906,9 @@ img {
 }
 
 /* Show Scroll Up */
-
+.show-scroll{
+  bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
