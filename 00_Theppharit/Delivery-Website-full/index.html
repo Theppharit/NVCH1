@@ -704,7 +704,7 @@
       </div>
 
       <span class="footer__copy">
-        &#169; All Rights Reserved By Theppharit Tomongkhon
+        &#169; All Rights Reserved By 
       </span>
     </footer>
 
