@@ -1,4 +1,10 @@
- <section class="menu section" id="menu">
+<?php include('include/head.php') ?>
+
+  <body>
+    <!--==================== HEADER ====================-->
+   <?php include('include/navbar.php') ?>
+
+   <section class="menu section" id="menu">
         <h4 class="section__subtitle">OUR MENU</h4>
         <h2 class="section__title">The Most Popular</h2>
 
@@ -174,3 +180,10 @@
           </article>
         </div>
       </section>
+
+<!--==================== FOOTER ====================-->
+    <?php include('include/footer.php') ?>
+
+   <?php include('include/add-js.php') ?> 
+  </body>
+</html>
