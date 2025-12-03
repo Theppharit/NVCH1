@@ -118,6 +118,8 @@
       </div>
 
       <span class="footer__copy">
-        &#169; All Rights Reserved By 
+        &#169; All Rights Reserved By Potcharapon
       </span>
     </footer>
+
+    

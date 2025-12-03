@@ -1,4 +1,4 @@
-<footer class="footer">
+ <footer class="footer">
       <div class="footer__container container grid">
         <div class="footer__data">
           <div class="footer__info">
@@ -121,3 +121,16 @@
         &#169; All Rights Reserved By 
       </span>
     </footer>
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
