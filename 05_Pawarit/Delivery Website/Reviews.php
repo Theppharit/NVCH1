@@ -1,4 +1,12 @@
- <!--==================== REVIEWS ====================-->
+<?php include ('include/head.php')?>
+  <body>
+    <!--==================== HEADER ====================-->
+    <?php include ('include/navbar.php')?>
+  <body>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== REVIEWS ====================-->
       <section class="reviews section" id="reviews">
         <div class="reviews__container container grid">
           <div class="reviews__content">
@@ -124,3 +132,9 @@
           </div>
         </div>
       </section>
+
+   <!--==================== FOOTER ====================-->
+     <?php include ('include/footer.php')?>
+    <?php include ('include/add-js.php')?>
+  </body>
+</html>

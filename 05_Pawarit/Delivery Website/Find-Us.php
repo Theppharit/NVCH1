@@ -1,4 +1,14 @@
-<section class="map section" id="map">
+<?php include ('include/head.php')?>
+  <body>
+    <!--==================== HEADER ====================-->
+    <?php include ('include/navbar.php')?>
+  <body>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+    
+      <!--==================== MAP ====================-->
+      <section class="map section" id="map">
         <h4 class="section__subtitle">OUR LOCATION</h4>
         <h2 class="section__title">Find Us On The Map</h2>
 
@@ -58,3 +68,10 @@
           </div>
         </div>
       </section>
+    </main>
+
+     <!--==================== FOOTER ====================-->
+     <?php include ('include/footer.php')?>
+    <?php include ('include/add-js.php')?>
+  </body>
+</html>

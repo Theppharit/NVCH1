@@ -15,15 +15,15 @@
             </li>
 
             <li>
-              <a href="r.php#reviews" class="nav__link">Reviews</a>
+              <a href="Reviews.php#reviews" class="nav__link">Reviews</a>
             </li>
 
             <li>
-              <a href="app.php#app" class="nav__link">Our App</a>
+              <a href="Our-App.php#app" class="nav__link">Our App</a>
             </li>
 
             <li>
-              <a href="map.php#map" class="nav__link">Find Us</a>
+              <a href="Find-Us.php#map" class="nav__link">Find Us</a>
             </li>
           </ul>
 
