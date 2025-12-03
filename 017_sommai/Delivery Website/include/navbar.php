@@ -1,4 +1,12 @@
-    <header class="header" id="header">
+<?php
+
+$sql_C = 'SELECT * from table_company';
+$result_C = mysqli_query($conn,$sql_c);
+
+?>
+
+
+<header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
           <i class="ri-bowl-fill"></i> <span>Food Lover</span>
