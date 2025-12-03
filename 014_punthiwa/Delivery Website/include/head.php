@@ -23,5 +23,5 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Responsive delivery website - Bedimcode</title>
+    <title>Punthiwa.com</title>
   </head>

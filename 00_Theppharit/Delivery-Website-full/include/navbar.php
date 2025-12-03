@@ -19,11 +19,11 @@
             </li>
 
             <li>
-              <a href="app.php#app" class="nav__link">Our App</a>
+              <a href="our-app.php#app" class="nav__link">Our App</a>
             </li>
 
             <li>
-              <a href="findus.php#map" class="nav__link">Find Us</a>
+              <a href="find-us.php#map" class="nav__link">Find Us</a>
             </li>
           </ul>
 
