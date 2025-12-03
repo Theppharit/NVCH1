@@ -1,14 +1,10 @@
-<?php include('include/head.php') ?>
-   
+<?php include('include/head.php')?>
+
    <body>
       <!--==================== HEADER ====================-->
-<?php include('include/navbar.php') ?>
+<?php include('include/navbar.php')?>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         
-      <!--==================== REVIEWS ====================-->
-         <section class="reviews section" id="reviews">
+      <section class="reviews section" id="reviews">
             <div class="reviews__container container grid">
                <div class="reviews__content">
                    <h4 class="section__subtitle">OUR REVIEWS</h4>  
@@ -117,12 +113,9 @@
                </div>
             </div>
          </section>
-      </main>
 
       <!--==================== FOOTER ====================-->
-<?php include('include/footer.php') ?>
-      
-      <!--==================== JS ====================-->
-<?php include('include/add-js.php') ?>
+     <?php include('include/footer.php')?>
+     <?php include('include/add-js.php')?>
    </body>
 </html>
