@@ -23,7 +23,7 @@
             </li>
 
             <li>
-              <a href="find.php#map" class="nav__link">Find Us</a>
+              <a href="find-us.php#map" class="nav__link">Find Us</a>
             </li>
           </ul>
 

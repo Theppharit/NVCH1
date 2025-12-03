@@ -1,14 +1,10 @@
-<?php include('include/head.php') ?>
-   
+<?php include('include/head.php')?>
+
    <body>
       <!--==================== HEADER ====================-->
-<?php include('include/navbar.php') ?>
+<?php include('include/navbar.php')?>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-
-         <!--==================== APP ====================-->
-         <section class="app section" id="app">
+      <section class="app section" id="app">
             <div class="app__container container grid">
                <div class="app__data">
                    <h4 class="section__subtitle">OUR APP</h4>
@@ -29,12 +25,8 @@
             </div>
          </section>
 
-       </main>
-
       <!--==================== FOOTER ====================-->
-<?php include('include/footer.php') ?>
-      
-      <!--==================== JS ====================-->
-<?php include('include/add-js.php') ?>
+     <?php include('include/footer.php')?>
+     <?php include('include/add-js.php')?>
    </body>
 </html>
