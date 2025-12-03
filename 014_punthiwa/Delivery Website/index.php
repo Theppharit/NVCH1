@@ -1,11 +1,8 @@
-<?php include("include/head.php"); ?>
-
+<?php include('include/head.php') ?>
 
   <body>
-   
-  <!--==================== HEADER ====================-->
-  
-  <?php include("include/navbar.php"); ?>
+    <!--==================== HEADER ====================-->
+   <?php include('include/navbar.php') ?>
 
     <!--==================== MAIN ====================-->
     <main class="main">
@@ -131,23 +128,20 @@
       </section>
 
       <!--==================== MENU ====================-->
-      
+     
 
       <!--==================== REVIEWS ====================-->
       
 
       <!--==================== APP ====================-->
-      
+   
 
       <!--==================== MAP ====================-->
-      
-    </main>
+   
 
     <!--==================== FOOTER ====================-->
-    <?php include("include/footer.php"); ?>
+    <?php include('include/footer.php') ?>
 
-    <?php include("include/add-js.php"); ?>
-
-    
+    <?php include('include/add-js.php') ?>
   </body>
 </html>
