@@ -11,19 +11,19 @@
             </li>
 
             <li>
-              <a href="menu.php#menu" class="nav__link">Menu</a>
+              <a href="Menu.php#menu" class="nav__link">Menu</a>
             </li>
 
             <li>
-              <a href="reviews.php#reviews" class="nav__link">Reviews</a>
+              <a href="Reviews.php#reviews" class="nav__link">Reviews</a>
             </li>
 
             <li>
-              <a href="app.php#app" class="nav__link">Our App</a>
+              <a href="Ourapp.php#app" class="nav__link">Our App</a>
             </li>
 
             <li>
-              <a href="findus.php#map" class="nav__link">Find Us</a>
+              <a href="Findus.php#map" class="nav__link">Find Us</a>
             </li>
           </ul>
 
