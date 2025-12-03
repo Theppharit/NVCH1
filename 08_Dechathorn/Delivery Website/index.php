@@ -25,19 +25,27 @@
                     </div>
 
                     <div class="home__social">
-                       <a href="https://m.me/bedimcode" target="_blank" class="home__link">
+                       <a href="https://m.me/bedimcode" 
+                       target="_blank"
+                       class="home__link">
                           <i class="ri-messenger-fill"></i>
                        </a>
 
-                       <a href="https://www.instagram.com/bedimcode/" target="_blank" class="home__link">
+                       <a href="https://www.instagram.com/bedimcode/" 
+                       target="_blank" 
+                       class="home__link">
                            <i class="ri-instagram-fill"></i>
                        </a>
 
-                       <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="home__link">
+                       <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" 
+                       target="_blank" 
+                       class="home__link">
                            <i class="ri-whatsapp-fill"></i>
                        </a> 
 
-                       <a href="https://web.telegram.org/" target="_blank" class="home__link">
+                       <a href="https://web.telegram.org/" 
+                       target="_blank" 
+                       class="home__link">
                             <i class="ri-telegram-2-fill"></i>
                        </a>    
                     </div>
