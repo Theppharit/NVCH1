@@ -80,7 +80,7 @@
         </div>
       </section>
 
-      <!--==================== SERVICE ====================-->
+      <!--=======11============= SERVICE ====================-->
       <section class="service section">
         <h4 class="section__subtitle">OUR SERVICE</h4>
         <h2 class="section__title">How Does It Work?</h2>
@@ -127,7 +127,7 @@
         </div>
       </section>
 
-    <!--==================== FOOTER ====================-->
+     <!--==================== FOOTER ====================-->
      <?php include ('include/footer.php')?>
     <?php include ('include/add-js.php')?>
   </body>
