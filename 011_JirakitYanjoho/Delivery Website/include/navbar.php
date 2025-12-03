@@ -1,3 +1,10 @@
+<?php
+
+$sql_c = "SELECT * FROM tbl_company";
+$result_c = mysql_query( $conn, $sql_c);
+
+?>    
+    
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
