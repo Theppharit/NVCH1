@@ -1,3 +1,5 @@
+<?php include_once('./connect/conn.php'); ?>
+
 !DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,3 +27,4 @@
 
     <title>Responsive delivery website - Bedimcode</title>
   </head>
+
