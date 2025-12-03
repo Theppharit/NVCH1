@@ -1,4 +1,4 @@
-<?php  include_once  ('conn/conn.php') ?>
+<?php include_once('conn/conn.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,5 +25,5 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Responsive delivery website - Bedimcode</title>
+    <title>jakgapat.com</title>
   </head>

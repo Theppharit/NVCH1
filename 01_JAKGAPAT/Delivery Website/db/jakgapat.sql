@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2025 at 09:15 AM
+-- Generation Time: Dec 03, 2025 at 10:25 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -24,30 +24,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tp_compami`
+-- Table structure for table `tbl_company`
 --
 
-CREATE TABLE `tp_compami` (
+CREATE TABLE `tbl_company` (
   `c_id` int(11) NOT NULL,
-  `c_logo` text NOT NULL DEFAULT '  <i class="ri-bowl-fill"></i>',
+  `c_logo` text NOT NULL DEFAULT '<i class="ri-bowl-fill"></i>',
   `c_name` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `tp_compami`
+-- Dumping data for table `tbl_company`
 --
 
-INSERT INTO `tp_compami` (`c_id`, `c_logo`, `c_name`) VALUES
-(1, '<i class=\"ri-cpu-line\"></i>', 'jakgapat.com');
+INSERT INTO `tbl_company` (`c_id`, `c_logo`, `c_name`) VALUES
+(1, '<i class=\"ri-cpu-line\"></i>', 'Jakgapat.com');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tp_compami`
+-- Indexes for table `tbl_company`
 --
-ALTER TABLE `tp_compami`
+ALTER TABLE `tbl_company`
   ADD PRIMARY KEY (`c_id`);
 
 --
@@ -55,9 +55,9 @@ ALTER TABLE `tp_compami`
 --
 
 --
--- AUTO_INCREMENT for table `tp_compami`
+-- AUTO_INCREMENT for table `tbl_company`
 --
-ALTER TABLE `tp_compami`
+ALTER TABLE `tbl_company`
   MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
