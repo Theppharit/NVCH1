@@ -1,34 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
-
-    <!--=============== REMIXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-    />
-
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Responsive delivery website - Bedimcode</title>
-  </head>
+<?php include('include/head.php'); ?>
   <body>
     <!--==================== HEADER ====================-->
     
-    <?php include_once 'include/head.php'; ?>
+    <?php include('include/navbar.php'); ?>
   
     <!--==================== MAIN ====================-->
     <main class="main">
@@ -40,7 +14,6 @@
               <h1 class="home__title">
                 Enjoy Your Delicious <span>Food</span>
               </h1>
-
               <p class="home__description">
                 We'll delight your stomach with a variety of delicious
                 home-delivered food, delivered quickly and without delay.
