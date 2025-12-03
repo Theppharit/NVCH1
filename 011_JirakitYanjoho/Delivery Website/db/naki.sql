@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2025 at 09:15 AM
+-- Generation Time: Dec 03, 2025 at 10:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,36 +18,36 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `jirakit yanjoho`
+-- Database: `naki`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl-company`
+-- Table structure for table `tbl_company`
 --
 
-CREATE TABLE `tbl-company` (
+CREATE TABLE `tbl_company` (
   `c_id` int(11) NOT NULL,
-  `c_logo` text NOT NULL DEFAULT '<i class="ri-bowl-fill"></i>',
+  `c_logo` text NOT NULL DEFAULT '<i class="ri-gamepad-line"></i>',
   `c_name` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `tbl-company`
+-- Dumping data for table `tbl_company`
 --
 
-INSERT INTO `tbl-company` (`c_id`, `c_logo`, `c_name`) VALUES
-(1, '<i class=\"ri-bowl-fill\"></i>', 'NaKi');
+INSERT INTO `tbl_company` (`c_id`, `c_logo`, `c_name`) VALUES
+(1, '<i class=\"ri-gamepad-line\"></i>', 'Naki');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tbl-company`
+-- Indexes for table `tbl_company`
 --
-ALTER TABLE `tbl-company`
+ALTER TABLE `tbl_company`
   ADD PRIMARY KEY (`c_id`);
 
 --
@@ -55,9 +55,9 @@ ALTER TABLE `tbl-company`
 --
 
 --
--- AUTO_INCREMENT for table `tbl-company`
+-- AUTO_INCREMENT for table `tbl_company`
 --
-ALTER TABLE `tbl-company`
+ALTER TABLE `tbl_company`
   MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
