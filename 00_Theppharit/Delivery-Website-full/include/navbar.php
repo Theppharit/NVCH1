@@ -7,7 +7,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li>
-              <a href="#home" class="nav__link active-link">Home</a>
+              <a href="index.php#home" class="nav__link active-link">Home</a>
             </li>
 
             <li>
