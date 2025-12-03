@@ -1,3 +1,5 @@
+<?php include_once('conn/conn.php') ?>
+
 <!DOCTYPE html>
    <html lang="en">
    <head>
@@ -16,6 +18,6 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive delivery website - Bedimcode</title>
+      <title>thiraphongdelivery.com</title>
    </head>
    
