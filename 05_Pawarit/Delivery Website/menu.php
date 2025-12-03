@@ -1,10 +1,14 @@
-<?php include('include/head.php') ?>
-
+<?php include ('include/head.php')?>
   <body>
     <!--==================== HEADER ====================-->
-   <?php include('include/navbar.php') ?>
+    <?php include ('include/navbar.php')?>
+  <body>
 
-   <section class="menu section" id="menu">
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+      <!--==================== MENU ====================-->
+      <section class="menu section" id="menu">
         <h4 class="section__subtitle">OUR MENU</h4>
         <h2 class="section__title">The Most Popular</h2>
 
@@ -181,9 +185,8 @@
         </div>
       </section>
 
-<!--==================== FOOTER ====================-->
-    <?php include('include/footer.php') ?>
-
-   <?php include('include/add-js.php') ?> 
+      <!--==================== FOOTER ====================-->
+     <?php include ('include/footer.php')?>
+    <?php include ('include/add-js.php')?>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!--==================== FOOTER ====================-->
+ <!--==================== FOOTER ====================-->
     <footer class="footer">
       <div class="footer__container container grid">
         <div class="footer__data">
@@ -122,3 +122,4 @@
         &#169; All Rights Reserved By 
       </span>
     </footer>
+    
