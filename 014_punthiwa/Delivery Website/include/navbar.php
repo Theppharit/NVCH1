@@ -1,3 +1,12 @@
+    <?php 
+    $sql_c ="SELECT * FROM tbl_company";
+    $result_c  = mysqli_query($company,)
+    
+    ?>
+    
+    
+    
+    
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">

@@ -1,3 +1,5 @@
+<?php include_once('conn/conn.php')?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,5 +25,5 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Jirakit Yanjoho</title>
+    <title>Jirakit Yanjoho.com</title>
   </head>
