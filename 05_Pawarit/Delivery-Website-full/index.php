@@ -2,7 +2,7 @@
   <body>
     <!--==================== HEADER ====================-->
     
-    <?php include_once 'include/head.php'; ?>
+    <?php include('include/navbar.php'); ?>
   
     <!--==================== MAIN ====================-->
     <main class="main">
@@ -14,7 +14,6 @@
               <h1 class="home__title">
                 Enjoy Your Delicious <span>Food</span>
               </h1>
-
               <p class="home__description">
                 We'll delight your stomach with a variety of delicious
                 home-delivered food, delivered quickly and without delay.
