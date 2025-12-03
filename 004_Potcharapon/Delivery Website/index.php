@@ -1,71 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
-
-    <!--=============== REMIXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-    />
-
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Responsive delivery website - Bedimcode</title>
-  </head>
+<?php include 'include/header.php' ?>
   <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <i class="ri-bowl-fill"></i> <span>Food Lover</span>
-        </a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li>
-              <a href="#home" class="nav__link active-link">Home</a>
-            </li>
-
-            <li>
-              <a href="#menu" class="nav__link">Menu</a>
-            </li>
-
-            <li>
-              <a href="#reviews" class="nav__link">Reviews</a>
-            </li>
-
-            <li>
-              <a href="#app" class="nav__link">Our App</a>
-            </li>
-
-            <li>
-              <a href="#map" class="nav__link">Find Us</a>
-            </li>
-          </ul>
-
-          <!-- Theme button -->
-          <i class="ri-moon-fill nav__theme" id="theme-button"></i>
-        </div>
-
-        <!-- Toggle button -->
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-5-fill"></i>
-        </div>
-      </nav>
-    </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
@@ -474,16 +410,8 @@
                 </article>
               </div>
 
-              <!-- Navigation buttons -->
-              <div class="swiper-button-prev">
-                <i class="ri-arrow-left-s-line"></i>
-              </div>
+                  <?php include('include/navbar.php') ?>
 
-              <div class="swiper-button-next">
-                <i class="ri-arrow-right-s-line"></i>
-              </div>
-            </div>
-          </div>
 
           <div class="reviews__image">
             <img
@@ -584,142 +512,10 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
-      <div class="footer__container container grid">
-        <div class="footer__data">
-          <div class="footer__info">
-            <a href="#" class="footer__logo">
-              <i class="ri-bowl-fill"></i> <span>Food Lover</span>
-            </a>
-
-            <p class="footer__description">
-              We will fill your tummy with <br />
-              delicious food with fast delivery.
-            </p>
-          </div>
-
-          <div class="footer__socail">
-            <a
-              href="https://www.facebook.com/bedimcode"
-              target="_blank"
-              class="footer__socail-link"
-            >
-              <i class="ri-facebook-circle-fill"></i>
-            </a>
-
-            <a
-              href="https://www.instagram.com/bedimcode/"
-              target="_blank"
-              class="footer__socail-link"
-            >
-              <i class="ri-instagram-fill"></i>
-            </a>
-
-            <a
-              href="https://x.com/bedimcode"
-              target="_blank"
-              class="footer__socail-link"
-            >
-              <i class="ri-twitter-x-fill"></i>
-            </a>
-
-            <a
-              href="https://www.youtube.com/@Bedimcode"
-              target="_blank"
-              class="footer__socail-link"
-            >
-              <i class="ri-youtube-fill"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer__content grid">
-          <div>
-            <h3 class="footer__title">Company</h3>
-
-            <ul class="footer__links">
-              <li>
-                <a href="#" class="footer__link"> Why Food? </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer__link"> Partner with us </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer__link"> About us </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer__link"> FAQ </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="footer__title">Support</h3>
-
-            <ul class="footer__links">
-              <li>
-                <a href="#" class="footer__link"> Account </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer__link"> Support center </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer__link"> Feedback </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer__link"> Contacts </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__newsletter">
-            <h3 class="footer__title">Stay Connected</h3>
-
-            <p>
-              Questions or feedback? we'd <br />
-              love to hear from you.
-            </p>
-
-            <form action="" class="footer__form">
-              <input
-                type="email"
-                placeholder="Email address"
-                name=""
-                id=""
-                class="footer__input"
-              />
-
-              <button class="footer__button">
-                <i class="ri-arrow-right-s-line"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <span class="footer__copy">
-        &#169; All Rights Reserved By Potcharapon
-      </span>
-    </footer>
-
+    
+  <?php include'include/footer.php' ?>
     <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="ri-arrow-up-line"></i>
-    </a>
+     <?php include'include/js.php' ?>
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
