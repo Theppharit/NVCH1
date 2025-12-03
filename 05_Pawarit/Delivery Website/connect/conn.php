@@ -1,10 +1,10 @@
 <?php
-$host = '';
-#user = '';
+$host = 'localhost';
+#user = 'root';
 $pass = '';
-$dbname = '';
+$dbname = 'tplcompany';
 
 
 $conn = mysqli_connect(hostname: $host, username: $user, password: $pass, database: $dbname);
-
+$conn -> set_charset(charset: 'utf8');  
 
