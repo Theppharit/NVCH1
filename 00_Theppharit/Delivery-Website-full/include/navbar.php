@@ -1,46 +1,52 @@
 <?php
 
 $sql_c = "SELECT * FROM tbl_company";
-$result_c = mysqli_query($conn,$sql_c);
+$result_c = mysqli_query($conn, $sql_c);
 
-?>    
-    
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <i class="ri-bowl-fill"></i> <span>Food Lover</span>
-        </a>
+?>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li>
-              <a href="index.php#home" class="nav__link active-link">Home</a>
-            </li>
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">
 
-            <li>
-              <a href="menu.php#menu" class="nav__link">Menu</a>
-            </li>
+      <?php while ($row_c = mysqli_fetch_assoc($result_c)) { ?>
 
-            <li>
-              <a href="reviews.php#reviews" class="nav__link">Reviews</a>
-            </li>
+        <?= $row_c['c_logo'] ?><span><?= $row_c['c_name'] ?></span>
 
-            <li>
-              <a href="our-app.php#app" class="nav__link">Our App</a>
-            </li>
+      <?php } ?>
 
-            <li>
-              <a href="find-us.php#map" class="nav__link">Find Us</a>
-            </li>
-          </ul>
+    </a>
 
-          <!-- Theme button -->
-          <i class="ri-moon-fill nav__theme" id="theme-button"></i>
-        </div>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li>
+          <a href="index.php#home" class="nav__link active-link">Home</a>
+        </li>
 
-        <!-- Toggle button -->
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-5-fill"></i>
-        </div>
-      </nav>
-    </header>
+        <li>
+          <a href="menu.php#menu" class="nav__link">Menu</a>
+        </li>
+
+        <li>
+          <a href="reviews.php#reviews" class="nav__link">Reviews</a>
+        </li>
+
+        <li>
+          <a href="our-app.php#app" class="nav__link">Our App</a>
+        </li>
+
+        <li>
+          <a href="find-us.php#map" class="nav__link">Find Us</a>
+        </li>
+      </ul>
+
+      <!-- Theme button -->
+      <i class="ri-moon-fill nav__theme" id="theme-button"></i>
+    </div>
+
+    <!-- Toggle button -->
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="ri-menu-5-fill"></i>
+    </div>
+  </nav>
+</header>
