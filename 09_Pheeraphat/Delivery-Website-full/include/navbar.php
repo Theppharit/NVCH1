@@ -1,5 +1,4 @@
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
+<header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
           <i class="ri-bowl-fill"></i> <span>Food Lover</span>
