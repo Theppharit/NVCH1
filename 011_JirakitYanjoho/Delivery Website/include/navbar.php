@@ -1,7 +1,7 @@
 <?php
 
 $sql_c = "SELECT * FROM tbl_company";
-$result_c = mysql_query( $conn, $sql_c);
+$result_c = mysqli_query( $conn, $sql_c);
 
 ?>    
     
