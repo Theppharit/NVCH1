@@ -1,0 +1,39 @@
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <i class="ri-bowl-fill"></i> <span>Food Lover</span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+
+            <li>
+              <a href="menu.php#menu" class="nav__link">Menu</a>
+            </li>
+
+            <li>
+              <a href="reviews.php#reviews" class="nav__link">Reviews</a>
+            </li>
+
+            <li>
+              <a href="app.php#app" class="nav__link">Our App</a>
+            </li>
+
+            <li>
+              <a href="findus.php#map" class="nav__link">Find Us</a>
+            </li>
+          </ul>
+
+          <!-- Theme button -->
+          <i class="ri-moon-fill nav__theme" id="theme-button"></i>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-5-fill"></i>
+        </div>
+      </nav>
+    </header>
