@@ -20,7 +20,7 @@
             </li>
 
             <li>
-              <a href=" ourapp.php" class="nav__link">Our App</a>
+              <a href="ourapp.php" class="nav__link">Our App</a>
             </li>
 
             <li>
