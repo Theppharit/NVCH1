@@ -25,5 +25,5 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Jirakit Yanjoho.com</title>
+    <title>NaKi.com</title>
   </head>

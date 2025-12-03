@@ -18,47 +18,31 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `jakgapat`
+-- Database: `dachathorn`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tp_compami`
+-- Table structure for table `dechathorn`
 --
 
-CREATE TABLE `tp_compami` (
-  `c_id` int(11) NOT NULL,
-  `c_logo` text NOT NULL DEFAULT '  <i class="ri-bowl-fill"></i>',
+CREATE TABLE `dechathorn` (
+  `c _id` int(11) NOT NULL,
+  `c_logo` text NOT NULL DEFAULT ' <i class="ri-bowl-fill"></i>',
   `c_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tp_compami`
+-- Dumping data for table `dechathorn`
 --
 
-INSERT INTO `tp_compami` (`c_id`, `c_logo`, `c_name`) VALUES
-(1, '<i class=\"ri-cpu-line\"></i>', 'jakgapat.com');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `tp_compami`
---
-ALTER TABLE `tp_compami`
-  ADD PRIMARY KEY (`c_id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `tp_compami`
---
-ALTER TABLE `tp_compami`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+INSERT INTO `dechathorn` (`c _id`, `c_logo`, `c_name`) VALUES
+(0, ' <i class=\"ri-bowl-fill\"></i>', 'dechathron.com'),
+(0, ' <i class=\"ri-bowl-fill\"></i>', 'ronkarthok.com'),
+(0, ' <i class=\"ri-bowl-fill\"></i>', 'ronkarthok.com'),
+(0, ' <i class=\"ri-bowl-fill\"></i>', 'sfsafasfasddf'),
+(0, ' <i class=\"ri-bowl-fill\"></i>', 'aasfsdf.com');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
