@@ -1,3 +1,4 @@
+    <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
@@ -7,23 +8,23 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li>
-              <a href="index.php#home" class="nav__link active-link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
 
             <li>
-              <a href="menu.php#menu" class="nav__link">Menu</a>
+              <a href="#menu" class="nav__link">Menu</a>
             </li>
 
             <li>
-              <a href="reviews.php#reviews" class="nav__link">Reviews</a>
+              <a href="#reviews" class="nav__link">Reviews</a>
             </li>
 
             <li>
-              <a href="our-app.php#app" class="nav__link">Our App</a>
+              <a href="#app" class="nav__link">Our App</a>
             </li>
 
             <li>
-              <a href="find-us.php#map" class="nav__link">Find Us</a>
+              <a href="#map" class="nav__link">Find Us</a>
             </li>
           </ul>
 
