@@ -8,23 +8,23 @@
                  <ul class="nav__list">
                     
                   <li>
-                     <a href="#home" class="nav__link active-link">Home</a>
+                     <a href="index.php" class="nav__link active-link">Home</a>
                   </li>
                     
                   <li>
-                     <a href="#menu" class="nav__link">Menu</a>
+                     <a href="menu.php" class="nav__link">Menu</a>
                   </li>
                     
                   <li>
-                     <a href="#reviews" class="nav__link">Reviews</a>
+                     <a href="reviews.php" class="nav__link">Reviews</a>
                   </li>
                     
                   <li>
-                     <a href="#app" class="nav__link">Our App</a>
+                     <a href="our-App.php" class="nav__link">Our App</a>
                   </li>
                     
                   <li>
-                     <a href="#map" class="nav__link">Find Us</a>
+                     <a href="map.php" class="nav__link">Find Us</a>
                   </li>
                  
                   </ul>
