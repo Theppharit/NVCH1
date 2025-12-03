@@ -1,10 +1,9 @@
 <?php
+
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$dbname = 'tplcompany';
-
+$dbname = 'jirakit yanjoho';
 
 $conn = mysqli_connect($host, $user, $pass, $dbname);
-$conn -> set_charset(charset: 'utf8');  
-
+$conn -> set_charset('utf8');
