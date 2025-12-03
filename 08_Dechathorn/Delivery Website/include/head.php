@@ -1,18 +1,30 @@
- <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <?php include_once('conn/conn.php')?>
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+ 
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-      <title>Responsive delivery website - Bedimcode</title>
-   </head>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Theppharit.com</title>
+  </head>
