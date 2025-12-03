@@ -578,7 +578,7 @@
             </div>
          </div>
          <span class="footer__copy">
-             &#169; All Rights Reserved By Bedimcode
+             &#169; All Rights Reserved By Thiraphong13
          </span>
       </footer>
 
