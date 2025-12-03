@@ -1,8 +1,26 @@
+    <?php 
+    $sql_c ="SELECT * FROM tbl_company";
+    $result_c  = mysqli_query($conn,$sql_c);
+    
+    ?>
+    
+    
+    
+    
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
-          <i class="ri-bowl-fill"></i> <span>Food Lover</span>
+         
+        <?php 
+        while ($row_c = mysqli_fetch_assoc($result_c))
+           { ?>  
+          
+        # code...<?php= $row_c['c_logo']  ?>
+
+        <?php } ?>
+        
+        <i class="ri-bowl-fill"></i> <span>Food Lover</span>
         </a>
 
         <div class="nav__menu" id="nav-menu">

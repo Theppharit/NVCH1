@@ -1,6 +1,23 @@
-    <header class="header" id="header">
+<?php
+
+$sql_C = 'SELECT * FROM table_company';
+$resualt = mysqli_query($conn,$sql_C);
+
+?>
+
+
+<header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
+
+<?php 
+
+while ($row_C = mysqli_feth_assoc) {
+  # code...
+}
+?>
+
+
           <i class="ri-bowl-fill"></i> <span>Food Lover</span>
         </a>
 
