@@ -117,7 +117,7 @@
                </div>
             </div>
          </section>
-
+      </main>
 
       <!--==================== FOOTER ====================-->
 <?php include('include/footer.php') ?>
