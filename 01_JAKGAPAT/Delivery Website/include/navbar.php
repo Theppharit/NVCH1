@@ -1,6 +1,29 @@
+<?php        
+
+$sql_c ='SELECT * FROM tp_compami';
+$result_c = mysqli_query($conn,$sql_c);
+
+
+?>
+
+
+
 <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
+
+<?php 
+        
+while ($row_c =myaqli_feths_assoc($result_c))
+  { ?>
+  
+
+  <?= $row_c ['c-logo'] <i class="ri-bowl-fill"></i> <span>Food Lover</span>
+<?php}?>   
+        
+        
+        
+?>
           <i class="ri-bowl-fill"></i> <span>Food Lover</span>
         </a>
 
