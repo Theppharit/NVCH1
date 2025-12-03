@@ -5,22 +5,18 @@
     ?>
     
     
-    
-    
-    <!--==================== HEADER ====================-->
+     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
          
-        <?php 
-        while ($row_c = mysqli_fetch_assoc($result_c))
-           { ?>  
+        <?php while ($row_c = mysqli_fetch_assoc($result_c))  { ?>  
           
-        # code...<?php= $row_c['c_logo']  ?>
+         <?= $row_c['c_logo']  ?><span><?=  $row_c['c_name'] ?></span> 
 
         <?php } ?>
         
-        <i class="ri-bowl-fill"></i> <span>Food Lover</span>
+        
         </a>
 
         <div class="nav__menu" id="nav-menu">
