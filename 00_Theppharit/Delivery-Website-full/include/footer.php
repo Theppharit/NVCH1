@@ -1,9 +1,22 @@
+  <?php
+
+  $sql_c2 = "SELECT * FROM tbl_company";
+  $result_c2 = mysqli_query($conn, $sql_c2);
+
+  ?>
+
   <footer class="footer">
     <div class="footer__container container grid">
       <div class="footer__data">
         <div class="footer__info">
           <a href="#" class="footer__logo">
-            <i class="ri-bowl-fill"></i> <span>Food Lover</span>
+
+            <?php while ($row_c2 = mysqli_fetch_assoc($result_c2)) { ?>
+
+              <?= $row_c2['c_logo'] ?><span><?= $row_c2['c_name'] ?></span>
+
+            <?php } ?>
+
           </a>
 
           <p class="footer__description">
