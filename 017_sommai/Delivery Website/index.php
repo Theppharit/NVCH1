@@ -77,22 +77,36 @@
     </section>
 
     <!--==================== SERVICE ====================-->
+
+<?php
+
+$sql_SV = 'SELECT * FROM table_company';
+$resualt_SV = mysqli_query($conn,$sql_SV);
+
+?>
+
     <section class="service section">
       <h4 class="section__subtitle">OUR SERVICE</h4>
       <h2 class="section__title">How Does It Work?</h2>
 
       <div class="service__container container grid">
+
+      <?php while ($row_SV = mysqli_fetch_assoc($resualt_SV)) { ?>
+
         <div class="service__card">
           <img
-            src="assets/img/service-img-1.svg"
+            src="assets/img/<?= $row_SV['SV_img'] ?>"
             alt="image"
             class="service__img" />
 
-          <h3 class="service__title">Easy To Order</h3>
+          <h3 class="service__title"><?= $row_SV ['SV_title'] ?></h3>
           <p class="service__description">
             You only need a few steps in ordering food.
           </p>
         </div>
+
+      <?php } ?>
+
 
         <div class="service__card">
           <img
