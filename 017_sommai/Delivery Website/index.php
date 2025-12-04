@@ -77,10 +77,9 @@
     </section>
 
     <!--==================== SERVICE ====================-->
-
 <?php
 
-$sql_SV = 'SELECT * FROM table_company';
+$sql_SV = 'SELECT * FROM tbl_service';
 $resualt_SV = mysqli_query($conn,$sql_SV);
 
 ?>
@@ -91,46 +90,22 @@ $resualt_SV = mysqli_query($conn,$sql_SV);
 
       <div class="service__container container grid">
 
-      <?php while ($row_SV = mysqli_fetch_assoc($resualt_SV)) { ?>
-
+                  <?php while ($row_SV = mysqli_fetch_assoc($resualt_SV)) { ?>
         <div class="service__card">
           <img
             src="assets/img/<?= $row_SV['SV_img'] ?>"
             alt="image"
             class="service__img" />
 
-          <h3 class="service__title"><?= $row_SV ['SV_title'] ?></h3>
-          <p class="service__description">
-            You only need a few steps in ordering food.
+          <h3 class="service__title"><?= $row_SV['SV_img'] ?></h3>
+          <p class="service__ds">
+            <?= $row_SV['SV_ds'] ?>
           </p>
         </div>
 
-      <?php } ?>
+        <?php } ?>
 
-
-        <div class="service__card">
-          <img
-            src="assets/img/service-img-2.svg"
-            alt="image"
-            class="service__img" />
-
-          <h3 class="service__title">Fastest Delivery</h3>
-          <p class="service__description">
-            Always delivered on time and even faster.
-          </p>
-        </div>
-
-        <div class="service__card">
-          <img
-            src="assets/img/service-img-3.svg"
-            alt="image"
-            class="service__img" />
-
-          <h3 class="service__title">Best Quality</h3>
-          <p class="service__description">
-            Not only fast for us quality is also number one.
-          </p>
-        </div>
+        
       </div>
     </section>
   </main>
