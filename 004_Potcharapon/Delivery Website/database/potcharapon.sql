@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2025 at 09:42 AM
+-- Generation Time: Dec 03, 2025 at 09:15 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `potcharapon`
+-- Database: `Potcharapon`
 --
 
 -- --------------------------------------------------------
@@ -32,6 +32,7 @@ CREATE TABLE `tbl_company` (
   `c_logo` text NOT NULL DEFAULT '<i class="ri-bowl-fill"></i>',
   `c_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
 --
 -- Dumping data for table `tbl_company`
 --

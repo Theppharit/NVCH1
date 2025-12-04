@@ -3,7 +3,19 @@
         <div class="footer__data">
           <div class="footer__info">
             <a href="#" class="footer__logo">
-              <i class="ri-bowl-fill"></i> <span>Food Lover</span>
+              
+            <?php
+
+$sql_C = 'SELECT * FROM table_company';
+$resualt_c = mysqli_query($conn,$sql_C);
+
+?>
+            
+            <?php while ($row_c = mysqli_fetch_assoc($resualt_c)) { ?>
+  
+  <?= $row_c['C_logo'] ?><span><?= $row_c['C_name'] ?></span>
+
+<?php } ?>
             </a>
 
             <p class="footer__description">
