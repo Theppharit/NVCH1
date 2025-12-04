@@ -1,3 +1,12 @@
+<?php
+
+$sql_C = 'SELECT * FROM table_company';
+$resualt_c = mysqli_query($conn,$sql_C);
+
+?>
+
+
+
 <footer class="footer">
       <div class="footer__container container grid">
         <div class="footer__data">
