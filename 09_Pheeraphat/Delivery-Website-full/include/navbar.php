@@ -24,11 +24,11 @@ $resualt_c = mysqli_query($conn, $sql_c);
             </li>
 
             <li>
-              <a href="manu.php#menu" class="nav__link">Menu</a>
+              <a href="menu.php#menu" class="nav__link">Menu</a>
             </li>
 
             <li>
-              <a href="review.php#reviews" class="nav__link">Reviews</a>
+              <a href="reviews.php#reviews" class="nav__link">Reviews</a>
             </li>
 
             <li>
