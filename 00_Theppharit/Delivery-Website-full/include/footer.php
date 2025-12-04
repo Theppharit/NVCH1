@@ -1,7 +1,7 @@
   <?php
 
-  $sql_c2 = "SELECT * FROM tbl_company";
-  $result_c2 = mysqli_query($conn, $sql_c2);
+  $sql_c = "SELECT * FROM tbl_company";
+  $result_c = mysqli_query($conn, $sql_c);
 
   ?>
 
@@ -11,9 +11,9 @@
         <div class="footer__info">
           <a href="#" class="footer__logo">
 
-            <?php while ($row_c2 = mysqli_fetch_assoc($result_c2)) { ?>
+            <?php while ($row_c = mysqli_fetch_assoc($result_c)) { ?>
 
-              <?= $row_c2['c_logo'] ?><span><?= $row_c2['c_name'] ?></span>
+              <?= $row_c['c_logo'] ?><span><?= $row_c['c_name'] ?></span>
 
             <?php } ?>
 

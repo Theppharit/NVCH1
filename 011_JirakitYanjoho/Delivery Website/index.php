@@ -77,22 +77,35 @@
     </section>
 
     <!--==================== SERVICE ====================-->
+        <?php
+
+        $sql_c = "SELECT * FROM tbl_service";
+        $result_c = mysqli_query( $conn, $sql_c);
+
+        ?> 
+
     <section class="service section">
       <h4 class="section__subtitle">OUR SERVICE</h4>
       <h2 class="section__title">How Does It Work?</h2>
 
+
       <div class="service__container container grid">
+
+<?php while ($row_sv = mysqli_fetch_assoc( $result_sv)) { ?>
+
         <div class="service__card">
           <img
-            src="assets/img/service-img-1.svg"
+            src="assets/img/<?= $row_sv['sv_img'] ?>"
             alt="image"
             class="service__img" />
 
-          <h3 class="service__title">Easy To Order</h3>
+          <h3 class="service__title"><?= $row_sv['sv_title'] ?></h3>
           <p class="service__description">
-            You only need a few steps in ordering food.
+             <?= $row_sv['sv_description'] ?> 
           </p>
         </div>
+
+<?php } ?>
 
         <div class="service__card">
           <img
