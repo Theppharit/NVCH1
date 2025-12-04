@@ -77,6 +77,13 @@
     </section>
 
     <!--==================== SERVICE ====================-->
+        <?php
+
+        $sql_c = "SELECT * FROM tbl_service";
+        $result_c = mysqli_query( $conn, $sql_c);
+
+        ?> 
+
     <section class="service section">
       <h4 class="section__subtitle">OUR SERVICE</h4>
       <h2 class="section__title">How Does It Work?</h2>
