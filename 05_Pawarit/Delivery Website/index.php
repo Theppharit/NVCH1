@@ -81,51 +81,41 @@
       </section>
 
       <!--=======11============= SERVICE ====================-->
+       
+       
+       <?php
+$sql_sv="SELECT * FROM tbl_service";
+$result_sv=mysqli_query($conn,$sql_sv);
+?>
+ 
+     
+     
       <section class="service section">
-        <h4 class="section__subtitle">OUR SERVICE</h4>
-        <h2 class="section__title">How Does It Work?</h2>
+      <h4 class="section__subtitle">OUR SERVICE</h4>
+      <h2 class="section__title">How Does It Work?</h2>
 
-        <div class="service__container container grid">
-          <div class="service__card">
-            <img
-              src="assets/img/service-img-1.svg"
-              alt="image"
-              class="service__img"
-            />
+      <div class="service__container container grid">
 
-            <h3 class="service__title">Easy To Order</h3>
-            <p class="service__description">
-              You only need a few steps in ordering food.
-            </p>
-          </div>
+        <?php while ($row_sv = mysqli_fetch_assoc($result_sv)) { ?>
 
           <div class="service__card">
             <img
-              src="assets/img/service-img-2.svg"
+              src="assets/img/<?= $row_sv['sv_img'] ?>"
               alt="image"
-              class="service__img"
-            />
+              class="service__img" />
 
-            <h3 class="service__title">Fastest Delivery</h3>
-            <p class="service__description">
-              Always delivered on time and even faster.
+            <h3 class="service__title"><?= $row_sv['sv_title'] ?></h3>
+            <p class="service__des">
+              <?= $row_sv['sv_des'] ?>
             </p>
           </div>
 
-          <div class="service__card">
-            <img
-              src="assets/img/service-img-3.svg"
-              alt="image"
-              class="service__img"
-            />
+        <?php } ?>
+        
+      </div>
+    </section>
+  
 
-            <h3 class="service__title">Best Quality</h3>
-            <p class="service__description">
-              Not only fast for us quality is also number one.
-            </p>
-          </div>
-        </div>
-      </section>
 
      <!--==================== FOOTER ====================-->
      <?php include ('include/footer.php')?>
