@@ -77,10 +77,11 @@
     </section>
 
     <!--==================== SERVICE ====================-->
+
         <?php
 
-        $sql_c = "SELECT * FROM tbl_service";
-        $result_c = mysqli_query( $conn, $sql_c);
+        $sql_sv = "SELECT * FROM tbl_service";
+        $result_sv = mysqli_query( $conn, $sql_sv);
 
         ?> 
 
@@ -88,48 +89,24 @@
       <h4 class="section__subtitle">OUR SERVICE</h4>
       <h2 class="section__title">How Does It Work?</h2>
 
-
       <div class="service__container container grid">
 
-<?php while ($row_sv = mysqli_fetch_assoc( $result_sv)) { ?>
+        <?php while ($row_sv = mysqli_fetch_assoc($result_sv)) { ?>
 
-        <div class="service__card">
-          <img
-            src="assets/img/<?= $row_sv['sv_img'] ?>"
-            alt="image"
-            class="service__img" />
+          <div class="service__card">
+            <img
+              src="assets/img/<?= $row_sv['sv_img'] ?>"
+              alt="image"
+              class="service__img" />
 
-          <h3 class="service__title"><?= $row_sv['sv_title'] ?></h3>
-          <p class="service__description">
-             <?= $row_sv['sv_description'] ?> 
-          </p>
-        </div>
+            <h3 class="service__title"><?= $row_sv['sv_title'] ?></h3>
+            <p class="service__description">
+              <?= $row_sv['sv_description'] ?> 
+            </p>
+          </div>
 
-<?php } ?>
+        <?php } ?>
 
-        <div class="service__card">
-          <img
-            src="assets/img/service-img-2.svg"
-            alt="image"
-            class="service__img" />
-
-          <h3 class="service__title">Fastest Delivery</h3>
-          <p class="service__description">
-            Always delivered on time and even faster.
-          </p>
-        </div>
-
-        <div class="service__card">
-          <img
-            src="assets/img/service-img-3.svg"
-            alt="image"
-            class="service__img" />
-
-          <h3 class="service__title">Best Quality</h3>
-          <p class="service__description">
-            Not only fast for us quality is also number one.
-          </p>
-        </div>
       </div>
     </section>
   </main>
