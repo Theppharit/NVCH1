@@ -1,191 +1,70 @@
 <?php include('include/head.php') ?>
 
 <body>
-    <!--==================== HEADER ====================-->
     <?php include('include/navbar.php') ?>
 
-    <!--==================== MAIN ====================-->
     <main class="main">
-        <!--==================== MENU ====================-->
         <section class="menu section" id="menu">
             <h4 class="section__subtitle">OUR MENU</h4>
             <h2 class="section__title">The Most Popular</h2>
 
             <div class="menu__container container grid">
-                <article class="menu__card">
-                    <img src="assets/img/menu-1.png" alt="image" class="menu__img" />
+               <?php
+                // 1. INCLUDE DATABASE CONNECTION (Which now provides a MySQLi object $conn)
+                include('conn/conn.php'); 
 
-                    <div>
-                        <h3 class="menu__name">
-                            Meat <br />
-                            Burger
-                        </h3>
-                        <p class="menu__amount">240g</p>
-                        <h3 class="menu__price">$9.90</h3>
-                    </div>
+                // Check for connection failure before continuing
+                if (!isset($conn) || !$conn) {
+                    echo "<p style='color: red; text-align: center; grid-column: 1 / -1;'>FATAL ERROR: Could not establish a database connection. Check your 'conn/conn.php' file.</p>";
+                } else {
+                    // 2. DEFINE SQL QUERY (FIXED: ORDER BY 'id')
+                    $sql = "SELECT name, amount, price, image_path FROM tbl_menu ORDER BY id ASC";
 
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
+                    try {
+                        // 3. EXECUTE THE QUERY using MySQLi
+                        $result = mysqli_query($conn, $sql);
 
-                <article class="menu__card">
-                    <img src="assets/img/menu-2.png" alt="image" class="menu__img" />
+                        // 4. LOOP THROUGH RESULTS AND GENERATE HTML
+                        if ($result && mysqli_num_rows($result) > 0) {
+                            while ($item = mysqli_fetch_assoc($result)) {
+                                // Split the name for the two-line display
+                                $name_parts = explode(' ', $item['name'], 2);
+                                $first_line = htmlspecialchars($name_parts[0]);
+                                $second_line = htmlspecialchars(isset($name_parts[1]) ? $name_parts[1] : '');
+                                $price_formatted = number_format($item['price'], 2);
 
-                    <div>
-                        <h3 class="menu__name">
-                            Grill <br />
-                            Burger
-                        </h3>
-                        <p class="menu__amount">240g</p>
-                        <h3 class="menu__price">$9.90</h3>
-                    </div>
+                                echo '
+                                <article class="menu__card">
+                                    <img src="' . htmlspecialchars($item['image_path']) . '" alt="' . $first_line . ' ' . $second_line . '" class="menu__img" />
 
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
+                                    <div>
+                                        <h3 class="menu__name">
+                                            ' . $first_line . ' <br />
+                                            ' . $second_line . '
+                                        </h3>
+                                        <p class="menu__amount">' . htmlspecialchars($item['amount']) . '</p>
+                                        <h3 class="menu__price">$' . $price_formatted . '</h3>
+                                    </div>
 
-                <article class="menu__card">
-                    <img src="assets/img/menu-3.png" alt="image" class="menu__img" />
+                                    <button class="menu__button">
+                                        <i class="ri-shopping-bag-3-fill"></i>
+                                    </button>
+                                </article>';
+                            }
+                        } else {
+                            echo "<p style='text-align: center; grid-column: 1 / -1;'>No menu items found in the database or query failed.</p>";
+                        }
 
-                    <div>
-                        <h3 class="menu__name">
-                            Pepperoni <br />
-                            Pizza
-                        </h3>
-                        <p class="menu__amount">700g</p>
-                        <h3 class="menu__price">$14.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-4.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Margherita <br />
-                            Pizza
-                        </h3>
-                        <p class="menu__amount">700g</p>
-                        <h3 class="menu__price">$14.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-5.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Soda <br />
-                            Glass
-                        </h3>
-                        <p class="menu__amount">250 ml</p>
-                        <h3 class="menu__price">$3.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-6.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Refreshing <br />
-                            Lemonade
-                        </h3>
-                        <p class="menu__amount">250 ml</p>
-                        <h3 class="menu__price">$3.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-7.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Cheese <br />
-                            Potatoes
-                        </h3>
-                        <p class="menu__amount">50g</p>
-                        <h3 class="menu__price">$2.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-8.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Spicy <br />
-                            Potatoes
-                        </h3>
-                        <p class="menu__amount">50g</p>
-                        <h3 class="menu__price">$2.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-9.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Mixed <br />
-                            Salad
-                        </h3>
-                        <p class="menu__amount">320g</p>
-                        <h3 class="menu__price">$4.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-10.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Healthy <br />
-                            Salad
-                        </h3>
-                        <p class="menu__amount">320g</p>
-                        <h3 class="menu__price">$4.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
+                    } catch(Exception $e) {
+                        // Error handling is less specific with procedural MySQLi, but still catches general issues
+                        echo "<p style='color: red; text-align: center; grid-column: 1 / -1;'>Database Query Error.</p>";
+                    }
+                }
+                ?>
             </div>
         </section>
     </main>
 
-    <!--==================== FOOTER ====================-->
     <?php include('include/footer.php') ?>
 
     <?php include('include/add-js.php') ?>
