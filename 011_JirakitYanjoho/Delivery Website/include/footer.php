@@ -3,6 +3,12 @@
       <div class="footer__data">
         <div class="footer__info">
           <a href="#" class="footer__logo">
+
+          <?php while ($row_c = mysqli_fetch_assoc( $result_c)) { ?>
+          
+          <?= $row_c['c_logo'] ?><span><?= $row_c['c_name'] ?></span>
+          
+         <?php } ?>
             <i class="ri-bowl-fill"></i> <span>Food Lover</span>
           </a>
 
