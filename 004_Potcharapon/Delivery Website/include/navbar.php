@@ -37,6 +37,9 @@ $result_c = mysqli_query($conn, $sql_c);
 
         <li>
           <a href="find-us.php#map" class="nav__link">Find Us</a>
+      </li>
+        <li>
+          <a href="login.php" class="nav__link">login</a>
         </li>
       </ul>
 
