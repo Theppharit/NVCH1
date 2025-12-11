@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2025 at 08:45 AM
+-- Generation Time: Dec 11, 2025 at 07:51 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -73,6 +73,29 @@ INSERT INTO `tbl_menu` (`m_id`, `m_img`, `m_name`, `m_amount`, `m_price`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_reviews`
+--
+
+CREATE TABLE `tbl_reviews` (
+  `r_id` int(11) NOT NULL,
+  `r_img` text NOT NULL DEFAULT 'reviews-img-1.png',
+  `r_name` varchar(255) NOT NULL,
+  `r_number` varchar(255) NOT NULL,
+  `r_comment` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `tbl_reviews`
+--
+
+INSERT INTO `tbl_reviews` (`r_id`, `r_img`, `r_name`, `r_number`, `r_comment`) VALUES
+(1, 'reviews-img-1.png', 'Emy Hawkins', '5.0', 'Food is the best. Besides the many and delicious meals, \r\n                               the service is also very good, especially in the very fast \r\n                               delivery. I highly recommend food to you.'),
+(2, 'reviews-img-2.png', 'Aliz Doe', '5.0', 'Food is the best. Besides the many and delicious meals, \r\n                               the service is also very good, especially in the very fast \r\n                               delivery. I highly recommend food to you.'),
+(3, 'reviews-img-3.png', 'Anna Wlhix', '5.0', 'Food is the best. Besides the many and delicious meals, \r\n                               the service is also very good, especially in the very fast \r\n                               delivery. I highly recommend food to you.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_service`
 --
 
@@ -109,6 +132,12 @@ ALTER TABLE `tbl_menu`
   ADD PRIMARY KEY (`m_id`);
 
 --
+-- Indexes for table `tbl_reviews`
+--
+ALTER TABLE `tbl_reviews`
+  ADD PRIMARY KEY (`r_id`);
+
+--
 -- Indexes for table `tbl_service`
 --
 ALTER TABLE `tbl_service`
@@ -129,6 +158,12 @@ ALTER TABLE `tbl_company`
 --
 ALTER TABLE `tbl_menu`
   MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `tbl_reviews`
+--
+ALTER TABLE `tbl_reviews`
+  MODIFY `r_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tbl_service`
