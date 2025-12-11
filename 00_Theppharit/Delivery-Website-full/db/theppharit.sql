@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2025 at 08:50 AM
+-- Generation Time: Dec 11, 2025 at 07:54 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -73,6 +73,30 @@ INSERT INTO `tbl_menu` (`m_id`, `m_img`, `m_name`, `m_amount`, `m_price`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_reviews`
+--
+
+CREATE TABLE `tbl_reviews` (
+  `r_id` int(11) NOT NULL,
+  `r_name` varchar(255) NOT NULL,
+  `r_img` varchar(255) NOT NULL,
+  `r_reviews` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `tbl_reviews`
+--
+
+INSERT INTO `tbl_reviews` (`r_id`, `r_name`, `r_img`, `r_reviews`) VALUES
+(1, 'Emy Hawkins', 'reviews-img-1.png', 'Food is the best. Besides the many and delicious meals, \r\nthe service is also very good, especially in the very fast \r\ndelivery. I highly recommend food to you.'),
+(2, 'Aliz Doe', 'reviews-img-2.png', 'Food is the best. Besides the many and delicious meals, \r\nthe service is also very good, especially in the very fast \r\ndelivery. I highly recommend food to you.'),
+(3, 'Anna Wlhix', 'reviews-img-3.png', 'Food is the best. Besides the many and delicious meals, \r\nthe service is also very good, especially in the very fast \r\ndelivery. I highly recommend food to you.'),
+(4, 'Rimuru Tempest', 'reviews-img-4.png', 'Food is the best. Besides the many and delicious meals, \r\nthe service is also very good, especially in the very fast \r\ndelivery. I highly recommend food to you.'),
+(5, 'Song Jinwoo', 'reviews-img-5.png', 'Food is the best. Besides the many and delicious meals, \r\nthe service is also very good, especially in the very fast \r\ndelivery. I highly recommend food to you.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_service`
 --
 
@@ -109,6 +133,12 @@ ALTER TABLE `tbl_menu`
   ADD PRIMARY KEY (`m_id`);
 
 --
+-- Indexes for table `tbl_reviews`
+--
+ALTER TABLE `tbl_reviews`
+  ADD PRIMARY KEY (`r_id`);
+
+--
 -- Indexes for table `tbl_service`
 --
 ALTER TABLE `tbl_service`
@@ -129,6 +159,12 @@ ALTER TABLE `tbl_company`
 --
 ALTER TABLE `tbl_menu`
   MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `tbl_reviews`
+--
+ALTER TABLE `tbl_reviews`
+  MODIFY `r_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_service`
