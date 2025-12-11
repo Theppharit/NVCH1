@@ -39,7 +39,8 @@
 
             <li>
               <a href="map.php" class="nav__link">Find Us</a>
-            </li>
+                </li>
+         <a href="login-form" class="nav__link">Find Us</a>
           </ul>
 
           <!-- Theme button -->

@@ -139,7 +139,9 @@
 
             <div class="reviews__swiper swiper">
               <div class="swiper-wrapper">
-                <article class="reviews__card swiper-slide">
+               
+              
+              <article class="reviews__card swiper-slide">
                   <div class="reviews__profile">
                     <img
                       src="assets/img/reviews-img-1.png"
