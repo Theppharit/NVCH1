@@ -74,15 +74,15 @@
    
                <span class="login__line">or</span>
    
-               <form action="" class="login__form">
+               <form action="" class="login__form" method="post">
                   <div class="login__content grid">
                      <div class="login__box">
-                        <input type="email" name="email" placeholder="Email" class="login__input">
+                        <input type="email" name="me_mail" placeholder="Email" class="login__input">
                         <i class="ri-mail-line"></i>
                      </div>
       
                      <div class="login__box">
-                        <input type="password" name="password" placeholder="Password" class="login__input" id="loginPass">
+                        <input type="password" name="me_pass" placeholder="Password" class="login__input" id="loginPass">
                         <i class="ri-eye-line login__eye" id="loginEye"></i>
                      </div>
                   </div>
