@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2025 at 08:45 AM
+-- Generation Time: Dec 04, 2025 at 09:26 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `thiraphong`
+-- Database: `naki`
 --
 
 -- --------------------------------------------------------
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tbl_company` (
   `c_id` int(11) NOT NULL,
-  `c_logo` text NOT NULL DEFAULT '<i class="ri-bowl-fill"></i>',
+  `c_logo` text NOT NULL DEFAULT '<i class="ri-gamepad-line"></i>',
   `c_name` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
@@ -38,7 +38,7 @@ CREATE TABLE `tbl_company` (
 --
 
 INSERT INTO `tbl_company` (`c_id`, `c_logo`, `c_name`) VALUES
-(1, '<i class=\"ri-focus-2-line\"></i>', 'thiraphongdelivery.com');
+(1, '<i class=\"ri-gamepad-line\"></i>', 'Naki');
 
 -- --------------------------------------------------------
 
@@ -59,16 +59,16 @@ CREATE TABLE `tbl_menu` (
 --
 
 INSERT INTO `tbl_menu` (`m_id`, `m_img`, `m_name`, `m_amount`, `m_price`) VALUES
-(1, 'menu-1.png', 'Meat <br> Burger ', '240g', '$9.90'),
-(2, 'menu-2.png', 'Grill <br> Burger', '240g', '$9.90'),
-(3, 'menu-3.png', 'Pepperoni <br> Pizza', '700g', '$14.90'),
-(4, 'menu-4.png', 'Margherita <br> Pizza', '700g', '$14.90'),
-(5, 'menu-5.png', 'Soda <br> Glass', '250 ml', '$3.90'),
-(6, 'menu-6.png', 'Refreshing <br> Lemonade', '250 ml', '$3.90'),
-(7, 'menu-7.png', 'Cheese <br> Potatoes', '50g', '$2.90'),
-(8, 'menu-8.png', 'Spicy <br> Potatoes', '50g', '$2.90'),
-(9, 'menu-9.png', 'Mixed <br> Salad', '320g', '$4.90'),
-(10, 'menu-10.png', 'Healthy <br> Salad', '320g', '$4.90');
+(1, 'menu-1.png', 'Meat\r\nBurger', '240g', '$9.90'),
+(2, 'menu-2.png', 'Grill Burger', '240g', '9.90'),
+(3, 'menu-3.png', 'Pepperoni Pizza', '700g', '$14.90'),
+(4, 'menu-4.png', 'Margherita Pizza', '700g', '$14.90'),
+(5, 'menu-5.png', 'Soda Glass', '250 ml', '$3.90'),
+(6, 'menu-6.png', 'Refreshing Lemonade', '250 ml', '$3.90'),
+(7, 'menu-7.png', 'Cheese Potatoes', '50g', '$2.90'),
+(8, 'menu-8.png', 'Spicy Potatoes', '50g', '$2.90'),
+(9, 'menu-9.png', 'Mixed Salad', '320g', '$4.90'),
+(10, 'menu-10.png', 'Healthy Salad', '320g', '$4.90');
 
 -- --------------------------------------------------------
 

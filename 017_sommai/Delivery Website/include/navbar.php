@@ -1,7 +1,7 @@
 <?php
 
 $sql_C = 'SELECT * FROM table_company';
-$resualt = mysqli_query($conn,$sql_C);
+$resualt_c = mysqli_query($conn,$sql_C);
 
 ?>
 
@@ -10,15 +10,12 @@ $resualt = mysqli_query($conn,$sql_C);
       <nav class="nav container">
         <a href="#" class="nav__logo">
 
-<?php 
+<?php while ($row_c = mysqli_fetch_assoc($resualt_c)) { ?>
+  
+  <?= $row_c['C_logo'] ?><span><?= $row_c['C_name'] ?></span>
 
-while ($row_C = mysqli_feth_assoc) {
-  # code...
-}
-?>
+<?php } ?>
 
-
-          <i class="ri-bowl-fill"></i> <span>Food Lover</span>
         </a>
 
         <div class="nav__menu" id="nav-menu">

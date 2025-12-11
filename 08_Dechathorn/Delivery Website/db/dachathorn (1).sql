@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2025 at 08:45 AM
+-- Generation Time: Dec 04, 2025 at 09:25 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,27 +18,27 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `thiraphong`
+-- Database: `dachathorn`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_company`
+-- Table structure for table `dechathorn`
 --
 
-CREATE TABLE `tbl_company` (
-  `c_id` int(11) NOT NULL,
-  `c_logo` text NOT NULL DEFAULT '<i class="ri-bowl-fill"></i>',
-  `c_name` varchar(256) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+CREATE TABLE `dechathorn` (
+  `c _id` int(11) NOT NULL,
+  `c_logo` text NOT NULL DEFAULT ' <i class="ri-bowl-fill"></i>',
+  `c_name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tbl_company`
+-- Dumping data for table `dechathorn`
 --
 
-INSERT INTO `tbl_company` (`c_id`, `c_logo`, `c_name`) VALUES
-(1, '<i class=\"ri-focus-2-line\"></i>', 'thiraphongdelivery.com');
+INSERT INTO `dechathorn` (`c _id`, `c_logo`, `c_name`) VALUES
+(1, ' <i class=\"ri-bowl-fill\"></i>', 'dechathron.com');
 
 -- --------------------------------------------------------
 
@@ -48,18 +48,18 @@ INSERT INTO `tbl_company` (`c_id`, `c_logo`, `c_name`) VALUES
 
 CREATE TABLE `tbl_menu` (
   `m_id` int(11) NOT NULL,
-  `m_img` text NOT NULL DEFAULT 'menu-1.png',
-  `m_name` varchar(255) NOT NULL,
-  `m_amount` varchar(255) NOT NULL,
+  `m_img` varchar(255) CHARACTER SET armscii8 COLLATE armscii8_general_ci NOT NULL DEFAULT '''menu-1.png''',
+  `m_name` varchar(255) CHARACTER SET armscii8 COLLATE armscii8_general_ci NOT NULL,
+  `m_amount` varchar(255) CHARACTER SET armscii8 COLLATE armscii8_general_ci NOT NULL,
   `m_price` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tbl_menu`
 --
 
 INSERT INTO `tbl_menu` (`m_id`, `m_img`, `m_name`, `m_amount`, `m_price`) VALUES
-(1, 'menu-1.png', 'Meat <br> Burger ', '240g', '$9.90'),
+(1, 'menu-1.png', 'Meat <br> Burger', '240g', '$9.90'),
 (2, 'menu-2.png', 'Grill <br> Burger', '240g', '$9.90'),
 (3, 'menu-3.png', 'Pepperoni <br> Pizza', '700g', '$14.90'),
 (4, 'menu-4.png', 'Margherita <br> Pizza', '700g', '$14.90'),
@@ -81,26 +81,26 @@ CREATE TABLE `tbl_service` (
   `sv_img` varchar(255) NOT NULL DEFAULT 'service-img-1.svg',
   `sv_title` varchar(255) NOT NULL,
   `sv_description` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tbl_service`
 --
 
 INSERT INTO `tbl_service` (`sv_id`, `sv_img`, `sv_title`, `sv_description`) VALUES
-(1, 'service-img-1.svg', 'Easy To Order', 'You only need a few steps in ordering food.'),
-(2, 'service-img-2.svg', 'Fastest Delivery', 'Always delivered on time and even faster.'),
-(3, 'service-img-3.svg', 'Best Quality', 'Not only fast for us quality is also number one.');
+(0, 'service-img-1.svg', 'Easy To Order', 'You only need a few steps in ordering food.'),
+(0, 'service-img-2.svg', 'Fastest Delivery', 'Always delivered on time and even faster.'),
+(0, 'service-img-3.svg', 'Best Quality', 'Not only fast for us quality is also number one.');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tbl_company`
+-- Indexes for table `dechathorn`
 --
-ALTER TABLE `tbl_company`
-  ADD PRIMARY KEY (`c_id`);
+ALTER TABLE `dechathorn`
+  ADD PRIMARY KEY (`c _id`);
 
 --
 -- Indexes for table `tbl_menu`
@@ -109,32 +109,20 @@ ALTER TABLE `tbl_menu`
   ADD PRIMARY KEY (`m_id`);
 
 --
--- Indexes for table `tbl_service`
---
-ALTER TABLE `tbl_service`
-  ADD PRIMARY KEY (`sv_id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `tbl_company`
+-- AUTO_INCREMENT for table `dechathorn`
 --
-ALTER TABLE `tbl_company`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `dechathorn`
+  MODIFY `c _id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_menu`
 --
 ALTER TABLE `tbl_menu`
   MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
--- AUTO_INCREMENT for table `tbl_service`
---
-ALTER TABLE `tbl_service`
-  MODIFY `sv_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
