@@ -7,6 +7,13 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== REVIEWS ====================-->
+        <?php
+
+        $sql_r = "SELECT * FROM tbl_reviews";
+        $result_r = mysqli_query($conn, $sql_r);
+
+        ?>
+
         <section class="reviews section" id="reviews">
             <div class="reviews__container container grid">
                 <div class="reviews__content">
@@ -15,98 +22,40 @@
 
                     <div class="reviews__swiper swiper">
                         <div class="swiper-wrapper">
-                            <article class="reviews__card swiper-slide">
-                                <div class="reviews__profile">
-                                    <img
-                                        src="assets/img/reviews-img-1.png"
-                                        alt="image"
-                                        class="reviews__photo" />
 
-                                    <div class="reviews__data">
-                                        <h3 class="reviews__name">Emy Hawkins</h3>
+                            <?php while ($row_r = mysqli_fetch_assoc($result_r)) { ?>
 
-                                        <div class="reviews__rating">
-                                            <div class="reviews__stars">
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
+                                <article class="reviews__card swiper-slide">
+                                    <div class="reviews__profile">
+                                        <img
+                                            src="assets/img/<?= $row_r['r_img'] ?>"
+                                            alt="image"
+                                            class="reviews__photo" />
+
+                                        <div class="reviews__data">
+                                            <h3 class="reviews__name"><?= $row_r['r_name'] ?></h3>
+
+                                            <div class="reviews__rating">
+                                                <div class="reviews__stars">
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                    <i class="ri-star-fill"></i>
+                                                </div>
+
+                                                <h3 class="reviews__number">5.0</h3>
                                             </div>
-
-                                            <h3 class="reviews__number">5.0</h3>
                                         </div>
                                     </div>
-                                </div>
 
-                                <p class="reviews__comment">
-                                    Food is the best. Besides the many and delicious meals, the
-                                    service is also very good, especially in the very fast
-                                    delivery. I highly recommend food to you.
-                                </p>
-                            </article>
+                                    <p class="reviews__comment">
+                                        <?= $row_r['r_reviews'] ?>
+                                    </p>
+                                </article>
 
-                            <article class="reviews__card swiper-slide">
-                                <div class="reviews__profile">
-                                    <img
-                                        src="assets/img/reviews-img-2.png"
-                                        alt="image"
-                                        class="reviews__photo" />
+                            <?php } ?>
 
-                                    <div class="reviews__data">
-                                        <h3 class="reviews__name">Aliz Doe</h3>
-
-                                        <div class="reviews__rating">
-                                            <div class="reviews__stars">
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                            </div>
-
-                                            <h3 class="reviews__number">5.0</h3>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p class="reviews__comment">
-                                    Food is the best. Besides the many and delicious meals, the
-                                    service is also very good, especially in the very fast
-                                    delivery. I highly recommend food to you.
-                                </p>
-                            </article>
-
-                            <article class="reviews__card swiper-slide">
-                                <div class="reviews__profile">
-                                    <img
-                                        src="assets/img/reviews-img-3.png"
-                                        alt="image"
-                                        class="reviews__photo" />
-
-                                    <div class="reviews__data">
-                                        <h3 class="reviews__name">Anna Wlhix</h3>
-
-                                        <div class="reviews__rating">
-                                            <div class="reviews__stars">
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                            </div>
-
-                                            <h3 class="reviews__number">5.0</h3>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p class="reviews__comment">
-                                    Food is the best. Besides the many and delicious meals, the
-                                    service is also very good, especially in the very fast
-                                    delivery. I highly recommend food to you.
-                                </p>
-                            </article>
                         </div>
 
                         <!-- Navigation buttons -->
