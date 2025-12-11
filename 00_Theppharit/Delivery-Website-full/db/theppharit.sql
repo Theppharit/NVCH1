@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 11, 2025 at 07:54 AM
+-- Generation Time: Dec 11, 2025 at 08:34 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,6 +39,19 @@ CREATE TABLE `tbl_company` (
 
 INSERT INTO `tbl_company` (`c_id`, `c_logo`, `c_name`) VALUES
 (1, '<i class=\"ri-cpu-line\"></i>', 'Theppharit.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_member`
+--
+
+CREATE TABLE `tbl_member` (
+  `me_id` int(11) NOT NULL,
+  `me_name` varchar(255) NOT NULL,
+  `me_mail` varchar(255) NOT NULL,
+  `me_pass` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -127,6 +140,12 @@ ALTER TABLE `tbl_company`
   ADD PRIMARY KEY (`c_id`);
 
 --
+-- Indexes for table `tbl_member`
+--
+ALTER TABLE `tbl_member`
+  ADD PRIMARY KEY (`me_id`);
+
+--
 -- Indexes for table `tbl_menu`
 --
 ALTER TABLE `tbl_menu`
@@ -153,6 +172,12 @@ ALTER TABLE `tbl_service`
 --
 ALTER TABLE `tbl_company`
   MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `tbl_member`
+--
+ALTER TABLE `tbl_member`
+  MODIFY `me_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_menu`
