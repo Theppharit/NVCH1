@@ -6,181 +6,74 @@
 
     <!--==================== MAIN ====================-->
     <main class="main">
+
         <!--==================== MENU ====================-->
+<<<<<<< HEAD
+
+        <?php
+
+    $sql_M = "SELECT * FROM tbl_menu";
+    $result_M= mysqli_query($conn, $sql_M);
+
+    ?>
+=======
+        <?php
+
+        $sql_m = "SELECT * FROM tbl_menu";
+        $result_m = mysqli_query($conn, $sql_m);
+
+        ?>
+>>>>>>> 1e77a88ec925de9bf075238e88d005390d8027a0
+
         <section class="menu section" id="menu">
             <h4 class="section__subtitle">OUR MENU</h4>
             <h2 class="section__title">The Most Popular</h2>
 
             <div class="menu__container container grid">
+<<<<<<< HEAD
+
+            <?php while ($row_M = mysqli_fetch_assoc($result_M)) { ?>
+
                 <article class="menu__card">
-                    <img src="assets/img/menu-1.png" alt="image" class="menu__img" />
+                    <img src="assets/img/<?= $row_M['M_img'] ?>" alt="image" class="menu__img" />
 
                     <div>
                         <h3 class="menu__name">
-                            Meat <br />
-                            Burger
+                            <?= $row_M['M_name'] ?>
+                            
                         </h3>
-                        <p class="menu__amount">240g</p>
-                        <h3 class="menu__price">$9.90</h3>
+                        <p class="menu__amount"><?= $row_M['M_amount'] ?></p>
+                        <h3 class="menu__price"><?= $row_M['M_pirc'] ?></h3>
                     </div>
+=======
 
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
+                <?php while ($row_m = mysqli_fetch_assoc($result_m)) { ?>
+>>>>>>> 1e77a88ec925de9bf075238e88d005390d8027a0
 
-                <article class="menu__card">
-                    <img src="assets/img/menu-2.png" alt="image" class="menu__img" />
+                    <article class="menu__card">
+                        <img src="assets/img/<?= $row_m['m_img'] ?>" alt="image" class="menu__img" />
 
-                    <div>
-                        <h3 class="menu__name">
-                            Grill <br />
-                            Burger
-                        </h3>
-                        <p class="menu__amount">240g</p>
-                        <h3 class="menu__price">$9.90</h3>
-                    </div>
+<<<<<<< HEAD
+                <?php } ?>
 
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
+                
+=======
+                        <div>
+                            <h3 class="menu__name">
+                                <?= $row_m['m_name'] ?>
+                            </h3>
+                            <p class="menu__amount"><?= $row_m['m_amount'] ?></p>
+                            <h3 class="menu__price">$<?= $row_m['m_price'] ?></h3>
+                        </div>
 
-                <article class="menu__card">
-                    <img src="assets/img/menu-3.png" alt="image" class="menu__img" />
+                        <button class="menu__button">
+                            <i class="ri-shopping-bag-3-fill"></i>
+                        </button>
+                    </article>
 
-                    <div>
-                        <h3 class="menu__name">
-                            Pepperoni <br />
-                            Pizza
-                        </h3>
-                        <p class="menu__amount">700g</p>
-                        <h3 class="menu__price">$14.90</h3>
-                    </div>
+                <?php } ?>
 
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-4.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Margherita <br />
-                            Pizza
-                        </h3>
-                        <p class="menu__amount">700g</p>
-                        <h3 class="menu__price">$14.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-5.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Soda <br />
-                            Glass
-                        </h3>
-                        <p class="menu__amount">250 ml</p>
-                        <h3 class="menu__price">$3.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-6.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Refreshing <br />
-                            Lemonade
-                        </h3>
-                        <p class="menu__amount">250 ml</p>
-                        <h3 class="menu__price">$3.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-7.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Cheese <br />
-                            Potatoes
-                        </h3>
-                        <p class="menu__amount">50g</p>
-                        <h3 class="menu__price">$2.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-8.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Spicy <br />
-                            Potatoes
-                        </h3>
-                        <p class="menu__amount">50g</p>
-                        <h3 class="menu__price">$2.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-9.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Mixed <br />
-                            Salad
-                        </h3>
-                        <p class="menu__amount">320g</p>
-                        <h3 class="menu__price">$4.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
-
-                <article class="menu__card">
-                    <img src="assets/img/menu-10.png" alt="image" class="menu__img" />
-
-                    <div>
-                        <h3 class="menu__name">
-                            Healthy <br />
-                            Salad
-                        </h3>
-                        <p class="menu__amount">320g</p>
-                        <h3 class="menu__price">$4.90</h3>
-                    </div>
-
-                    <button class="menu__button">
-                        <i class="ri-shopping-bag-3-fill"></i>
-                    </button>
-                </article>
+>>>>>>> 1e77a88ec925de9bf075238e88d005390d8027a0
             </div>
         </section>
     </main>
