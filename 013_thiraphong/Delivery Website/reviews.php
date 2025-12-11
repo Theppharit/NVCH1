@@ -42,7 +42,7 @@
                                  <h3 class="reviews__name"><?= $row_r['r_name'] ?></h3>
 
                                  <div class="reviews__ratting">
-                                    <div class="reviews__starts">
+                                    <div class="reviews__stars">
                                        <i class="ri-star-fill"></i>
                                        <i class="ri-star-fill"></i>
                                        <i class="ri-star-fill"></i>
