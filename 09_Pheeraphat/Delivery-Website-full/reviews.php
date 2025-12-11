@@ -7,6 +7,12 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== REVIEWS ====================-->
+        <?php 
+
+$sql_rv = "SELECT * FROM tb_menu";
+$resualt_rv = mysqli_query($conn, $sql_rv);
+
+?>
         <section class="reviews section" id="reviews">
             <div class="reviews__container container grid">
                 <div class="reviews__content">
@@ -14,37 +20,35 @@
                     <h2 class="section__title">What They Say?</h2>
 
                     <div class="reviews__swiper swiper">
+
+                    <?php while ($row_rv = mysqli_fetch_assoc($resualt_rv)) { ?>
+
                         <div class="swiper-wrapper">
+
                             <article class="reviews__card swiper-slide">
                                 <div class="reviews__profile">
                                     <img
-                                        src="assets/img/reviews-img-1.png"
-                                        alt="image"
-                                        class="reviews__photo" />
+                                        src="assets/img/<?= $row_rv['rv_img'] ?>" alt="image" class="menu__img">
 
                                     <div class="reviews__data">
-                                        <h3 class="reviews__name">Emy Hawkins</h3>
+                                        <h3 class="reviews__name"><?= $row_rv['rv_name'] ?></h3>
 
                                         <div class="reviews__rating">
                                             <div class="reviews__stars">
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
-                                                <i class="ri-star-fill"></i>
+                                                <?= $row_rv['rv_rating'] ?>
                                             </div>
 
-                                            <h3 class="reviews__number">5.0</h3>
+                                            <h3 class="reviews__number"><?= $row_rv['rv_numbers'] ?></h3>
                                         </div>
                                     </div>
                                 </div>
 
                                 <p class="reviews__comment">
-                                    Food is the best. Besides the many and delicious meals, the
-                                    service is also very good, especially in the very fast
-                                    delivery. I highly recommend food to you.
+                                    <?= $row_rv['rv_comment'] ?>
                                 </p>
                             </article>
+
+                            <?php } ?>
 
                             <article class="reviews__card swiper-slide">
                                 <div class="reviews__profile">
