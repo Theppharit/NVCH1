@@ -7,6 +7,14 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== REVIEWS ====================-->
+      
+      <?php
+
+    $sql_sv = "SELECT * FROM tbl_reviws";
+    $result_sv = mysqli_query($conn, $sql_sv);
+
+    ?>
+      
       <section class="reviews section" id="reviews">
         <div class="reviews__container container grid">
           <div class="reviews__content">
@@ -17,12 +25,13 @@
               <div class="swiper-wrapper">
                 <article class="reviews__card swiper-slide">
                   <div class="reviews__profile">
-                    <img
+                    <?php while ($row_sv = mysqli_fetch_assoc($result_sv)) { ?>
+                  <img
                       src="assets/img/reviews-img-1.png"
                       alt="image"
                       class="reviews__photo"
                     />
-
+<?php } ?>
                     <div class="reviews__data">
                       <h3 class="reviews__name">Emy Hawkins</h3>
 
