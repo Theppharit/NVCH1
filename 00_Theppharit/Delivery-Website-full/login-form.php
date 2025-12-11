@@ -74,7 +74,7 @@
    
                <span class="login__line">or</span>
    
-               <form action="" class="login__form" method="post">
+               <form action="check/check-login.php" class="login__form" method="post">
                   <div class="login__content grid">
                      <div class="login__box">
                         <input type="email" name="me_mail" placeholder="Email" class="login__input">
