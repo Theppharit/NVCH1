@@ -38,6 +38,10 @@ $resualt_c = mysqli_query($conn, $sql_c);
             <li>
               <a href="find Us.php#map" class="nav__link">Find Us</a>
             </li>
+
+            <li>
+              <a href="login-from.php" class="nav__link">Login</a>
+            </li>
           </ul>
 
           <!-- Theme button -->
