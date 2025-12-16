@@ -40,7 +40,13 @@ $result_c = mysqli_query($conn, $sql_c);
         </li>
 
         <li>
+
+        <?php if (isset($_SESSION['me_id'])) { ?>
+          <a href="#" class="nav__link"><?= $me_name ?></a>
+        <?php } else { ?>
           <a href="login-form.php" class="nav__link">Login</a>
+        <?php } ?>
+
         </li>
       </ul>
 
