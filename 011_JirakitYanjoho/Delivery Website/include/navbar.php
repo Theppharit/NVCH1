@@ -38,8 +38,15 @@ $result_c = mysqli_query( $conn, $sql_c);
             <li>
               <a href="find-us.php#map" class="nav__link">Find Us</a>
             </li>
+
             <li>
-              <a href="Log-from.php" class="nav__link">Log in</a>
+
+              <?php if (isset($_SESSION['me_id'])) { ?>
+                <a href="#" class="nav__link"><?= $me_name ?></a>
+              <?php } else { ?>
+                <a href="Log-from.php" class="nav__link">Log in</a>
+              <?php } ?>
+              
             </li>
 
           </ul>
