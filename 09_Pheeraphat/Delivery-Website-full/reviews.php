@@ -9,7 +9,7 @@
         <!--==================== REVIEWS ====================-->
         <?php 
 
-$sql_rv = "SELECT * FROM tb_menu";
+$sql_rv = "SELECT * FROM tb_reviews";
 $resualt_rv = mysqli_query($conn, $sql_rv);
 
 ?>
@@ -20,15 +20,13 @@ $resualt_rv = mysqli_query($conn, $sql_rv);
                     <h2 class="section__title">What They Say?</h2>
 
                     <div class="reviews__swiper swiper">
-
-                    <?php while ($row_rv = mysqli_fetch_assoc($resualt_rv)) { ?>
-
                         <div class="swiper-wrapper">
+
+                            <?php while ($row_rv = mysqli_fetch_assoc($resualt_rv)) { ?>
 
                             <article class="reviews__card swiper-slide">
                                 <div class="reviews__profile">
-                                    <img
-                                        src="assets/img/<?= $row_rv['rv_img'] ?>" alt="image" class="menu__img">
+                                    <img src="assets/img/<?= $row_rv['rv_img'] ?>" alt="image" class="reviews__photo">
 
                                     <div class="reviews__data">
                                         <h3 class="reviews__name"><?= $row_rv['rv_name'] ?></h3>
