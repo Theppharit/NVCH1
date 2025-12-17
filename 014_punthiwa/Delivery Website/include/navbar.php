@@ -41,8 +41,15 @@
               <a href="map.php" class="nav__link">Find Us</a>
                 </li>
          
-                <a href="index-login.php" class="nav__link">Log In</a>
-          </ul>
+         <?php if(isset($_SESSION['me_id'])) { ?>
+            <a href="#" class="nav__link"><?= $_mename ?></a>
+           <?php }else { ?>
+
+           <a href="index-login.php" class="nav__link">Log In</a>
+          <?php } ?>
+        
+        
+        </ul>
 
           <!-- Theme button -->
           <i class="ri-moon-fill nav__theme" id="theme-button"></i>
