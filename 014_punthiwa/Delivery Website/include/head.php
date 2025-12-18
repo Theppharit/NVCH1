@@ -1,4 +1,12 @@
-<?php include_once('conn/conn.php') ?>
+<?php
+
+
+session_start();
+include_once('conn/conn.php');
+ 
+ $me_name =$_SESSION['me_name'];
+
+ ?>
 
 
 <!DOCTYPE html>

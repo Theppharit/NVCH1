@@ -12,6 +12,7 @@
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets-login/css/styles.css">
+      
 
       <title>Responsive login form with slider images - Bedimcode</title>
    </head>
@@ -51,11 +52,11 @@
                </div>
 
                <div class="swiper-wrapper">
-                  <img src="assets/img/img-1.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="assets-login/img/img-1.png" alt="image" class="login__swiper-img swiper-slide">
 
-                  <img src="assets/img/img-2.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="assets-login/img/img-2.png" alt="image" class="login__swiper-img swiper-slide">
                   
-                  <img src="assets/img/img-3.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="assets-login/img/img-3.png" alt="image" class="login__swiper-img swiper-slide">
                </div>
 
                <div class="swiper-pagination"></div>
@@ -74,15 +75,15 @@
    
                <span class="login__line">or</span>
    
-               <form action="" class="login__form">
+               <form action="check/checklogin.php" class="login__form" method="post">
                   <div class="login__content grid">
                      <div class="login__box">
-                        <input type="email" name="email" placeholder="Email" class="login__input">
+                        <input type="email" name="me_mail" placeholder="Email" class="login__input">
                         <i class="ri-mail-line"></i>
                      </div>
       
                      <div class="login__box">
-                        <input type="password" name="password" placeholder="Password" class="login__input" id="loginPass">
+                        <input type="password" name="me_pass" placeholder="Password" class="login__input" id="loginPass">
                         <i class="ri-eye-line login__eye" id="loginEye"></i>
                      </div>
                   </div>
