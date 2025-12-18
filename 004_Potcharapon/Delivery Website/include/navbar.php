@@ -1,18 +1,18 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 $sql_c = "SELECT * FROM tbl_company";
 $result_c = mysqli_query($conn, $sql_c);
-
 ?>
 
 <header class="header" id="header">
   <nav class="nav container">
-    <a href="#" class="nav__logo">
+    <a href="index.php" class="nav__logo">
 
       <?php while ($row_c = mysqli_fetch_assoc($result_c)) { ?>
-
         <?= $row_c['c_logo'] ?><span><?= $row_c['c_name'] ?></span>
-
       <?php } ?>
 
     </a>
@@ -37,10 +37,26 @@ $result_c = mysqli_query($conn, $sql_c);
 
         <li>
           <a href="find-us.php#map" class="nav__link">Find Us</a>
-      </li>
-        <li>
-          <a href="login.php" class="nav__link">login</a>
         </li>
+
+        <!-- ===== LOGIN / LOGOUT ===== -->
+        <?php if (isset($_SESSION['member_id'])): ?>
+          <!-- ✅ ล็อกอินแล้ว -->
+          <li>
+            <span class="nav__link">
+              Hi, <?= htmlspecialchars($_SESSION['name']) ?>
+            </span>
+          </li>
+          <li>
+            <a href="logout.php" class="nav__link">Logout</a>
+          </li>
+        <?php else: ?>
+          <!-- ❌ ยังไม่ล็อกอิน -->
+          <li>
+            <a href="login.php" class="nav__link">Login</a>
+          </li>
+        <?php endif; ?>
+
       </ul>
 
       <!-- Theme button -->
