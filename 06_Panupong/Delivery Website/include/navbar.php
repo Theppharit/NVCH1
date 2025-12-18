@@ -39,11 +39,17 @@
                   <li>
                      <a href="Findus.php#map" class="nav__link">Find Us</a>
                   </li>
-                  
+                    
                   <li>
-                     <a href="login-form.php" class="nav__link">Login</a>
-                  </li>
+
+                  <?php  if ($_SESSION('me_id')) { ?>
+                      <a href="#" class="nav__link"><?= $me_name ?> </a>
+                  <?php } else { ?>
+                      <a href="login-form.php" class="nav__link">Login</a>
+                  <?php } ?>
                  
+            
+                  </li>
                   </ul>
 
                  <!-- Theme button -->
