@@ -41,13 +41,25 @@ $result_c = mysqli_query( $conn, $sql_c);
 
             <li>
 
-              <?php if (isset($_SESSION['me_id'])) { ?>
-                <a href="#" class="nav__link"><?= $me_name ?></a>
-              <?php } else { ?>
-                <a href="Log-from.php" class="nav__link">Log in</a>
-              <?php } ?>
+            <?php if (isset($_SESSION['me_id'])) { ?>
               
-            </li>
+              <li>
+                <a href="#" class="nav__link"><?= $me_name ?></a>
+              </li>
+                
+              <li>
+                <a href="check/logout.php" class="nav__link">Logout</a>
+              </li>
+              
+              <?php } else { ?>
+
+              <li>
+                <a href="Log-from.php" class="nav__link">Log in</a>
+              </li>  
+
+            <?php } ?>
+
+
 
           </ul>
 
