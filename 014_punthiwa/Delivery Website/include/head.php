@@ -35,4 +35,28 @@ include_once('conn/conn.php');
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Punthiwa.com</title>
+      <?php
+
+      
+      function shwoAlert($text,$locata): {
+  echo"<script type='text/javascript'>";
+  echo"alert( '$text' );";
+  echo"window.location.href='$locata';";
+  echo"</script>";
+}
+if($_GET['do'] == 'login'){
+showAlert('เข้าสู่ระบบสำเร็จ','login.php');
+
+}else if ($_GET['do'] == 'logout') {
+showAlert('ออกจากระบบสำเร็จ','login.php');
+
+     } elseif ($_GET['do'] == 'check') {
+showAlert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง','login.php');
+      }  else {
+showAlert('กรุณาเข้าสู่ระบบก่อนใช้งาน','login.php');
+      }
+
+
+?>
+
   </head>
