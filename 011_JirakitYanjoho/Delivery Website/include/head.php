@@ -39,10 +39,10 @@ $me_name = $_SESSION['me_name'];
   
 
 function showAlert($text, $locate) {
-  echo "<script 'text/javscript'>":
+  echo "<script type='text/javascript'>";
   echo "alert('$text'):";
   echo "window.location.href = '$locate';";
-  echo "</script>":
+  echo "</script>";
 }
 
 if ($_GET['do'] == 'login') {
