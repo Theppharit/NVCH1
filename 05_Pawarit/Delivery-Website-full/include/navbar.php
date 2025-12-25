@@ -1,18 +1,18 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
 
 $sql_c = "SELECT * FROM tbl_company";
 $result_c = mysqli_query($conn, $sql_c);
+
 ?>
 
 <header class="header" id="header">
   <nav class="nav container">
-    <a href="index.php" class="nav__logo">
+    <a href="#" class="nav__logo">
 
       <?php while ($row_c = mysqli_fetch_assoc($result_c)) { ?>
+
         <?= $row_c['c_logo'] ?><span><?= $row_c['c_name'] ?></span>
+
       <?php } ?>
 
     </a>
@@ -39,23 +39,28 @@ $result_c = mysqli_query($conn, $sql_c);
           <a href="find-us.php#map" class="nav__link">Find Us</a>
         </li>
 
-        <!-- ===== LOGIN / LOGOUT ===== -->
-        <?php if (isset($_SESSION['member_id'])): ?>
-          <!-- ✅ ล็อกอินแล้ว -->
+
+
+        <?php if (isset($_SESSION['me_id'])) { ?>
+
           <li>
-            <span class="nav__link">
-              Hi, <?= htmlspecialchars($_SESSION['name']) ?>
-            </span>
+            <a href="#" class="nav__link"><?= $me_name ?></a>
+
           </li>
+
           <li>
-            <a href="logout.php" class="nav__link">Logout</a>
+            <a href="check/logout.php" class="nav__link">Logout</a>
+
           </li>
-        <?php else: ?>
-          <!-- ❌ ยังไม่ล็อกอิน -->
+
+        <?php } else { ?>
+
           <li>
-            <a href="login.php" class="nav__link">Login</a>
+            <a href="login-form.php" class="nav__link">Login</a>
           </li>
-        <?php endif; ?>
+
+        <?php } ?>
+
 
       </ul>
 

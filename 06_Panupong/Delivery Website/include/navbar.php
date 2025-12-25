@@ -42,26 +42,10 @@
                     
                   <li>
 
-                  <?php  if (isset($_SESSION['me_id'])) { ?>
-                     
-                     <li>
-                        <a href="#" class="nav__link"><?= $me_name ?> </a>
-                     </li>
-                     
-                     
-                     <li>
-                        <a href="check/logout.php" class="nav__link">logout</a>
-                     </li>
-                     
-
-
+                  <?php  if ($_SESSION('me_id')) { ?>
+                      <a href="#" class="nav__link"><?= $me_name ?> </a>
                   <?php } else { ?>
-                     
-                     <li>
-                        <a href="login-form.php" class="nav__link">Login</a>
-                     </li>
-                     
-
+                      <a href="login-form.php" class="nav__link">Login</a>
                   <?php } ?>
                  
             

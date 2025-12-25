@@ -20,7 +20,7 @@ $result_c = mysqli_query($conn, $sql_c);
     <div class="nav__menu" id="nav-menu">
       <ul class="nav__list">
         <li>
-          <a href="index.php#home" class="nav__link active-link">Home</a>
+          <a href="index.php#home" class="nav__link">Home</a>
         </li>
 
         <li>
@@ -39,15 +39,29 @@ $result_c = mysqli_query($conn, $sql_c);
           <a href="find-us.php#map" class="nav__link">Find Us</a>
         </li>
 
-        <li>
+
 
         <?php if (isset($_SESSION['me_id'])) { ?>
-          <a href="#" class="nav__link"><?= $me_name ?></a>
+
+          <li>
+            <a href="#" class="nav__link"><?= $me_name ?></a>
+
+          </li>
+
+          <li>
+            <a href="check/logout.php" class="nav__link">Logout</a>
+
+          </li>
+
         <?php } else { ?>
-          <a href="login-form.php" class="nav__link">Login</a>
+
+          <li>
+            <a href="login-form.php" class="nav__link">Login</a>
+          </li>
+
         <?php } ?>
 
-        </li>
+
       </ul>
 
       <!-- Theme button -->

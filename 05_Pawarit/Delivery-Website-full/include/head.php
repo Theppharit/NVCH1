@@ -3,11 +3,10 @@
 
 session_start();
 include_once('conn/conn.php');
- 
- $me_name =$_SESSION['me_name'];
 
- ?>
+$me_name = $_SESSION['me_name'];
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,5 +33,5 @@ include_once('conn/conn.php');
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Punthiwa.com</title>
+    <title>pawarit</title>
   </head>
