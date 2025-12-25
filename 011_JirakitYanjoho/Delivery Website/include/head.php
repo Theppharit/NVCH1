@@ -45,6 +45,19 @@ function showAlert($text, $locate) {
   echo "</script>":
 }
 
+if ($_GET['do'] == 'login') {
+  showAlert('เข้าสู่ระบบเรียบร้อยแล้ว', 'index.php');
+
+} elseif ($_GET['do'] == 'logout') {
+  showAlert('ออกจากระบบเรียบร้อยแล้ว', 'index.php');
+
+} elseif ($_GET['do'] == 'check') {
+  showAlert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง!', 'log-from.php');
+
+} else {
+  showAlert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง!', 'log-from.php');
+}
+
   ?>
 
   </head>
