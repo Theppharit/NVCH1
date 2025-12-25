@@ -31,7 +31,7 @@ $me_name = $_SESSION['me_name'];
 
  <?php  
 
-function showAlert() {
+function showAlert($text, $locate) {
    echo "<script type='text/javascript'>";
    echo"alert('$text');";
    echo"window.location.href = '$locate';";
