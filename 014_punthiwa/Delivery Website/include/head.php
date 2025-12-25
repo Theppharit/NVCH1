@@ -38,7 +38,7 @@ include_once('conn/conn.php');
       <?php
 
       
-      function shwoAlert($text,$locata): {
+      function shwoAlert($text,$locata) {
   echo"<script type='text/javascript'>";
   echo"alert( '$text' );";
   echo"window.location.href='$locata';";
