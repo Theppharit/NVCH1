@@ -20,7 +20,9 @@ if (mysqli_num_rows($result) == 1) {
     $me_id = $_SESSION['me_id'];
 
         header("Location: ../index.php");
+        exit();
 
 } else {
     header("Location: ../log-from.php");
+    exit();
 }

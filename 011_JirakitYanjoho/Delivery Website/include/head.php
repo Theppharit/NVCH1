@@ -6,7 +6,6 @@ include_once('conn/conn.php');
 
 $me_name = $_SESSION['me_name'];
 
-
 ?>
 
 <!DOCTYPE html>
@@ -35,4 +34,17 @@ $me_name = $_SESSION['me_name'];
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>NaKi.com</title>
+
+  <?php
+  
+
+function showAlert($text, $locate) {
+  echo "<script 'text/javscript'>":
+  echo "alert('$text'):";
+  echo "window.location.href = '$locate';";
+  echo "</script>":
+}
+
+  ?>
+
   </head>
