@@ -51,11 +51,11 @@
                </div>
 
                <div class="swiper-wrapper">
-                  <img src="assets-login/img/img-1.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="assets-login/img/1.png" alt="image" class="login__swiper-img swiper-slide">
 
-                  <img src="assets-login/img/img-2.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="assets-login/img/2.png" alt="image" class="login__swiper-img swiper-slide">
                   
-                  <img src="assets-login/img/img-3.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="assets-login/img/3.png" alt="image" class="login__swiper-img swiper-slide">
                </div>
 
                <div class="swiper-pagination"></div>
