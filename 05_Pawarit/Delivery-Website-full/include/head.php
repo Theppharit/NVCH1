@@ -1,6 +1,14 @@
-<?php include_once('./connect/conn.php'); ?>
+<?php
 
-!DOCTYPE html>
+
+session_start();
+include_once('conn/conn.php');
+
+$me_name = $_SESSION['me_name'];
+
+?>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,6 +33,5 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Responsive delivery website - Bedimcode</title>
+    <title>pawarit</title>
   </head>
-

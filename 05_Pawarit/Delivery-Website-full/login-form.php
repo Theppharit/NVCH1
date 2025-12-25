@@ -44,7 +44,7 @@
                         <i class="ri-dribbble-fill"></i>
                      </a>
 
-                     <a href="https://github.com/bedimcode" target="_blank" class="login__swiper-link">d
+                     <a href="https://github.com/bedimcode" target="_blank" class="login__swiper-link">
                         <i class="ri-github-line"></i>
                      </a>
                   </div>
@@ -72,12 +72,12 @@
                   </button>
                </div>
    
-               <span class="login__line">or</span> 
+               <span class="login__line">or</span>
    
-               <form action="" class="login__form" method="post"> 
+               <form action="check/check-login.php" class="login__form" method="post">
                   <div class="login__content grid">
                      <div class="login__box">
-                        <input type="email" name="me_email" placeholder="Email" class="login__input">
+                        <input type="email" name="me_mail" placeholder="Email" class="login__input">
                         <i class="ri-mail-line"></i>
                      </div>
       

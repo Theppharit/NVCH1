@@ -7,10 +7,10 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== REVIEWS ====================-->
-        <?php 
+        <?php
 
-        $sql_rv = "SELECT * FROM tb_reviews";
-        $result_rv = mysqli_query($conn, $sql_rv);
+        $sql_r = "SELECT * FROM tbl_reviews";
+        $result_r = mysqli_query($conn, $sql_r);
 
         ?>
 
@@ -23,17 +23,17 @@
                     <div class="reviews__swiper swiper">
                         <div class="swiper-wrapper">
 
-                            <?php while ($row_rv = mysqli_fetch_assoc($result_rv)) { ?>
+                            <?php while ($row_r = mysqli_fetch_assoc($result_r)) { ?>
 
                                 <article class="reviews__card swiper-slide">
                                     <div class="reviews__profile">
-                                        <img 
-                                            src="assets/img/<?= $row_rv['rv_profile'] ?>" 
-                                            alt="image" 
-                                            class="reviews__photo">
+                                        <img
+                                            src="assets/img/<?= $row_r['r_img'] ?>"
+                                            alt="image"
+                                            class="reviews__photo" />
 
                                         <div class="reviews__data">
-                                            <h3 class="reviews__name"><?= $row_rv['rv_name'] ?></h3>
+                                            <h3 class="reviews__name"><?= $row_r['r_name'] ?></h3>
 
                                             <div class="reviews__rating">
                                                 <div class="reviews__stars">
@@ -44,15 +44,15 @@
                                                     <i class="ri-star-fill"></i>
                                                 </div>
 
-                                            <h3 class="reviews__number"><?= $row_rv['rv_numbers'] ?></h3>
+                                                <h3 class="reviews__number">5.0</h3>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <p class="reviews__comment">
-                                    <?= $row_rv['rv_comment'] ?>
-                                </p>
-                            </article>
+                                    <p class="reviews__comment">
+                                        <?= $row_r['r_reviews'] ?>
+                                    </p>
+                                </article>
 
                             <?php } ?>
 
