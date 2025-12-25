@@ -19,10 +19,10 @@ if (mysqli_num_rows($result) == 1) {
       $_SESSION["me_name"] = $row["me_name"];
       $me_id = $_SESSION['me_id'];
 
-      header("Location: ../index.php");
+      header("Location: ../index.php?do=login");
       exit();
 
 } else {
-    header("Location: ../login-form.php");
+    header("Location: ../index.php?do=check");
     exit();
 }

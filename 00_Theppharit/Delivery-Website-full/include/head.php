@@ -52,9 +52,6 @@ if ($_GET['do'] == 'login') {
 } elseif ($_GET['do'] == 'check') {
   showAlert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง!', 'login-form.php');
 
-} else {
-  showAlert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง!', 'login-form.php');
-
 }
 
   ?>
