@@ -97,6 +97,11 @@
                   Don’t have an account? 
                   <a href="#" class="login__sign">Sign Up</a>
                </p>
+
+                 <p class="login__switch">
+                  Back to 
+                  <a href="#" class="login__sign">Home</a>
+               </p>
             </div>
          </div>
       </div>
