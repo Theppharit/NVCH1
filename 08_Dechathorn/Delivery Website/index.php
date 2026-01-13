@@ -1,9 +1,8 @@
- <?php include('include/head.php')?>
-
-
+<?php include('include/head.php') ?>
+   
    <body>
       <!--==================== HEADER ====================-->
-     <?php include('include/navbar.php') ?>
+<?php include('include/navbar.php') ?>
 
       <!--==================== MAIN ====================-->
       <main class="main">
@@ -25,27 +24,19 @@
                     </div>
 
                     <div class="home__social">
-                       <a href="https://m.me/bedimcode" 
-                       target="_blank"
-                       class="home__link">
+                       <a href="https://m.me/bedimcode" target="_blank" class="home__link">
                           <i class="ri-messenger-fill"></i>
                        </a>
 
-                       <a href="https://www.instagram.com/bedimcode/" 
-                       target="_blank" 
-                       class="home__link">
+                       <a href="https://www.instagram.com/bedimcode/" target="_blank" class="home__link">
                            <i class="ri-instagram-fill"></i>
                        </a>
 
-                       <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" 
-                       target="_blank" 
-                       class="home__link">
+                       <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="home__link">
                            <i class="ri-whatsapp-fill"></i>
                        </a> 
 
-                       <a href="https://web.telegram.org/" 
-                       target="_blank" 
-                       class="home__link">
+                       <a href="https://web.telegram.org/" target="_blank" class="home__link">
                             <i class="ri-telegram-2-fill"></i>
                        </a>    
                     </div>
@@ -74,43 +65,37 @@
          </section>
 
          <!--==================== SERVICE ====================-->
+         <?php  
 
-          <?php
-       $sql_sv = "SELECT * FROM tbl_service";
-       $result_sv = mysqli_query($conn,$sql_sv );
-       ?>
-
-
+  $sql_sv = "SELECT * FROM tbl_service";
+  $result_sv = mysqli_query($conn, $sql_sv);
+  
+?> 
          <section class="service section">
             <h4 class="section__subtitle">OUR SERVICE</h4>
             <h2 class="section__title">How Does It Work?</h2>
 
             <div class="service__container container grid">
 
-                <?php while ($row_sv = mysqli_fetch_assoc($result_sv)) {?>
- <div class="service__card">
-                  <img 
-                  src="assets/img/<?= $row_sv['sv_img'] ?>"
-                  alt="image" 
-                  class="service__img">
+            <?php while ($row_sv = mysqli_fetch_assoc ($result_sv)) { ?>
 
-                  <h3 class="service__title"><?= $row_sv['sv_title']?></h3>
-                  <p class="service__description">
-                     <?= $row_sv['sv_description'] ?>
-                 </class>
-                  </p>
-               </div> 
+               <div class="service__card">
+                  <img src="assets/img/<?= $row_sv['sv_img'] ?>" alt="image" class="service__img">
+                  <h3 class="service__title"><?= $row_sv['sv_title'] ?></h3>
+                  <p class="service__description"><?= $row_sv['sv_description'] ?></p>
+               </div>
 
-
-              <?php } ?>
+            <?php } ?>  
 
             </div>  
          </section>
 
+      </main>
 
       <!--==================== FOOTER ====================-->
-      <?php include('include/footer.php')?>
-
-     <?php include('include/add-js.php')?>
+<?php include('include/footer.php') ?>
+      
+      <!--==================== JS ====================-->
+<?php include('include/add-js.php') ?>
    </body>
 </html>
