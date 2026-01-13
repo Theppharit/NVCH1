@@ -21,7 +21,7 @@
                  <ul class="nav__list">
                     
                   <li>
-                     <a href="index.php#home" class="nav__link active-link">Home</a>
+                     <a href="index.php#home" class="nav__link">Home</a>
                   </li>
                     
                   <li>
@@ -50,7 +50,7 @@
                      
                      
                      <li>
-                        <a href="check/logout.php" class="nav__link">logout</a>
+                        <a href="check/logout.php" class="nav__link">Logout</a>
                      </li>
                      
 

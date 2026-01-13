@@ -96,6 +96,12 @@
                   Don’t have an account? 
                   <a href="#" class="login__sign">Sign Up</a>
                </p>
+
+               <p class="login__switch">
+                  ออกไปซ่ะเจ้าโรคจิต! 
+                  <a href="index.php" class="login__sign">log out</a>
+               </p>
+
             </div>
          </div>
       </div>
