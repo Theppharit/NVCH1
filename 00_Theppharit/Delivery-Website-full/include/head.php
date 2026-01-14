@@ -4,6 +4,7 @@
 session_start();
 include_once('conn/conn.php');
 
+$me_id = $_SESSION['me_id'];
 $me_name = $_SESSION['me_name'];
 
 ?>

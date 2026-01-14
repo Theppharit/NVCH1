@@ -98,8 +98,8 @@
                </p>
 
                <p class="login__switch">
-                  ออกระบบ 
-                  <a href="#" class="login__sign">log out</a>
+                  ออกไปซ่ะเจ้าโรคจิต! 
+                  <a href="index.php" class="login__sign">log out</a>
                </p>
 
             </div>

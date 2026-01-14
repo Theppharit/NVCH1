@@ -7,9 +7,9 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(45, 100%, 50%);
   --first-color-alt: hsl(45, 100%, 48%);
-  --hover-color: hsl(45, 100%, 88%);
-  --title-color: hsl(45, 100%, 65%);
-  --text-color: hsl(45, 100%, 45%);
+  --hover-color: hsl(0, 0%, 100%);
+  --title-color: hsl(0, 0%, 12%);
+  --text-color: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 100%);
   --border-color: hsl(0, 0%, 72%);
   --body-color: hsl(0, 0%, 100%);

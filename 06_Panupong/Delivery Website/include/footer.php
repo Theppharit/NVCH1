@@ -105,6 +105,6 @@
             </div>
          </div>
          <span class="footer__copy">
-             &#169; All Rights Reserved By Thiraphong13
+             &#169; All Rights Reserved By saigon
          </span>
       </footer>
