@@ -42,7 +42,7 @@
                 </li>
          
          <?php if(isset($_SESSION['me_id'])) { ?>
-            <a href="#" class="nav__link"><?= $_mename ?></a>
+            <a href="dashboard.php?me_id" class="nav__link"><?= $_mename ?></a>
            <?php }else { ?>
 
            <a href="index-login.php" class="nav__link">Log In</a>
