@@ -1,9 +1,12 @@
 <?php
 
+error_reporting(0);
+
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$dbname = 'dachathorn';
-$conn = mysqli_connect($host,$user,$pass,$dbname);
+$dbname = 'thiraphong';
+
+$conn = mysqli_connect($host,$user,$pass,$dbname );
 
 $conn -> set_charset('utf8');
