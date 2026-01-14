@@ -45,7 +45,7 @@
                   <?php  if (isset($_SESSION['me_id'])) { ?>
                      
                      <li>
-                        <a href="#" class="nav__link"><?= $me_name ?> </a>
+                        <a href="dashboard.php?me_id=<?= $_SESSION['me_id'] ?>" class="nav__link"><?= $me_name ?> </a>
                      </li>
                      
                      
