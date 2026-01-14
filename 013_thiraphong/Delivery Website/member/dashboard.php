@@ -7,10 +7,11 @@
       <!--==================== MAIN ====================-->
       <main class="main">
 
+<section class="menu section" id="menu">
 
 <form action="add-menu.php?me_id=<?= $_SESSION['me_id'] ?>" method="post">
     
-   <section class="menu section" id="menu">
+   
 
         <h1 class="">เพิ่มเมนูอาหาร</h1>
 
@@ -21,7 +22,7 @@
         <button type="submit">เพิ่มเมนู</button>
 
 
-   </section>
+</section>
          
 
 </form>
@@ -33,6 +34,6 @@
 <?php include('../include/footer.php') ?>
       
       <!--==================== JS ====================-->
-<?php include('include/add-js.php') ?>
+<?php include('add-js.php') ?>
    </body>
 </html>
