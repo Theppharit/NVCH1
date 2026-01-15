@@ -18,15 +18,12 @@
         <input type="text" name="m_name" id="" class="" placeholder="ชื่อเมนู">
         <input type="text" name="m_amount" id="" class="" placeholder="จำนวน">
         <input type="text" name="m_price" id="" class="" placeholder="ราคา">
-        <input type="hidden" name="me_id" value="<?= $_SESSION['me_id'] ?>">
+        <input type="hidden" name="me_id" value="<?= $me_id ?>">
         <button type="submit">เพิ่มเมนู</button>
-
-
-</section>
-         
-
-</form>
      
+</form>
+    
+</section>
 
       </main>
 

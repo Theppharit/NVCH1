@@ -7,8 +7,23 @@ $m_name = $_POST['m_name'];
 $m_amount = $_POST['m_amount'];
 $m_price = $_POST['m_price'];
 
-$sql = "INSERT INTO menu (m_name, m_amount, m_price, me_id)
-VALUSE
-('$m_name', '$m_amount', 
+$sql = "INSERT INTO tbl_menu (m_name, m_amount, m_price,)
+VALUES
+('$m_name', '$m_amount', '$m_price')";
+$result = mysqli_query($conn, $sql);
+
+if ($result) {
+
+    header("Location: ../menu.php");
+    exit();
+    
+} else {
+
+    header("Location: member/dashboard.php");
+    exit();
+
+
+
+}
 
 ?>
