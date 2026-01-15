@@ -5,7 +5,7 @@ error_reporting(0);
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$dbname = 'thiraphong';
+$dbname = 'sommai';
 
 $conn = mysqli_connect($host,$user,$pass,$dbname );
 

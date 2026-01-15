@@ -39,7 +39,7 @@ CREATE TABLE `table_company` (
 
 INSERT INTO `table_company` (`C_id`, `C_logo`, `C_name`) VALUES
 (1, '<i class=\"ri-computer-fill\"></i>', ''),
-(2, '<i class=\"ri-bowl-fill\"></i>', 'sommai.com');
+(2, '<i class=\"ri-bowl-fill\"></i>', 'dechathorn.com');
 
 --
 -- Indexes for dumped tables
