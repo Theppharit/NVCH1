@@ -139,6 +139,6 @@ $resualt_c = mysqli_query($conn,$sql_C);
       </div>
 
       <span class="footer__copy">
-        &#169; All Rights Reserved By 
+        &#169; All Rights Reserved By dechathorn
       </span>
     </footer>
