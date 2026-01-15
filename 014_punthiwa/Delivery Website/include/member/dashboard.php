@@ -6,11 +6,22 @@
 
 <main class="main">
 
+<section class="menu section" id="menu">
+
 <form action="add-menu.php?me_id=<?= $_SESSION['me_id'] ?>"method="post">
 <h1 class="">เพิ่มเมนูอาหาร</h1>
 
-import
+<input type="text" name="m_name" placeholder="ชื่อเมนู">
+<input type="text" name="m_amount" placeholder="จำนวน">
+<input type="text" name="m_price" placeholder="ราคา">
+<input type="hidden" name="m_img">
+<input type="hidden"name="me_id" value="<?= $_SESSION['me_id'] ?>"
 
+</form>
+
+</section>
+
+</main>
 
 
 <?php
