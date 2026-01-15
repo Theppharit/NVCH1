@@ -105,6 +105,6 @@
             </div>
          </div>
          <span class="footer__copy">
-             &#169; All Rights Reserved By sommai
+             &#169; All Rights Reserved By Pheeraphat
          </span>
       </footer>

@@ -8,7 +8,7 @@
       
       <header class="header" id="header">                                        
          <nav class="nav container">
-            <a href="#" class="nav__logo">
+            <a href="" class="nav__logo">
                
 <?php while ($row_c = mysqli_fetch_assoc ($result_c)) { ?>
       <?= $row_c['c_logo'] ?> <span><?= $row_c['c_name']?></span>
@@ -39,13 +39,11 @@
                   <li>
                      <a href="Findus.php#map" class="nav__link">Find Us</a>
                   </li>
-                    
-                  <li>
 
-                  <?php  if (isset($me_id)) { ?>
+                  <?php  if (isset($_SESSION['me_id'])) { ?>
                      
                      <li>
-                        <a href="member/dashboard.php?me_id=<?= $me_id ?>" class="nav__link"><?= $me_name ?></a>
+                        <a href="#" class="nav__link"><?= $me_name ?> </a>
                      </li>
                      
                      
