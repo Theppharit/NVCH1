@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 15, 2026 at 07:10 AM
+-- Generation Time: Jan 15, 2026 at 07:31 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `thiraphong`
+-- Database: `pawarit`
 --
 
 -- --------------------------------------------------------
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `tbl_company` (
   `c_id` int(11) NOT NULL,
   `c_logo` text NOT NULL DEFAULT '<i class="ri-bowl-fill"></i>',
-  `c_name` varchar(256) NOT NULL
+  `c_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `tbl_company` (
 --
 
 INSERT INTO `tbl_company` (`c_id`, `c_logo`, `c_name`) VALUES
-(1, '<i class=\"ri-focus-2-line\"></i>', 'thiraphong.com');
+(1, '<i class=\"ri-cpu-line\"></i>', 'pawarit');
 
 -- --------------------------------------------------------
 
@@ -58,7 +58,7 @@ CREATE TABLE `tbl_member` (
 --
 
 INSERT INTO `tbl_member` (`me_id`, `me_name`, `me_mail`, `me_pass`) VALUES
-(1, 'member01', 'member01@gmail.com', 'member01');
+(1, 'fiw', 'fiw@gmail.com', 'FEW123');
 
 -- --------------------------------------------------------
 
@@ -68,10 +68,10 @@ INSERT INTO `tbl_member` (`me_id`, `me_name`, `me_mail`, `me_pass`) VALUES
 
 CREATE TABLE `tbl_menu` (
   `m_id` int(11) NOT NULL,
-  `m_img` text NOT NULL DEFAULT 'menu-1.png',
+  `m_img` varchar(255) NOT NULL DEFAULT 'menu-1.png',
   `m_name` varchar(255) NOT NULL,
   `m_amount` varchar(255) NOT NULL,
-  `m_price` varchar(255) NOT NULL
+  `m_price` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
@@ -79,16 +79,16 @@ CREATE TABLE `tbl_menu` (
 --
 
 INSERT INTO `tbl_menu` (`m_id`, `m_img`, `m_name`, `m_amount`, `m_price`) VALUES
-(1, 'menu-1.png', 'Meat <br> Burger ', '240g', '$9.90'),
-(2, 'menu-2.png', 'Grill <br> Burger', '240g', '$9.90'),
-(3, 'menu-3.png', 'Pepperoni <br> Pizza', '700g', '$14.90'),
-(4, 'menu-4.png', 'Margherita <br> Pizza', '700g', '$14.90'),
-(5, 'menu-5.png', 'Soda <br> Glass', '250 ml', '$3.90'),
-(6, 'menu-6.png', 'Refreshing <br> Lemonade', '250 ml', '$3.90'),
-(7, 'menu-7.png', 'Cheese <br> Potatoes', '50g', '$2.90'),
-(8, 'menu-8.png', 'Spicy <br> Potatoes', '50g', '$2.90'),
-(9, 'menu-9.png', 'Mixed <br> Salad', '320g', '$4.90'),
-(10, 'menu-10.png', 'Healthy <br> Salad', '320g', '$4.90');
+(1, 'menu-1.png', 'Meat <br> Burger', '240g', 9.9),
+(2, 'menu-2.png', 'Grill <br> Burger', '240g', 9.9),
+(3, 'menu-3.png', 'Pepperoni <br> Pizza', '700g', 14.9),
+(4, 'menu-4.png', 'Margherita <br> Pizza', '700g', 14.9),
+(5, 'menu-5.png', 'Soda <br> Glass', '250 ml', 3.9),
+(6, 'menu-6.png', 'Refreshing <br> Lemonade', '250 ml', 3.9),
+(7, 'menu-7.png', 'Cheese <br> Potatoes', '50g', 2.9),
+(8, 'menu-8.png', 'Spicy <br> Potatoes', '50g', 2.9),
+(9, 'menu-9.png', 'Mixed <br> Salad', '320g', 4.9),
+(10, 'menu-10.png', 'Healthy <br> Salad', '320g', 4.9);
 
 -- --------------------------------------------------------
 
@@ -98,20 +98,21 @@ INSERT INTO `tbl_menu` (`m_id`, `m_img`, `m_name`, `m_amount`, `m_price`) VALUES
 
 CREATE TABLE `tbl_reviews` (
   `r_id` int(11) NOT NULL,
-  `r_img` text NOT NULL DEFAULT 'reviews-img-1.png',
   `r_name` varchar(255) NOT NULL,
-  `r_number` varchar(255) NOT NULL,
-  `r_comment` text NOT NULL
+  `r_img` varchar(255) NOT NULL,
+  `r_reviews` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_reviews`
 --
 
-INSERT INTO `tbl_reviews` (`r_id`, `r_img`, `r_name`, `r_number`, `r_comment`) VALUES
-(1, 'reviews-img-1.png', 'Emy Hawkins', '5.0', 'Food is the best. Besides the many and delicious meals, \r\n                               the service is also very good, especially in the very fast \r\n                               delivery. I highly recommend food to you.'),
-(2, 'reviews-img-2.png', 'Aliz Doe', '5.0', 'Food is the best. Besides the many and delicious meals, \r\n                               the service is also very good, especially in the very fast \r\n                               delivery. I highly recommend food to you.'),
-(3, 'reviews-img-3.png', 'Anna Wlhix', '5.0', 'Food is the best. Besides the many and delicious meals, \r\n                               the service is also very good, especially in the very fast \r\n                               delivery. I highly recommend food to you.');
+INSERT INTO `tbl_reviews` (`r_id`, `r_name`, `r_img`, `r_reviews`) VALUES
+(1, 'Emy Hawkins', 'reviews-img-1.png', 'Food is the best. Besides the many and delicious meals, \r\nthe service is also very good, especially in the very fast \r\ndelivery. I highly recommend food to you.'),
+(2, 'Aliz Doe', 'reviews-img-2.png', 'Food is the best. Besides the many and delicious meals, \r\nthe service is also very good, especially in the very fast \r\ndelivery. I highly recommend food to you.'),
+(3, 'Anna Wlhix', 'reviews-img-3.png', 'Food is the best. Besides the many and delicious meals, \r\nthe service is also very good, especially in the very fast \r\ndelivery. I highly recommend food to you.'),
+(4, 'Rimuru Tempest', 'reviews-img-4.png', 'Food is the best. Besides the many and delicious meals, \r\nthe service is also very good, especially in the very fast \r\ndelivery. I highly recommend food to you.'),
+(5, 'Song Jinwoo', 'reviews-img-5.png', 'Food is the best. Besides the many and delicious meals, \r\nthe service is also very good, especially in the very fast \r\ndelivery. I highly recommend food to you.');
 
 -- --------------------------------------------------------
 
@@ -189,19 +190,19 @@ ALTER TABLE `tbl_member`
 -- AUTO_INCREMENT for table `tbl_menu`
 --
 ALTER TABLE `tbl_menu`
-  MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tbl_reviews`
 --
 ALTER TABLE `tbl_reviews`
-  MODIFY `r_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `r_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_service`
 --
 ALTER TABLE `tbl_service`
-  MODIFY `sv_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `sv_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
