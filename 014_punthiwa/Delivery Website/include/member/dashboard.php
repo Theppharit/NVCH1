@@ -15,7 +15,7 @@
 <input type="text" name="m_amount" placeholder="จำนวน">
 <input type="text" name="m_price" placeholder="ราคา">
 <input type="hidden" name="m_img">
-<input type="hidden"name="me_id" value="<?= $_SESSION['me_id'] ?>"
+<input type="hidden"name="me_id" value="<?= $_SESSION['me_id'] ?>">
 
 </form>
 
