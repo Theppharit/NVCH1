@@ -105,6 +105,6 @@
             </div>
          </div>
          <span class="footer__copy">
-             &#169; All Rights Reserved By SOMMAI HUMYAI
+             &#169; All Rights Reserved By Thiraphong13
          </span>
       </footer>
