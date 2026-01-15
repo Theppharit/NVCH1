@@ -1,38 +1,34 @@
 /*=============== HIDE & SHOW PASSWORD ===============*/
-const showHiddenPass = (passwordId, eyeId) => {
-  const input = document.getElementById(passwordId),
-        iconEye = document.getElementById(eyeId);
+const showHiddenPass = (password, eye) => {
+   const input = document.getElementById(password),
+         iconEye = document.getElementById(eye)
 
-  if (!input || !iconEye) return;
+   iconEye.addEventListener('click', () => {
+      input.type === 'password' ? input.type = 'text'
+                                : input.type = 'password'
 
-  iconEye.addEventListener('click', () => {
-    if (input.type === 'password') {
-      input.type = 'text';
-      iconEye.classList.remove('ri-eye-line');
-      iconEye.classList.add('ri-eye-off-line');
-    } else {
-      input.type = 'password';
-      iconEye.classList.remove('ri-eye-off-line');
-      iconEye.classList.add('ri-eye-line');
-    }
-  });
-};
-
-showHiddenPass('loginPass', 'loginEye');
+      iconEye.classList.toggle('ri-eye-off-line')
+      iconEye.classList.toggle('ri-eye-line')
+   })
+}
+showHiddenPass('loginPass','loginEye')
 
 /*=============== SWIPER IMAGES ===============*/
 const swiperLogin = new Swiper('.login__swiper', {
-  loop: true,
-  spaceBetween: 24,
-  grabCursor: true,
-  effect: 'fade',
-  speed: 800,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
-});
+   loop: true,
+   spaceBetween: '24',
+   grabCursor: true,
+   speed: 600,
+   // effect: 'fade',
+
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+
+   autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+   },
+})
+
