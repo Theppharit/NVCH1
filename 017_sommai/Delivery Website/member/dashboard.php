@@ -5,15 +5,15 @@
 <?php include('../include/navbar.php') ?>
 
       <!--==================== MAIN ====================-->
-      <main class="main">
+<main class="main">
 
-<section class="menu section" id="menu">
+   <section class="menu section" id="menu">
 
-<form action="add-menu.php?me_id=<?= $_SESSION['me_id'] ?>" method="post">
+<form action="add-menu.php?me_id=<?= $me_id ?>" method="post">
     
    
 
-        <h1 class="">เพิ่มเมนูอาหาร</h1>
+        <h1 class="">เพิ่มเมนูอาหาร +</h1>
 
         <input type="text" name="m_name" id="" class="" placeholder="ชื่อเมนู">
         <input type="text" name="m_amount" id="" class="" placeholder="จำนวน">
@@ -23,14 +23,15 @@
      
 </form>
     
-</section>
+   </section>
 
-      </main>
+</main>
 
       <!--==================== FOOTER ====================-->
 <?php include('../include/footer.php') ?>
       
-      <!--==================== JS ====================-->
 <?php include('add-js.php') ?>
+
    </body>
+   
 </html>
