@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 11, 2025 at 09:43 AM
+-- Generation Time: Jan 15, 2026 at 07:10 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `thiraphong`
+-- Database: `sommai`
 --
 
 -- --------------------------------------------------------
@@ -38,7 +38,7 @@ CREATE TABLE `tbl_company` (
 --
 
 INSERT INTO `tbl_company` (`c_id`, `c_logo`, `c_name`) VALUES
-(1, '<i class=\"ri-focus-2-line\"></i>', 'thiraphongdelivery.com');
+(1, '<i class=\"ri-focus-2-line\"></i>', 'HumYai.com');
 
 -- --------------------------------------------------------
 
