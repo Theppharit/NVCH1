@@ -20,11 +20,11 @@ $result_c = mysqli_query( $conn, $sql_c);
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li>
-              <a href="index.php" class="nav__link active-link">Home</a>
+              <a href="index.php#home" class="nav__link active-link">Home</a>
             </li>
 
             <li>
-              <a href="menu.php" class="nav__link">Menu</a>
+              <a href="menu.php#menu" class="nav__link">Menu</a>
             </li>
 
             <li>
@@ -41,10 +41,10 @@ $result_c = mysqli_query( $conn, $sql_c);
 
             <li>
 
-            <?php if (isset($_SESSION['me_id'])) { ?>
+            <?php if (isset($me_id)) { ?>
               
               <li>
-                <a href="#" class="nav__link"><?= $me_name ?></a>
+                <a href="member/dashboard.php?me_id<?= $me_id ?>" class="nav__link"><?= $me_name ?></a>
               </li>
                 
               <li>

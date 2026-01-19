@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `thiraphong`
+-- Database: `Pheeraphat`
 --
 
 -- --------------------------------------------------------
@@ -38,7 +38,7 @@ CREATE TABLE `tbl_company` (
 --
 
 INSERT INTO `tbl_company` (`c_id`, `c_logo`, `c_name`) VALUES
-(1, '<i class=\"ri-focus-2-line\"></i>', 'thiraphongdelivery.com');
+(1, '<i class=\"ri-focus-2-line\"></i>', 'Pheeraphatdelivery.com');
 
 -- --------------------------------------------------------
 

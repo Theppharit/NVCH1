@@ -43,8 +43,8 @@
                   <?php  if (isset($_SESSION['me_id'])) { ?>
                      
                      <li>
-                        <a href="#" class="nav__link"><?= $me_name ?> </a>
-                     </li>
+                        <a href="member/dashboard.php?me_id=<?= $me_id ?>" class="nav__link"><?= $me_name ?></a>
+                     </li> 
                      
                      
                      <li>

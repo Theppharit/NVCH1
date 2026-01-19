@@ -11,18 +11,16 @@ VALUES
 ('$m_name', '$m_amount', '$m_price')";
 $result = mysqli_query($conn, $sql);
 
-if ($result) {
+    if ($result) {
 
-    header("Location: ../menu.php");
-    exit();
-    
-} else {
+        header("Location: ../menu.php");
+        exit();
 
-    header("Location: member/dashboard.php");
-    exit();
+    } else {
 
+        header("Location: member/dashboard.php");
+        exit();
 
-
-}
+    }
 
 ?>
