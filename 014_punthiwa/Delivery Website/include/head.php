@@ -3,7 +3,7 @@
 
 session_start();
 include_once('conn/conn.php');
- 
+ $me_id = $_SESSION['me_id'];
  $me_name =$_SESSION['me_name'];
 
  ?>
@@ -45,16 +45,14 @@ include_once('conn/conn.php');
   echo"</script>";
 }
 if($_GET['do'] == 'login'){
-showAlert('เข้าสู่ระบบสำเร็จ','login.php');
+showAlert('เข้าสู่ระบบสำเร็จ','index.php');
 
-}else if ($_GET['do'] == 'logout') {
-showAlert('ออกจากระบบสำเร็จ','login.php');
+}elseif ($_GET['do'] == 'logout') {
+showAlert('ออกจากระบบสำเร็จ','index.php');
 
      } elseif ($_GET['do'] == 'check') {
-showAlert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง','login.php');
-      }  else {
-showAlert('กรุณาเข้าสู่ระบบก่อนใช้งาน','login.php');
-      }
+showAlert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง','login-form.php');
+      } 
 
 
 ?>
