@@ -32,15 +32,16 @@ $me_name = $_SESSION['me_name'];
 
   <!--=============== CSS ===============-->
   <link rel="stylesheet" href="../assets/css/styles.css" />
+
   <link rel="stylesheet" href="../assets/css/table.css" />
 
-  <title>Naki.com</title>
+  <title>pawarit.com</title>
 
   <?php
 
 function showAlert($text, $locate) {
   echo "<script type='text/javascript'>";
-  echo"alert('$text'):";
+  echo"alert('$text');";
   echo"window.location.href = '$locate';";
   echo "</script>";
 }
@@ -52,10 +53,8 @@ if ($_GET['do'] == 'login') {
   showAlert('ออกจากระบบเรียบร้อยแล้ว', '../index.php');
 
 } elseif ($_GET['do'] == 'check') {
-  showAlert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง!', '../log-from.php');
+  showAlert('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง!', '../login-form.php');
 
-} else {
-  showAlert('เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง!', '../log-from.php');
 }
 
   ?>
