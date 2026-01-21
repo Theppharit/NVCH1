@@ -20,7 +20,7 @@
 
 <h4 class="section__subtitle">OUR MENU</h4>
 <h2 class="section__title">The Most Popular</h2>
-<h2 class="section__title">thiraphong เอง</h2>
+<h2 class="section__title">jakgapat เอง</h2>
 
 
 <table class="table">
