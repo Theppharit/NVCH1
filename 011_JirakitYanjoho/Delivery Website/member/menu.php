@@ -35,7 +35,7 @@
             <tr>
                 <td class="td-menu"><?= $row_m['m_id'] ?></td>
                 <td class="td-menu"><?= $row_m['m_name'] ?></td>
-                <td class="td-menu"><?= $row_m['m_img'] ?></td>
+                <td class="td-menu"><ing src="../assets/img/<?= $row_m['m_img'] ?>"</td>
                 <td class="td-menu"><?= $row_m['m_amount'] ?></td>
                 <td class="td-menu"><?= $row_m['m_price'] ?></td>
                 <td class="td-menu"></td>
