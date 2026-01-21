@@ -13,7 +13,20 @@
 
 
 <table class="table">
-    
+
+
+
+<tr>
+    <th class="menu">รหัสสินค้า</th>
+    <th class="menu">ชื่อเมนู</th>
+    <th class="menu">รูปภาพ</th>
+    <th class="menu">ปริมาณ</th>
+    <th class="menu">ราคา</th>
+    <th class="menu">แก้ไข & ลบ</th>
+</tr>
+
+
+
 </table>
 
 

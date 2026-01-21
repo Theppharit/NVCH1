@@ -25,7 +25,7 @@
                   </li>
                     
                   <li>
-                     <a href="../menu.php" class="nav__link">Menu</a>
+                     <a href="menu.php" class="nav__link">Menu</a>
                   </li>
                     
          
