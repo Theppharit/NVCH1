@@ -1,31 +1,29 @@
 .table {
-     border: 1px solid #4c4ad3;
-     box-shadow: 0 0 10px rgba(51, 51, 51, 0.5);
+     border: 1px solid #4c4ad3(45, 4%, 60%);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 
 }
 .th-menu {
-    background-color: #f8f8f8;
-    color: #333;
-    font-weight: bold;
-    padding: 10px;
-    text-align: left;
-    border-bottom: 2px solid #162836;
+    background-color: #f8f8f8(45, 100%, 50%);
+    padding: 16px;
+    color: black;
 }
 .td-menu {
     padding: 10px;
-    border-color:#d44d18;( 45, 125, 255)
+    border-color:#d44d18;( 45, 20%, 88%);
     color:black;
     text-align: center;
 }
-.td-img{
-    
+
+.td-img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
 
 }
 
-
-
-.a-menu {
-    color: #007bff;
-    text-decoration: none;
+.a-td {
+    color: #007bff(30, 100%, 30%);
+    font-size: 16pt;
 }

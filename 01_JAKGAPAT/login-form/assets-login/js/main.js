@@ -31,4 +31,3 @@ const swiperLogin = new Swiper('.login__swiper', {
       disableOnInteraction: false,
    },
 })
-

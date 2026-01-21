@@ -32,7 +32,7 @@ $me_name = $_SESSION['me_name'];
 
 
 
-      <title>thiraphong.com</title>
+      <title>jakgapat.com</title>
 
  <?php  
 
