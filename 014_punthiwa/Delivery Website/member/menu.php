@@ -31,11 +31,11 @@
                <?php while ($row_sv = mysqli_fetch_assoc($result_sv)) { ?>
 
            <tr>
-                        <td class="th-menu"><?php  $row_sv['menu_id']; ?></td>
-                        <td class="th-menu"><?php  $row_sv['menu_name']; ?></td>
-                        <td class="th-menu"><img src="../assets/img/<?php  $row_sv['menu_image']; ?>" alt="Menu Image" width="100"></td>
-                        <td class="th-menu"><?php  $row_sv['menu_awount']; ?></td>
-                        <td class="th-menu"><?php  $row_sv['menu_price']; ?></td>
+                        <td class="th-menu"><?  $row_m['m_id']; ?></td>
+                        <td class="th-menu"><?  $row_m['m_name']; ?></td>
+                        <td class="th-menu"><img src="../assets/img/<?  $row_m['m_imag']; ?>" ></td>
+                        <td class="th-menu"><?  $row_m['m_awount']; ?></td>
+                        <td class="th-menu"><?  $row_m['m_price']; ?></td>
                         <td class="th-menu">แก้ไข&ลบ</td>
  </tr>
       <?php } ?>
