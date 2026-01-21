@@ -35,7 +35,7 @@ $me_name = $_SESSION['me_name'];
 
   <link rel="stylesheet" href="../assets/css/table.css" />
 
-  <title>Theppharit.com</title>
+  <title>pawarit.com</title>
 
   <?php
 
