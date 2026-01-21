@@ -7,7 +7,7 @@ $result_c = mysqli_query($conn, $sql_c);
 
 <header class="header" id="header">
   <nav class="nav container">
-    <a href="#" class="nav__logo">
+    <a href="../index.php#home" class="nav__logo">
 
       <?php while ($row_c = mysqli_fetch_assoc($result_c)) { ?>
 
@@ -20,7 +20,7 @@ $result_c = mysqli_query($conn, $sql_c);
     <div class="nav__menu" id="nav-menu">
       <ul class="nav__list">
         <li>
-          <a href="index.php#home" class="nav__link">Home</a>
+          <a href="dashboard.php#home" class="nav__link">dashboard</a>
         </li>
 
         <li>
@@ -28,15 +28,15 @@ $result_c = mysqli_query($conn, $sql_c);
         </li>
 
         <li>
-          <a href="reviews.php#reviews" class="nav__link">Reviews</a>
+          <a href="../reviews.php#reviews" class="nav__link">Reviews</a>
         </li>
 
         <li>
-          <a href="our-app.php#app" class="nav__link">Our App</a>
+          <a href="../our-app.php#app" class="nav__link">Our App</a>
         </li>
 
         <li>
-          <a href="find-us.php#map" class="nav__link">Find Us</a>
+          <a href="../find-us.php#map" class="nav__link">Find Us</a>
         </li>
 
 
@@ -44,19 +44,19 @@ $result_c = mysqli_query($conn, $sql_c);
         <?php if (isset($me_id)) { ?>
 
           <li>
-            <a href="member/dashboard.php?me_id=<?= $me_id ?>" class="nav__link"><?= $me_name ?></a>
+            <a href="dashboard.php?me_id=<?= $me_id ?>" class="nav__link"><?= $me_name ?></a>
 
           </li>
 
           <li>
-            <a href="check/logout.php" class="nav__link">Logout</a>
+            <a href="../check/logout.php" class="nav__link">Logout</a>
 
           </li>
 
         <?php } else { ?>
 
           <li>
-            <a href="login-form.php" class="nav__link">Login</a>
+            <a href="../login-form.php" class="nav__link">Login</a>
           </li>
 
         <?php } ?>

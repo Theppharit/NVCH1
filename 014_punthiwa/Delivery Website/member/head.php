@@ -33,7 +33,7 @@ $me_name = $_SESSION['me_name'];
   <!--=============== CSS ===============-->
   <link rel="stylesheet" href="../assets/css/styles.css" />
 
-  <title>saigon.com</title>
+  <title>punthiwa.com</title>
 
   <?php
 
