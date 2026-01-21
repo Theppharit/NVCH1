@@ -1,14 +1,11 @@
-/* Variable setup */
+/* variable setup */
 :root{
-    --main-color:rgb(53, 53, 53) ;
-    --sub-color: rgb(255, 125, 38);
+    --main-color:rgb(34, 14, 212);
 }
-    
 
 
 
-
-/* Main Setup */
+/* main setup */
 * {
     margin: 0;
     padding: 0;
@@ -21,61 +18,70 @@
 .navbar {
     width: 100vw;
     height: 70px;
-    background-color: #474a4e;
+    background-color: #6ecefa;
     padding: 1rem 5rem;
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.div-navbar {
+
+
+.a-navbar:hover {
+     color: var(--main-color);
+     text-decoration: wavy underline;
+     scale: 2.2;
+}
+
+
+
+
+
+.a-navbar{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0 1rem;
+    transition: 0.3s linear;
+}
+
+
+
+.div-navbar{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.a-navbar:hover {
-    color: var(--sub-color);
-    text-decoration: wavy;
+
+
+
+/* section setup */
+.section-conteaner{
+    padding: 0 5rem;
 }
 
-.div {
-    border: rgb(114, 105, 114) 2px solid;
-}
 
 
-/* Section Title */
 .div-head {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     width: 100%;
     height: 150px;
     background-color: var(--main-color);
-    margin: 3rem 0;
+    margin: 2rem 0;
+
 }
+
+
+
 
 .section-head {
-    color: rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+
 }
 
-
-
-/* Section Setup */
-.section-contianer {
-    padding: 0 5rem;
-}
-
-.section-head2 {
-    color: var(--main-color);
-}
-
-
-/* Section Setup */
-.section-contianer {
-    padding: 0 5rem;
-}
-
-.section-head2 {
+.section-head2{
     color: var(--main-color);
 }

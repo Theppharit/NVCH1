@@ -28,7 +28,7 @@ $me_name = $_SESSION['me_name'];
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css" >
 
-      <title>HumYai.com</title>
+      <title>thiraphong.com</title>
 
  <?php  
 
