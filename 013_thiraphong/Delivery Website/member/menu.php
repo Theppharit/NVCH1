@@ -8,7 +8,8 @@
 <main class="main">
 
    <section class="menu section" id="menu">
-
+      <div class="container grid">
+     
 
 <?php  
 
@@ -64,7 +65,7 @@
 
 
 
-
+</div>
     
    </section>
 
