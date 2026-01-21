@@ -8,7 +8,8 @@
       
       <header class="header" id="header">                                        
          <nav class="nav container">
-            <a href="" class="nav__logo">
+            <a href=".../index.php#home" 
+            class="nav__logo">
                
 <?php while ($row_c = mysqli_fetch_assoc ($result_c)) { ?>
       <?= $row_c['c_logo'] ?> <span><?= $row_c['c_name']?></span>
@@ -21,7 +22,7 @@
                  <ul class="nav__list">
                     
                   <li>
-                     <a href="../index.php#home" class="nav__link">Home</a>
+                     <a href="dashboard.php" class="nav__link">Home</a>
                   </li>
                     
                   <li>
