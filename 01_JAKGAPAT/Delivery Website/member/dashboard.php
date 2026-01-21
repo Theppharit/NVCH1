@@ -1,37 +1,37 @@
 <?php include('head.php') ?>
+   
+   <body>
+      <!--==================== HEADER ====================-->
+<?php include('navbar.php') ?>
 
-<body>
-    <!--==================== HEADER ====================-->
-    <?php include('navbar.php') ?>
+      <!--==================== MAIN ====================-->
+<main class="main">
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
+   <section class="menu section" id="menu">
 
-        <section class="menu section" id="menu">
+<form action="add-menu.php?me_id=<?= $me_id ?>" method="post">
+    
+   
 
+        <h1 class="">เพิ่มเมนูอาหาร +</h1>
 
-        <form action="add-menu.php?me_id=<?= $me_id ?>" method="post">
+        <input type="text" name="m_name" id="" class="" placeholder="ชื่อเมนู">
+        <input type="text" name="m_amount" id="" class="" placeholder="จำนวน">
+        <input type="text" name="m_price" id="" class="" placeholder="ราคา">
+        <input type="hidden" name="me_id" value="<?= $me_id ?>">
+        <button type="submit">เพิ่มเมนู</button>
+     
+</form>
+    
+   </section>
 
-            <h1 class="">เพิ่มเมนูอาหาร +</h1>
+</main>
 
-            <input type="text" name="m_name" id="" class="" placeholder="ชื่อเมนู">
-            <input type="text" name="m_amount" id="" class="" placeholder="จำนวน">
-            <input type="text" name="m_price" id="" class="" placeholder="ราคา">
-            <input type="hidden" name="me_id" value="<?= $me_id ?>">
-            <button type="submit">เพิ่มเมนู</button>
+      <!--==================== FOOTER ====================-->
+<?php include('../include/footer.php') ?>
+      
+<?php include('add-js.php') ?>
 
-        </form>
-
-
-        </section>
-
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <?php include('../include/footer.php') ?>
-
-    <?php include('add-js.php') ?>
-
-</body>
-
+   </body>
+   
 </html>

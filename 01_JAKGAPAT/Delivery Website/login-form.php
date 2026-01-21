@@ -8,10 +8,11 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
       <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <link rel="stylesheet" href="assets-login/css/swiper-bundle.min.css">
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets-login/css/styles.css">
+      
 
       <title>Responsive login form with slider images - Bedimcode</title>
    </head>
@@ -51,11 +52,11 @@
                </div>
 
                <div class="swiper-wrapper">
-                  <img src="assets/img/img-1.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="assets/img/menu-1.png" alt="image" class="login__swiper-img swiper-slide">
 
-                  <img src="assets/img/img-2.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="assets/img/menu-2.png" alt="image" class="login__swiper-img swiper-slide">
                   
-                  <img src="assets/img/img-3.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="assets/img/menu-3.png" alt="image" class="login__swiper-img swiper-slide">
                </div>
 
                <div class="swiper-pagination"></div>
@@ -74,15 +75,15 @@
    
                <span class="login__line">or</span>
    
-               <form action="" class="login__form">
+               <form action="check/checklogin.php" class="login__form" method="post">
                   <div class="login__content grid">
                      <div class="login__box">
-                        <input type="email" name="email" placeholder="Email" class="login__input">
+                        <input type="email" name="me_mail" placeholder="Email" class="login__input">
                         <i class="ri-mail-line"></i>
                      </div>
       
                      <div class="login__box">
-                        <input type="password" name="password" placeholder="Password" class="login__input" id="loginPass">
+                        <input type="password" name="me_pass" placeholder="Password" class="login__input" id="loginPass">
                         <i class="ri-eye-line login__eye" id="loginEye"></i>
                      </div>
                   </div>
@@ -96,14 +97,19 @@
                   Don’t have an account? 
                   <a href="#" class="login__sign">Sign Up</a>
                </p>
+
+                 <p class="login__switch">
+                  Back to 
+                  <a href="#" class="login__sign">Home</a>
+               </p>
             </div>
          </div>
       </div>
       
       <!--=============== SWIPER JS ===============-->
-      <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="assets-login/js/swiper-bundle.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+      <script src="assets-login/js/main.js"></script>
    </body>
 </html>
