@@ -8,7 +8,7 @@
     <main class="main">
 
         <section class="menu section" id="menu">
-
+            <div class="container grid>"
 
             <?php
 
@@ -18,6 +18,10 @@
             ?>
 
         
+
+        <h4 class="sectio__subtitle">OUR MENU</h4>
+        <h2 class="sectio__title">The Most Popular</h2>
+
         <table class="table">
 
             <tr>
@@ -51,7 +55,7 @@
 
         </table>
 
-
+            </div>
         </section>
 
     </main>
