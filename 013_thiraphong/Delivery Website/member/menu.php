@@ -18,6 +18,9 @@
   
 ?> 
 
+<h4 class="section__subtitle">OUR MENU</h4>
+<h2 class="section__title">The Most Popular</h2>
+
 <table class="table">
 
 
@@ -44,8 +47,8 @@
 
 
      <td class="td-menu">
-        <a href="#" class="td-menu"><i class="ri-pencil-line"></i></a>
-        <a href="#" class="td-menu"><i class="ri-delete-bin-6-line"></i></a>
+        <a href="#" class="a-td"><i class="ri-pencil-line"></i></a>
+        <a href="#" class="a-td"><i class="ri-delete-bin-6-line"></i></a>
      </td>
 
 
@@ -65,7 +68,7 @@
 
 
 
-</div>
+    </div>
     
    </section>
 
