@@ -7,7 +7,7 @@ $result_c = mysqli_query( $conn, $sql_c);
     
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">
+        <a href="../index.php#home" class="nav__logo">
 
         <?php while ($row_c = mysqli_fetch_assoc( $result_c)) { ?>
           
@@ -20,41 +20,29 @@ $result_c = mysqli_query( $conn, $sql_c);
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li>
-              <a href="index.php#home" class="nav__link active-link">Home</a>
+              <a href="dashboard.php" class="nav__link active-link">dashboard</a>
             </li>
 
             <li>
               <a href="menu.php#menu" class="nav__link">Menu</a>
             </li>
 
-            <li>
-              <a href="reviews.php#reviews" class="nav__link">Reviews</a>
-            </li>
-
-            <li>
-              <a href="our-app.php#app" class="nav__link">Our App</a>
-            </li>
-
-            <li>
-              <a href="find-us.php#map" class="nav__link">Find Us</a>
-            </li>
-
-            <li>
+            
 
             <?php if (isset($me_id)) { ?>
               
               <li>
-                <a href="member/dashboard.php?me_id<?= $me_id ?>" class="nav__link"><?= $me_name ?></a>
+                <a href="dashboard.php?me_id<?= $me_id ?>" class="nav__link"><?= $me_name ?></a>
               </li>
                 
               <li>
-                <a href="check/logout.php" class="nav__link">Logout</a>
+                <a href="../check/logout.php" class="nav__link">Logout</a>
               </li>
               
               <?php } else { ?>
 
               <li>
-                <a href="Log-from.php" class="nav__link">Log in</a>
+                <a href="../Log-from.php" class="nav__link">Login</a>
               </li>  
 
             <?php } ?>

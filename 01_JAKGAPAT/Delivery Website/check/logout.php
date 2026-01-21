@@ -1,10 +1,9 @@
-<?php 
+<?php
 
 session_start();
 session_destroy();
 
-header("Location: ../index.php?do=logout");
-
+header("location: ../index.php?do=logout");
 exit();
-
+    
 ?>

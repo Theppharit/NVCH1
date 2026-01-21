@@ -8,11 +8,10 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
       <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="assets-login/css/swiper-bundle.min.css">
+      <link rel="stylesheet" href="loginaset/css/swiper-bundle.min.css">
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets-login/css/styles.css">
-      
+      <link rel="stylesheet" href="loginaset/css/styles.css">
 
       <title>Responsive login form with slider images - Bedimcode</title>
    </head>
@@ -52,11 +51,11 @@
                </div>
 
                <div class="swiper-wrapper">
-                  <img src="assets-login/img/img-1.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="loginaset/img/img-1.png" alt="image" class="login__swiper-img swiper-slide">
 
-                  <img src="assets-login/img/img-2.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="loginaset/img/img-2.png" alt="image" class="login__swiper-img swiper-slide">
                   
-                  <img src="assets-login/img/img-3.png" alt="image" class="login__swiper-img swiper-slide">
+                  <img src="loginaset/img/img-3.png" alt="image" class="login__swiper-img swiper-slide">
                </div>
 
                <div class="swiper-pagination"></div>
@@ -75,7 +74,7 @@
    
                <span class="login__line">or</span>
    
-               <form action="check/checklogin.php" class="login__form" method="post">
+               <form action="check/check-login.php" class="login__form" method= "post">
                   <div class="login__content grid">
                      <div class="login__box">
                         <input type="email" name="me_mail" placeholder="Email" class="login__input">
@@ -98,18 +97,19 @@
                   <a href="#" class="login__sign">Sign Up</a>
                </p>
 
-                 <p class="login__switch">
-                  Back to 
-                  <a href="#" class="login__sign">Home</a>
+               <p class="login__switch">
+                  ออกไปซ่ะเจ้าโรคจิต! 
+                  <a href="index.php" class="login__sign">log out</a>
                </p>
+
             </div>
          </div>
       </div>
       
       <!--=============== SWIPER JS ===============-->
-      <script src="assets-login/js/swiper-bundle.min.js"></script>
+      <script src="loginaset/js/swiper-bundle.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
-      <script src="assets-login/js/main.js"></script>
+      <script src="loginaset/js/main.js"></script>
    </body>
 </html>

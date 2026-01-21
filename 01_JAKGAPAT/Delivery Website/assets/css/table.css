@@ -1,0 +1,29 @@
+.table {
+    border: 1px solid #0000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1) ;
+}
+
+.th-menu {
+    background-color: hsl(60, 100%, 66%);
+    padding: 15px;
+    color: black;
+}
+
+.td-menu {
+    background-color: hsl(0, 0%, 100%);
+    padding: 12px;
+    color: black;
+    text-align: center;
+}
+
+.td-img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.a-td {
+    color: hsl(28, 100%, 58%);
+    font-size: 16pt;
+}
+
