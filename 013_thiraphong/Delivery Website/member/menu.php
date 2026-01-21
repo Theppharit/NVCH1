@@ -43,8 +43,8 @@
 
 
      <td class="td-menu">
-        <a href="#" class="td-menu"><i class="ri-pencil-line"></i>
-        <a href="#" class="td-menu"><i class="ri-delete-bin-6-line"></i>
+        <a href="#" class="td-menu"><i class="ri-pencil-line"></i></a>
+        <a href="#" class="td-menu"><i class="ri-delete-bin-6-line"></i></a>
      </td>
 
 
