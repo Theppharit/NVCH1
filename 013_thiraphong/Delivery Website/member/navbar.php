@@ -26,7 +26,7 @@
                     
                   <li>
                      <a href="menu.php" class="nav__link">Menu</a>
-                  </li>
+                  </li> 
                     
          
 

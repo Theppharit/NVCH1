@@ -26,7 +26,7 @@ $me_name = $_SESSION['me_name'];
       <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="../assets/css/styles.css" />
+      <link rel="stylesheet" href="../assets/css/table.css" />
 
       <title>thiraphong.com</title>
 
