@@ -4,6 +4,7 @@
 session_start();
 include_once('conn/conn.php');
 
+$me_id = $_SESSION['me_id'];
 $me_name = $_SESSION['me_name'];
 
 ?>
@@ -22,12 +23,12 @@ $me_name = $_SESSION['me_name'];
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
       <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" >
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/styles.css" >
 
-      <title>thiraphongdelivery.com</title>
+      <title>thiraphong.com</title>
 
  <?php  
 
