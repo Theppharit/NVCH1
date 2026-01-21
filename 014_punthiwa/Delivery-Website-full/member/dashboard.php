@@ -1,15 +1,18 @@
 <?php include('head.php') ?>
 
-  <body>
+<body>
     <!--==================== HEADER ====================-->
-   <?php include('navbar.php') ?>
+    <?php include('navbar.php') ?>
 
-<main class="main">
+    <!--==================== MAIN ====================-->
+    <main class="main">
 
-<section class="menu section" id="menu">
+        <section class="menu section" id="menu">
 
-<form action="add-menu.php?me_id=<?= $me_id ?>" method="post">
-<h1 class="">เพิ่มเมนูอาหาร</h1>
+
+        <form action="add-menu.php?me_id=<?= $me_id ?>" method="post">
+
+            <h1 class="">เพิ่มเมนูอาหาร +</h1>
 
             <input type="text" name="m_name" id="" class="" placeholder="ชื่อเมนู">
             <input type="text" name="m_amount" id="" class="" placeholder="จำนวน">
@@ -17,20 +20,18 @@
             <input type="hidden" name="me_id" value="<?= $me_id ?>">
             <button type="submit">เพิ่มเมนู</button>
 
-
-</form>
-
-</section>
-
-</main>
+        </form>
 
 
+        </section>
 
+    </main>
 
-    
-<!--==================== FOOTER ====================-->
+    <!--==================== FOOTER ====================-->
     <?php include('../include/footer.php') ?>
 
-   <?php include('add-js.php') ?> 
-  </body>
+    <?php include('add-js.php') ?>
+
+</body>
+
 </html>
