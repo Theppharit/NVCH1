@@ -7,7 +7,7 @@ $result_c = mysqli_query($conn, $sql_c);
 
 <header class="header" id="header">
   <nav class="nav container">
-    <a href="#" class="nav__logo">
+    <a href="../index.php#home" class="nav__logo">
 
       <?php while ($row_c = mysqli_fetch_assoc($result_c)) { ?>
 
