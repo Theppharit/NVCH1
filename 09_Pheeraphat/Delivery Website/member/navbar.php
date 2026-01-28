@@ -26,30 +26,18 @@
                   </li>
                     
                   <li>
-                     <a href="../Menu.php#menu" class="nav__link">Menu</a>
-                  </li>
-                    
-                  <li>
-                     <a href="../Reviews.php#reviews" class="nav__link">Reviews</a>
-                  </li>
-                    
-                  <li>
-                     <a href="../Ourapp.php#app" class="nav__link">Our App</a>
-                  </li>
-                    
-                  <li>
-                     <a href="../Findus.php#map" class="nav__link">Find Us</a>
+                     <a href="menu.php" class="nav__link">Menu</a>
                   </li>
 
                   <?php  if (isset($_SESSION['me_id'])) { ?>
                      
                      <li>
-                        <a href="../member/dashboard.php?me_id=<?= $me_id ?>" class="nav__link"><?= $me_name ?></a>
+                        <a href="member/dashboard.php?me_id=<?= $me_id ?>" class="nav__link"><?= $me_name ?></a>
                      </li> 
                      
                      
                      <li>
-                        <a href="../check/logout.php" class="nav__link">Logout</a>
+                        <a href="check/logout.php" class="nav__link">Logout</a>
                      </li>
                      
 
