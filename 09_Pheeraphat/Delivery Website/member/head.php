@@ -27,6 +27,7 @@ $me_name = $_SESSION['me_name'];
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="../assets/css/styles.css" />
+      <link rel="stylesheet" href="../assets/css/table.css" />
 
       <title>Pheeraphat.com</title>
 
