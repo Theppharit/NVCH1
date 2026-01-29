@@ -1,11 +1,11 @@
 <?php
 session_start();
-include "db_config.php";
+require 'db_config.php';
 
 $email    = $_POST['email'];
 $password = $_POST['password'];
 
-$sql = "SELECT name, password FROM users WHERE email = ?";
+$sql = "SELECT id, name, password, role FROM users WHERE email = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $email);
 $stmt->execute();
@@ -24,8 +24,10 @@ if (!password_verify($password, $user['password'])) {
   exit;
 }
 
-/* 🔥 ตรงนี้สำคัญ */
+/* ✅ เก็บ session */
+$_SESSION['user_id']   = $user['id'];
 $_SESSION['user_name'] = $user['name'];
+$_SESSION['role']      = $user['role'];
 
 echo "success";
 exit;
