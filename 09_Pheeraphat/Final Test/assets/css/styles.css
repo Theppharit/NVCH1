@@ -264,7 +264,7 @@ video {
 .home__gradient{
   background: linear-gradient(180deg,
               hsla(25, 70%, 55%, 0) 80%,
-              hsla(25, 70%, 55%) 100%);
+              rgb(94, 95, 99) 100%);
 }
 
 .home__data{
