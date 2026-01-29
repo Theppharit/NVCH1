@@ -20,7 +20,7 @@ session_start();
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive car website saigon</title>
+      <title>Responsive car website pheeraphat</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
