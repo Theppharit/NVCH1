@@ -55,6 +55,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
             </div>
         </main>
     </div>
+        <script src="assets/main.js"></script>
 
 </body>
 </html>
