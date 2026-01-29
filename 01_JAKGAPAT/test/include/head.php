@@ -9,5 +9,5 @@
     <link rel="stylesheet" href="./assets/style.css">
     
    <!-- website name -->
-    <title>Thiraphong</title>
+    <title>jagapat</title>
 </head>
