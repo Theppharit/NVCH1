@@ -1,6 +1,6 @@
 ========== HEADER ==========
 .nav__logo
-Samsung
+AVENTADOR
 
 .nav__link
 Home - About - Models - Information - Contact
@@ -8,10 +8,10 @@ Home - About - Models - Information - Contact
 
 ========== HOME ==========
 .home__subtitle
-CHOOSE YOUR Samsung
+CHOOSE YOUR AVENTADOR
 
 .home__title
-Samsung
+AVENTADOR
 
 .home__button
 START
@@ -40,22 +40,22 @@ INSPIRED BY <br>
 COLORS OF NATURE
 
 .models__name .models__info
-BMW S1000RR
+Silver Aventador
 355km/s
 
-BMW R1300RT
+Yellow Aventador
 355km/s
 
-BMW R1250GS
+Blue Aventador
 355km/s
 
 
 ========== INFORMATION ==========
 .section__subtitle
-CHOOSE YOUR BMW
+CHOOSE YOUR AVENTADOR
 
 .section__title
-BMW LP <br>
+AVENTADOR LP <br>
 780-4 ULTIMAE
 
 .info__number
@@ -75,7 +75,7 @@ MAX. SPEED
 ========== CONTACT ==========
 .section__title
 SUBSCRIBE TO GET <br> 
-YOUR BMW
+YOUR AVENTADOR
 
 .contact__label
 Names
@@ -91,7 +91,7 @@ SEND EMAIL
 
 ========== FOOTER ==========
 .footer__logo
-BMW
+AVENTADOR
 
 .footer__links
 Privacy & Legal

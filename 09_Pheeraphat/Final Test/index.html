@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
    <html lang="en">
    <head>
@@ -20,13 +16,13 @@ session_start();
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive car website pheeraphat</title>
+      <title>Responsive car website thiraphong</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-              <a href="#" class="nav__logo">Samsung</a>
+              <a href="#" class="nav__logo">AVENTADOR</a>
 
               <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
@@ -49,27 +45,6 @@ session_start();
                   <li>
                      <a href="#contact" class="nav__link">Contact</a>
                   </li>
-                  
-               <li>
-  <?php if (isset($_SESSION['user_name'])): ?>
-    <!-- ชื่อผู้ใช้ -->
-    <a href="profile.php" class="nav__link">
-      <?php echo htmlspecialchars($_SESSION['user_name']); ?>
-    </a>
-  </li>
-
-  <li>
-    <!-- Logout แยก -->
-    <a href="logout.php" class="nav__link">Logout</a>
-  </li>
-  <?php else: ?>
-    <li>
-      <a href="login.html" class="nav__link">Login</a>
-    </li>
-  <?php endif; ?>
-
-
-
                </ul>
 
                <!-- Close button -->
@@ -93,14 +68,14 @@ session_start();
             <div class="home__gradient"></div>
 
             <div class="home__data">
-               <h3 class="home__subtitle">CHOOSE YOUR Samsung</h3>
-               <h1 class="home__title">Samsung</h1>
+               <h3 class="home__subtitle">CHOOSE YOUR AVENTADOR</h3>
+               <h1 class="home__title">AVENTADOR</h1>
             </div>
 
             <div class="home__swiper swiper">
                <div class="swiper-wrapper">
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/1.png" alt="image" class="home__img">
+                     <img src="assets/img/home-car-1.png" alt="image" class="home__img">
                   </article>
 
                   <article class="home__article swiper-slide">
@@ -164,11 +139,11 @@ session_start();
 
             <div class="models__container container grid">
                <article class="models__card">
-                  <img src="assets/img/bmw1.png" alt="image" class="models__img">
+                  <img src="assets/img/model-car-1.png" alt="image" class="models__img">
                   <div class="models__gradient"></div>
 
                   <div class="models__data">
-                     <h3 class="models__name">Silver Samsung</h3>
+                     <h3 class="models__name">Silver Aventador</h3>
                      <span class="models__info">355km/s</span>
                   </div>
                </article>
@@ -178,7 +153,7 @@ session_start();
                   <div class="models__gradient"></div>
 
                   <div class="models__data">
-                     <h3 class="models__name">Yellow Samsung</h3>
+                     <h3 class="models__name">Yellow Aventador</h3>
                      <span class="models__info">355km/s</span>
                   </div>
                </article>
@@ -188,7 +163,7 @@ session_start();
                   <div class="models__gradient"></div>
 
                   <div class="models__data">
-                     <h3 class="models__name">Blue Samsung</h3>
+                     <h3 class="models__name">Blue Aventador</h3>
                      <span class="models__info">355km/s</span>
                   </div>
                </article>
@@ -197,9 +172,9 @@ session_start();
 
          <!--==================== INFORMATION ====================-->
          <section class="info section" id="info">
-            <span class="section__subtitle">CHOOSE YOUR Samsung</span>
+            <span class="section__subtitle">CHOOSE YOUR AVENTADOR</span>
             <h2 class="section__title info__title">
-               Samsung LP <br>
+               AVENTADOR LP <br>
                780-4 ULTIMAE
             </h2>
 
@@ -234,19 +209,19 @@ session_start();
                <div class="contact__content">
                   <h2 class="section__title contact__title">
                      SUBSCRIBE TO GET <br> 
-                     YOUR Samsung
+                     YOUR AVENTADOR
                   </h2>
 
-                  <form id="contactForm" class="contact__form grid">
+                  <form action="" class="contact__form grid">
                      <div class="contact__inputs grid">
                         <div class="contact__box">
                            <label for="name" class="contact__label">Names</label>
-                         <input type="text" id="name" name="name" placeholder="Enter names" class="contact__input">
+                           <input type="text" id="name" placeholder="Enter names" class="contact__input">
                         </div>
 
                         <div class="contact__box">
                            <label for="email" class="contact__label"></label>
-                           <input type="email" id="email" name="email" placeholder="Enter email" class="contact__input">
+                           <input type="email" id="email" placeholder="Enter email" class="contact__input">
                         </div>
                      </div>
 
@@ -264,7 +239,7 @@ session_start();
       <!--==================== FOOTER ====================-->
       <footer class="footer">
          <div class="footer__container container grid">
-            <a href="#" class="footer__logo"></a>
+            <a href="#" class="footer__logo">AVENTADOR</a>
 
             <ul class="footer__links">
                 <li>
@@ -304,7 +279,7 @@ session_start();
          </div>
 
          <span class="footer__copy">
-              &#169; All Rights Reserved By pheeraphat 
+              &#169; All Rights Reserved By Thiraphong 
          </span>
       </footer>
 
@@ -321,33 +296,5 @@ session_start();
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
-
-
-<script>
-  const form = document.getElementById("contactForm");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-
-    fetch("process.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(res => res.text())
-    .then(data => {
-      if (data.trim() === "success") {
-        alert("ส่งสำเร็จแล้ว ✅");
-        form.reset();
-      } else {
-        alert("ส่งไม่สำเร็จ ❌");
-      }
-    });
-  });
-</script>
-
-
-
    </body>
 </html>
