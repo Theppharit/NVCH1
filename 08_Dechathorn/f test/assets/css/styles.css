@@ -7,14 +7,14 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(43, 90%, 50%);
-  --first-color-alt: hsl(43, 88%, 48%);
+  --first-color: hsl(224, 90%, 50%);
+  --first-color-alt: hsl(219, 81%, 51%);
   --text-color: hsl(0, 0%, 42%);
   --text-color-lighten: hsl(0, 0%, 92%);
   --black-color: hsl(0, 0%, 8%);
   --white-color: hsl(0, 0%, 100%);
   --body-color: hsl(0, 0%, 98%);
-  --body-second-color: hsl(25, 70%, 55%);
+  --body-second-color: hsl(236, 80%, 53%);
   --shadow-img: -8px 8px 16px hsla(0, 0%, 0%, .2);
 
   /*========== Font and typography ==========*/
@@ -264,7 +264,7 @@ video {
 .home__gradient{
   background: linear-gradient(180deg,
               hsla(25, 70%, 55%, 0) 80%,
-              hsla(25, 70%, 55%) 100%);
+              rgb(31, 50, 219) 100%);
 }
 
 .home__data{
