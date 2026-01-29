@@ -1,9 +1,14 @@
+/* --- 1. Global Settings & Variables --- */
 :root {
-    --primary: #1a1a1a;
-    --accent: #c5a059;
+    --primary: #050505;       /* ดำสนิท */
+    --accent: #00f2ff;        /* ฟ้า Neon */
+    --accent-dark: #0088ff;   /* น้ำเงิน Tech */
     --white: #ffffff;
-    --gray: #f9f9f9;
+    --gray: #111111;          /* พื้นหลัง Card */
+    --gray-light: #1a1a1a;
+    --text-muted: #888888;
     --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --neon-glow: 0 0 15px rgba(0, 242, 255, 0.4);
 }
 
 * {
@@ -13,195 +18,36 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--white);
-    color: var(--primary);
-    line-height: 1.6;
-}
-
-/* Hero Section */
-.hero {
-    height: 80vh;
-    background: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3F3d2toMzcwN2V4MmppdDZ2emxmM2k5dXg4amRmeHV5NDdvdXl2ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oFzmrqRPhYnFg9oGs/giphy.gif') center/cover no-repeat;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-}
-
-.hero-content {
+    font-family: 'Inter', 'Poppins', sans-serif;
+    background-color: var(--primary);
     color: var(--white);
-    max-width: 600px;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-.subtitle {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 0.85rem;
-    color: var(--accent);
-    font-weight: 600;
-}
-
-.hero-content h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    margin: 15px 0;
-    line-height: 1.1;
-}
-
-.hero-btns {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.btn-primary, .btn-secondary {
-    padding: 15px 35px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: var(--transition);
-}
-
-.btn-primary { background: var(--accent); color: white; }
-.btn-primary:hover { background: #b08d4a; transform: translateY(-3px); }
-
-.btn-secondary { border: 1px solid white; color: white; }
-.btn-secondary:hover { background: white; color: var(--primary); }
-
-/* Products Section */
-.products {
-    padding: 80px 10%;
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-}
-
-.line {
-    width: 60px;
-    height: 3px;
-    background: var(--accent);
-    margin: 10px auto;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-}
-
-.product-card {
-    transition: var(--transition);
-}
-
-.product-img {
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
-    background-color: var(--gray);
-}
-
-.overlay-btn {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    width: 100%;
-    background: rgba(255,255,255,0.9);
-    padding: 15px;
-    text-align: center;
-    font-weight: 600;
-    transition: var(--transition);
-    cursor: pointer;
-}
-
-.product-card:hover .overlay-btn { bottom: 0; }
-.product-card:hover { transform: translateY(-5px); }
-
-.product-info {
-    padding: 20px 0;
-    text-align: center;
-}
-
-.product-info h3 {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-}
-
-.price {
-    color: var(--accent);
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.add-btn {
-    width: 100%;
-    padding: 12px;
-    background: transparent;
-    border: 1px solid var(--primary);
-    cursor: pointer;
-    font-weight: 600;
-    transition: var(--transition);
-}
-
-.add-btn:hover {
-    background: var(--primary);
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .hero-content h1 { font-size: 2.5rem; }
-    .hero-btns { flex-direction: column; }
-}
-/* navbar.php specific styles */
-/* 1. ตัวตั้งต้น: เพิ่ม transition เพื่อให้ตอนเปลี่ยนสีมันดูสมูท ไม่กระตุก */
+/* --- 2. Navbar & Navigation --- */
 .navbar {
-    position: fixed; /* แนะนำให้ใช้ fixed ถ้าอยากให้เกาะขอบบนตลอดแบบเนียนๆ */
+    position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95); /* สีขาวตอนอยู่บนสุด */
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #eee;
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 242, 255, 0.1);
     z-index: 1000;
     padding: 15px 0;
-    transition: all 0.4s ease; /* หัวใจสำคัญ: ทำให้สีค่อยๆ เปลี่ยน */
+    transition: var(--transition);
 }
 
-/* 2. ตัวที่ JS จะสั่งให้เปลี่ยน: เมื่อเลื่อนลงมาเกิน 50px */
 .navbar.navbar-scrolled {
-    background: #000000 !important; /* เปลี่ยนเป็นสีดำสนิท */
-    border-bottom: 1px solid #333;  /* เปลี่ยนเส้นขอบให้เข้มเข้ากับสีดำ */
-    padding: 10px 0;               /* หด Navbar ลงนิดนึงให้ดูเท่ */
-}
-
-/* 3. อย่าลืมเปลี่ยนสีตัวอักษรเมนูให้เป็นสีขาวตอนพื้นหลังดำด้วย (ถ้าจำเป็น) */
-.navbar.navbar-scrolled .nav-links a {
-    color: #ffffff !important;
-}
-
-/* 4. สีโลโก้ตอนพื้นหลังดำ */
-.navbar.navbar-scrolled .logo {
-    color: #c5a059 !important; /* สีทองจะสวยมากบนพื้นดำ */
+    background: #000000;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--accent);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
 }
 
 .nav-container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -212,611 +58,279 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.logo span { color: #c5a059; }
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.nav-links a {
+    color: var(--white);
     text-decoration: none;
-    color: #333;
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-.nav-links a:hover { color: #c5a059; }
-
-.nav-icons { display: flex; gap: 20px; align-items: center; cursor: pointer; }
-
-.cart-wrapper { position: relative; }
-.badge {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background: #1a1a1a;
-    color: white;
-    font-size: 0.7rem;
-    padding: 2px 6px;
-    border-radius: 50%;
-}
-
-/* Mobile Menu */
-.mobile-toggle { display: none; flex-direction: column; gap: 5px; }
-.mobile-toggle span { width: 25px; height: 2px; background: #333; }
-
-@media (max-width: 768px) {
-    .mobile-toggle { display: flex; }
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    }
-    .nav-links.active { display: flex; }
-}
-/* --- Footer Styles --- */
-.main-footer {
-    background-color: #1a1a1a; /* Matches your primary dark color */
-    color: #ffffff;
-    padding: 80px 0 20px;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 50px;
-}
-
-.footer-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    padding-bottom: 50px;
-}
-
-/* Footer About Section */
-.footer-about h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
     letter-spacing: 2px;
 }
 
-.footer-about h3 span {
-    color: #c5a059; /* Gold accent */
-}
+.logo span { color: var(--accent); text-shadow: var(--neon-glow); }
 
-.footer-about p {
-    color: #bbb;
-    line-height: 1.8;
-    font-size: 0.9rem;
-}
+.nav-links { display: flex; list-style: none; gap: 35px; }
 
-/* Footer Links & Contact Headers */
-.main-footer h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.main-footer h4::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 30px;
-    height: 2px;
-    background-color: #c5a059;
-}
-
-/* Links List */
-.footer-links ul {
-    list-style: none;
-}
-
-.footer-links ul li {
-    margin-bottom: 12px;
-}
-
-.footer-links ul li a {
-    color: #bbb;
+.nav-links a {
     text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.footer-links ul li a:hover {
-    color: #c5a059;
-    padding-left: 5px;
-}
-
-/* Contact Info */
-.footer-contact p {
-    color: #bbb;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-}
-
-/* Bottom Bar */
-.footer-bottom {
-    border-top: 1px solid #333;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.footer-bottom p {
-    color: #777;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-}
-
-/* Responsive Footer */
-@media (max-width: 768px) {
-    .footer-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .main-footer h4::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-/* 1. คุมกล่องรูปภาพ */
-.product-img {
-    position: relative; /* สำคัญมาก: เพื่อให้ปุ่ม Quick View เกาะอยู่แค่ในรูป */
-    overflow: hidden;    /* กันปุ่มโผล่ออกมาตอนยังไม่ Hover */
-    width: 100%;
-    height: 300px;       /* ปรับความสูงตามต้องการ */
-    background-size: cover;
-    background-position: center;
-}
-
-/* 2. ตั้งค่าปุ่ม Quick View ตอนเริ่มต้น (ซ่อนไว้ด้านล่าง) */
-.overlay-btn {
-    position: absolute;
-    left: 50%;
-    bottom: -50px;       /* ซ่อนไว้ใต้ขอบรูป */
-    transform: translateX(-50%); /* จัดกึ่งกลางแนวนอน */
-    background: rgba(255, 255, 255, 0.95);
-    color: #333;
-    padding: 12px 25px;
+    color: var(--text-muted);
     font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 1px;
     text-transform: uppercase;
-    white-space: nowrap;  /* กันตัวหนังสือตัดบรรทัด */
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
-    border: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    letter-spacing: 1px;
+    transition: var(--transition);
 }
 
-/* 3. เมื่อเอาเมาส์จ่อที่รูป ให้ปุ่มลอยขึ้นมา */
-.product-img:hover .overlay-btn {
-    bottom: 20px;        /* ลอยขึ้นมาจากขอบล่าง 20px */
-    opacity: 1;
+.nav-links a:hover, .navbar.navbar-scrolled .nav-links a:hover {
+    color: var(--accent);
+    text-shadow: var(--neon-glow);
 }
 
-/* 4. เพิ่มลูกเล่นให้ปุ่มตอนเอาเมาส์จ่อที่ตัวปุ่มเอง */
-.overlay-btn:hover {
-    background: #333;
-    color: #fff;
-}
-/* Progress Bar */
-#scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 4px;
-    background: #c5a059; /* สีทองเดียวกับแบรนด์ */
-    z-index: 9999;
-    transition: width 0.1s ease;
+.navbar.navbar-scrolled .nav-links a { color: var(--white); }
+
+.nav-icons { display: flex; gap: 20px; color: var(--white); cursor: pointer; }
+
+/* --- 3. Hero Section --- */
+.hero {
+    height: 100vh;
+    background: url('https://media.tenor.com/p34oU47DQ-8AAAAM/monkey-conduciendo.gif') center/cover no-repeat;
+    display: flex;
+    align-items: center;
 }
 
-/* ปุ่ม Back to Top */
-#backToTop {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 18px;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    opacity: 0;
-}
-
-#backToTop:hover {
-    background-color: #c5a059;
-    transform: translateY(-5px);
-}
-/* --- About Page Custom Style --- */
-.about-page {
-    background-color: #050508 !important; /* บังคับพื้นหลังดำอวกาศ */
-    color: #ffffff !important;
-}
-
-.about-content {
-    padding: 160px 10% 80px;
-    text-align: center;
-}
-
-.luxury-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
-    color: #c5a059;
-    margin-bottom: 10px;
+.hero-overlay {
+    background: linear-gradient(to right, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.2));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
 }
 
 .subtitle {
-    letter-spacing: 3px;
-    font-size: 0.8rem;
-    color: #888;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-shadow: var(--neon-glow);
 }
 
-/* 3D Moon Design */
-/* --- Moon CSS (ฉบับแก้ตัว) --- */
-.moon-sphere {
-    width: 350px;
+.hero-content h1 {
+    font-size: 4.5rem;
+    margin: 20px 0;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+.hero-btns { display: flex; gap: 20px; }
+
+.btn-primary {
+    background: var(--accent);
+    color: var(--primary);
+    padding: 15px 40px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+.btn-primary:hover {
+    background: var(--white);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--accent);
+}
+
+.btn-secondary {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 15px 40px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 242, 255, 0.1);
+    color: var(--white);
+}
+
+/* --- 4. Product Grid & Cards --- */
+.products { padding: 100px 10%; }
+
+.section-header h2 {
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.line {
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    margin: 15px auto;
+    box-shadow: var(--neon-glow);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--gray);
+    border: 1px solid #222;
+    padding: 15px;
+    transition: var(--transition);
+}
+
+.product-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.1);
+}
+
+.product-img {
     height: 350px;
-    margin: 40px auto;
-    border-radius: 50%;
-    position: relative;
-    cursor: pointer;
-    
-    /* ใช้สีเทาไล่เฉดสร้างผิวพระจันทร์ (ไม่ต้องใช้รูปนอก) */
-    background: radial-gradient(circle at 30% 30%, #d1d1d1 0%, #949494 50%, #333 100%);
-    
-    /* แสงเรืองรองรอบดวงจันทร์ */
-    box-shadow: 0 0 40px rgba(197, 160, 89, 0.3), 
-                inset -20px -20px 50px rgba(0,0,0,0.8);
-    
-    transition: 0.5s;
-}
-
-/* เพิ่มหลุมอุกกาบาตจำลอง (ใช้ CSS Pseudo-element) */
-.moon-sphere::before {
-    content: "";
-    position: absolute;
-    width: 100%; height: 100%;
-    border-radius: 50%;
-    opacity: 0.2;
-    background-image: 
-        radial-gradient(circle at 20% 40%, #000 2px, transparent 10px),
-        radial-gradient(circle at 60% 20%, #000 4px, transparent 15px),
-        radial-gradient(circle at 50% 70%, #000 3px, transparent 12px),
-        radial-gradient(circle at 80% 50%, #000 5px, transparent 20px);
-}
-
-/* คลาสสั่งหมุน */
-.moon-sphere.rotating {
-    animation: moonPulse 4s ease-in-out infinite alternate;
-    transform: rotate(360px);
-}
-
-@keyframes moonPulse {
-    from { box-shadow: 0 0 20px rgba(197, 160, 89, 0.2); }
-    to { box-shadow: 0 0 50px rgba(197, 160, 89, 0.5); }
-}
-
-/* Address Card */
-.address-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(197, 160, 89, 0.3);
-    padding: 40px;
-    border-radius: 4px;
-    max-width: 500px;
-    margin: 40px auto;
-    backdrop-filter: blur(10px);
-    text-align: left;
-}
-
-.status-bar {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #333;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.7rem;
-    color: #00ffcc;
-}
-/* --- Contact Page Styles --- */
-.step-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(197, 160, 89, 0.2);
-    padding: 40px 20px;
-    width: 280px;
-    border-radius: 15px;
-    transition: 0.4s;
+    background-color: #000;
     position: relative;
     overflow: hidden;
 }
 
-.step-card:hover {
-    transform: translateY(-15px);
-    border-color: #c5a059;
-    box-shadow: 0 10px 30px rgba(197, 160, 89, 0.1);
-}
-
-.step-icon {
-    font-size: 50px;
-    color: #c5a059;
-    margin-bottom: 20px;
-}
-
-.step-number {
-    font-size: 5rem;
-    font-weight: 900;
-    color: rgba(197, 160, 89, 0.05);
+.overlay-btn {
     position: absolute;
-    top: -10px;
-    right: 10px;
-    z-index: 0;
-}
-
-.step-card h3 {
-    font-family: 'Playfair Display', serif;
-    color: #c5a059;
-    margin-bottom: 15px;
-    position: relative;
-    z-index: 1;
-}
-
-.step-card p {
-    font-size: 0.9rem;
-    color: #bbb;
-    line-height: 1.6;
-    position: relative;
-    z-index: 1;
-}
-
-/* แถม: เอฟเฟกต์ไฟวิ่งที่ขอบการ์ด */
-.step-card::after {
-    content: '';
-    position: absolute;
-    top: 0; left: -100%;
-    width: 100%; height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.1), transparent);
-    transition: 0.5s;
-}
-.step-card:hover::after {
-    left: 100%;
-}
-/* 1. ตัวพื้นหลัง Modal */
-#quickViewModal {
-    display: none; /* JS จะเปลี่ยนเป็น flex เมื่อกด */
-    position: fixed;
-    top: 0;
+    bottom: -60px;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.95); /* ดำเข้มแบบอวกาศ */
-    z-index: 10000;
-    align-items: center;     /* จัดกลางแนวตั้ง */
-    justify-content: center;   /* จัดกลางแนวนอน */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    backdrop-filter: blur(8px); /* แถม: ทำหลังเบลอให้ดู Luxury */
-}
-
-/* 2. คลาสทำงานเมื่อเปิด (Active) */
-#quickViewModal.active {
-    opacity: 1;
-}
-
-/* 3. กล่องหุ้มรูปและคำบรรยาย */
-.modal-container {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: scale(0.7); /* เริ่มต้นจากตัวเล็ก */
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-#quickViewModal.active .modal-container {
-    transform: scale(1); /* ขยายออกมากลางจอ */
-}
-
-/* 4. ตัวรูปภาพ */
-#imgFull {
-    max-width: 100%;
-    max-height: 80vh; /* ไม่ให้สูงเกินหน้าจอ */
-    object-fit: contain;
-    border: 1px solid rgba(197, 160, 89, 0.5); /* ขอบทองบางๆ */
-    box-shadow: 0 0 50px rgba(0,0,0,0.5);
-    cursor: zoom-in; /* บอก User ว่าซูมได้ */
-    transition: transform 0.2s ease-out; /* สำหรับระบบซูมส่องพระ */
-}
-
-/* 5. คำบรรยายใต้รูป */
-#caption {
-    margin-top: 20px;
-    color: #c5a059;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+    background: var(--accent);
+    color: var(--primary);
+    padding: 15px;
     text-align: center;
+    font-weight: 700;
+    transition: var(--transition);
 }
 
-/* 6. ปุ่มปิด (กากบาท) */
-.modal-close {
-    position: absolute;
-    top: -50px;
-    right: 0;
-    color: #fff;
-    font-size: 30px;
+.product-card:hover .overlay-btn { bottom: 0; }
+
+.product-info { padding: 20px 0; text-align: left; }
+
+.product-info h3 { font-size: 1.2rem; color: var(--white); margin-bottom: 10px; }
+
+.price {
+    color: var(--accent);
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: monospace;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-weight: 700;
     cursor: pointer;
-    transition: 0.3s;
+    transition: var(--transition);
 }
 
-.modal-close:hover {
-    color: #c5a059;
-    transform: rotate(90deg);
-}
-/* --- แก้ไข Search Overlay ให้ซ่อนไว้ก่อนกด --- */
+.add-btn:hover { background: var(--accent); color: var(--primary); }
+
+/* --- 5. Search Overlay --- */
 .search-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(5, 5, 8, 0.98);
-    backdrop-filter: blur(15px);
+    background: rgba(5, 5, 5, 0.98);
+    backdrop-filter: blur(20px);
     z-index: 10000;
-    
-    /* สองบรรทัดนี้คือหัวใจที่ทำให้มันไม่โผล่มาก่อนกด */
-    display: none;    /* ซ่อนการแสดงผล */
-    opacity: 0;       /* ทำให้โปร่งใส */
-    pointer-events: none; /* ห้ามคลิกโดนตอนที่ยังไม่เปิด */
-    
-    transition: opacity 0.4s ease;
+    display: none;
+    opacity: 0;
+    transition: var(--transition);
     align-items: center;
     justify-content: center;
 }
 
-/* เมื่อมีคลาส active ถึงจะโชว์ */
-.search-overlay.active {
-    display: flex !important; /* บังคับให้แสดงผล */
-    opacity: 1;
-    pointer-events: auto;     /* ให้คลิกพิมพ์ได้ปกติ */
-}
-/* กลุ่ม Input และปุ่มปิด */
-.search-input-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* ระยะห่างระหว่างช่องพิมพ์กับกากบาท */
-}
+.search-overlay.active { display: flex !important; opacity: 1; }
 
-/* คุมกล่องให้พอดี ไม่ใหญ่เว่อร์ */
 .search-box-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* แยกช่องพิมพ์กับกากบาท */
-    gap: 15px;
-    width: 100%;
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 10px;
 }
 
 #search-input {
     background: transparent;
     border: none;
     outline: none;
-    font-size: 1.8rem; /* ขนาดเดิมที่พี่โอเค */
-    color: #c5a059;
-    font-family: 'Playfair Display', serif;
-    flex: 1; /* ให้ช่องพิมพ์กินพื้นที่ที่เหลือ */
-    text-align: left; /* เปลี่ยนกลับมาเป็นชิดซ้าย */
+    font-size: 2.5rem;
+    color: var(--accent);
+    width: 100%;
+    font-weight: 700;
 }
 
 .search-close-btn {
-    position: static !important; /* ยกเลิก absolute ของเก่า */
-    font-size: 3rem; /* ใหญ่สะใจตามที่ขอ */
-    color: #fff !important;
+    font-size: 4rem;
+    color: var(--white) !important;
     cursor: pointer;
-    line-height: 1;
-    transition: 0.3s;
-    user-select: none;
+    transition: var(--transition);
 }
 
-.search-close-btn:hover {
-    color: #c5a059 !important;
-    transform: scale(1.1);
-}
+.search-close-btn:hover { color: var(--accent) !important; transform: rotate(90deg); }
 
-/* เส้นใต้คุมแค่พื้นที่ค้นหา */
-.search-bar-line {
-    height: 1px;
-    background: #c5a059;
-    width: 0;
-    margin-top: 5px;
-    transition: width 0.6s ease;
-}
-
-.search-overlay.active .search-bar-line {
-    width: 100%;
-}
-/* ส่วนหัวของหน้า Spec */
+/* --- 6. Spec Page Styles --- */
 .spec-hero {
-    padding: 150px 0 60px;
-    background: #0a0a0a;
+    padding: 180px 10% 80px;
+    background: radial-gradient(circle at top, #001a1a 0%, var(--primary) 70%);
     text-align: center;
 }
 
-.spec-hero h1 {
-    font-size: 3rem;
-    color: #c5a059; /* สีทอง Lux */
-    margin-top: 10px;
-}
-
-/* การจัดวาง Grid */
-.spec-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    padding: 60px 0;
-}
+.spec-hero h1 { font-size: 4rem; color: var(--accent); text-shadow: var(--neon-glow); }
 
 .spec-item {
-    background: #111;
+    background: var(--gray-light);
+    border: 1px solid #333;
     padding: 40px;
-    border-radius: 10px;
-    border: 1px solid #222;
-    transition: 0.3s;
+    border-radius: 4px;
+    transition: var(--transition);
 }
 
 .spec-item:hover {
-    border-color: #c5a059;
-    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
 }
 
-.spec-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.spec-icon { font-size: 3rem; margin-bottom: 20px; filter: drop-shadow(var(--neon-glow)); }
+
+/* --- 7. Footer --- */
+.main-footer {
+    background: #000;
+    border-top: 1px solid #222;
+    padding: 80px 10% 30px;
 }
 
-.spec-item h3 {
-    color: #fff;
-    margin-bottom: 15px;
-    font-family: 'Playfair Display', serif;
+.footer-about h3 span { color: var(--accent); }
+
+.footer-links ul li a:hover { color: var(--accent); padding-left: 10px; }
+
+/* Scroll Progress */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: var(--accent);
+    box-shadow: var(--neon-glow);
+    z-index: 9999;
 }
 
-.spec-item p {
-    color: #888;
-    line-height: 1.6;
-    font-size: 0.95rem;
-}
-
-.spec-item strong {
-    color: #c5a059;
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 3rem; }
+    .nav-links { display: none; }
+    .hero-btns { flex-direction: column; }
 }

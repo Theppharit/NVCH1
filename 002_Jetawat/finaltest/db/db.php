@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$dbname = "luxe_shop";
+$dbname = "jetawat";
 $username = "root";
 $password = ""; // Default XAMPP password is empty
 

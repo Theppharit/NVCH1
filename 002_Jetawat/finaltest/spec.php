@@ -4,9 +4,9 @@
 
     <section class="spec-hero">
         <div class="container">
-            <span class="subtitle">System Architecture</span>
-            <h1>Luxe-Bot Model 7 Specs</h1>
-            <p>เจาะลึกวิศวกรรมหุ่นยนต์รุ่นล่าสุด ความลงตัวของความแข็งแกร่งและสติปัญญา</p>
+            <span class="subtitle">Performance Engineering</span>
+            <h1>The Jatawat Edition - V12 Specs</h1>
+            <p>สัมผัสขีดสุดของวิศวกรรมยานยนต์ที่หลอมรวมความเร็วและเทคโนโลยีเข้าด้วยกัน</p>
         </div>
     </section>
 
@@ -15,27 +15,27 @@
             <div class="spec-grid">
                 
                 <div class="spec-item">
-                    <div class="spec-icon">🧠</div>
-                    <h3>Core Processor</h3>
-                    <p><strong>AI Neural Link v4.0:</strong> ชิปประมวลผลสถาปัตยกรรม 2 นาโนเมตร รองรับการคำนวณ 500 Trillion Operations ต่อวินาที ทำให้ตัดสินใจได้ในเสี้ยววินาที</p>
+                    <div class="spec-icon">🏎️</div>
+                    <h3>Powertrain</h3>
+                    <p><strong>V12 Quad-Turbo Hybrid:</strong> เครื่องยนต์เบนซิน V12 ทำงานร่วมกับมอเตอร์ไฟฟ้า 3 ตัว ให้กำลังสูงสุด 1,200 แรงม้า เร่ง 0-100 กม./ชม. ภายใน 2.1 วินาที</p>
                 </div>
 
                 <div class="spec-item">
-                    <div class="spec-icon">👁️</div>
-                    <h3>Vision System</h3>
-                    <p><strong>LiDAR Pro 360:</strong> ระบบสแกนพื้นที่แบบ 3 มิติ พร้อมกล้องความละเอียดสูง 8K ทำงานได้แม้ในที่มืดสนิทด้วยอินฟราเรด</p>
+                    <div class="spec-icon">⚙️</div>
+                    <h3>Transmission</h3>
+                    <p><strong>9-Speed Dual-Clutch:</strong> ระบบเกียร์อัจฉริยะที่เปลี่ยนเกียร์ได้รวดเร็วเพียง 0.05 วินาที พร้อมระบบขับเคลื่อน 4 ล้อแบบ Active Torque Vectoring</p>
                 </div>
 
                 <div class="spec-item">
-                    <div class="spec-icon">🦾</div>
-                    <h3>Actuators & Limbs</h3>
-                    <p><strong>Titanium-Alloy Joints:</strong> ข้อต่อโลหะผสมไทเทเนียม ขับเคลื่อนด้วยมอเตอร์ Servo ความแม่นยำสูง ให้การเคลื่อนไหวที่นุ่มนวลเหมือนมนุษย์</p>
+                    <div class="spec-icon">🛡️</div>
+                    <h3>Chassis & Body</h3>
+                    <p><strong>Carbon Monocoque:</strong> ตัวถังทำจากคาร์บอนไฟเบอร์น้ำหนักเบาแต่แข็งแกร่งระดับรถแข่ง Formula 1 พร้อมระบบ Aerodynamics ปรับองศาปีกหลังอัตโนมัติ</p>
                 </div>
 
                 <div class="spec-item">
-                    <div class="spec-icon">🔋</div>
-                    <h3>Power Source</h3>
-                    <p><strong>Solid-State Battery:</strong> ความจุ 15,000 mAh ใช้งานได้ต่อเนื่อง 48 ชั่วโมง พร้อมระบบ Fast Charge 0-80% ภายใน 15 นาที</p>
+                    <div class="spec-icon">⚡</div>
+                    <h3>Smart Tech</h3>
+                    <p><strong>LUXE OS Connect:</strong> ระบบปฏิบัติการอัจฉริยะควบคุมผ่านหน้าจอ OLED 15 นิ้ว รองรับระบบช่วยขับขี่กึ่งอัตโนมัติ และการอัปเดตซอฟต์แวร์แบบ Over-the-air</p>
                 </div>
 
             </div>

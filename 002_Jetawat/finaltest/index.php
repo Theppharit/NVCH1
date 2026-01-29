@@ -1,13 +1,13 @@
 <?php include('include/head.php') ?>
 <?php 
-session_start();
+if (session_status() === PHP_SESSION_NONE) { session_start(); }
 $host = "localhost"; $db = "luxe_shop"; $user = "root"; $pass = "";
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-    // ดึงข้อมูลสินค้าทั้งหมด
-    $stmt = $pdo->query("SELECT * FROM products");
+    // ดึงข้อมูลรถยนต์ทั้งหมด
+    $stmt = $pdo->query("SELECT * FROM products ORDER BY id DESC");
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     die("Error: " . $e->getMessage());
@@ -15,23 +15,24 @@ try {
 ?>
 <body>
   <?php include('include/navbar.php') ?>
+    
     <header class="hero">
         <div class="hero-overlay">
             <div class="hero-content">
-                <span class="subtitle">Innovation & Technology 2026</span>
-                <h1>The Future of Intelligence</h1>
-                <p>Discover the next frontier of high-performance computing and seamless AI integration.</p>
+                <span class="subtitle">PREMIUM SELECTION BY JATAWAT</span>
+                <h1>DRIVE THE EXTRAORDINARY</h1>
+                <p>สัมผัสประสบการณ์เหนือระดับกับยนตรกรรมคัดสรรพิเศษ เพื่อรสนิยมที่ไร้ขีดจำกัด</p>
                 <div class="hero-btns">
-                    <a href="shop.php" class="btn-primary">View Products</a>
-                    <a href="spec.php" class="btn-secondary">Technical Specs</a>
+                    <a href="#inventory" class="btn-primary">View Inventory</a>
+                    <a href="about.php" class="btn-secondary">Our Story</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="products">
+    <section class="products" id="inventory">
         <div class="section-header">
-            <h2>Featured Products</h2>
+            <h2>Available Vehicles</h2>
             <div class="line"></div>
         </div>
 
@@ -40,19 +41,26 @@ try {
        <?php foreach ($products as $row): ?>
     <div class="product-card">
         <div class="product-img" style="background-image: url('<?= htmlspecialchars($row['image_url']) ?>');">
-            <div class="overlay-btn" onclick="openQuickView(this)">Quick View</div>
+            <div class="overlay-btn" onclick="openQuickView(this)">Examine</div>
         </div>
         <div class="product-info">
-            <p style="color: #c5a059; font-size: 0.8rem; margin-bottom: 5px; text-transform: uppercase;"><?= htmlspecialchars($row['category']) ?></p>
+            <p style="color: #00f2ff; font-size: 0.75rem; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">
+                <?= htmlspecialchars($row['category']) ?>
+            </p>
             <h3><?= htmlspecialchars($row['name']) ?></h3>
-            <p style="font-size: 0.85rem; color: #888; margin-bottom: 8px;">คงเหลือ: <?= $row['stock'] ?> ชิ้น</p>
-            <p class="price">$<?= number_format($row['price'], 2) ?></p>
+            <p style="font-size: 0.85rem; color: #666; margin-bottom: 8px;">จำนวนในสต็อก: <?= $row['stock'] ?> คัน</p>
+            
+            <p class="price" style="color: #fff; font-size: 1.2rem; font-weight: 700;">
+                ฿<?= number_format($row['price']) ?>
+            </p>
             
             <?php if ($row['status'] === 'active' && $row['stock'] > 0): ?>
-                <button class="add-btn" onclick="addToCart(<?= $row['id'] ?>)">Add to Cart</button>
+                <button class="add-btn" onclick="addToCart(<?= $row['id'] ?>)" style="background: #00f2ff; color: #000; font-weight: bold;">
+                    Book Now
+                </button>
             <?php else: ?>
-                <button class="add-btn" style="background:#333; cursor:pointer;" onclick="alert('สินค้าไม่พร้อมขาย')">
-                    <?= ($row['stock'] <= 0) ? 'Out of Stock' : 'Not Available' ?>
+                <button class="add-btn" style="background:#222; color: #555; cursor:not-allowed;" disabled>
+                    <?= ($row['stock'] <= 0) ? 'Sold Out' : 'Unavailable' ?>
                 </button>
             <?php endif; ?>
         </div>
@@ -72,22 +80,24 @@ function addToCart(productId) {
             if (badge) {
                 badge.innerText = data.totalItems;
                 badge.style.transform = 'scale(1.4)';
-                badge.style.transition = '0.2s';
-                setTimeout(() => { badge.style.transform = 'scale(1)'; }, 200);
+                badge.style.boxShadow = '0 0 15px #00f2ff';
+                setTimeout(() => { 
+                    badge.style.transform = 'scale(1)'; 
+                    badge.style.boxShadow = 'none';
+                }, 200);
             }
         } else if (data.status === 'out_of_stock') {
-            // แจ้งเตือนเมื่อสินค้าเกินสต็อก
             alert(data.message);
         }
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('เกิดข้อผิดพลาดในการเพิ่มสินค้า');
+        alert('ไม่สามารถเพิ่มลงในรายการจองได้');
     });
 }
 </script>
     <?php else: ?>
-        <p style="text-align:center; width:100%;">No products found.</p>
+        <p style="text-align:center; width:100%; color: #555;">ขณะนี้ยังไม่มีรถในรายการสต็อก</p>
     <?php endif; ?>
 </div>
         
@@ -97,8 +107,8 @@ function addToCart(productId) {
 <div id="quickViewModal">
     <div class="modal-container">
         <span class="modal-close">&times;</span>
-        <img id="imgFull" src="" alt="Product Image">
-        <div id="caption"></div>
+        <img id="imgFull" src="" alt="Vehicle Image" style="border-radius: 8px;">
+        <div id="caption" style="color: #00f2ff; font-weight: 600; text-transform: uppercase;"></div>
     </div>
 </div>
 
