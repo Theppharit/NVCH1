@@ -89,7 +89,7 @@ session_start();
       <main class="main">
          <!--==================== HOME ====================-->
          <section class="home grid section" id="home">
-            <img src="assets/img/home-bg.png" alt="image" class="home__bg">
+            <img src="assets/img/999.jpg" alt="image" class="home__bg">
             <div class="home__gradient"></div>
 
             <div class="home__data">
@@ -104,15 +104,15 @@ session_start();
                   </article>
 
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-2.png" alt="image" class="home__img">
+                     <img src="assets/img/3.png" alt="image" class="home__img">
                   </article>
 
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-3.png" alt="image" class="home__img">
+                     <img src="assets/img/4.png" alt="image" class="home__img">
                   </article>
 
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-4.png" alt="image" class="home__img">
+                     <img src="assets/img/5.png" alt="image" class="home__img">
                   </article>
 
                </div>
@@ -137,11 +137,9 @@ session_start();
                   </h2>
 
                   <p class="about__description">
-                     Revolutionary thinking is at the heart of 
-                     every Lamborghini car idea, whether it is 
-                     the design inspired by the aerospace 
-                     industry or the technologies applied to 
-                     natural aspiration. 
+                    Revolutionary thinking lies at the heart of every Samsung TV
+                     whether it is the sleek design inspired by future technology
+                     or the intelligent visual and audio innovations that deliver an unparalleled entertainment experience.
                   </p>
 
                   <a href="#" class="button button__ghost">
@@ -150,7 +148,7 @@ session_start();
                </div>
 
                <div class="about__video">
-                   <video src="assets/img/about-vid.mp4" autoplay loop muted class="about__file"></video>
+                   <video src="assets/img/vdo.mp4" autoplay loop muted class="about__file"></video>
                </div>
             </div>
          </section>
@@ -164,32 +162,33 @@ session_start();
 
             <div class="models__container container grid">
                <article class="models__card">
-                  <img src="assets/img/model-car-1.png" alt="image" class="models__img">
+                  <img src="assets/img/22.png" alt="image" class="models__img">
                   <div class="models__gradient"></div>
 
                   <div class="models__data">
-                     <h3 class="models__name">Silver Samsung</h3>
-                     <span class="models__info">355km/s</span>
+                     <h3 class="models__name"> Neo QLED QN1EF 4K</h3>
+                     <span class="models__info">55" Neo QLED QN1EF 4K Samsung Vision AI Smart TV (2025)
+55”</span>
                   </div>
                </article>
 
                <article class="models__card">
-                  <img src="assets/img/model-car-2.png" alt="image" class="models__img">
+                  <img src="assets/img/11.png" alt="image" class="models__img">
                   <div class="models__gradient"></div>
 
                   <div class="models__data">
-                     <h3 class="models__name">Yellow Samsung</h3>
-                     <span class="models__info">355km/s</span>
+                     <h3 class="models__name"> Crystal UHD </h3>
+                     <span class="models__info">43" Crystal UHD UE800F 4K Smart TV (2025)</span>
                   </div>
                </article>
 
                <article class="models__card">
-                  <img src="assets/img/model-car-3.png" alt="image" class="models__img">
+                  <img src="assets/img/33.png" alt="image" class="models__img">
                   <div class="models__gradient"></div>
 
                   <div class="models__data">
-                     <h3 class="models__name">Blue Samsung</h3>
-                     <span class="models__info">355km/s</span>
+                     <h3 class="models__name"> Micro RGB R95H 4K </h3>
+                     <span class="models__info">115" Micro RGB R95H 4K Samsung Vision AI Smart TV (2025)</span>
                   </div>
                </article>
             </div>
@@ -199,14 +198,14 @@ session_start();
          <section class="info section" id="info">
             <span class="section__subtitle">CHOOSE YOUR Samsung</span>
             <h2 class="section__title info__title">
-               Samsung LP <br>
-               780-4 ULTIMAE
+               Samsung   <br>
+               Micro RGB AI Engine
             </h2>
 
             <div class="info__container container grid">
                <div class="info__content">
-                   <h1 class="info__number">780-4</h1>
-                   <img src="assets/img/info-car.png" alt="image" class="info__img">
+                   <h1 class="info__number"> Neo QLED 4K</h1>
+                   <img src="assets/img/33.png" alt="image" class="info__img">
                </div>
 
                <div class="info__data">
@@ -256,7 +255,7 @@ session_start();
                   </form>
                </div>
 
-               <img src="assets/img/contact-car.png" alt="image" class="contact__img">
+               <img src="assets/img/55.png" alt="image" class="contact__img">
             </div>
          </section>
       </main>

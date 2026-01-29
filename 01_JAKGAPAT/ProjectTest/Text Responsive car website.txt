@@ -24,11 +24,9 @@ DESIGNED TO <br>
 PERFORMANCE
 
 .about__description
-Revolutionary thinking is at the heart of 
-every Lamborghini car idea, whether it is 
-the design inspired by the aerospace 
-industry or the technologies applied to 
-natural aspiration. 
+Revolutionary thinking lies at the heart of every Samsung TV
+whether it is the sleek design inspired by future technology
+or the intelligent visual and audio innovations that deliver an unparalleled entertainment experience.
 
 .button
 DETAILS
@@ -40,14 +38,14 @@ INSPIRED BY <br>
 COLORS OF NATURE
 
 .models__name .models__info
-Silver Aventador
-355km/s
+Neo QLED QN1EF 4K
+55" Neo QLED QN1EF 4K Samsung Vision AI Smart TV (2025)
 
-Yellow Aventador
-355km/s
+Crystal UHD
+43" Crystal UHD UE800F 4K Smart TV (2025)
 
-Blue Aventador
-355km/s
+icro RGB R95H 4K
+115" Micro RGB R95H 4K Samsung Vision AI Smart TV (2025)
 
 
 ========== INFORMATION ==========
