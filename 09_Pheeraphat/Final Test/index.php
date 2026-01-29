@@ -26,7 +26,7 @@ session_start();
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-              <a href="#" class="nav__logo">AVENTADOR</a>
+              <a href="#" class="nav__logo">Samsung</a>
 
               <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
@@ -93,26 +93,26 @@ session_start();
             <div class="home__gradient"></div>
 
             <div class="home__data">
-               <h3 class="home__subtitle">CHOOSE YOUR AVENTADOR</h3>
-               <h1 class="home__title">AVENTADOR</h1>
+               <h3 class="home__subtitle">CHOOSE YOUR Samsung</h3>
+               <h1 class="home__title">Samsung</h1>
             </div>
 
             <div class="home__swiper swiper">
                <div class="swiper-wrapper">
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/bmw1.png" alt="image" class="home__img">
+                     <img src="assets/img/1.png" alt="image" class="home__img">
                   </article>
 
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/bmw2.png" alt="image" class="home__img">
+                     <img src="assets/img/home-car-2.png" alt="image" class="home__img">
                   </article>
 
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/bmw3.png" alt="image" class="home__img">
+                     <img src="assets/img/home-car-3.png" alt="image" class="home__img">
                   </article>
 
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/bmw4.png" alt="image" class="home__img">
+                     <img src="assets/img/home-car-4.png" alt="image" class="home__img">
                   </article>
 
                </div>
@@ -164,11 +164,11 @@ session_start();
 
             <div class="models__container container grid">
                <article class="models__card">
-                  <img src="assets/img/model-car-1.png" alt="image" class="models__img">
+                  <img src="assets/img/bmw1.png" alt="image" class="models__img">
                   <div class="models__gradient"></div>
 
                   <div class="models__data">
-                     <h3 class="models__name">Silver Aventador</h3>
+                     <h3 class="models__name">Silver Samsung</h3>
                      <span class="models__info">355km/s</span>
                   </div>
                </article>
@@ -178,7 +178,7 @@ session_start();
                   <div class="models__gradient"></div>
 
                   <div class="models__data">
-                     <h3 class="models__name">Yellow Aventador</h3>
+                     <h3 class="models__name">Yellow Samsung</h3>
                      <span class="models__info">355km/s</span>
                   </div>
                </article>
@@ -188,7 +188,7 @@ session_start();
                   <div class="models__gradient"></div>
 
                   <div class="models__data">
-                     <h3 class="models__name">Blue Aventador</h3>
+                     <h3 class="models__name">Blue Samsung</h3>
                      <span class="models__info">355km/s</span>
                   </div>
                </article>
@@ -197,9 +197,9 @@ session_start();
 
          <!--==================== INFORMATION ====================-->
          <section class="info section" id="info">
-            <span class="section__subtitle">CHOOSE YOUR AVENTADOR</span>
+            <span class="section__subtitle">CHOOSE YOUR Samsung</span>
             <h2 class="section__title info__title">
-               AVENTADOR LP <br>
+               Samsung LP <br>
                780-4 ULTIMAE
             </h2>
 
@@ -234,7 +234,7 @@ session_start();
                <div class="contact__content">
                   <h2 class="section__title contact__title">
                      SUBSCRIBE TO GET <br> 
-                     YOUR AVENTADOR
+                     YOUR Samsung
                   </h2>
 
                   <form id="contactForm" class="contact__form grid">
@@ -264,7 +264,7 @@ session_start();
       <!--==================== FOOTER ====================-->
       <footer class="footer">
          <div class="footer__container container grid">
-            <a href="#" class="footer__logo">AVENTADOR</a>
+            <a href="#" class="footer__logo"></a>
 
             <ul class="footer__links">
                 <li>
@@ -304,7 +304,7 @@ session_start();
          </div>
 
          <span class="footer__copy">
-              &#169; All Rights Reserved By Thiraphong 
+              &#169; All Rights Reserved By pheeraphat 
          </span>
       </footer>
 
