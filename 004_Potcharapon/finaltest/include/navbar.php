@@ -1,3 +1,12 @@
+<?php
+if (isset($_SESSION['user_id'])) {
+    if ($_SESSION['user_id'] == 1) {
+        echo "สวัสดี Admin!"; // เมนูของ Admin
+    } else {
+        echo "สวัสดีคุณ " . $_SESSION['username']; // เมนูของลูกค้า
+    }
+}
+?>
 <nav class="navbar">
     <div class="nav-container">
         <div class="logo">LUXE<span>.</span></div>
@@ -12,7 +21,7 @@
                 <li><a href="admin_dashboard.php" style="color: #c5a059;">Dashboard</a></li>
                 <li><a href="logout.php" style="color: #ff6b6b;">Logout</a></li>
             <?php else: ?>
-                <li><a href="login.php">Login</a></li>
+                <li><a href="login.php">Login/Register</a></li>
             <?php endif; ?>
         </ul>
 
