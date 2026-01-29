@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Detail | Saigon Computer</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .detail {
+      display: flex;
+      gap: 30px;
+      padding: 40px;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+    }
+
+    .detail__img img {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    .detail__content h2 {
+      margin-top: 0;
+    }
+
+    .detail__content ul {
+      padding-left: 20px;
+    }
+
+    .detail__content li {
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background: #333;
+    }
+
+    @media (max-width: 768px) {
+      .detail {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .detail__img img {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Saigon Computer</h1>
+  </header>
+
+  <main class="detail">
+    <div class="detail__img">
+     <img src="assets/img/saigon.png" alt="Saigon Computer Logo" class="about__file">
+    </div>
+
+    <div class="detail__content">
+      <h2>รายละเอียด</h2>
+      <p>
+        ให้บริการประกอบคอม ซ่อมคอม อัปเกรดเครื่อง
+        สำหรับสายเกมและทำงาน
+      </p>
+
+      <ul>
+        <li>💻 ประกอบคอมตามงบ</li>
+        <li>🎮 เกมมิ่ง / สตรีม</li>
+        <li>🛠 ซ่อม-อัปเกรด</li>
+      </ul>
+
+      <a href="index.php" class="btn">กลับหน้าแรก</a>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,353 +1,312 @@
 <?php
 session_start();
+
 ?>
 
+
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <title>saigon computer</title>
+</head>
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<body>
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">SAIGON COMPUTER</a>
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
-
-      <title>Responsive car website saigon</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-              <a href="#" class="nav__logo">AVENTADOR</a>
-
-              <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li>
-                     <a href="#home" class="nav__link">Home </a>
-                  </li>
-
-                  <li>
-                     <a href="#about" class="nav__link">About</a>
-                  </li>
-
-                  <li>
-                     <a href="#models" class="nav__link">Models</a>
-                  </li>
-
-                  <li>
-                     <a href="#info" class="nav__link">Information</a>
-                  </li>
-
-                  <li>
-                     <a href="#contact" class="nav__link">Contact</a>
-                  </li>
-                  
-               <li>
-  <?php if (isset($_SESSION['user_name'])): ?>
-    <!-- ชื่อผู้ใช้ -->
-    <a href="profile.php" class="nav__link">
-      <?php echo htmlspecialchars($_SESSION['user_name']); ?>
-    </a>
-  </li>
-
-  <li>
-    <!-- Logout แยก -->
-    <a href="logout.php" class="nav__link">Logout</a>
-  </li>
-  <?php else: ?>
-    <li>
-      <a href="login.html" class="nav__link">Login</a>
-    </li>
-  <?php endif; ?>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link">หน้าหลัก</a></li>
+        <li><a href="#about" class="nav__link">เกี่ยวกับเรา</a></li>
+        <li><a href="#models" class="nav__link"> สินค้า</a></li>
+        <li><a href="#info" class="nav__link">รายละเอียด</a></li>
+        <li><a href="#contact" class="nav__link">ติดต่อเรา</a></li>
+ <li style="position: relative;">
+<?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
+  <!-- แอดมิน -->
+  <a href="admin_reply.php" class="nav__link">
+    ข้อความลูกค้า
+  </a>
+<?php else: ?>
+  <!-- user -->
+  <a href="reply.php?clear=1" class="nav__link">
+    ข้อความ
+    <?php if (!empty($_SESSION['unread_reply'])): ?>
+      <span class="msg-badge"><?= $_SESSION['unread_reply'] ?></span>
+    <?php endif; ?>
+  </a>
+<?php endif; ?>
+</li>
 
 
 
-               </ul>
-
-               <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
-              </div>
-
-              <!-- Toggle button -->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line"></i>
-               </div>
-         </nav>
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home grid section" id="home">
-            <img src="assets/img/home-bg.png" alt="image" class="home__bg">
-            <div class="home__gradient"></div>
-
-            <div class="home__data">
-               <h3 class="home__subtitle">CHOOSE YOUR AVENTADOR</h3>
-               <h1 class="home__title">AVENTADOR</h1>
-            </div>
-
-            <div class="home__swiper swiper">
-               <div class="swiper-wrapper">
-                  <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-1.png" alt="image" class="home__img">
-                  </article>
-
-                  <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-2.png" alt="image" class="home__img">
-                  </article>
-
-                  <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-3.png" alt="image" class="home__img">
-                  </article>
-
-                  <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-4.png" alt="image" class="home__img">
-                  </article>
-
-               </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-
-            <a href="#about" class="home__button">
-               <span>START</span>
-               <i class="ri-arrow-down-s-line"></i>
+        <?php if (isset($_SESSION['user_name'])): ?>
+          <li>
+            <a href="profile.php" class="nav__link">
+              <?php echo htmlspecialchars($_SESSION['user_name']); ?>
             </a>
-         </section>
+            
+          </li>
+          <li><a href="logout.php" class="nav__link">Logout</a></li>
+        <?php else: ?>
+          <li><a href="login.html" class="nav__link">Login</a></li>
+        <?php endif; ?>
+      </ul>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            <div class="about__container container grid">
-               <div class="about__data">
-                  <h2 class="section__title about__title">
-                     DESIGNED TO <br>
-                     <span>GO BEYOND</span> <br>
-                     PERFORMANCE
-                  </h2>
+      <div class="nav__close" id="nav-close">
+        <i class="ri-close-large-line"></i>
+      </div>
+    </div>
 
-                  <p class="about__description">
-                     Revolutionary thinking is at the heart of 
-                     every Lamborghini car idea, whether it is 
-                     the design inspired by the aerospace 
-                     industry or the technologies applied to 
-                     natural aspiration. 
-                  </p>
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="ri-menu-line"></i>
+    </div>
+  </nav>
+  <style>
+/* กันชื่อขึ้น 2 บรรทัด เฉพาะหน้า index */
+.nav__link {
+  white-space: nowrap;
+}
 
-                  <a href="#" class="button button__ghost">
-                     DETAILS <i class="ri-arrow-right-s-line"></i>
-                  </a>
-               </div>
+/* เพิ่มพื้นที่ให้เมนูขวาบน */
+.nav__list li a {
+  padding: 0.5rem 1.2rem;
+}
+</style>
 
-               <div class="about__video">
-                   <video src="assets/img/about-vid.mp4" autoplay loop muted class="about__file"></video>
-               </div>
-            </div>
-         </section>
+<style>
+.msg-badge {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  background: red;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  line-height: 1;
+}
+</style>
 
-         <!--==================== MODELS ====================-->
-         <section class="models section" id="models">
-            <h2 class="section__title">
-               INSPIRED BY <br> 
-               COLORS OF NATURE
-            </h2>
 
-            <div class="models__container container grid">
-               <article class="models__card">
-                  <img src="assets/img/model-car-1.png" alt="image" class="models__img">
-                  <div class="models__gradient"></div>
+</header>
 
-                  <div class="models__data">
-                     <h3 class="models__name">Silver Aventador</h3>
-                     <span class="models__info">355km/s</span>
-                  </div>
-               </article>
+<main class="main">
+<section class="home grid section" id="home">
+  <img src="assets/img/10.png" alt="image" class="home__bg">
+  <div class="home__gradient"></div>
 
-               <article class="models__card">
-                  <img src="assets/img/model-car-2.png" alt="image" class="models__img">
-                  <div class="models__gradient"></div>
+  <div class="home__data">
+    <h3 class="home__subtitle">CHOOSE YOUR COMPUTER</h3>
+    <h1 class="home__title">computer</h1>
+  </div>
 
-                  <div class="models__data">
-                     <h3 class="models__name">Yellow Aventador</h3>
-                     <span class="models__info">355km/s</span>
-                  </div>
-               </article>
+  <div class="home__swiper swiper">
+    <div class="swiper-wrapper">
+      <article class="home__article swiper-slide">
+        <img src="assets/img/1.png" alt="image" class="home__img">
+      </article>
+      <article class="home__article swiper-slide">
+        <img src="assets/img/2.png" alt="image" class="home__img">
+      </article>
+      <article class="home__article swiper-slide">
+        <img src="assets/img/3.png" alt="image" class="home__img">
+      </article>
+      <article class="home__article swiper-slide">
+        <img src="assets/img/4.png" alt="image" class="home__img">
+      </article>
+    </div>
+  </div>
 
-               <article class="models__card">
-                  <img src="assets/img/model-car-3.png" alt="image" class="models__img">
-                  <div class="models__gradient"></div>
+  <div class="swiper-pagination"></div>
 
-                  <div class="models__data">
-                     <h3 class="models__name">Blue Aventador</h3>
-                     <span class="models__info">355km/s</span>
-                  </div>
-               </article>
-            </div>
-         </section>
+  <a href="#about" class="home__button">
+    <span>GET STARTED</span>
+    <i class="ri-arrow-down-s-line"></i>
+  </a>
+</section>
 
-         <!--==================== INFORMATION ====================-->
-         <section class="info section" id="info">
-            <span class="section__subtitle">CHOOSE YOUR AVENTADOR</span>
-            <h2 class="section__title info__title">
-               AVENTADOR LP <br>
-               780-4 ULTIMAE
-            </h2>
+<section class="about section" id="about">
+  <div class="about__container container grid">
+    <div class="about__data">
+      <h2 class="section__title about__title">
+        DESIGNED FOR <br>
+        <span>MAXIMUM</span> <br>
+        PERFORMANCE
+      </h2>
 
-            <div class="info__container container grid">
-               <div class="info__content">
-                   <h1 class="info__number">780-4</h1>
-                   <img src="assets/img/info-car.png" alt="image" class="info__img">
-               </div>
+      <p class="about__description">
+      คอมพิวเตอร์ประสิทธิภาพสูง คือหัวใจหลักในทุกเครื่องที่เราประกอบ ตั้งแต่ระบบงานออฟฟิศ ไปจนถึงเครื่องสำหรับเกมเมอร์ระดับโปร และเวิร์กสเตชันสำหรับสายครีเอเตอร์
+      </p>
 
-               <div class="info__data">
-                   <div class="info__group">
-                     <h3>POWER (KW)</h3>
-                     <p>780 CV (574 kW) <br> 8.500 rpm</p>
-                   </div>
-
-                   <div class="info__group">
-                     <h3>MAX. SPEED</h3>
-                     <p>355 km/h</p>
-                   </div>
-
-                   <div class="info__group">
-                     <h3>0-100 KM/H</h3>
-                     <p>2.8 - 2.9s</p>
-                   </div>
-               </div>              
-            </div>
-         </section>
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            <div class="contact__container container grid">
-               <div class="contact__content">
-                  <h2 class="section__title contact__title">
-                     SUBSCRIBE TO GET <br> 
-                     YOUR AVENTADOR
-                  </h2>
-
-                  <form id="contactForm" class="contact__form grid">
-                     <div class="contact__inputs grid">
-                        <div class="contact__box">
-                           <label for="name" class="contact__label">Names</label>
-                         <input type="text" id="name" name="name" placeholder="Enter names" class="contact__input">
-                        </div>
-
-                        <div class="contact__box">
-                           <label for="email" class="contact__label"></label>
-                           <input type="email" id="email" name="email" placeholder="Enter email" class="contact__input">
-                        </div>
-                     </div>
-
-                     <button class="button contact__button">
-                        SEND EMAIL <i class="ri-arrow-right-s-line"></i>
-                     </button>
-                  </form>
-               </div>
-
-               <img src="assets/img/contact-car.png" alt="image" class="contact__img">
-            </div>
-         </section>
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
-            <a href="#" class="footer__logo">AVENTADOR</a>
-
-            <ul class="footer__links">
-                <li>
-                  <a href="#" class="footer__link">Privacy & Legal</a>
-                </li>
-
-                <li>
-                  <a href="#" class="footer__link">Contact</a>
-                </li>
-
-                <li>
-                  <a href="#" class="footer__link">Locations</a>
-                </li>
-
-                <li>
-                  <a href="#" class="footer__link">News</a>
-                </li>
-
-                <li>
-                  <a href="#" class="footer__link">Forums</a>
-                </li>
-            </ul>
-
-            <div class="footer__social">
-                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                  <i class="ri-facebook-circle-line"></i>
-                </a>
-
-                <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                  <i class="ri-instagram-line"></i>
-                </a>
-
-                <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                  <i class="ri-twitter-x-line"></i>
-                </a>
-            </div>
-         </div>
-
-         <span class="footer__copy">
-              &#169; All Rights Reserved By Thiraphong 
-         </span>
-      </footer>
-
-      <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-line"></i>
+      <a href="detail.html" class="button button__ghost">
+        VIEW DETAILS <i class="ri-arrow-right-s-line"></i>
       </a>
+    </div>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="assets/js/scrollreveal.min.js"></script>
+    <div class="about__video">
+      <div class="">
+  <img src="assets/img/saigon.png" alt="Saigon Computer Logo" class="about__file">
+</div>
+    </div>
+  </div>
+</section>
 
-      <!--=============== SWIPER JS ===============-->
-      <script src="assets/js/swiper-bundle.min.js"></script>
+<section class="models section" id="models">
+  <h2 class="section__title">
+    BUILT FOR <br>
+    EVERY USER
+  </h2>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+  <div class="models__container container grid">
+    <article class="models__card">
+      <img src="assets/img/6.png" alt="image" class="models__img">
+      <div class="models__gradient"></div>
+      <div class="models__data">
+        <h3 class="models__name">Office PC</h3>
+        <span class="models__info">Stable & Efficient</span>
+      </div>
+    </article>
 
+    <article class="models__card">
+      <img src="assets/img/7.png" alt="image" class="models__img">
+      <div class="models__gradient"></div>
+      <div class="models__data">
+        <h3 class="models__name">Gaming PC</h3>
+        <span class="models__info">High FPS Performance</span>
+      </div>
+    </article>
 
+    <article class="models__card">
+      <img src="assets/img/8.png" alt="image" class="models__img">
+      <div class="models__gradient"></div>
+      <div class="models__data">
+        <h3 class="models__name">Creator PC</h3>
+        <span class="models__info">Rendering Power</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="info section" id="info">
+  <span class="section__subtitle">CHOOSE YOUR PC</span>
+  <h2 class="section__title info__title">
+    HIGH <br>
+    PERFORMANCE PC
+  </h2>
+
+  <div class="info__container container grid">
+    <div class="info__content">
+      <h1 class="info__number">RTX 5090</h1>
+      <img src="assets/img/9.png" alt="image" class="info__img">
+    </div>
+
+    <div class="info__data">
+      <div class="info__group">
+        <h3>CPU PERFORMANCE</h3>
+        <p>Intel / AMD High Performance</p>
+      </div>
+
+      <div class="info__group">
+        <h3>STORAGE</h3>
+        <p>NVMe SSD</p>
+      </div>
+
+      <div class="info__group">
+        <h3>BOOT TIME</h3>
+        <p>~10 Seconds</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="contact__container container grid">
+    <div class="contact__content">
+      <h2 class="section__title contact__title">
+      แจ้งปัญหา
+      </h2>
+
+     <form id="contactForm" class="contact__form grid">
+  <div class="contact__inputs grid">
+
+    <div class="contact__box">
+      <label class="contact__label">ชื่อ</label>
+      <input type="text" name="name" required class="contact__input">
+    </div>
+
+    <div class="contact__box">
+      <label class="contact__label">ข้อความ</label>
+      <textarea name="message" required class="contact__input"></textarea>
+    </div>
+
+    <div class="contact__box">
+      <label class="contact__label">อีเมล</label>
+      <input type="email" name="email" required class="contact__input">
+    </div>
+
+  </div>
+
+  <button class="button contact__button">
+    ส่งข้อความ
+  </button>
+</form>
+
+    </div>
+
+    <img src="assets/img/saigon.png" alt="Saigon Computer Logo" class="">
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container container grid">
+    <a href="#" class="footer__logo">SAIGON COMPUTER</a>
+  </div>
+
+  <span class="footer__copy">
+    &#169; All Rights Reserved | Saigon Computer
+  </span>
+</footer>
+
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
 <script>
-  const form = document.getElementById("contactForm");
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-
-    fetch("process.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(res => res.text())
-    .then(data => {
-      if (data.trim() === "success") {
-        alert("ส่งสำเร็จแล้ว ✅");
-        form.reset();
-      } else {
-        alert("ส่งไม่สำเร็จ ❌");
-      }
-    });
-  });
+  alert("ส่งข้อมูลเรียบร้อย เดี๋ยวเราติดต่อกลับครับ 🙏");
+});
 </script>
 
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
 
+  fetch("send_message.php", {
+    method: "POST",
+    body: new FormData(this)
+  })
+  .then(res => res.json())
+  .then(data => {
+    alert("ส่งข้อความเรียบร้อย 🙏");
+    this.reset();
+  })
+  .catch(err => {
+    alert("ส่งไม่สำเร็จ ลองใหม่อีกครั้ง");
+  });
+});
+</script>
 
-   </body>
+</body>
 </html>

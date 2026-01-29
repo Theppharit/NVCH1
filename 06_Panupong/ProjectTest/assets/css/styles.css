@@ -223,6 +223,16 @@ video {
   right: 1.5rem;
 }
 
+/* ไม่ให้ชื่อขึ้น 2 บรรทัด */
+.nav__link {
+  white-space: nowrap;   /* ห้ามตัดบรรทัด */
+}
+
+/* ขยายพื้นที่ฝั่งขวา (ชื่อ user) */
+.nav__list li a {
+  padding: 0.5rem 1.2rem; /* เพิ่มพื้นที่ด้านซ้ายขวา */
+}
+
 
 /* Show menu */
 .show-menu{
