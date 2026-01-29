@@ -1,3 +1,4 @@
+<script src="assets/main.js"></script>
 <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-about">
@@ -14,12 +15,12 @@
             </div>
             <div class="footer-contact">
                 <h4>Contact Us</h4>
-                <p>Email: info@luxe.com</p>
+                <p>Email: potcharapon@luxe.com</p>
                 <p>Phone: +66 123 4567</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 LUXE Modern Shopping. All rights reserved.</p>
+            <p>&copy; 2026 LUXE potcharapon. All rights reserved.</p>
         </div>
     </footer>
 </body>
