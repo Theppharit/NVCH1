@@ -1,7 +1,12 @@
 <?php 
-// ต้องมีบรรทัดนี้ที่บนสุดเสมอเพื่อให้ PHP จำได้ว่าใคร Login อยู่
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
+}
+
+// นับจำนวนสินค้าทั้งหมดในตะกร้าจาก Session
+$total_cart_items = 0;
+if (isset($_SESSION['cart']) && is_array($_SESSION['cart'])) {
+    $total_cart_items = array_sum($_SESSION['cart']);
 }
 ?>
 
@@ -35,9 +40,11 @@ if (session_status() === PHP_SESSION_NONE) {
 
         <div class="nav-icons">
             <span class="search-icon">🔍</span>
-            <div class="cart-wrapper">
-                <span>🛒</span>
-                <span class="badge">0</span>
+            <div class="cart-wrapper" onclick="location.href='cart.php'" style="cursor: pointer; position: relative;">
+                <span style="font-size: 1.5rem;">🛒</span>
+                <span class="badge" id="cart-count">
+    <?= isset($_SESSION['cart']) ? array_sum($_SESSION['cart']) : 0 ?>
+</span>
             </div>
             <div class="mobile-toggle" onclick="toggleMenu()">
                 <span></span>
@@ -46,14 +53,52 @@ if (session_status() === PHP_SESSION_NONE) {
             </div>
         </div>
     </div>
+    <div id="search-overlay" class="search-overlay">
+    <div class="search-wrapper">
+        <div class="search-box-container">
+            <input type="text" id="search-input" placeholder="SEARCH..." autocomplete="off">
+            <div class="search-close-btn" id="close-search">&times;</div>
+        </div>
+        <div class="search-bar-line"></div>
+    </div>
+</div>
 </nav>
 
 <style>
-    /* เพิ่ม CSS เล็กน้อยเพื่อให้ Navbar ดูดีขึ้น */
     .nav-links { display: flex; align-items: center; list-style: none; gap: 20px; }
     .user-menu { font-size: 0.9rem; }
+    
+    /* ตกแต่ง Badge ตัวเลขรถเข็น */
+    .cart-wrapper { position: relative; display: inline-block; }
+    .badge {
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        background: #1a1a1a;
+        color: #c5a059;
+        font-size: 0.7rem;
+        font-weight: bold;
+        padding: 2px 6px;
+        border-radius: 50%;
+        border: 1px solid #c5a059;
+        min-width: 18px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
     @media (max-width: 768px) {
-        .nav-links.active { display: flex; flex-direction: column; position: absolute; top: 70px; background: #fff; width: 100%; left: 0; padding: 20px; box-shadow: 0 10px 10px rgba(0,0,0,0.1); }
+        .nav-links.active { 
+            display: flex; 
+            flex-direction: column; 
+            position: absolute; 
+            top: 70px; 
+            background: #fff; 
+            width: 100%; 
+            left: 0; 
+            padding: 20px; 
+            box-shadow: 0 10px 10px rgba(0,0,0,0.1); 
+            z-index: 100;
+        }
     }
 </style>
 
