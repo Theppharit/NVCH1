@@ -100,19 +100,19 @@ session_start();
             <div class="home__swiper swiper">
                <div class="swiper-wrapper">
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-1.png" alt="image" class="home__img">
+                     <img src="assets/img/bmw1.png" alt="image" class="home__img">
                   </article>
 
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-2.png" alt="image" class="home__img">
+                     <img src="assets/img/bmw2.png" alt="image" class="home__img">
                   </article>
 
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-3.png" alt="image" class="home__img">
+                     <img src="assets/img/bmw3.png" alt="image" class="home__img">
                   </article>
 
                   <article class="home__article swiper-slide">
-                     <img src="assets/img/home-car-4.png" alt="image" class="home__img">
+                     <img src="assets/img/bmw4.png" alt="image" class="home__img">
                   </article>
 
                </div>
