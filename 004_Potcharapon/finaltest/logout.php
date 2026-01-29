@@ -1,9 +1,13 @@
 <?php
 session_start();
-session_unset(); // Remove all session variables
-session_destroy(); // Destroy the session itself
 
-// Redirect back to login page
-header("Location: login.php");
+// 1. เคลียร์ค่า Session ทั้งหมด
+session_unset();
+
+// 2. ทำลาย Session
+session_destroy();
+
+// 3. ส่งกลับไปที่หน้า index.php (หน้าหลัก) แทนหน้า login
+header("Location: index.php");
 exit;
 ?>

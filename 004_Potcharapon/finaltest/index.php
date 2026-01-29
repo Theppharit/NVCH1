@@ -1,4 +1,5 @@
   <?php include('include/head.php') ?>
+<script src="assets/main.js"></script>
 
 <body>
   <?php include('include/navbar.php') ?>
@@ -56,6 +57,7 @@
                 </div>
             </div>
         </div>
+        
     </section>
   <?php include('include/footer.php') ?>
 

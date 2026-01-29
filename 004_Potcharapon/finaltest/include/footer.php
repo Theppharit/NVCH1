@@ -1,3 +1,4 @@
+<script src="assets/main.js"></script>
 <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-about">

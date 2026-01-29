@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Security check: If no session exists, kick them back to login.php
-if (!isset($_SESSION['admin_id'])) {
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     header("Location: login.php");
     exit;
 }
@@ -28,7 +28,7 @@ if (!isset($_SESSION['admin_id'])) {
     <div class="admin-wrapper">
         <aside class="sidebar">
             <h3>LUXE Admin</h3>
-            <p>Welcome, <?php echo $_SESSION['admin_user']; ?></p>
+            <p>Welcome, <?php echo $_SESSION['username']; ?></p>
             <nav>
                 <a href="admin_dashboard.php">Dashboard</a>
                 <a href="manage_products.php">Manage Products</a>

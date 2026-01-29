@@ -17,18 +17,21 @@ if (isset($_POST['register_admin'])) {
     $u = $_POST['username'];
     $p = $_POST['password'];
     $c = $_POST['confirm_password'];
+    $email = $_POST['email'];   // รับค่าอีเมล
+    $phone = $_POST['phone'];   // รับค่าเบอร์โทร
+    $addr  = $_POST['address']; // รับค่าที่อยู่
 
     if ($p !== $c) {
         $message = "Passwords do not match!";
     } else {
         try {
-            // บันทึกลงตาราง users (กำหนดค่าเริ่มต้นเป็น customer)
-            $stmt = $pdo->prepare("INSERT INTO users (username, password, role) VALUES (?, ?, 'customer')");
-            $stmt->execute([$u, $p]); 
+            // เพิ่มการบันทึก email, phone, address ลงใน SQL
+            $stmt = $pdo->prepare("INSERT INTO users (username, password, email, phone, address, role) VALUES (?, ?, ?, ?, ?, 'customer')");
+            $stmt->execute([$u, $p, $email, $phone, $addr]); 
             header("Location: login.php?action=login&success=1");
             exit;
         } catch (Exception $e) { 
-            $message = "Username already exists!"; 
+            $message = "Username already exists or data error!"; 
         }
     }
 }
@@ -38,18 +41,15 @@ if (isset($_POST['login_admin'])) {
     $u = $_POST['username'];
     $p = $_POST['password'];
 
-    // แก้ไข: เปลี่ยนไปเช็คที่ตาราง users
     $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
     $stmt->execute([$u]);
     $user = $stmt->fetch();
 
-    // เช็ค User และรหัสผ่าน (แบบไม่เข้ารหัส)
     if ($user && $user['password'] === $p) { 
-        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['user_id'] = $user['id']; 
         $_SESSION['username'] = $user['username'];
-        $_SESSION['role'] = $user['role']; // เก็บ role ไว้ใน session
+        $_SESSION['role'] = $user['role']; 
 
-        // แยกเส้นทาง: ถ้าเป็น admin ไปหลังบ้าน ถ้าไม่ใช่ไปหน้าแรก
         if ($user['role'] === 'admin') {
             header("Location: admin_dashboard.php");
         } else {
@@ -70,17 +70,17 @@ if (isset($_POST['login_admin'])) {
     <link rel="stylesheet" href="assets-loginj/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* ตกแต่งข้อความแจ้งเตือนเพิ่มเติม */
         .msg { text-align: center; margin-bottom: 15px; padding: 10px; border-radius: 5px; font-size: 0.9rem; }
         .msg.error { background: #ffebeb; color: #d63031; border: 1px solid #fab1a0; }
         .msg.success { background: #ebfff0; color: #27ae60; border: 1px solid #b8e994; }
+        /* ปรับแต่ง textarea ให้เข้ากับดีไซน์ */
+        textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
     </style>
 </head>
 <body class="auth-page">
 
 <div class="auth-wrapper">
-    <div class="auth-card">
-        <div class="auth-tabs">
+    <div class="auth-card" style="max-width: 500px;"> <div class="auth-tabs">
             <a href="?action=login" class="<?= ($action == 'login') ? 'active' : '' ?>">Login</a>
             <a href="?action=register" class="<?= ($action == 'register') ? 'active' : '' ?>">Register</a>
         </div>
@@ -103,8 +103,20 @@ if (isset($_POST['login_admin'])) {
         <?php else: ?>
             <form action="login.php?action=register" method="POST">
                 <div class="form-group">
-                    <label>New Username</label>
+                    <label>Username</label>
                     <input type="text" name="username" placeholder="Create Username" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" placeholder="08x-xxx-xxxx" required>
+                </div>
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea name="address" rows="3" placeholder="Enter your full address" required></textarea>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
