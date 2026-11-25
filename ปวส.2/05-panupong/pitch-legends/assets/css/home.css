@@ -1,0 +1,87 @@
+/* ==========================================================
+   home.css — เฉพาะหน้าแรก (Hero, การ์ดนักเตะ, โหมดเกม, CTA)
+   ========================================================== */
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative; overflow: hidden; min-height: calc(100vh - var(--header-h));
+  display: flex; align-items: center;
+  background:
+    radial-gradient(ellipse at 75% 30%, rgba(44, 255, 138, 0.18), transparent 55%),
+    radial-gradient(ellipse at 20% 80%, rgba(0, 194, 255, 0.16), transparent 55%),
+    var(--bg);
+}
+.hero::before {
+  /* เส้นสนามบอลจางๆ ด้านหลัง */
+  content: ""; position: absolute; inset: 0; opacity: 0.12;
+  background:
+    linear-gradient(90deg, transparent 49.8%, #fff 49.8%, #fff 50.2%, transparent 50.2%),
+    radial-gradient(circle at 50% 50%, transparent 120px, #fff 121px, #fff 123px, transparent 124px);
+  pointer-events: none;
+}
+.hero-inner { position: relative; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding: 60px 0; }
+.hero-tag { display: inline-block; padding: 6px 16px; border: 1px solid var(--accent); color: var(--accent); border-radius: 999px; font-size: 0.85rem; font-weight: 500; margin-bottom: 18px; }
+.hero h1 { font-size: clamp(2.6rem, 7vw, 5rem); font-weight: 800; line-height: 1.05; }
+.hero h1 span { background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p { color: var(--muted); font-size: 1.1rem; max-width: 520px; margin: 18px 0 30px; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.hero-stats { display: flex; gap: 34px; margin-top: 44px; flex-wrap: wrap; }
+.hero-stats strong { display: block; font-size: 1.9rem; font-weight: 700; color: var(--text); }
+.hero-stats span { color: var(--muted); font-size: 0.9rem; }
+
+/* ---------- Hero player-card visual ---------- */
+.hero-visual { position: relative; height: 480px; }
+.pcard {
+  position: absolute; width: 230px; aspect-ratio: 3 / 4.2; border-radius: 20px; padding: 18px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  box-shadow: var(--shadow); border: 2px solid rgba(255, 255, 255, 0.25);
+  transition: transform 0.4s;
+}
+.pcard .ovr { font-size: 2.6rem; font-weight: 800; line-height: 1; }
+.pcard .pos { font-weight: 600; letter-spacing: 2px; opacity: 0.85; }
+.pcard .silhouette { align-self: center; font-size: 5.5rem; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.4)); }
+.pcard .pname { font-weight: 700; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.35); padding-top: 8px; }
+.pcard-1 { background: linear-gradient(160deg, #ffd86b, #b8791a); color: #2b1a00; left: 2%; top: 50px; transform: rotate(-9deg); z-index: 1; }
+.pcard-2 { background: linear-gradient(160deg, #38ffa0, #0c7a55); color: #032015; left: 28%; top: 0; z-index: 3; }
+.pcard-3 { background: linear-gradient(160deg, #62d6ff, #1b4fa8); color: #031530; right: 0; top: 80px; transform: rotate(9deg); z-index: 2; }
+.hero-visual:hover .pcard-1 { transform: rotate(-14deg) translateX(-12px); }
+.hero-visual:hover .pcard-3 { transform: rotate(14deg) translateX(12px); }
+.pcard-2 { animation: float 4s ease-in-out infinite; }
+@keyframes float { 50% { transform: translateY(-14px); } }
+
+/* ---------- News preview (ใช้ร่วมกับ pages.css) ---------- */
+.news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+/* ---------- Game modes ---------- */
+.mode-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.mode-card { padding: 30px 26px; transition: 0.25s; }
+.mode-card:hover { transform: translateY(-6px); border-color: var(--accent); box-shadow: 0 14px 40px rgba(44, 255, 138, 0.12); }
+.mode-card .icon { font-size: 2.2rem; width: 64px; height: 64px; display: grid; place-items: center; border-radius: 16px; background: var(--card-2); margin-bottom: 16px; }
+.mode-card h3 { font-size: 1.25rem; margin-bottom: 6px; }
+.mode-card p { color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- Ranking preview ---------- */
+.rank-preview { display: grid; grid-template-columns: 1fr; gap: 12px; }
+
+/* ---------- CTA ---------- */
+.cta {
+  text-align: center; padding: 80px 20px; border-radius: 28px; position: relative; overflow: hidden;
+  background: linear-gradient(135deg, rgba(44, 255, 138, 0.18), rgba(0, 194, 255, 0.18)), var(--card);
+  border: 1px solid var(--line);
+}
+.cta h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; }
+.cta p { color: var(--muted); margin: 10px auto 28px; max-width: 520px; }
+
+@media (max-width: 980px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-visual { height: 420px; order: -1; }
+  .news-grid, .mode-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .news-grid, .mode-grid { grid-template-columns: 1fr; }
+  .pcard { width: 170px; padding: 12px; }
+  .pcard .ovr { font-size: 2rem; }
+  .pcard .silhouette { font-size: 3.8rem; }
+  .hero-visual { height: 340px; }
+}
