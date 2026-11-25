@@ -1,0 +1,50 @@
+/* ===== Base: ตัวแปรสี, ฟอนต์, รีเซ็ต ===== */
+:root {
+  --ink: #16213a;
+  --red: #d4202f;
+  --red-dark: #a8141f;
+  --paper: #f6f7f9;
+  --white: #ffffff;
+  --nori: #1f3b34;
+  --gold: #e9b44c;
+  --line: #e3e6ec;
+  --muted: #5d667a;
+
+  --font-body: "Noto Sans Thai", system-ui, sans-serif;
+  --font-head: "Mitr", "Noto Sans Thai", sans-serif;
+
+  --radius-s: 6px;
+  --radius-m: 12px;
+  --radius-l: 24px;
+  --shadow: 0 8px 24px rgba(22, 33, 58, 0.08);
+  --header-h: 72px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 500; line-height: 1.25; margin: 0 0 .5em; }
+h1 { font-size: clamp(2rem, 5vw, 3.4rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
+h3 { font-size: 1.15rem; }
+p { margin: 0 0 1em; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

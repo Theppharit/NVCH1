@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หน้าแรก | ซากุระ เดลิเวอรี่</title>
+  <meta name="description" content="สั่งอาหารญี่ปุ่นสดใหม่ ส่งตรงถึงบ้าน ซูชิ ราเมน ข้าวหน้า และเซ็ตเบนโตะ">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&family=Noto+Sans+Thai:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>อาหารญี่ปุ่นทำสด<br>ส่งถึงบ้านใน 30 นาที</h1>
+        <p>ซูชิ ราเมน ข้าวหน้า และเบนโตะ ปรุงตามออเดอร์ทุกจาน เลือกเมนูแล้วสั่งได้เลย</p>
+        <div class="hero-actions">
+          <a class="btn" href="menu.html">ดูเมนูทั้งหมด</a>
+          <a class="btn btn-outline" href="promotions.html">โปรโมชั่นวันนี้</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">🍱</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2>เลือกตามหมวด</h2></div>
+      <div class="cat-grid" id="home-categories"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head"><h2>เมนูแนะนำ</h2><a href="menu.html">ดูทั้งหมด</a></div>
+      <div class="grid grid-products" id="home-popular"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="promo">
+        <div>
+          <h2>สั่งครั้งแรก ลด 10%</h2>
+          <p>ใส่โค้ดตอนชำระเงิน ใช้ได้กับทุกเมนู</p>
+        </div>
+        <span class="promo-code">WELCOME10</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head"><h2>สั่งอาหารง่ายๆ 4 ขั้นตอน</h2></div>
+      <div class="steps">
+        <div class="step"><h3>เลือกเมนู</h3><p>เลือกจากหมวดหรือค้นหาชื่อเมนู</p></div>
+        <div class="step"><h3>ใส่ตะกร้า</h3><p>ปรับจำนวนและตรวจยอดรวม</p></div>
+        <div class="step"><h3>กรอกที่อยู่</h3><p>ระบุที่อยู่จัดส่งและเบอร์โทร</p></div>
+        <div class="step"><h3>รอรับอาหาร</h3><p>ทีมจัดส่งนำอาหารถึงหน้าบ้าน</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

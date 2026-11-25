@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ติดต่อ | ซากุระ เดลิเวอรี่</title>
+  <meta name="description" content="สั่งอาหารญี่ปุ่นสดใหม่ ส่งตรงถึงบ้าน ซูชิ ราเมน ข้าวหน้า และเซ็ตเบนโตะ">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&family=Noto+Sans+Thai:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+<main>
+  <div class="page-title"><div class="container">
+    <h1>ติดต่อเรา</h1><p>สอบถามออเดอร์ ติดต่อเรื่องงานเลี้ยง หรือแจ้งปัญหา</p>
+  </div></div>
+  <div class="container section">
+    <div class="two-col">
+      <form id="contact-form">
+        <div class="field"><label for="name">ชื่อ</label><input class="input" id="name" name="name" required></div>
+        <div class="field"><label for="phone">เบอร์โทร</label><input class="input" id="phone" name="phone" type="tel" required></div>
+        <div class="field"><label for="msg">ข้อความ</label><textarea class="input" id="msg" name="msg" required></textarea></div>
+        <button class="btn" type="submit">ส่งข้อความ</button>
+        <p class="form-msg" id="form-msg" role="status" hidden></p>
+      </form>
+      <ul class="info-list" id="contact-info"></ul>
+    </div>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/layout.js"></script>
+<script>
+  document.getElementById("contact-info").innerHTML = `
+    <li><strong>โทรศัพท์</strong>${SHOP.phone}</li>
+    <li><strong>LINE</strong>${SHOP.line}</li>
+    <li><strong>อีเมล</strong>${SHOP.email}</li>
+    <li><strong>เวลาทำการ</strong>${SHOP.hours}</li>
+    <li><strong>ที่อยู่</strong>${SHOP.address}</li>`;
+</script>
+<script src="js/contact.js"></script>
+</body>
+</html>
