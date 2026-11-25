@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THREADY - มาร์เก็ตเพลสเสื้อผ้าแฟชั่น ส่งฟรี</title>
+  <meta name="description" content="ช้อปเสื้อผ้าแฟชั่นหญิง ชาย เด็ก จากแบรนด์ไทย ราคาพิเศษ ส่งฟรี">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <a class="skip" href="#content">ข้ามไปยังเนื้อหา</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">THREAD<span>Y</span></a>
+      <form class="search" role="search" id="searchForm">
+        <input type="search" id="searchInput" placeholder="ค้นหาสินค้า" aria-label="ค้นหาสินค้า">
+      </form>
+      <div class="header-actions">
+        <a class="live-link" href="#live"><i class="dot"></i>Live</a>
+        <button class="cart-btn" id="cartBtn" type="button" aria-label="ตะกร้าสินค้า">🛒<b id="cartCount">0</b></button>
+        <button class="btn" type="button">ลงชื่อเข้าใช้ / สมัครสมาชิก</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <section class="hero" aria-roledescription="carousel" aria-label="แบนเนอร์โปรโมชัน">
+      <div class="hero-track" id="heroTrack"></div>
+      <button class="hero-arrow prev" aria-label="สไลด์ก่อนหน้า">‹</button>
+      <button class="hero-arrow next" aria-label="สไลด์ถัดไป">›</button>
+      <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <a class="seller-cta" href="#">
+      <span class="seller-icon">🏬</span>
+      <span><strong>เริ่มธุรกิจของคุณกับ THREADY</strong> สมัครฟรี ไม่มีค่าธรรมเนียม</span>
+      <span class="btn dark">เข้าระบบร้านค้า</span>
+    </a>
+
+    <nav class="cats" id="cats" aria-label="หมวดหมู่สินค้า"></nav>
+
+    <section class="block" id="live">
+      <div class="block-head"><div><h2>ไลฟ์สดตอนนี้</h2><p>เลือกดูรายการสดจากร้านค้าแนะนำ</p></div><a href="#">ดูทั้งหมด</a></div>
+      <div class="slider"><button class="arrow prev" aria-label="ก่อนหน้า">‹</button>
+        <div class="track live-track" id="liveTrack"></div>
+        <button class="arrow next" aria-label="ถัดไป">›</button></div>
+    </section>
+
+    <section class="block" id="products">
+      <div class="block-head"><h2>สินค้าแนะนำ</h2></div>
+      <div class="tabs" data-tabs="products"></div>
+      <div class="grid grid-5" id="productGrid"></div>
+      <p class="empty" id="empty" hidden>ไม่พบสินค้าที่ตรงกับคำค้นหา ลองใช้คำอื่นหรือล้างช่องค้นหา</p>
+    </section>
+
+    <section class="notice" aria-label="ประกาศข่าวสาร">
+      <h2>ประกาศข่าวสาร</h2>
+      <p>ช่วงนี้ส่งฟรีเมื่อซื้อครบ 499 บาท เมื่อใช้โค้ด <b>FREESHIP</b></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">THREAD<span>Y</span></div>
+        <p class="muted">หน้าแรก · คำสั่งซื้อ · การแจ้งเตือน · โปรไฟล์ · ความช่วยเหลือ</p>
+        <p class="muted">ติดต่อแอดมิน: 02-000-0000<br>support@example.com</p>
+      </div>
+      <div>
+        <h3>เกี่ยวกับ THREADY</h3>
+        <a href="#">ข้อกำหนดและเงื่อนไขการใช้บริการ</a>
+        <a href="#">นโยบายความเป็นส่วนตัว</a>
+      </div>
+      <div>
+        <h3>วิธีการชำระเงิน</h3>
+        <div class="chips"><span>บัตรเครดิต/เดบิต</span><span>QR พร้อมเพย์</span><span>E-Wallet</span></div>
+        <h3>บริการจัดส่ง</h3>
+        <div class="chips"><span>Flash</span><span>ไปรษณีย์ไทย</span><span>KEX</span><span>J&amp;T</span></div>
+      </div>
+      <div>
+        <h3>ช่องทางติดตาม</h3>
+        <div class="chips"><a href="#">LINE</a><a href="#">Facebook</a><a href="#">TikTok</a><a href="#">Instagram</a><a href="#">YouTube</a></div>
+        <h3>ดาวน์โหลดแอป</h3>
+        <div class="chips"><a class="btn dark" href="#">App Store</a><a class="btn dark" href="#">Google Play</a></div>
+      </div>
+    </div>
+    <p class="container copy">© 2026 THREADY — เว็บไซต์ตัวอย่างสำหรับการเรียนรู้</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
