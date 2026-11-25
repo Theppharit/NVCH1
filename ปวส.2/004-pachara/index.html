@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131f">
+  <meta name="description" content="รวมเกมเว็บฟรี เล่นได้ทันที ทั้งมินิเกมและเกม HTML5 จากแหล่งโอเพนซอร์ส">
+  <title>PLAYNEST — รวมเกมฟรี เล่นได้ทันที</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="PLAYNEST หน้าแรก"><span class="brand-mark">P</span><span>PLAY<span class="brand-accent">NEST</span><small>FREE BROWSER ARCADE</small></span></a>
+    <nav class="main-nav" aria-label="เมนูหลัก">
+      <a href="#games">เกมทั้งหมด</a>
+      <a href="#about">เกี่ยวกับเว็บ</a>
+      <a href="#sources">แหล่งที่มา</a>
+    </nav>
+    <form class="search" id="searchForm" role="search">
+      <span aria-hidden="true">⌕</span>
+      <input id="searchInput" type="search" placeholder="ค้นหาเกม เช่น Tetris, Puzzle..." autocomplete="off" aria-label="ค้นหาเกม">
+      <kbd>/</kbd>
+    </form>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> PLAY • DISCOVER • REPEAT</div>
+        <h1>เกมสนุก ๆ<br><span>เปิดเล่นได้เลย</span></h1>
+        <p>รวมมินิเกมเล่นฟรีและเกม HTML5 จากแหล่งโอเพนซอร์ส ไม่ต้องติดตั้งโปรแกรม</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#games">เลือกเกม <span>↘</span></a>
+          <a class="btn btn-ghost" href="#sources">ดูแหล่งเกมฟรี</a>
+        </div>
+        <div class="hero-stats"><div><b id="gameCount">18</b><small>เกมในคลัง</small></div><i></i><div><b>ฟรี</b><small>เล่นบนเบราว์เซอร์</small></div><i></i><div><b>HTML5</b><small>ไม่ต้องติดตั้ง</small></div></div>
+      </div>
+      <div class="hero-art" aria-label="ภาพประกอบเกม">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-tile tile-back">✦</div><div class="art-tile tile-top">◆</div>
+        <div class="art-console"><div class="console-screen"><span>PLAY</span><b>∞</b></div><div class="console-controls"><i></i><i></i><i></i><i></i></div></div>
+        <div class="art-spark spark-one">✦</div><div class="art-spark spark-two">✧</div><div class="art-spark spark-three">+</div>
+        <div class="hero-note"><span>✦</span> GOOD GAMES, GOOD MOOD</div>
+      </div>
+    </section>
+
+    <section class="quick-row" aria-label="หมวดเกมด่วน">
+      <button class="quick-chip active" data-category="all"><span>✦</span> ทั้งหมด</button>
+      <button class="quick-chip" data-category="arcade"><span>🕹️</span> อาร์เคด</button>
+      <button class="quick-chip" data-category="puzzle"><span>🧩</span> ปริศนา</button>
+      <button class="quick-chip" data-category="classic"><span>👾</span> คลาสสิก</button>
+      <button class="quick-chip" data-category="casual"><span>🎯</span> เล่นเพลิน</button>
+      <button class="quick-chip" data-category="racing"><span>🏁</span> แข่งรถ</button>
+      <button class="quick-chip" data-category="action"><span>⚡</span> แอ็กชัน</button>
+    </section>
+
+    <section class="section-head" id="games">
+      <div><div class="eyebrow">YOUR NEXT FAVORITE</div><h2>เลือกเกมที่อยากเล่น</h2><p>กดการ์ดเพื่อเปิดเกมในหน้าต่างเล่น</p></div>
+      <div class="sort-wrap"><label for="sortSelect">เรียงตาม</label><select id="sortSelect"><option value="featured">แนะนำ</option><option value="az">ชื่อ A–Z</option><option value="local">เกมเล่นในเว็บนี้</option><option value="external">เกมจากแหล่งอื่น</option></select></div>
+    </section>
+
+    <div class="filter-status" id="filterStatus" aria-live="polite"></div>
+    <section class="game-grid" id="gameGrid" aria-label="รายการเกม"></section>
+    <div class="empty-state" id="emptyState" hidden><div>⌕</div><h3>ไม่พบเกมที่ค้นหา</h3><p>ลองเปลี่ยนคำค้นหรือเลือกหมวดหมู่อื่น</p><button class="btn btn-ghost" id="clearFilters">ล้างตัวกรอง</button></div>
+
+    <section class="promo-band" id="about">
+      <div class="promo-icon"><img src="https://rekhasvg.com/wp-content/uploads/free-icons/gaming/game-controller.png" alt="ไอคอนจอยเกม CC0" loading="lazy"></div>
+      <div><div class="eyebrow">PLAY YOUR WAY</div><h2>เล่นบนคอมก็ได้ มือถือก็ดี</h2><p>มินิเกมในเว็บนี้เล่นได้ทันที ส่วนเกมจากแหล่งภายนอกจะโหลดผ่านอินเทอร์เน็ตและอาจมีข้อจำกัดตามผู้ให้บริการ</p></div>
+      <a class="btn btn-primary" href="#games">ไปเลือกเกม <span>→</span></a>
+    </section>
+
+    <section class="source-section" id="sources">
+      <div class="eyebrow">OPEN & FREE RESOURCES</div>
+      <h2>แหล่งเกมและภาพประกอบ</h2>
+      <p class="source-intro">เลือกใช้แหล่งที่ระบุเงื่อนไขอนุญาตชัดเจน และใส่ข้อมูลเครดิตไว้ให้ตรวจสอบต่อได้</p>
+      <div class="source-cards">
+        <article class="source-card">
+          <div class="source-logo arcadia-logo">A<span>↗</span></div>
+          <div><h3>Arcadia — Open-source browser games</h3><p>เกม HTML5 หลายประเภท โค้ดอยู่ภายใต้ MIT License และเกมในรายการภายนอกจะฝังจาก CDN ของ GitHub</p><a href="https://github.com/JeffreyHamilton6399/arcadia" target="_blank" rel="noopener noreferrer">ดูโปรเจกต์และโค้ดต้นฉบับ ↗</a></div>
+          <span class="license-pill">MIT</span>
+        </article>
+        <article class="source-card">
+          <div class="source-logo image-logo">✦</div>
+          <div><h3>Rekha — Gaming icon set</h3><p>ไอคอนจอยเกม เครื่องเล่นพกพา จอยสติ๊ก หูฟัง ถ้วยรางวัล และหัวใจ ใช้สัญญาอนุญาต CC0 1.0</p><a href="https://rekhasvg.com/free-icons/gaming/game-controller/" target="_blank" rel="noopener noreferrer">ดูชุดไอคอนและใบอนุญาต ↗</a></div>
+          <span class="license-pill">CC0</span>
+        </article>
+        <article class="source-card">
+          <div class="source-logo kenney-logo">K</div>
+          <div><h3>Kenney — Free game assets</h3><p>แหล่งรวมภาพ sprite, tile, UI และเสียงสำหรับทำเกม หลายชุดเป็น CC0 โปรดตรวจสอบใบอนุญาตของแต่ละชุดก่อนนำไปใช้</p><a href="https://kenney.nl/assets" target="_blank" rel="noopener noreferrer">ค้นหาชุดภาพฟรี ↗</a></div>
+          <span class="license-pill">CC0*</span>
+        </article>
+      </div>
+      <p class="fine-print">* สัญญาอนุญาตของชุดทรัพยากร Kenney อาจแตกต่างกันในแต่ละรายการ โปรดอ่านหน้าสินทรัพย์ต้นทางก่อนใช้งานทุกครั้ง</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">P</span><span>PLAY<span class="brand-accent">NEST</span><small>FREE BROWSER ARCADE</small></span></a>
+    <p>เว็บตัวอย่างรวมเกมฟรีอิสระ ไม่ได้เป็นเว็บไซต์ทางการหรือมีความเกี่ยวข้องกับ Y8 หรือเจ้าของเกมใด ๆ</p>
+    <span>© 2026 PLAYNEST · Made for fun</span>
+  </footer>
+
+  <div class="modal" id="gameModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <header class="modal-header">
+        <div><span class="modal-kicker" id="modalKicker">NOW PLAYING</span><h2 id="modalTitle">Game title</h2></div>
+        <div class="modal-tools"><a class="modal-source" id="modalSource" href="#" target="_blank" rel="noopener noreferrer">ต้นทาง ↗</a><button class="icon-button" id="fullscreenBtn" aria-label="เต็มหน้าจอ">⛶</button><button class="icon-button close-button" id="closeModal" aria-label="ปิดเกม">×</button></div>
+      </header>
+      <div class="game-stage" id="gameStage"></div>
+      <div class="modal-footer"><span id="gameHelp">กดปุ่มเริ่มเพื่อเล่น</span><span>ESC เพื่อปิด</span></div>
+    </section>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
