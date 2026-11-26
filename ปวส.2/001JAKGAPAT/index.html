@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LEARNTOON – โรงเรียนออนไลน์สไตล์เว็บตูน</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--card:#f4f6f5;--tx:#17201b;--mu:#667;--ac:#00b956;--acx:#fff;--bd:#e2e8e4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101412;--card:#1a201d;--tx:#eef3f0;--mu:#9aa8a0;--ac:#00dc64;--acx:#06210f;--bd:#2a332e}}
+:root[data-theme="dark"]{--bg:#101412;--card:#1a201d;--tx:#eef3f0;--mu:#9aa8a0;--ac:#00dc64;--acx:#06210f;--bd:#2a332e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Noto Sans Thai',system-ui,sans-serif;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--bd);z-index:9}
+.bar{max-width:1100px;margin:auto;display:flex;align-items:center;gap:20px;padding:12px 16px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:22px;color:var(--ac)}
+nav{display:flex;gap:16px;font-weight:600;flex:1;overflow-x:auto}
+nav a{white-space:nowrap;padding:4px 0}nav a:hover{color:var(--ac)}
+.btn{background:var(--ac);color:var(--acx);border:0;border-radius:20px;padding:8px 18px;font:inherit;font-weight:600;cursor:pointer}
+main{max-width:1100px;margin:auto;padding:0 16px 40px}
+.hero{margin:20px 0;padding:32px;border-radius:20px;background:linear-gradient(135deg,#00b956,#0a7d4a);color:#fff}
+.hero h1{margin:0 0 8px;font-size:clamp(24px,5vw,38px)}
+.hero input{width:100%;max-width:420px;padding:12px 16px;border-radius:24px;border:0;font:inherit;margin-top:12px}
+h2{font-size:20px;margin:32px 0 12px;display:flex;justify-content:space-between;align-items:baseline}
+h2 a{font-size:14px;color:var(--ac);font-weight:600}
+.tabs{display:flex;gap:8px;overflow-x:auto;margin-bottom:14px}
+.tab{border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:20px;padding:6px 16px;font:inherit;cursor:pointer;white-space:nowrap}
+.tab.on{background:var(--ac);color:var(--acx);border-color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.c{background:var(--card);border-radius:14px;padding:14px;position:relative;border:1px solid var(--bd)}
+.c .ic{height:86px;border-radius:10px;display:grid;place-items:center;font-size:40px;margin-bottom:10px}
+.c b{display:block}.c small{color:var(--mu)}
+.rk{position:absolute;top:8px;left:8px;background:var(--ac);color:var(--acx);border-radius:50%;width:26px;height:26px;display:grid;place-items:center;font-weight:800;font-size:13px}
+.tag{display:inline-block;font-size:11px;background:var(--ac);color:var(--acx);border-radius:6px;padding:0 6px;margin-left:6px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:24px}
+.stats div{background:var(--card);border-radius:14px;padding:16px;text-align:center;border:1px solid var(--bd)}
+.stats b{font-size:26px;color:var(--ac);display:block}
+footer{border-top:1px solid var(--bd);padding:24px 16px;text-align:center;color:var(--mu);font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="#">📚 LEARNTOON</a>
+<nav><a href="#top">คอร์สแนะนำ</a><a href="#cat">หมวดวิชา</a><a href="#new">คอร์สใหม่</a><a href="#day">ตารางเรียน</a><a href="#works">ผลงานนักเรียน</a></nav>
+<button class="btn" onclick="alert('ระบบเข้าสู่ระบบ (ตัวอย่าง)')">เข้าสู่ระบบ</button>
+</div></header>
+<main>
+<section class="hero"><h1>เรียนสนุกเหมือนอ่านการ์ตูน</h1><p>บทเรียนสั้น ๆ ติดตามได้ทุกวัน ครบทุกวิชาตั้งแต่ ม.1 – ม.6 ฟรีเดือนแรก!</p><input type="search" placeholder="ค้นหาวิชา ครู หรือบทเรียน…" aria-label="ค้นหา"></section>
+
+<h2 id="top">คอร์สมาแรง & ยอดนิยม <a href="#">ดูทั้งหมด</a></h2>
+<div class="tabs" id="t1"></div><div class="grid" id="g1"></div>
+
+<h2 id="cat">คอร์สเด็ดตามหมวดวิชา <a href="#">ดูทั้งหมด</a></h2>
+<div class="tabs" id="t2"></div><div class="grid" id="g2"></div>
+
+<h2 id="new">คอร์สใหม่ล่าสุด</h2><div class="grid" id="g3"></div>
+
+<h2 id="day">ตารางเรียนประจำวัน</h2>
+<div class="tabs" id="t4"></div><div class="grid" id="g4"></div>
+
+<h2 id="works">ผลงานนักเรียน (Student Canvas) <a href="#">ดูทั้งหมด</a></h2><div class="grid" id="g5"></div>
+
+<div class="stats"><div><b>12,000+</b>นักเรียน</div><div><b>85</b>ครูผู้สอน</div><div><b>320</b>คอร์สเรียน</div><div><b>4.9★</b>คะแนนความพึงพอใจ</div></div>
+</main>
+<footer>📱 ดาวน์โหลดแอป LEARNTOON บน App Store และ Google Play<br>ติดต่อ: Facebook · LINE · Instagram · YouTube<br>© LEARNTOON School (เว็บไซต์ตัวอย่าง)</footer>
+<script>
+const col=['#cdeedb','#fde7c8','#dbe6fb','#f9d6e0','#e4dafc','#d3f1f1'];
+const C=(n,s,i,x)=>({n,s,i,x});
+const hot=[C('ฟิสิกส์ม.ปลายสุดมันส์','ฟิสิกส์','⚛️','↑2'),C('อังกฤษพิชิตสอบ','ภาษาอังกฤษ','🔤','↓1'),C('คณิตศาสตร์ไม่ยาก','คณิตศาสตร์','➗','↑3'),C('เคมีรอบตัว','เคมี','🧪','↑1'),C('ชีววิทยาฉบับการ์ตูน','ชีววิทยา','🧬','↑2'),C('ประวัติศาสตร์ไทย','สังคมศึกษา','🏯','↓2'),C('โค้ดดิ้งเบื้องต้น','คอมพิวเตอร์','💻','↑9'),C('ภาษาไทยเข้มข้น','ภาษาไทย','📖','↑1')];
+const pop=[...hot].reverse();
+const cats={'คณิตศาสตร์':['พีชคณิตง่ายนิดเดียว','เรขาคณิตวาดเล่น','สถิติรอบตัว','แคลคูลัสเบื้องต้น','ตรีโกณมิติสุดฮา','ความน่าจะเป็น'],'วิทยาศาสตร์':['แรงและการเคลื่อนที่','ตารางธาตุ','เซลล์และพันธุกรรม','ระบบสุริยะ','ไฟฟ้าเบื้องต้น','โลกและดาราศาสตร์'],'ภาษา':['Grammar ฉบับย่อ','Speaking มั่นใจ','คำศัพท์ TOEIC','เขียนเรียงความ','อ่านจับใจความ','ภาษาญี่ปุ่นเบื้องต้น'],'สังคมศึกษา':['พลเมืองดี','เศรษฐศาสตร์พื้นฐาน','ภูมิศาสตร์ไทย','ประวัติศาสตร์โลก','ศาสนาและวัฒนธรรม','กฎหมายใกล้ตัว'],'ศิลปะ & ดนตรี':['วาดการ์ตูนเบื้องต้น','สีน้ำสบายใจ','ทฤษฎีดนตรี','อูคูเลเล่มือใหม่','ออกแบบกราฟิก','ถ่ายภาพด้วยมือถือ'],'เทคโนโลยี':['Python มือใหม่','สร้างเว็บแรก','Scratch สำหรับเด็ก','AI คืออะไร','Excel ใช้งานจริง','ความปลอดภัยออนไลน์']};
+const newc=['วิทยาศาสตร์ในครัว','คณิตคิดเร็ว','อังกฤษจากเพลง','เขียนโปรแกรมเกม','ประวัติศาสตร์แบบสืบสวน','ติวสอบ A-Level','ฟิสิกส์รอบสนามกีฬา','นักเขียนรุ่นเยาว์','การเงินวัยรุ่น','ดาราศาสตร์ยามค่ำ'];
+const days={'จันทร์':['คณิตศาสตร์ ม.1','ภาษาไทย ม.2','วิทย์ ม.3','อังกฤษ ม.4'],'อังคาร':['ฟิสิกส์ ม.5','สังคม ม.1','ศิลปะ ม.2','คอมพิวเตอร์ ม.3'],'พุธ':['เคมี ม.4','คณิตศาสตร์ ม.6','อังกฤษสนทนา','ดนตรี ม.1'],'พฤหัสบดี':['ชีววิทยา ม.5','ภาษาไทย ม.4','ประวัติศาสตร์ ม.2','พลศึกษา'],'ศุกร์':['ติวสอบเข้า','โค้ดดิ้ง ม.3','วิทย์ ม.1','แนะแนว'],'เสาร์':['ติวเข้ม TCAS','อังกฤษ IELTS','ศิลปะพิเศษ','ชมรม'],'อาทิตย์':['ทบทวนประจำสัปดาห์','ตอบข้อสงสัยสด','กิจกรรมชมรม','ห้องสมุดออนไลน์']};
+const works=['โปรเจกต์ระบบสุริยะ — น้องมะลิ ม.2','คอมมิคประวัติศาสตร์ — น้องบิว ม.4','เกมโค้ดดิ้ง — น้องต้น ม.3','โปสเตอร์รักษ์โลก — น้องฟ้า ม.1','ทดลองภูเขาไฟ — น้องเก้า ม.5','เรียงความ “โรงเรียนในฝัน” — น้องพลอย ม.6'];
+const emo=['📘','🔬','🎨','🧮','🌏','🎵'];
+const card=(n,s,i,k,r,x)=>`<a class="c" href="#">${r?`<span class="rk">${r}</span>`:''}<div class="ic" style="background:${col[k%6]}">${i}</div><b>${n}${x?`<span class="tag">${x}</span>`:''}</b><small>${s}</small></a>`;
+function tabs(tid,gid,keys,fn){const t=document.getElementById(tid),g=document.getElementById(gid);
+ const show=k=>{[...t.children].forEach(b=>b.classList.toggle('on',b.dataset.k===k));g.innerHTML=fn(k)};
+ keys.forEach(k=>{const b=document.createElement('button');b.className='tab';b.textContent=k;b.dataset.k=k;b.onclick=()=>show(k);t.append(b)});show(keys[0])}
+tabs('t1','g1',['มาแรง','ยอดนิยม'],k=>(k==='มาแรง'?hot:pop).map((c,i)=>card(c.n,c.s,c.i,i,i+1,c.x)).join(''));
+tabs('t2','g2',Object.keys(cats),k=>cats[k].map((n,i)=>card(n,k,emo[i%6],i)).join(''));
+document.getElementById('g3').innerHTML=newc.map((n,i)=>card(n,'คอร์สใหม่',emo[i%6],i,0,'ใหม่')).join('');
+tabs('t4','g4',Object.keys(days),k=>days[k].map((n,i)=>card(n,'อัปเดต 09:00 น.',emo[i%6],i)).join(''));
+document.getElementById('g5').innerHTML=works.map((n,i)=>card(n.split(' — ')[0],n.split(' — ')[1],emo[i%6],i)).join('');
+</script>
+</body>
+</html>
